@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("https://staticdn.vivaia.com/oneapi/fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("https://staticdn.vivaia.com/oneapi/fonts/Roboto-Bold.ttf");
+}
+.product_detail_richtext {
+  font-family: "Roboto-Regular";
+}
+.product_detail_richtext .tc {
+  text-align: center;
+}
+.product_detail_richtext .sp_img {
+  width: 100%;
+}
+.product_detail_richtext .detail-text-wrap {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.product_detail_richtext .detail-item > div {
+  width: 50%;
+}
+.product_detail_richtext .detail-item {
+  display: flex;
+  background-color: #f5f3ef;
+}
+.product_detail_richtext .detail-item img {
+  height: 100%;
+}
+.product_detail_richtext .gif_wrapper .gif_img {
+  display: block;
+  margin: 0 auto;
+  width: 50%;
+}
+.product_detail_richtext .gif_wrapper .gif_img1 {
+  width: 100%;
+}
+.product_detail_richtext .cb5 {
+  color: #000;
+  opacity: 0.5;
+}
+.product_detail_richtext .c5 {
+  color: #000;
+  opacity: 0.5;
+}
+.product_detail_richtext .mb10 {
+  margin-bottom: 10px;
+}
+.product_detail_richtext .fwb {
+  font-weight: bold;
+  font-family: "Roboto-Bold";
+}
+.product_detail_richtext .mb15 {
+  margin-bottom: 15px;
+}
+.product_detail_richtext .mt15 {
+  margin-top: 15px;
+}
+.product_detail_richtext .desc-grid-3 {
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 3%;
+}
+.product_detail_richtext .desc-grid {
+  display: grid;
+}
+.product_detail_richtext .mt42 {
+  margin-top: 42px;
+}
