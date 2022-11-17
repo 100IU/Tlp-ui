@@ -49,3 +49,28 @@ a {
 .the-black-friday .the-banner1-bg {
   background-color: #6B0000;
 }
+.the-black-friday .the-discount-text {
+  color: #fff;
+}
+.the-black-friday .text-line-through {
+  text-decoration: line-through;
+}
+.the-black-friday .the-a-po {
+  position: relative;
+}
+.the-black-friday .the-a-po .the-discount {
+  position: absolute;
+  top: 2%;
+  left: 2%;
+  background-color: #610F08;
+}
+.the-black-friday .the-bannerbg-re {
+  position: relative;
+}
+.the-black-friday .the-bannerbg-re .the-text-re-ab {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -3,6 +3,12 @@
     width: 94% !important;
     margin: 0 auto;
   }
+  .the-black-friday .the-desc-item-banner {
+    width: 95% !important;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: #fff;
+  }
   .the-black-friday .the-title-area {
     margin-top: 40px;
   }
@@ -15,6 +21,10 @@
   .the-black-friday .the-title-h1 {
     font-family: 'Noto Serif';
     font-size: 36px;
+  }
+  .the-black-friday .the-text-h1 {
+    font-family: 'Noto Serif';
+    font-size: 20px;
   }
   .the-black-friday .the-text-Body {
     font-size: 12px;
@@ -38,6 +48,9 @@
   }
   .the-black-friday .the-text-desc-mb {
     margin-bottom: 40px;
+  }
+  .the-black-friday .the-text-mb {
+    margin-bottom: 20px;
   }
   .the-black-friday .the-pt {
     padding-top: 15px;
@@ -107,11 +120,81 @@
     width: 30px;
     margin: 0 auto;
   }
+  .the-black-friday .the-a-number:nth-child(n+3) {
+    margin-top: 40px;
+  }
+  .the-black-friday .the-a-number:nth-child(n+5) {
+    display: none;
+  }
+  .the-black-friday .the-picture-flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .the-black-friday .the-picture-flex > a {
+    width: 49%;
+  }
+  .the-black-friday .the-picture-flex .the-fs14 {
+    font-family: 'Noto Serif-Medium';
+    font-size: 12px;
+  }
+  .the-black-friday .the-picture-flex .the-fs16 {
+    font-family: 'Roboto-Bold';
+    font-size: 12px;
+  }
+  .the-black-friday .the-picture-flex .the-fs12 {
+    font-size: 12px;
+  }
+  .the-black-friday .the-picture-flex .the-fs12-fwb {
+    font-family: 'Roboto-Bold';
+    font-size: 12px;
+  }
+  .the-black-friday .the-picture-flex .the-top {
+    margin-top: 8px;
+  }
+  .the-black-friday .the-picture-flex .the-top2 {
+    margin-top: 20px;
+  }
+  .the-black-friday .the-picture-flex .the-top {
+    margin-top: 8px;
+  }
+  .the-black-friday .the-picture-flex .the-top2 {
+    margin-top: 15px;
+  }
+  .the-black-friday .the-picture-flex .the-pt-button {
+    padding: 12px 20%;
+    background-color: #050505;
+  }
+  .the-black-friday .the-picture-flex .the-ml {
+    margin-left: 5px;
+  }
+  .the-black-friday .the-picture-flex .the-discount-text {
+    margin-left: 2px;
+  }
+  .the-black-friday .disicon {
+    width: 10px;
+    vertical-align: inherit;
+  }
+  .the-black-friday .the-discount {
+    border-radius: 10px;
+    padding: 2px 6px;
+  }
+  .the-black-friday .the-vmbutton {
+    width: 175px !important;
+    padding: 15px 40px;
+    background-color: #6B0000;
+  }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .the-black-friday .the-desc-item {
     width: 83% !important;
     margin: 0 auto;
+  }
+  .the-black-friday .the-desc-item-banner {
+    width: 85% !important;
+    margin: 0 auto;
+    padding: 2%;
+    background-color: #fff;
   }
   .the-black-friday .the-title-area {
     margin-top: 40px;
@@ -133,6 +216,10 @@
     font-family: 'Noto Serif';
     font-size: 20px;
   }
+  .the-black-friday .the-text-h1 {
+    font-family: 'Noto Serif';
+    font-size: 32px;
+  }
   .the-black-friday .the-content-h1 {
     font-family: 'Noto Serif';
     font-size: 28px;
@@ -147,6 +234,9 @@
     font-size: 16px;
   }
   .the-black-friday .the-text-desc-mb {
+    margin-bottom: 20px;
+  }
+  .the-black-friday .the-text-mb {
     margin-bottom: 20px;
   }
   .the-black-friday .the-pt {
@@ -186,5 +276,56 @@
   .the-black-friday .the-icon-size {
     width: 40px;
     margin: 0 auto;
+  }
+  .the-black-friday .the-picture-flex .the-fs14 {
+    font-family: 'Noto Serif-Medium';
+    font-size: 14px;
+  }
+  .the-black-friday .the-picture-flex .the-fs16 {
+    font-family: 'Roboto-Bold';
+    font-size: 14px;
+  }
+  .the-black-friday .the-picture-flex .the-fs12 {
+    font-size: 12px;
+  }
+  .the-black-friday .the-picture-flex .the-fs12-fwb {
+    font-family: 'Roboto-Bold';
+    font-size: 12px;
+  }
+  .the-black-friday .the-picture-flex .the-top {
+    margin-top: 8px;
+  }
+  .the-black-friday .the-picture-flex .the-top2 {
+    margin-top: 20px;
+  }
+  .the-black-friday .the-picture-flex .the-top {
+    margin-top: 8px;
+  }
+  .the-black-friday .the-picture-flex .the-top2 {
+    margin-top: 15px;
+  }
+  .the-black-friday .the-picture-flex .the-pt-button {
+    padding: 12px 20%;
+    background-color: #050505;
+  }
+  .the-black-friday .the-picture-flex .the-ml {
+    margin-left: 10px;
+  }
+  .the-black-friday .disicon {
+    width: 10px;
+    vertical-align: inherit;
+  }
+  .the-black-friday .the-discount {
+    border-radius: 10px;
+    padding: 2px 6px;
+  }
+  .the-black-friday .the-discount .the-fs16 {
+    font-family: 'Roboto-Bold';
+    font-size: 12px;
+  }
+  .the-black-friday .the-vmbutton {
+    width: 200px !important;
+    padding: 15px 55px;
+    background-color: #6B0000;
   }
 }

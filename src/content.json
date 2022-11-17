@@ -45,9 +45,78 @@
     }
   ],
   "bannerTitle":{
-    "title1":"Shop Best Sellers"
+    "title1":"Shop Best Sellers",
+    "title2":"Shop Winter Must-Haves",
+    "title3":"Save More On Final Sales",
+    "title4":"Shop VIVAIA Specials",
+    "ViewMore":"View More >"
   },
-  "picturebanner":[
+  "ViewMore":{
+    "vmsrc":"https://www.vivaia.com/category/collection-c_394.html"
+  },
+  "ViewMore1":{
+    "vmsrc":"https://www.vivaia.com/category/sale-c_511.html"
+  },
+  "ViewMore2":{
+    "vmsrc":"https://www.vivaia.com/category/collection-c_394.html"
+  },
+  "bannerbg":{
+    "pc_bgsrc":"https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/b1@2x.jpg",
+    "m_bgsrc":"https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/m2@2x.jpg"
+  },
+  "thepicturebanner":[
+    {
+      "pc_bpt":"https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/bs1@2x.jpg",
+      "m_bpt":"https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/mbs1@2x.jpg",
+      "nubemr2":20,
+      "text1":"Square-Toe V-Cut Flats",
+      "text2":"$97.00",
+      "text3":"Sale $111.2 (20% OFF)",
+      "number":20,
+      "text4":"$67.9",
+      "text5":" when buy 3 or more",
+      "shopnow":"SHOP NOW",
+      "src":"https://www.vivaia.com/item/water-repellent-chelsea-boot-p_10073728.html?gid=10009094",
+      "Disicon":"https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/sbg@2x.png"
+    },
+    {
+      "pc_bpt":"https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/bs1@2x.jpg",
+      "m_bpt":"https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/mbs1@2x.jpg",
+      "nubemr2":20,
+      "text1":"Square-Toe V-Cut Flats",
+      "text2":"Was $97.00",
+      "text3":"Sale $77.6",
+      "number":20,
+      "text4":"$67.9",
+      "text5":" when buy 3 or more",
+      "shopnow":"SHOP NOW",
+      "src":"https://www.vivaia.com/item/water-repellent-chelsea-boot-p_10073728.html?gid=10009094"
+    },
+    {
+      "pc_bpt":"https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/bs1@2x.jpg",
+      "m_bpt":"https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/mbs1@2x.jpg",
+      "text1":"Square-Toe V-Cut Flats",
+      "text2":"Was $97.00",
+      "text3":"Sale $77.6",
+      "number":20,
+      "text4":"$67.9",
+      "text5":" when buy 3 or more",
+      "shopnow":"SHOP NOW",
+      "src":"https://www.vivaia.com/item/water-repellent-chelsea-boot-p_10073728.html?gid=10009094"
+    },
+    {
+      "pc_bpt":"https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/bs1@2x.jpg",
+      "m_bpt":"https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/mbs1@2x.jpg",
+      "nubemr2":20,
+      "text1":"Square-Toe V-Cut Flats",
+      "text2":"Was $97.00",
+      "text3":"Sale $77.6",
+      "nubemr":20,
+      "text4":"$67.9",
+      "text5":" when buy 3 or more",
+      "shopnow":"SHOP NOW",
+      "src":"https://www.vivaia.com/item/water-repellent-chelsea-boot-p_10073728.html?gid=10009094"
+    },
     {
       "pc_bpt":"https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/bs1@2x.jpg",
       "m_bpt":"https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/mbs1@2x.jpg",
@@ -82,6 +151,60 @@
       "text2":"Was $97.00",
       "text3":"Sale $77.6",
       "nubemr":20,
+      "text4":"$67.9",
+      "text5":" when buy 3 or more",
+      "shopnow":"SHOP NOW",
+      "src":"https://www.vivaia.com/item/water-repellent-chelsea-boot-p_10073728.html?gid=10009094"
+    },
+    {
+      "pc_bpt":"https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/bs1@2x.jpg",
+      "m_bpt":"https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/mbs1@2x.jpg",
+      "nubemr2":20,
+      "text1":"Square-Toe V-Cut Flats",
+      "text2":"Was $97.00",
+      "text3":"Sale $77.6",
+      "nubemr":20,
+      "text4":"$67.9",
+      "text5":" when buy 3 or more",
+      "shopnow":"SHOP NOW",
+      "src":"https://www.vivaia.com/item/water-repellent-chelsea-boot-p_10073728.html?gid=10009094"
+    }
+  ],
+  "thepicturebanner1":[
+    {
+      "pc_bpt":"https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/bc1@2x.jpg",
+      "m_bpt":"https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/mbs1@2x.jpg",
+      "nubemr2":20,
+      "text1":"Square-Toe V-Cut Flats",
+      "text2":"$97.00",
+      "text3":"Sale $111.2 (20% OFF)",
+      "number":20,
+      "text4":"$67.9",
+      "text5":" when buy 3 or more",
+      "shopnow":"SHOP NOW",
+      "src":"https://www.vivaia.com/item/water-repellent-chelsea-boot-p_10073728.html?gid=10009094",
+      "Disicon":"https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/sbg@2x.png"
+    },
+    {
+      "pc_bpt":"https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/bs1@2x.jpg",
+      "m_bpt":"https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/mbs1@2x.jpg",
+      "nubemr2":20,
+      "text1":"Square-Toe V-Cut Flats",
+      "text2":"Was $97.00",
+      "text3":"Sale $77.6",
+      "number":20,
+      "text4":"$67.9",
+      "text5":" when buy 3 or more",
+      "shopnow":"SHOP NOW",
+      "src":"https://www.vivaia.com/item/water-repellent-chelsea-boot-p_10073728.html?gid=10009094"
+    },
+    {
+      "pc_bpt":"https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/bs1@2x.jpg",
+      "m_bpt":"https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/mbs1@2x.jpg",
+      "text1":"Square-Toe V-Cut Flats",
+      "text2":"Was $97.00",
+      "text3":"Sale $77.6",
+      "number":20,
       "text4":"$67.9",
       "text5":" when buy 3 or more",
       "shopnow":"SHOP NOW",
