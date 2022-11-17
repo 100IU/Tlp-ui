@@ -64,6 +64,10 @@
     "pc_bgsrc":"https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/b1@2x.jpg",
     "m_bgsrc":"https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/m2@2x.jpg"
   },
+  "blackbg":{
+    "pc_bcsrc":"https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/ll@2x.png",
+    "m_bcsrc":"https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/m3@2x.jpg"
+  },
   "thepicturebanner":[
     {
       "pc_bpt":"https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/bs1@2x.jpg",

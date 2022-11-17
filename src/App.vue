@@ -21,7 +21,7 @@
                alt="VIVAIA"
                :src=bannerbg.pc_bgsrc />
         </picture>
-        <div class="the-text-h1  fwb tc the-text-re-ab">{{bannerTitle.title3}}</div>
+        <div class="the-text-h1  fwb tc the-text-re-ab">{{bannerTitle.title2}}</div>
       </div>
       <div class="the-picture-flex the-desc-item-banner ">
         <picturebanner v-for="(picdata,index) in thepicturebanner1"
@@ -32,11 +32,53 @@
     </div>
     <vmbutton :viewmore="ViewMore"
               :bannerTitle='bannerTitle' />
+    <div class="the-title-area the-pb ">
+      <div class="the-bannerbg-re the-desc-item-banner">
+        <picture>
+          <source :srcset=bannerbg.m_bgsrc
+                  media="(max-width: 768px)" />
+          <img class="sp_img"
+               alt="VIVAIA"
+               :src=bannerbg.pc_bgsrc />
+        </picture>
+        <div class="the-text-h1  fwb tc the-text-re-ab">{{bannerTitle.title3}}</div>
+      </div>
+      <div class="the-picture-flex the-desc-item-banner ">
+        <picturebanner v-for="(picdata,index) in thepicturebanner2"
+                       :key="index"
+                       :picdata="picdata"
+                       class="the-a-number" />
+      </div>
+    </div>
+    <vmbutton :viewmore="ViewMore1"
+              :bannerTitle='bannerTitle' />
+    <blackbg />
+    <div class="the-title-area the-pb ">
+      <div class="the-bannerbg-re the-desc-item-banner">
+        <picture>
+          <source :srcset=bannerbg.m_bgsrc
+                  media="(max-width: 768px)" />
+          <img class="sp_img"
+               alt="VIVAIA"
+               :src=bannerbg.pc_bgsrc />
+        </picture>
+        <div class="the-text-h1  fwb tc the-text-re-ab">{{bannerTitle.title4}}</div>
+      </div>
+      <div class="the-picture-flex the-desc-item-banner ">
+        <picturebanner v-for="(picdata,index) in thepicturebanner3"
+                       :key="index"
+                       :picdata="picdata"
+                       class="the-a-number" />
+      </div>
+    </div>
+    <vmbutton :viewmore="ViewMore2"
+              :bannerTitle='bannerTitle' />
   </div>
 </template>
 
 <script>
 import Banner from './components/Banner.vue'
+import blackbg from './components/BlackBg.vue'
 import picturebanner from './components/PicturesBanner.vue'
 import topicon from './components/TopIcon.vue'
 import vmbutton from './components/VMButton.vue'
@@ -45,7 +87,11 @@ import {
   bannerTitle,
   thepicturebanner,
   thepicturebanner1,
+  thepicturebanner2,
+  thepicturebanner3,
   ViewMore,
+  ViewMore1,
+  ViewMore2,
 } from './content.json'
 export default {
   name: 'App',
@@ -54,14 +100,19 @@ export default {
     topicon,
     picturebanner,
     vmbutton,
+    blackbg,
   },
   data() {
     return {
       thepicturebanner,
       thepicturebanner1,
+      thepicturebanner2,
+      thepicturebanner3,
       bannerTitle,
       bannerbg,
       ViewMore,
+      ViewMore1,
+      ViewMore2,
     }
   },
 }
