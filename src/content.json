@@ -275,5 +275,53 @@
       "shopnow":"SHOP NOW",
       "src":"https://www.vivaia.com/item/water-repellent-chelsea-boot-p_10073728.html?gid=10009094"
     }
+  ],
+  "bottomicon":[
+    {
+      "img":"https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/mbi1@2x.png",
+      "text":"Free shipping on  orders over $99"
+    },
+    {
+      "img":"https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/mbi2@2x.png",
+      "text":"Biggest Sale of the year:  Save up to 50%!"
+    },
+    {
+      "img":"https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/mbi3@2x.png",
+      "text":"30 + extended 15 days of  Free Return & Exchange"
+    },
+    {
+      "img":"https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/mbi4@2x.png",
+      "text":"Eco-friendly.  Made from recycled bottles."
+    },
+    {
+      "img":"https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/mbi5@2x.png",
+      "text":"Over 100k  5-star reviews"
+    },
+    {
+      "img":"https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/mbi6@2x.png",
+      "text":"Try free  pay later"
+    }
+  ],
+  "category":[
+    {
+      "img":"https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/mbs1@2x.jpg",
+      "link":"https://www.vivaia.com/category/boots-c_430.html",
+      "name":"BOOTS"
+    },
+    {
+      "img":"https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/mbs2@2x.jpg",
+      "link":"https://www.vivaia.com/category/collection-c_394.html",
+      "name":"SHOES"
+    },
+    {
+      "img":"https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/mbc1@2x.jpg",
+      "link":"https://www.vivaia.com/category/clothing-c_548.html",
+      "name":"CLOTHING"
+    },
+    {
+      "img":"https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/mbg1@2x.jpg",
+      "link":"https://www.vivaia.com/category/accessories-c_545.html",
+      "name":"ACCESSORIES"
+    }
   ]
 }

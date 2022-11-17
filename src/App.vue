@@ -32,6 +32,22 @@
     </div>
     <vmbutton :viewmore="ViewMore"
               :bannerTitle='bannerTitle' />
+    <Christmas></Christmas>
+    <picture>
+      <source media="(max-width: 768px )" srcset="https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/m41@2x.png">
+      <img class="swiper-pic" src="https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/3@2x.png" alt="VIVAIA">
+    </picture>
+    <div class="Category-wrapper">
+      <p class="title">· Shop by Category ·</p>
+      <div class="category-contents">
+      <Category v-for="(category,index) in content.category" :key="index" :category="category"></Category>
+    </div>
+    </div>
+    <div class="bottomicon-bg">
+    <bottomicon :bottomicon = "content.bottomicon"></bottomicon>
+  </div>
+
+ 
   </div>
 </template>
 
@@ -47,12 +63,18 @@ import {
   thepicturebanner1,
   ViewMore,
 } from './content.json'
+import bottomicon from './components/bottomicon.vue'
+import Category from './components/Category.vue'
+import Christmas from '@/components/Christmas'
 export default {
   name: 'App',
   components: {
     Banner,
     topicon,
     picturebanner,
+    bottomicon,
+    Category,
+    Christmas
     vmbutton,
   },
   data() {
@@ -67,7 +89,7 @@ export default {
 }
 </script>
 
-<style>
+<style lang="less">
 @font-face {
   font-family: 'Roboto';
   src: url('https://staticdn.vivaia.com/oneapi/fonts/Roboto-Regular.ttf');
@@ -89,5 +111,43 @@ export default {
 @font-face {
   font-family: 'Roboto-Light';
   src: url('https://staticdn.vivaia.com/oneapi/fonts/Roboto-Light.ttf');
+}
+.bottomicon-bg{
+  display: flex;
+  background-color: #6B0000;
+}
+.Category-wrapper{
+  width: 84%;
+  padding: 20px;
+  margin: 0 auto;
+  margin-bottom: 80px;
+  .title{
+    font-size: 40px;
+    color: #6B0000;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .category-contents{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+.swiper-pic{
+  width: 84%;
+  padding: 20px;
+  display: block;
+  margin: 0 auto;
+}
+@media screen and(max-width:768px) {
+  .Category-wrapper{
+    width: 100%;
+    .title{
+      font-size: 32px;
+    }
+    .category-contents{
+      justify-content: space-evenly;
+    }
+  }
 }
 </style>
