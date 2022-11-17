@@ -15,6 +15,9 @@
   .the-black-friday .the-title-area-pt {
     padding-top: 60px;
   }
+  .the-black-friday .the-title-area-sp {
+    padding-top: 40px;
+  }
   .the-black-friday .desc-title {
     margin: 0 auto;
   }
@@ -24,6 +27,10 @@
   }
   .the-black-friday .the-text-h1 {
     font-family: 'Noto Serif';
+    font-size: 36px;
+  }
+  .the-black-friday .the-blt-h1 {
+    font-family: 'Roboto-Bold';
     font-size: 36px;
   }
   .the-black-friday .the-text-Body {
@@ -134,6 +141,53 @@
     padding: 15px 80px;
     background-color: #6B0000;
   }
+  .the-black-friday .the-black-po {
+    position: relative;
+  }
+  .the-black-friday .the-black-po .the-black-ab {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    top: 45%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+  }
+  .the-black-friday .the-black-po .the-mr-br {
+    padding-right: 60px;
+    border-right: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .the-black-friday .the-black-po .the-ml-br {
+    padding-left: 60px;
+  }
+  .the-black-friday .the-black-po .the-box-body {
+    scale: 0.9;
+  }
+  .the-black-friday .the-bl-h1 {
+    font-family: 'Roboto-Bold';
+    font-size: 30px;
+  }
+  .the-black-friday .the-bl-h2 {
+    font-family: 'Roboto-Bold';
+    font-size: 34px;
+  }
+  .the-black-friday .the-bl-h3 {
+    font-family: 'Roboto-Bold';
+    font-size: 36px;
+    color: #FAD804;
+  }
+  .the-black-friday .this-after-before::after,
+  .the-black-friday .this-after-before::before {
+    content: '';
+    height: 0px;
+    border: 1px solid #fff;
+    width: 20%;
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
 @media screen and (min-width: 1441px) {
   .the-black-friday .the-desc-item {
@@ -152,6 +206,9 @@
   .the-black-friday .the-title-area-pt {
     padding-top: 80px;
   }
+  .the-black-friday .the-title-area-sp {
+    padding-top: 60px;
+  }
   .the-black-friday .desc-title {
     margin: 0 auto;
   }
@@ -161,6 +218,10 @@
   }
   .the-black-friday .the-text-h1 {
     font-family: 'Noto Serif';
+    font-size: 40px;
+  }
+  .the-black-friday .the-blt-h1 {
+    font-family: 'Roboto-Bold';
     font-size: 40px;
   }
   .the-black-friday .the-text-Body {
@@ -257,8 +318,61 @@
     padding: 20px 100px;
     background-color: #6B0000;
   }
+  .the-black-friday .the-black-po {
+    position: relative;
+  }
+  .the-black-friday .the-black-po .the-black-ab {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+  }
+  .the-black-friday .the-black-po .the-mr-br {
+    padding-right: 150px;
+    border-right: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .the-black-friday .the-black-po .the-ml-br {
+    padding-left: 150px;
+  }
+  .the-black-friday .the-black-po .the-box-body {
+    scale: 0.9;
+  }
+  .the-black-friday .the-mt-mb {
+    margin: 20px;
+  }
+  .the-black-friday .the-bl-h1 {
+    font-family: 'Roboto-Bold';
+    font-size: 36px;
+  }
+  .the-black-friday .the-bl-h2 {
+    font-family: 'Roboto-Bold';
+    font-size: 40px;
+  }
+  .the-black-friday .the-bl-h3 {
+    font-family: 'Roboto-Bold';
+    font-size: 48px;
+    color: #FAD804;
+  }
+  .the-black-friday .this-after-before::after,
+  .the-black-friday .this-after-before::before {
+    content: '';
+    height: 0px;
+    border: 1px solid #fff;
+    width: 27%;
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
 @media screen and (min-width: 769px) {
+  .the-black-friday .m-vi {
+    display: none !important;
+  }
   .the-black-friday .the-banner-position {
     position: relative;
   }
@@ -284,17 +398,6 @@
   .the-black-friday .the-banner-position .the-box-flex .the-small-box:last-child {
     border-right: 0;
   }
-  .the-black-friday .the-banner-position .the-btitle-po {
-    position: relative;
-    z-index: 1;
-  }
-  .the-black-friday .the-banner-position .the-btitle-po .the-btitle-ab {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    margin: 0 5px;
-  }
   .the-black-friday .the-banner-position .the-title-button {
     position: absolute;
     bottom: -10%;
@@ -318,5 +421,8 @@
   }
   .the-black-friday .the-discount-text {
     margin-left: 5px;
+  }
+  .the-black-friday .Christmas-top {
+    margin-top: 40px;
   }
 }

@@ -12,7 +12,7 @@
                        class="the-a-number" />
       </div>
     </div>
-    <div class="the-title-area the-pb ">
+    <div class="the-title-area-sp the-pb ">
       <div class="the-bannerbg-re the-desc-item-banner">
         <picture>
           <source :srcset=bannerbg.m_bgsrc
@@ -32,27 +32,7 @@
     </div>
     <vmbutton :viewmore="ViewMore"
               :bannerTitle='bannerTitle' />
-    <Christmas></Christmas>
-    <picture>
-      <source media="(max-width: 768px )"
-              srcset="https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/m41@2x.png">
-      <img class="swiper-pic"
-           src="https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/3@2x.png"
-           alt="VIVAIA">
-    </picture>
-    <div class="Category-wrapper">
-      <p class="title">· Shop by Category ·</p>
-      <div class="category-contents">
-        <Category v-for="(item,index) in category"
-                  :key="index"
-                  :category="item"></Category>
-      </div>
-    </div>
-    <div class="bottomicon-bg">
-      <bottomicon :bottomicon="bottomicondata"></bottomicon>
-    </div>
-
-    <div class="the-title-area the-pb ">
+    <div class="the-title-area-sp the-pb ">
       <div class="the-bannerbg-re the-desc-item-banner">
         <picture>
           <source :srcset=bannerbg.m_bgsrc
@@ -73,7 +53,7 @@
     <vmbutton :viewmore="ViewMore1"
               :bannerTitle='bannerTitle' />
     <blackbg />
-    <div class="the-title-area the-pb ">
+    <div class="the-title-area-sp the-pb ">
       <div class="the-bannerbg-re the-desc-item-banner">
         <picture>
           <source :srcset=bannerbg.m_bgsrc
@@ -93,6 +73,26 @@
     </div>
     <vmbutton :viewmore="ViewMore2"
               :bannerTitle='bannerTitle' />
+    <Christmas></Christmas>
+    <picture>
+      <source media="(max-width: 768px )"
+              srcset="https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/m41@2x.png">
+      <img class="swiper-pic Christmas-top"
+           src="https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/3@2x.png"
+           alt="VIVAIA">
+    </picture>
+    <div class="Category-wrapper the-title-area">
+      <p class="title fwb">· Shop by Category ·</p>
+      <div class="category-contents">
+        <Category v-for="(item,index) in category"
+                  :key="index"
+                  :category="item"></Category>
+      </div>
+    </div>
+    <div class="bottomicon-bg">
+      <bottomicon :bottomicon="bottomicondata"></bottomicon>
+    </div>
+
   </div>
 </template>
 
@@ -106,13 +106,17 @@ import picturebanner from './components/PicturesBanner.vue'
 import topicon from './components/TopIcon.vue'
 import vmbutton from './components/VMButton.vue'
 import {
-bannerbg,
-bannerTitle, bottomicondata, category, thepicturebanner,
-thepicturebanner1,
-thepicturebanner2,
-thepicturebanner3,
-ViewMore, ViewMore1,
-ViewMore2
+  bannerbg,
+  bannerTitle,
+  bottomicondata,
+  category,
+  thepicturebanner,
+  thepicturebanner1,
+  thepicturebanner2,
+  thepicturebanner3,
+  ViewMore,
+  ViewMore1,
+  ViewMore2,
 } from './content.json'
 export default {
   name: 'App',
@@ -136,7 +140,7 @@ export default {
       bannerbg,
       ViewMore,
       category,
-      bottomicondata
+      bottomicondata,
       ViewMore1,
       ViewMore2,
     }
@@ -173,10 +177,10 @@ export default {
 }
 .Category-wrapper {
   width: 84%;
-  padding: 20px;
   margin: 0 auto;
   margin-bottom: 80px;
   .title {
+    font-family: 'Noto Serif-Medium';
     font-size: 40px;
     color: #6b0000;
     text-align: center;
@@ -190,7 +194,6 @@ export default {
 }
 .swiper-pic {
   width: 84%;
-  padding: 20px;
   display: block;
   margin: 0 auto;
 }

@@ -1,5 +1,8 @@
 @media screen and (max-width:768px) {
   .the-black-friday{
+    .pc-vi{
+      display: none;
+    }
     .the-desc-item{
       width: 94% !important;
       margin: 0 auto;
@@ -15,6 +18,9 @@
     }
     .the-title-area-pt{
       padding-top: 40px;
+    }
+    .the-title-area-sp{
+      padding-top: 20px;
     }
     .desc-title{
       margin: 0 auto;
@@ -94,16 +100,7 @@
       .the-box-h1{
         margin-bottom: 8px;
       }
-      .the-btitle-po{
-        position: relative;
-        .the-btitle-ab{
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%,-50%);
-          margin: 0 5px;
-        }
-      }
+      
       .the-title-button{
         position: absolute;
         font-size: 12px;
@@ -114,7 +111,7 @@
       }
       .the-title-footer{
         position: absolute;
-        bottom: 6%;
+        bottom: 4%;
         width: 100%;
       }
     }
@@ -188,6 +185,46 @@
       padding: 15px 40px;
       background-color: #6B0000;
     }
+    .the-black-po{
+      position: relative;
+      .the-black-ab{
+        position: absolute;
+        width: 100%;
+        top: 47%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+      }
+      .the-box-body{
+        scale: 0.9;
+      }
+    }
+    .the-mt-mb{
+      margin: 20px;
+    }
+    .the-bl-h1{
+      font-family: 'Roboto-Bold';
+      font-size: 18px;
+    }
+    .the-bl-h2{
+      font-family: 'Roboto-Bold';
+      font-size: 20px;
+    }
+    .the-bl-h3{
+      font-family: 'Roboto-Bold';
+      font-size: 22px;
+      color: #FAD804;
+    }
+    .Christmas-top{
+      margin-top: 20px;
+    }
+    .this-after-before::after,.this-after-before::before{
+      content: '';
+      height: 0px;
+      border: 1px solid #fff;
+      width: 70px;
+      display: inline-block;
+      vertical-align: middle;
+    }
   }
 }
 @media screen and (min-width:769px) and (max-width:1024px) {
@@ -208,6 +245,9 @@
     .the-title-area-pt{
       padding-top: 40px;
     }
+    .the-title-area-sp{
+      padding-top: 20px;
+    }
     .desc-title{
       margin: 0 auto;
     }
@@ -225,6 +265,10 @@
     .the-text-h1{
       font-family: 'Noto Serif';
       font-size: 32px;
+    }
+    .the-blt-h1{
+      font-family: 'Roboto-Bold';
+      font-size: 30px;
     }
     .the-content-h1{
       font-family: 'Noto Serif';
@@ -335,6 +379,52 @@
       width: 200px !important;
       padding: 15px 55px;
       background-color: #6B0000;
+    }
+    .the-black-po{
+      position: relative;
+      .the-black-ab{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        top: 45%;
+        left: 48%;
+        transform: translate(-50%,-50%);
+      }
+      .the-mr-br{
+        padding-right: 40px;
+        border-right: 1px solid #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      .the-ml-br{
+        padding-left: 40px;
+      }
+      .the-box-body{
+        scale: 0.9;
+      }
+    }
+    .the-bl-h1{
+      font-family: 'Roboto-Bold';
+      font-size: 20px;
+    }
+    .the-bl-h2{
+      font-family: 'Roboto-Bold';
+      font-size: 22px;
+    }
+    .the-bl-h3{
+      font-family: 'Roboto-Bold';
+      font-size: 24px;
+      color: #FAD804;
+    }
+    .this-after-before::after,.this-after-before::before{
+      content: '';
+      height: 0px;
+      border: 1px solid #fff;
+      width: 20%;
+      display: inline-block;
+      vertical-align: middle;
     }
   }
 }

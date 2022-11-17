@@ -16,6 +16,9 @@
     .the-title-area-pt{
       padding-top: 60px;
     }
+    .the-title-area-sp{
+      padding-top: 40px;
+    }
     .desc-title{
       margin: 0 auto;
     }
@@ -25,6 +28,10 @@
     }
     .the-text-h1{
       font-family: 'Noto Serif';
+      font-size: 36px;
+    }
+    .the-blt-h1{
+      font-family: 'Roboto-Bold';
       font-size: 36px;
     }
     .the-text-Body{
@@ -137,6 +144,52 @@
       padding: 15px 80px;
       background-color: #6B0000;
     }
+    .the-black-po{
+      position: relative;
+      .the-black-ab{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        top: 45%;
+        left: 48%;
+        transform: translate(-50%,-50%);
+      }
+      .the-mr-br{
+        padding-right: 60px;
+        border-right: 1px solid #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      .the-ml-br{
+        padding-left: 60px;
+      }
+      .the-box-body{
+        scale: 0.9;
+      }
+    }
+    .the-bl-h1{
+      font-family: 'Roboto-Bold';
+      font-size: 30px;
+    }
+    .the-bl-h2{
+      font-family: 'Roboto-Bold';
+      font-size: 34px;
+    }
+    .the-bl-h3{
+      font-family: 'Roboto-Bold';
+      font-size: 36px;
+      color: #FAD804;
+    }
+    .this-after-before::after,.this-after-before::before{
+      content: '';
+      height: 0px;
+      border: 1px solid #fff;
+      width: 20%;
+      display: inline-block;
+      vertical-align: middle;
+    }
   }
 }
 @media screen and (min-width:1441px) {
@@ -157,6 +210,9 @@
     .the-title-area-pt{
       padding-top: 80px;
     }
+    .the-title-area-sp{
+      padding-top: 60px;
+    }
     .desc-title{
       margin: 0 auto;
     }
@@ -166,6 +222,10 @@
     }
     .the-text-h1{
       font-family: 'Noto Serif';
+      font-size: 40px;
+    }
+    .the-blt-h1{
+      font-family: 'Roboto-Bold';
       font-size: 40px;
     }
     .the-text-Body{
@@ -267,11 +327,62 @@
       padding: 20px 100px;
       background-color: #6B0000;
     }
-    
+    .the-black-po{
+      position: relative;
+      .the-black-ab{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        top: 50%;
+        left: 48%;
+        transform: translate(-50%,-50%);
+      }
+      .the-mr-br{
+        padding-right: 150px;
+        border-right: 1px solid #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+      .the-ml-br{
+        padding-left: 150px;
+      }
+      .the-box-body{
+        scale: 0.9;
+      }
+    }
+    .the-mt-mb{
+      margin: 20px;
+    }
+    .the-bl-h1{
+      font-family: 'Roboto-Bold';
+      font-size: 36px;
+    }
+    .the-bl-h2{
+      font-family: 'Roboto-Bold';
+      font-size: 40px;
+    }
+    .the-bl-h3{
+      font-family: 'Roboto-Bold';
+      font-size: 48px;
+      color: #FAD804;
+    }
+    .this-after-before::after,.this-after-before::before{
+      content: '';
+      height: 0px;
+      border: 1px solid #fff;
+      width: 27%;
+      display: inline-block;
+      vertical-align: middle;
+    }
   }
 }
 @media screen and (min-width:769px) {
   .the-black-friday{
+    .m-vi{
+      display: none !important;
+    }
     .the-banner-position{
       position: relative;
       .the-title-content{
@@ -295,17 +406,7 @@
           border-right: 0;
         }
       }
-      .the-btitle-po{
-        position: relative;
-        z-index: 1;
-        .the-btitle-ab{
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%,-50%);
-          margin: 0 5px;
-        }
-      }
+      
       .the-title-button{
         position: absolute;
         bottom: -10%;
@@ -332,5 +433,9 @@
     .the-discount-text{
       margin-left: 5px;
     }
+    .Christmas-top{
+      margin-top: 40px;
+    }
+    
   }
 }

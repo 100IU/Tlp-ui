@@ -20,17 +20,15 @@
                  :key="index"
                  class="the-small-box">
               <div class="the-btitle-po">
-                <div class="the-hr"></div>
-                <div class="the-btitle-ab the-btitle-h0">{{item.contT}}</div>
+                <!-- <div class="the-hr"></div> -->
+                <div class="the-btitle-ab the-btitle-h0 this-after-before"> {{item.contT}} </div>
               </div>
               <div class="the-content-h1">{{item.contC}}</div>
             </div>
           </div>
           <div class="the-box-body">{{Titlebig.Boxunder}}</div>
-          <a href="链接"
-             target="_blank"
-             class="the-title-button red-bg">{{Titlebig.Boxbutton}}
-          </a>
+          <div class="the-title-button red-bg">{{Titlebig.Boxbutton}}
+          </div>
         </div>
       </div>
     </div>
