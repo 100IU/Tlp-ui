@@ -3,9 +3,13 @@
        class="the-black-friday">
     <Banner />
     <topicon />
-    <div class="the-picture-flex other">
-      <picturebanner v-for="item in picturebanner"
-                     :key="index" />
+    <div class="the-title-area the-banner1-bg the-pb">
+      <div class="the-title-area-pt the-text-h1 the-text-desc-mb fwb tc">{{bannerTitle.title1}}</div>
+      <div class="the-picture-flex">
+        <picturebanner v-for="(picdata,index) in content.picturebanner"
+                       :key="index"
+                       :picdata="picdata" />
+      </div>
     </div>
   </div>
 </template>
@@ -14,13 +18,16 @@
 import Banner from './components/Banner.vue'
 import picturebanner from './components/PicturesBanner.vue'
 import topicon from './components/TopIcon.vue'
-
+import content, { bannerTitle } from './content.json'
 export default {
   name: 'App',
   components: {
     Banner,
     topicon,
     picturebanner,
+  },
+  data() {
+    return { content, bannerTitle }
   },
 }
 </script>

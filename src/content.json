@@ -44,6 +44,9 @@
       "theBackground":"background-color:#760000;"
     }
   ],
+  "bannerTitle":{
+    "title1":"Shop Best Sellers"
+  },
   "picturebanner":[
     {
       "pc_bpt":"https://cdnimg.vivaia.com/VA/image/Banner/20221116_5032/bs1@2x.jpg",

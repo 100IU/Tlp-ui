@@ -6,6 +6,9 @@
   .the-black-friday .the-title-area {
     margin-top: 40px;
   }
+  .the-black-friday .the-title-area-pt {
+    padding-top: 40px;
+  }
   .the-black-friday .desc-title {
     margin: 0 auto;
   }
@@ -112,6 +115,9 @@
   }
   .the-black-friday .the-title-area {
     margin-top: 40px;
+  }
+  .the-black-friday .the-title-area-pt {
+    padding-top: 40px;
   }
   .the-black-friday .desc-title {
     margin: 0 auto;
