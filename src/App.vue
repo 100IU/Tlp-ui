@@ -3,7 +3,7 @@
        class="the-black-friday">
     <Banner />
     <topicon />
-    <div class="the-picture-flex">
+    <div class="the-picture-flex other">
       <picturebanner v-for="item in picturebanner"
                      :key="index" />
     </div>
