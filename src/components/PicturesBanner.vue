@@ -1,6 +1,6 @@
 <template>
   <a :href=picdata.src
-     class="the-a-po the-flex">
+     class="the-a-po the-flex ">
     <picture>
       <source :srcset=picdata.m_bpt
               media="(max-width: 768px)" />
@@ -13,7 +13,7 @@
       <span class="the-fs12 black_cl">was <span class="text-line-through">{{picdata.text2}}</span></span>
       <span class="the-fs16 orange_cl the-ml">{{picdata.text3}}</span>
     </div>
-    <div class="the-fs16 the-top  ">
+    <div class="the-fs16 the-top disvi ">
       <span class="the-fs16 orange_cl ">{{picdata.text4}}</span>
       <span class="the-fs16 black_cl">{{picdata.text5}}</span>
     </div>

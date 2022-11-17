@@ -23,7 +23,7 @@
   }
   .the-black-friday .the-title-h1 {
     font-family: 'Noto Serif';
-    font-size: 50px;
+    font-size: 36px;
   }
   .the-black-friday .the-text-h1 {
     font-family: 'Noto Serif';
@@ -42,7 +42,7 @@
   }
   .the-black-friday .the-content-h1 {
     font-family: 'Noto Serif';
-    font-size: 48px;
+    font-size: 36px;
   }
   .the-black-friday .the-btitle-h0 {
     font-size: 20px;
@@ -79,13 +79,13 @@
     transform: translate(-50%, -50%);
   }
   .the-black-friday .the-banner-position .TopBox {
-    padding-top: 30px;
-    padding-bottom: 45px;
+    padding-top: 8px;
+    padding-bottom: 25px;
   }
   .the-black-friday .the-banner-position .the-title-button {
     position: absolute;
-    font-size: 20px;
-    padding: 13px 16px;
+    font-size: 18px;
+    padding: 8px 16px;
   }
   .the-black-friday .the-banner-position .the-title-footer {
     bottom: 6%;
@@ -137,9 +137,12 @@
     padding: 5px 10px;
   }
   .the-black-friday .the-vmbutton {
-    width: 260px !important;
-    padding: 15px 80px;
+    width: 265px !important;
+    padding: 15px 6%;
     background-color: #6B0000;
+  }
+  .the-black-friday .vmtext {
+    font-size: 16px;
   }
   .the-black-friday .the-black-po {
     position: relative;
@@ -214,7 +217,7 @@
   }
   .the-black-friday .the-title-h1 {
     font-family: 'Noto Serif';
-    font-size: 72px;
+    font-size: 60px;
   }
   .the-black-friday .the-text-h1 {
     font-family: 'Noto Serif';
@@ -233,7 +236,7 @@
   }
   .the-black-friday .the-content-h1 {
     font-family: 'Noto Serif';
-    font-size: 70px;
+    font-size: 60px;
   }
   .the-black-friday .the-btitle-h0 {
     font-size: 24px;
@@ -257,18 +260,18 @@
     padding-bottom: 40px;
   }
   .the-black-friday .the-banner-position .the-title-content {
-    top: 50%;
+    top: 44%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
   .the-black-friday .the-banner-position .TopBox {
-    padding-top: 40px;
-    padding-bottom: 50px;
+    padding-top: 30px;
+    padding-bottom: 40px;
   }
   .the-black-friday .the-banner-position .the-title-button {
     position: absolute;
     font-size: 20px;
-    padding: 17px 28px;
+    padding: 13px 28px;
   }
   .the-black-friday .the-banner-position .the-title-footer {
     bottom: 4%;
@@ -315,8 +318,11 @@
   }
   .the-black-friday .the-vmbutton {
     width: 300px !important;
-    padding: 20px 100px;
+    padding: 20px 5%;
     background-color: #6B0000;
+  }
+  .the-black-friday .vmtext {
+    font-size: 18px;
   }
   .the-black-friday .the-black-po {
     position: relative;

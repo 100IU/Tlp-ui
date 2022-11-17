@@ -72,7 +72,7 @@
   }
   .the-black-friday .the-banner-position .the-title-content {
     position: absolute;
-    width: 83%;
+    width: 86%;
     top: 46%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -119,7 +119,7 @@
   .the-black-friday .the-a-number:nth-child(n+3) {
     margin-top: 40px;
   }
-  .the-black-friday .the-a-number:nth-child(n+5) {
+  .the-black-friday .the-a-number:nth-child(n+7) {
     display: none;
   }
   .the-black-friday .the-picture-flex {
@@ -177,8 +177,11 @@
   }
   .the-black-friday .the-vmbutton {
     width: 175px !important;
-    padding: 15px 40px;
+    padding: 15px 11%;
     background-color: #6B0000;
+  }
+  .the-black-friday .vmtext {
+    font-size: 16px;
   }
   .the-black-friday .the-black-po {
     position: relative;
@@ -221,6 +224,9 @@
     display: inline-block;
     vertical-align: middle;
   }
+  .the-black-friday .disvi {
+    display: none;
+  }
 }
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .the-black-friday .the-desc-item {
@@ -258,7 +264,7 @@
   }
   .the-black-friday .the-text-h1 {
     font-family: 'Noto Serif';
-    font-size: 32px;
+    font-size: 24px;
   }
   .the-black-friday .the-blt-h1 {
     font-family: 'Roboto-Bold';
@@ -266,7 +272,7 @@
   }
   .the-black-friday .the-content-h1 {
     font-family: 'Noto Serif';
-    font-size: 28px;
+    font-size: 24px;
   }
   .the-black-friday .the-btitle-h0 {
     font-size: 16px;
@@ -303,19 +309,22 @@
     transform: translate(-50%, -50%);
   }
   .the-black-friday .the-banner-position .TopBox {
-    padding-top: 20px;
-    padding-bottom: 40px;
+    padding-top: 7px;
+    padding-bottom: 19px;
   }
   .the-black-friday .the-banner-position .the-box-h1 {
     margin-bottom: 5px;
   }
   .the-black-friday .the-banner-position .the-title-button {
     position: absolute;
-    font-size: 16px;
-    padding: 10px 14px;
+    font-size: 14px;
+    padding: 5px 14px;
   }
   .the-black-friday .the-banner-position .the-title-footer {
     bottom: 6%;
+  }
+  .the-black-friday .the-banner-position .the-text-body1 {
+    font-size: 12px;
   }
   .the-black-friday .the-icon-size {
     width: 40px;
@@ -369,8 +378,11 @@
   }
   .the-black-friday .the-vmbutton {
     width: 200px !important;
-    padding: 15px 55px;
+    padding: 15px 5%;
     background-color: #6B0000;
+  }
+  .the-black-friday .vmtext {
+    font-size: 16px;
   }
   .the-black-friday .the-black-po {
     position: relative;

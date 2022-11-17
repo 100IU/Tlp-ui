@@ -1,6 +1,6 @@
 <template>
   <div class="the-desc-item the-title-area the-topicon-flex">
-    <div v-for="item in Topicon"
+    <div v-for="(item, index) in Topicon"
          :key="index"
          :style=item.theBackground>
       <div class="the-icon-size the-pt the-pb">
