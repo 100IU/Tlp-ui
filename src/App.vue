@@ -40,11 +40,11 @@
     <div class="Category-wrapper">
       <p class="title">· Shop by Category ·</p>
       <div class="category-contents">
-      <Category v-for="(category,index) in content.category" :key="index" :category="category"></Category>
+      <Category v-for="(item,index) in category" :key="index" :category="item"></Category>
     </div>
     </div>
     <div class="bottomicon-bg">
-    <bottomicon :bottomicon = "content.bottomicon"></bottomicon>
+    <bottomicon :bottomicon="bottomicondata" ></bottomicon>
   </div>
 
  
@@ -62,6 +62,8 @@ import {
   thepicturebanner,
   thepicturebanner1,
   ViewMore,
+  category,
+  bottomicondata
 } from './content.json'
 import bottomicon from './components/bottomicon.vue'
 import Category from './components/Category.vue'
@@ -74,7 +76,7 @@ export default {
     picturebanner,
     bottomicon,
     Category,
-    Christmas
+    Christmas,
     vmbutton,
   },
   data() {
@@ -84,6 +86,8 @@ export default {
       bannerTitle,
       bannerbg,
       ViewMore,
+      category,
+      bottomicondata
     }
   },
 }

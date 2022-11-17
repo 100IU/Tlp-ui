@@ -7,7 +7,6 @@
 </div>
 </template>
 <script>
-import {bottomicon} from '../content.json'
 export default {
     props:['bottomicon']
 }
