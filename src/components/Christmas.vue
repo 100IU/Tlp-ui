@@ -51,6 +51,7 @@ img {
     margin-top: 30px;
     color: #fff;
     cursor: pointer;
+    font-size: 20px;
   }
 }
 @media screen and(max-width:1300px) {
@@ -82,6 +83,7 @@ img {
       padding: 10px 29px;
       margin-top: 15px;
       color: #fff;
+      font-size: 18px;
     }
   }
 }
