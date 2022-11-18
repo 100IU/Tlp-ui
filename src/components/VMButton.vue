@@ -1,5 +1,5 @@
 <template>
-  <div class="the-desc-item-banner the-vmbutton vmtext">
+  <div class="the-desc-item-banner the-vmbutton vmtext tc">
     <a class=" tc"
        :href=viewmore.vmsrc>{{bannerTitle.ViewMore}}</a>
   </div>
