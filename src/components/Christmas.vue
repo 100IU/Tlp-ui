@@ -12,7 +12,10 @@
       <p class="text">
         Prepare your holiday gifts now with the biggest sales of the year and the optimum quality. Running out fast. Don’t miss the chance!
       </p>
+      <a class="ChristmasButton"
+         href="https://www.vivaia.com/category/collection-c_394.html">Shop Chrismas</a>
     </div>
+
   </div>
 </template>
 <script>
@@ -26,7 +29,7 @@ img {
   position: relative;
   .texts {
     position: absolute;
-    top: 50%;
+    top: 45%;
     transform: translateY(-50%);
     width: 34%;
     left: 8%;
@@ -40,6 +43,14 @@ img {
       font-family: 'Roboto-Regular';
       color: #b3b3b3;
     }
+  }
+  .ChristmasButton {
+    display: inline-block;
+    background-color: #108062;
+    padding: 14px 45px;
+    margin-top: 30px;
+    color: #fff;
+    cursor: pointer;
   }
 }
 @media screen and(max-width:1300px) {
@@ -62,7 +73,15 @@ img {
       }
       .title {
         font-size: 24px;
+        margin-bottom: 10px;
       }
+    }
+    .ChristmasButton {
+      display: inline-block;
+      background-color: #108062;
+      padding: 10px 29px;
+      margin-top: 15px;
+      color: #fff;
     }
   }
 }
@@ -70,17 +89,26 @@ img {
   .Christmas {
     .texts {
       position: absolute;
-      top: 24%;
+      top: 23%;
       transform: translateY(-50%);
       width: 90%;
       left: 8%;
+      text-align: center;
       .text {
-        font-size: 16px;
+        font-size: 14px;
       }
       .title {
-        font-size: 24px;
-        margin-bottom: 10px;
+        font-size: 20px;
+        margin-bottom: 8px;
       }
+    }
+    .ChristmasButton {
+      display: inline-block;
+      background-color: #108062;
+      padding: 9px 25px;
+      margin-top: 10px;
+      color: #fff;
+      font-size: 14px;
     }
   }
 }
