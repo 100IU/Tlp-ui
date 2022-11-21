@@ -107,17 +107,17 @@ import picturebanner from './components/PicturesBanner.vue'
 import topicon from './components/TopIcon.vue'
 import vmbutton from './components/VMButton.vue'
 import {
-  bannerbg,
-  bannerTitle,
-  bottomicondata,
-  category,
-  thepicturebanner,
-  thepicturebanner1,
-  thepicturebanner2,
-  thepicturebanner3,
-  ViewMore,
-  ViewMore1,
-  ViewMore2,
+bannerbg,
+bannerTitle,
+bottomicondata,
+category,
+thepicturebanner,
+thepicturebanner1,
+thepicturebanner2,
+thepicturebanner3,
+ViewMore,
+ViewMore1,
+ViewMore2
 } from './content.json'
 export default {
   name: 'App',
