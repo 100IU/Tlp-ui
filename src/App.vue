@@ -12,26 +12,7 @@
                        class="the-a-number" />
       </div>
     </div>
-    <div class="the-title-area-sp the-pb ">
-      <div class="the-bannerbg-re the-desc-item-banner">
-        <picture>
-          <source :srcset=bannerbg.m_bgsrc
-                  media="(max-width: 768px)" />
-          <img class="sp_img"
-               alt="VIVAIA"
-               :src=bannerbg.pc_bgsrc />
-        </picture>
-        <div class="the-text-h1  fwb tc the-text-re-ab">{{bannerTitle.title2}}</div>
-      </div>
-      <div class="the-picture-flex the-desc-item-banner ">
-        <picturebanner v-for="(picdata,index) in thepicturebanner1"
-                       :key="index"
-                       :picdata="picdata"
-                       class="the-a-number" />
-      </div>
-    </div>
-    <vmbutton :viewmore="ViewMore"
-              :bannerTitle='bannerTitle' />
+    <blackbg />
     <div class="the-title-area-sp the-pb ">
       <div class="the-bannerbg-re the-desc-item-banner">
         <picture>
@@ -52,7 +33,27 @@
     </div>
     <vmbutton :viewmore="ViewMore1"
               :bannerTitle='bannerTitle' />
-    <blackbg />
+    <div class="the-title-area-sp the-pb ">
+      <div class="the-bannerbg-re the-desc-item-banner">
+        <picture>
+          <source :srcset=bannerbg.m_bgsrc
+                  media="(max-width: 768px)" />
+          <img class="sp_img"
+               alt="VIVAIA"
+               :src=bannerbg.pc_bgsrc />
+        </picture>
+        <div class="the-text-h1  fwb tc the-text-re-ab">{{bannerTitle.title2}}</div>
+      </div>
+      <div class="the-picture-flex the-desc-item-banner ">
+        <picturebanner v-for="(picdata,index) in thepicturebanner1"
+                       :key="index"
+                       :picdata="picdata"
+                       class="the-a-number" />
+      </div>
+    </div>
+    <vmbutton :viewmore="ViewMore"
+              :bannerTitle='bannerTitle' />
+
     <div class="the-title-area-sp the-pb ">
       <div class="the-bannerbg-re the-desc-item-banner">
         <picture>

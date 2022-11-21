@@ -28,8 +28,7 @@
             </div>
           </div>
           <div class="the-box-body">{{Titlebig.Boxunder}}</div>
-          <div class="the-title-button red-bg"
-               @click="handleCopyCode">With Code: <span>{{Titlebig.Boxbutton}}</span>
+          <div class="the-title-button red-bg">With Code: <span @click="handleCopyCode">{{Titlebig.Boxbutton}}</span>
           </div>
         </div>
       </div>

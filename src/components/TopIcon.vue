@@ -3,11 +3,13 @@
     <div v-for="(item, index) in Topicon"
          :key="index"
          :style=item.theBackground>
-      <div class="the-icon-size the-pt the-pb">
-        <img class="sp_img"
-             alt="VIVAIA"
-             :src=item.Ticon />
-      </div>
+      <a href="https://www.vivaia.com/category/sale-c_511.html?link_id=10412">
+        <div class="the-icon-size the-pt the-pb">
+          <img class="sp_img"
+               alt="VIVAIA"
+               :src=item.Ticon />
+        </div>
+      </a>
       <div class="the-text-Body tc the-pb"
            v-html="item.text"></div>
     </div>
