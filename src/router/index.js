@@ -8,15 +8,14 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    // redirect:'/about/icon',
     component: HomeView
   },
   {
     path: '/about',
-    name: 'about',  
-   
+    name: 'about',
+
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue'),
-    children:[
+    children: [
       {
         path: 'Start',
         name: 'Start',
@@ -86,10 +85,10 @@ const routes = [
         path: 'infiniteScroll',
         name: 'InfiniteScroll',
         component: () => import(/* webpackChunkName: "about" */ '../views/InfiniteScroll/infiniteScroll.vue')
-      },
+      }
     ]
-  },
-  
+  }
+
 ]
 
 const router = new VueRouter({

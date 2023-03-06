@@ -1,5 +1,5 @@
 <template>
-  <div >
+  <div>
     <div class="s0">
       <h3><a>¶</a>
         Select选择器</h3>
@@ -8,7 +8,7 @@
     <div class="s0">
       <h3><a>¶</a>
         基础用法</h3>
-    
+
     </div>
     <ShowCode>
       <Selectdefault></Selectdefault>
@@ -19,7 +19,7 @@
       <span>选择器为不可用状态</span>
     </div>
     <ShowCode>
-       <Selectdisable></Selectdisable>
+      <Selectdisable></Selectdisable>
     </ShowCode>
     <div class="s0">
       <h3><a>¶</a>
@@ -29,24 +29,23 @@
     <ShowCode>
       <Selectclear></Selectclear>
     </ShowCode>
-   
+
   </div>
 </template>
 
 <script>
 
-
-import Selectclear from "./clear.vue";
-import Selectdefault from "./default.vue";
-import Selectdisable from '../Input/disable.vue';
+import Selectclear from './clear.vue'
+import Selectdefault from './default.vue'
+import Selectdisable from '../Input/disable.vue'
 export default {
-  components:{
+  components: {
     Selectdefault,
     Selectclear,
     Selectdisable
-},
- 
-};
+  }
+
+}
 </script>
 <style scoped lang="less">
 .s0 {
@@ -56,7 +55,7 @@ export default {
   h3 {
     margin-bottom: 10px;
 
-    color: #1f2f3d;
+    color: var(--color);
 
     a {
       padding-right: 4px;
@@ -71,7 +70,7 @@ export default {
   }
 
   span {
-    color: #5e6d82;
+    // color: #5e6d82;
     font-size: 14px;
     margin-left: 18px;
   }

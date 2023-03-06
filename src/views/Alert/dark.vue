@@ -9,17 +9,17 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
-      codeList:[
-        {code:'<Tlp-alert title="成功提示的文案" type="success" closeText="关闭" effect="dark"></Tlp-alert>'},
-        {code:'<Tlp-alert title="成功提示的文案" type="info" closeText="关闭" effect="dark"></Tlp-alert>'},
-        {code:'<Tlp-alert title="成功提示的文案" type="warn" closeText="关闭" effect="dark"></Tlp-alert>'},
-        {code:'<Tlp-alert title="成功提示的文案" type="error" closeText="关闭" effect="dark"></Tlp-alert>'}
+      codeList: [
+        { code: '<Tlp-alert title="成功提示的文案" type="success" closeText="关闭" effect="dark"></Tlp-alert>' },
+        { code: '<Tlp-alert title="成功提示的文案" type="info" closeText="关闭" effect="dark"></Tlp-alert>' },
+        { code: '<Tlp-alert title="成功提示的文案" type="warn" closeText="关闭" effect="dark"></Tlp-alert>' },
+        { code: '<Tlp-alert title="成功提示的文案" type="error" closeText="关闭" effect="dark"></Tlp-alert>' }
       ]
     }
-  },
-};
+  }
+}
 </script>
 
 <style scoped>

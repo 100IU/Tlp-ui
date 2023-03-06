@@ -20,16 +20,16 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       codeList: [
         { code: "import tlpmentui from 'tlpment-ui'" },
         { code: "import 'tlpment-ui/dist/tlp-ui.css'" },
-        { code: "Vue.use(tlpmentui)" },
-      ],
-    };
-  },
-};
+        { code: 'Vue.use(tlpmentui)' }
+      ]
+    }
+  }
+}
 </script>
 <style scoped lang="less">
 .start {
@@ -46,7 +46,7 @@ p {
   h2 {
     margin-bottom: 10px;
 
-    color: #1f2f3d;
+    color: var(--color);
 
     a {
       padding-right: 4px;
@@ -58,6 +58,7 @@ p {
     &:hover a {
       opacity: 1;
     }
+
   }
 
   span {
@@ -68,15 +69,20 @@ p {
 }
 
 .s1 {
-  background-color: #fafafa;
+  background-color: var(--bg-color1);
   padding: 20px;
   margin-top: 20px;
+  color: rebeccapurple;
+
+  padding: 20px;
+  margin-top: 20px;
+  color: var(--color);
 }
 
 .s2 {
-  background-color: #fafafa;
+  background-color: var(--bg-color1);
   margin-top: 10px;
   font-size: 14px;
-  color: #848c98;
+  color: var(--color);
 }
 </style>

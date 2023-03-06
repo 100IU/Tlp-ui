@@ -12,9 +12,7 @@
         基础用法
       </h3>
     </div>
-    <ShowCode
-      desc="trigger属性用于设置何时触发 Popover，支持2种触发方式：hover,click"
-    >
+    <ShowCode desc="trigger属性用于设置何时触发 Popover，支持2种触发方式：hover,click">
       <Default></Default>
     </ShowCode>
     <div class="s0">
@@ -31,13 +29,13 @@
 </template>
 
 <script>
-import ShowCode from "@/components/ShowCode.vue";
-import Default from "./default.vue";
-import Delete from "./delete.vue";
+import ShowCode from '@/components/ShowCode.vue'
+import Default from './default.vue'
+import Delete from './delete.vue'
 
 export default {
-  components: { ShowCode, Default, Delete },
-};
+  components: { ShowCode, Default, Delete }
+}
 </script>
 <style scoped lang="less">
 .s0 {
@@ -47,7 +45,7 @@ export default {
   h3 {
     margin-bottom: 10px;
 
-    color: #1f2f3d;
+    color: var(--color);
 
     a {
       padding-right: 4px;
@@ -62,7 +60,7 @@ export default {
   }
 
   span {
-    color: #5e6d82;
+    color: var(--color);
     font-size: 14px;
     margin-left: 18px;
   }

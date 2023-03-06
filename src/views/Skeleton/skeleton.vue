@@ -1,5 +1,5 @@
 <template>
-  <div >
+  <div>
     <div class="s0">
       <h3><a>¶</a>
         Skeleton 骨架屏</h3>
@@ -28,19 +28,19 @@
 </template>
 
 <script>
-import SKdefault from "./default.vue";
-import Skslot from "./slot.vue";
-import Skanimate from "./animate.vue";
+import SKdefault from './default.vue'
+import Skslot from './slot.vue'
+import Skanimate from './animate.vue'
 
 export default {
-  components:{
+  components: {
     Skanimate,
     Skslot,
-    SKdefault,
-    
-},
- 
-};
+    SKdefault
+
+  }
+
+}
 </script>
 <style scoped lang="less">
 .s0 {
@@ -50,7 +50,7 @@ export default {
   h3 {
     margin-bottom: 10px;
 
-    color: #1f2f3d;
+    color: var(--color);
 
     a {
       padding-right: 4px;
@@ -71,4 +71,3 @@ export default {
   }
 }
 </style>
-

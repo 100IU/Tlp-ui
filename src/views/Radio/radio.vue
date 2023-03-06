@@ -1,5 +1,5 @@
 <template>
-  <div >
+  <div>
     <div class="s0">
       <h3><a>¶</a>
         Radio 单选框</h3>
@@ -10,7 +10,7 @@
         基础用法</h3>
       <!-- <span>由于</span> -->
     </div>
-    <ShowCode  desc="使用 Radio 组件，设置v-model绑定变量，选中变量的值为相应 Radio label属性的值，label可以是String、Number或Boolean。"> 
+    <ShowCode desc="使用 Radio 组件，设置v-model绑定变量，选中变量的值为相应 Radio label属性的值，label可以是String、Number或Boolean。">
       <radioDefault></radioDefault>
     </ShowCode>
     <div class="s0">
@@ -26,27 +26,34 @@
         单选框按钮</h3>
       <span>按钮样式的单选框组合</span>
     </div>
-    <ShowCode desc="只需要把tlp-radio元素换成tlp-radio-button元素即可"> 
+    <ShowCode desc="只需要把tlp-radio元素换成tlp-radio-button元素即可">
       <radioButton></radioButton>
     </ShowCode>
+    <!-- <button></button> -->
+    <!-- <span @click="count++">{{ count }}</span> -->
   </div>
 </template>
 
 <script>
-import radioDefault from "./radio-default.vue";
-import radioButton from "./radio-button.vue";
-import radioDisabled from "./radio-disabled.vue";
-import ShowCode from '@/components/ShowCode.vue';
+import radioDefault from './radio-default.vue'
+import radioButton from './radio-button.vue'
+import radioDisabled from './radio-disabled.vue'
+import ShowCode from '@/components/ShowCode.vue'
 
 export default {
-  components:{
+  components: {
     radioDefault,
     radioButton,
     radioDisabled,
     ShowCode
-},
- 
-};
+  },
+  data () {
+    return {
+      count: 0
+    }
+  }
+
+}
 </script>
 <style scoped lang="less">
 .s0 {
@@ -56,7 +63,7 @@ export default {
   h3 {
     margin-bottom: 10px;
 
-    color: #1f2f3d;
+    color: var(--color);
 
     a {
       padding-right: 4px;
@@ -71,7 +78,7 @@ export default {
   }
 
   span {
-    color: #5e6d82;
+    color: var(--color);
     font-size: 14px;
     margin-left: 18px;
   }

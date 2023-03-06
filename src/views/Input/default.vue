@@ -7,16 +7,16 @@
 <script>
 export default {
   components: {},
-  data() {
+  data () {
     return {
-      input: "",
-      
-      codeList:[
-        {code:'<Tlp-input v-model="input" placeholder="请输入内容"></Tlp-input>'}
+      input: '',
+
+      codeList: [
+        { code: '<Tlp-input v-model="input" placeholder="请输入内容"></Tlp-input>' }
       ]
-    };
-  },
-};
+    }
+  }
+}
 </script>
 <style scoped>
 .input {

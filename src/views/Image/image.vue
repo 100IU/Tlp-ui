@@ -1,5 +1,5 @@
 <template>
-  <div >
+  <div>
     <div class="s0">
       <h3><a>¶</a>
         Image 图片</h3>
@@ -10,7 +10,7 @@
         基础用法</h3>
       <span>除了普通的显示以外，点击图片还可以显示大图。</span>
     </div>
-    <ShowCode> 
+    <ShowCode>
       <Default></Default>
     </ShowCode>
     <div class="s0">
@@ -25,12 +25,12 @@
 </template>
 
 <script>
-import Default from './default.vue';
-import Lazy from './lazy.vue';
+import Default from './default.vue'
+import Lazy from './lazy.vue'
 export default {
-    
-    components: { Lazy ,Default}
-};
+
+  components: { Lazy, Default }
+}
 </script>
 <style scoped lang="less">
 .s0 {
@@ -40,7 +40,7 @@ export default {
   h3 {
     margin-bottom: 10px;
 
-    color: #1f2f3d;
+    color: var(--color);
 
     a {
       padding-right: 4px;

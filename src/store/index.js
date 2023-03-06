@@ -3,15 +3,14 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
-export default new Vuex.Store({
+const store = new Vuex.Store({
   state: {
-  },
-  getters: {
+    isDark: false
   },
   mutations: {
-  },
-  actions: {
-  },
-  modules: {
+    increment (state) {
+      state.count++
+    }
   }
 })
+export default store

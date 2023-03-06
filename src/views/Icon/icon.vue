@@ -118,17 +118,17 @@
 </template>
 
 <script>
-import IconCode from './icon-code.vue';
+import IconCode from './icon-code.vue'
 export default {
   components: {
-    IconCode,
+    IconCode
   },
   data () {
     return {
 
-    };
-  },
-};
+    }
+  }
+}
 </script>
 
 <style lang="less" scoped>
@@ -136,11 +136,10 @@ export default {
   text-align: left;
   margin-top: 50px;
 
-
   h2 {
     margin-bottom: 10px;
 
-    color: #1f2f3d;
+    color: var(--color);
 
     a {
       padding-right: 4px;
@@ -196,7 +195,6 @@ export default {
   color: #409eff;
 }
 
-
 .icon-one:nth-last-child(1) {
   border-bottom: 1px solid #eee;
 }
@@ -205,7 +203,7 @@ export default {
   border-bottom: 1px solid #eee;
 }
 
-.icon-one:nth-last-child(2) {
+.icon-one:nth-last-child(3) {
   border-bottom: 1px solid #eee;
 }
 
@@ -214,10 +212,6 @@ export default {
 }
 
 .icon-one:nth-last-child(5) {
-  border-bottom: 1px solid #eee;
-}
-
-.icon-one:nth-last-child(6) {
   border-bottom: 1px solid #eee;
 }
 </style>

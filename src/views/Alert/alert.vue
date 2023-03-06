@@ -41,16 +41,16 @@
 </template>
 
 <script>
-import Dark from "./dark.vue";
-import Default from "./default.vue";
-import Icon from "./icon.vue";
-import Atext from "./text.vue";
+import Dark from './dark.vue'
+import Default from './default.vue'
+import Icon from './icon.vue'
+import Atext from './text.vue'
 export default {
-  data() {
-    return {};
+  data () {
+    return {}
   },
-  components: { Dark, Default, Icon, Atext },
-};
+  components: { Dark, Default, Icon, Atext }
+}
 </script>
 <style scoped lang="less">
 .s0 {
@@ -60,7 +60,7 @@ export default {
   h3 {
     margin-bottom: 10px;
 
-    color: #1f2f3d;
+    color: var(--color);
 
     a {
       padding-right: 4px;
@@ -81,4 +81,3 @@ export default {
   }
 }
 </style>
-

@@ -8,7 +8,7 @@
     <div class="s0">
       <h3><a>¶</a>
         基础用法</h3>
-    
+
     </div>
     <ShowCode>
       <Inputdefault></Inputdefault>
@@ -16,7 +16,7 @@
     <div class="s0">
       <h3><a>¶</a>
         禁用状态</h3>
-      
+
     </div>
     <ShowCode desc="通过 disabled 属性指定是否禁用 input 组件">
       <Inputdisable></Inputdisable>
@@ -24,7 +24,7 @@
     <div class="s0">
       <h3><a>¶</a>
         可清空</h3>
-     
+
     </div>
     <ShowCode desc="使用clearable>属性即可得到一个可清空的输入框">
       <Inputclear></Inputclear>
@@ -32,7 +32,7 @@
     <div class="s0">
       <h3><a>¶</a>
         密码框</h3>
-      
+
     </div>
     <ShowCode desc="使用show-password属性即可得到一个可切换显示隐藏的密码框">
       <Inputpwd></Inputpwd>
@@ -40,7 +40,7 @@
     <div class="s0">
       <h3><a>¶</a>
         尺寸</h3>
-      
+
     </div>
     <ShowCode desc="可通过 size 属性指定输入框的尺寸">
       <Disize></Disize>
@@ -63,7 +63,7 @@
     <div class="s0">
       <h3><a>¶</a>
         输入长度限制</h3>
-      
+
     </div>
     <ShowCode desc="maxlength 和 minlength 是原生属性，用来限制输入框的字符长度">
       <Inputlength></Inputlength>
@@ -72,15 +72,15 @@
 </template>
 
 <script>
-import Inputdefault from "./default.vue";
-import Inputdisable from "./disable.vue";
-import Inputclear from "./clear.vue";
-import Inputpwd from "./password.vue";
-import Inputasize from "./autosize.vue";
-import Inputlength from "./length.vue";
-import Disize from "./disize.vue";
-import Textarea from "./textarea.vue";
-import ShowCode from "@/components/ShowCode.vue";
+import Inputdefault from './default.vue'
+import Inputdisable from './disable.vue'
+import Inputclear from './clear.vue'
+import Inputpwd from './password.vue'
+import Inputasize from './autosize.vue'
+import Inputlength from './length.vue'
+import Disize from './disize.vue'
+import Textarea from './textarea.vue'
+import ShowCode from '@/components/ShowCode.vue'
 export default {
   components: {
     Inputdefault,
@@ -91,10 +91,10 @@ export default {
     Inputlength,
     Disize,
     Textarea,
-    ShowCode,
-  },
-  
-};
+    ShowCode
+  }
+
+}
 </script>
 <style scoped lang="less">
 .s0 {
@@ -104,7 +104,7 @@ export default {
   h3 {
     margin-bottom: 10px;
 
-    color: #1f2f3d;
+    color: var(--color);
 
     a {
       padding-right: 4px;

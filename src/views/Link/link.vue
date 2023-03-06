@@ -19,7 +19,7 @@
       <span>文字链接变为不可用状态</span>
     </div>
     <ShowCode>
-      <linkDisabled></linkDisabled>
+      <linkDisabled ></linkDisabled>
     </ShowCode>
     <div class="s0">
       <h3><a>¶</a>下划线</h3>
@@ -32,17 +32,17 @@
 </template>
 
 <script>
-import linkDefault from './link-default.vue';
-import linkDisabled from './link-disabled.vue';
-import linkUnderline from './link-underline.vue';
+import linkDefault from './link-default.vue'
+import linkDisabled from './link-disabled.vue'
+import linkUnderline from './link-underline.vue'
 export default {
   components: {
     linkDefault,
     linkDisabled,
     linkUnderline
-  },
- 
-};
+  }
+
+}
 </script>
 <style scoped lang="less">
 .s0 {
@@ -52,7 +52,7 @@ export default {
   h3 {
     margin-bottom: 10px;
 
-    color: #1f2f3d;
+    color: var(--color);
 
     a {
       padding-right: 4px;

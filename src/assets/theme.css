@@ -1,0 +1,41 @@
+:root {
+  --bg-color: #ffff;
+  --bg-color1: #f1f1f1;
+  --color: #1a1a1a;
+  --text-color: #3182bd --border-color: rgba(60, 60, 60, .29);
+  --border-color: rgba(144, 147, 153, .3);
+  --fill: rgba(60, 60, 60, .7)
+}
+
+:root[theme='dark'] {
+  --bg-color: #1a1a1a;
+  --color: #fff;
+  --text-color: #819ba6;
+  --border-color: rgba(84, 84, 84, .64);
+  --bg-color1: #2f2f2f;
+  --fill: rgba(255, 255, 255, .87)
+}
+
+.markdown-body {
+  /* font-family: "Microsoft YaHei", 微软雅黑; */
+  font-style: normal;
+  font-size: 40px;
+  background-color: var(--bg-color) !important;
+}
+
+.markdown-body .highlight pre,
+.markdown-body pre {
+
+  background-color: var(--bg-color) !important;
+  color: var(--text-color) !important;
+
+}
+
+.markdown-body pre span {
+
+  line-height: 30px;
+
+  /* background-color: red; */
+  /* font-size: 4px; */
+
+}

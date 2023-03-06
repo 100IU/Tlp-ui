@@ -3,25 +3,32 @@
     <div class="head">
       <Header></Header>
     </div>
-
     <div class="info">
       Tlpment-ui 一套基于 Vue 2.0 的桌面端组件库,参考Element-ui
+
     </div>
     <img src="../assets/bg.svg" />
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
-import Header from "@/components/header.vue";
+
+import Header from '@/components/header.vue'
+
 export default {
   components: {
     Header,
+
   },
-  name: "HomeView",
-};
+  name: 'HomeView',
+  data () {
+    return {
+      // readme: this.md2html(readme)
+    }
+  }
+}
 </script>
-<style lang="less" scoped>
+<style lang="less" >
 .info {
   margin: 200px auto;
   position: absolute;
@@ -37,7 +44,6 @@ export default {
 .home {
   height: 110vh;
 
-  // overflow: hidden;
   img {
     height: 100%;
   }
@@ -55,8 +61,8 @@ export default {
     margin: 0 auto;
     top: 0;
     z-index: 999;
-    background-color: #fff;
-    border-bottom: 1px solid #dcdfe6;
+    background-color: var(--bg-color);
+    border-bottom: 1px solid var(--border-color);
   }
 }
 </style>

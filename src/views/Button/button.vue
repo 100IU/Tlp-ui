@@ -13,7 +13,6 @@
     </div>
     <ShowCode desc="使用type、plain、round属性来定义 Button 的样式">
       <ButtonDefault ref="code"></ButtonDefault>
-
     </ShowCode>
     <div class="s0">
       <h3><a>¶</a>
@@ -35,19 +34,18 @@
   </div>
 </template>
 <script>
-import ButtonDefault from "./button-dedault.vue";
-import ButtonDisabled from "./button-disabled.vue";
+import ButtonDefault from './button-dedault.vue'
+import ButtonDisabled from './button-disabled.vue'
 
-import ButtonSize from './button-size.vue';
+import ButtonSize from './button-size.vue'
 export default {
- 
 
   components: {
     ButtonDefault,
     ButtonDisabled,
     ButtonSize
-  },
-};
+  }
+}
 </script>
 <style lang="less">
 .button {
@@ -62,7 +60,7 @@ export default {
   h3 {
     margin-bottom: 10px;
 
-    color: #1f2f3d;
+    color: var(--color);
 
     a {
       padding-right: 4px;

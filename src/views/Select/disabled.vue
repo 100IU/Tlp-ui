@@ -6,11 +6,11 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
-      codeList:[{code:'<Tlp-select v-model="input" disabled></Tlp-select>'}]
-    };
-  },
-};
+      codeList: [{ code: '<Tlp-select v-model="input" disabled></Tlp-select>' }]
+    }
+  }
+}
 </script>
 <style scoped></style>

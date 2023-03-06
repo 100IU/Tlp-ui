@@ -12,9 +12,9 @@ export default {
       lazyImgs:
         'https://fuss10.elemecdn.com/a/3f/3302e58f9a181d2509f3dc0fa68b0jpeg.jpeg',
       codeList: [{ code: '<TlpImage  :src="url" :preview-src="lazyImgs" />' }]
-    };
-  },
-};
+    }
+  }
+}
 </script>
 <style scoped>
 .image {
@@ -22,6 +22,7 @@ export default {
   display: flex;
   width: 100%;
   padding: 20px;
+
 }
 
 .Tlpimg {

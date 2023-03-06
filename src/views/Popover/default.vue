@@ -22,7 +22,7 @@ export default {
     return {
       codeList: [{ code: '<TlpPopver trigger="click" placement="top">' },
       { code: '<span>click激活</span>' },
-      { code: "<template v-slot:inner>" },
+      { code: '<template v-slot:inner>' },
       { code: '<span> 这是一段内容,这是一段内容,这是一段内容,这是一段内容。 </span>' },
       {
         code: '</template'
@@ -31,9 +31,9 @@ export default {
         code: '</TlpPopver> '
       }
       ]
-    };
-  },
-};
+    }
+  }
+}
 </script>
 <style>
 .popver-inner {

@@ -28,16 +28,16 @@
 </template>
 
 <script>
-import ShowCode from "@/components/ShowCode.vue";
-import Default from "./default.vue";
-import Load from "./load.vue";
+import ShowCode from '@/components/ShowCode.vue'
+import Default from './default.vue'
+import Load from './load.vue'
 
 export default {
   data () {
-    return {};
+    return {}
   },
-  components: { ShowCode, Default, Load },
-};
+  components: { ShowCode, Default, Load }
+}
 </script>
 <style scoped lang="less">
 .tlp {
@@ -51,7 +51,7 @@ export default {
   h3 {
     margin-bottom: 10px;
 
-    color: #1f2f3d;
+    color: var(--color);
 
     a {
       padding-right: 4px;
