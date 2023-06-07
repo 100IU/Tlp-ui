@@ -11,11 +11,8 @@
 
 <script>
 
-
 export default {
-  components: {
-    readme
-  },
+
   data () {
     return {
 

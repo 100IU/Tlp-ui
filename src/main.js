@@ -6,14 +6,11 @@ import store from './store'
 import './assets/theme.css'
 import 'github-markdown-css'
 import ShowCode from './components/ShowCode'
-<<<<<<< HEAD
-=======
 
 import PerfectScrollbar from 'perfect-scrollbar'
 // 对应的css
 import 'perfect-scrollbar/css/perfect-scrollbar.css'
 
->>>>>>> 7894bea (更新主题切换)
 import tlpmentui from 'tlpment-ui'
 import 'tlpment-ui/dist/tlp-ui.css'
 
