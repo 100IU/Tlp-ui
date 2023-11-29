@@ -1,5 +1,6 @@
 <template>
-  <div class=''>
+  <div id="app">
+    <div class="snow-container"></div>
     <text1></text1>
   </div>
 </template>
@@ -13,4 +14,14 @@ export default {
 
 }
 </script>
-<style  scoped></style>
+<style  scoped>
+ .snow-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 100001;
+    }
+</style>

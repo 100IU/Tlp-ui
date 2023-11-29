@@ -1,72 +1,152 @@
 <template>
   <div class="fengniao_new" style="overflow-x: hidden;">
-    <div class="fengniao_top_banner" ref="top_banner" style="position: relative;">
+    <div class="fengniao_top_banner" style="position: relative;">
 
       <picture>
         <source srcset="
-        https://cdnimg.vivaia.com/VA/image/Banner/20231013_6384/Group%20337249.jpg
+        https://cdnimg.vivaia.com/VA/image/HomePage/20231129_6513/banner-a-M-.jpg
           " media="(max-width:768px)" />
-        <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20231013_6384/Group-337248.jpg" alt="" />
+        <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/HomePage/20231129_6513/Rectangle%201.jpg" alt="" />
       </picture>
-    </div>
-
-    <New></New>
-    <Margot_Walker></Margot_Walker>
-
-    <swiper_one></swiper_one>
-
-
-    <swiper_four></swiper_four>
-
-    <div class="last_bottom" id="section6">
-      <div class="inner space-w">
-        <a class="item" href="https://www.vivaia.com/article/about-us">
-          <div class="title">About Us</div>
-          <picture>
-            <source srcset="
-                https://cdnimg.vivaia.com/VA/image/Banner/20230919_6296/new%20arrival-m-1.jpg
-              " media="(max-width:768px)" />
-            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20230919_6295/Rectangle%202191.jpg"
-              alt="" />
-          </picture>
-        </a>
-        <a class="item" href="https://www.vivaia.com/article/Our-materials">
-          <div class="title">Our Materials</div>
-          <picture>
-            <source srcset="
-                https://cdnimg.vivaia.com/VA/image/Banner/20230919_6296/new%20arrival-m-2.jpg
-              " media="(max-width:768px)" />
-            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20230919_6295/Rectangle%202193.jpg"
-              alt="" />
-          </picture>
-        </a>
-        <a class="item" href="https://www.vivaia.com/promotion/vivaia-Press-5955.html">
-          <picture>
-            <source srcset="
-                https://cdnimg.vivaia.com/VA/image/Banner/20230919_6296/new%20arrival-m-3.jpg
-              " media="(max-width:768px)" />
-            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20230919_6295/Rectangle%202192.jpg"
-              alt="" />
-          </picture>
-          <div class="title">Press</div>
-        </a>
+      <div class="inner">
+        <div class="title common-title">
+          Warm & Cozy Holiday 
+        </div>
+        <div class="common-desc">
+          Delight your holiday with our enchanting collection.
+        </div>
       </div>
     </div>
+    <div class="deal">
+      <div class="list space-w">
+        <div class="item">
+         <img src="https://cdnimg.vivaia.com/CO/image/Banner/20231025_6418/shipping.png" alt="">
+          <span>Free shipping on orders over $99</span>
+        </div>
+        <div class="item">
+        <img src="https://cdnimg.vivaia.com/CO/image/Banner/20231025_6418/promotion.png" alt="">
+         <span style="white-space: nowrap;">Instant discount + holiday code</span>
+            </div>
+        <div class="item">
+       
+<img src="https://cdnimg.vivaia.com/CO/image/Banner/20231025_6418/return.png" alt="">
+          <span>30 + extended 15 days of Free Return & Exchange</span>
+          </div>
+      </div>
+    </div>
+
+   
+    <swiper_one></swiper_one>
+
+    <swiper_two></swiper_two>
+    <swiper_three></swiper_three>
+  
+
+    <div class="last_bottom" >
+      <div class="inner space-w">
+        <a class="item" >
+         <div class="inner" style="position: absolute;display: flex;align-items: center;flex-direction: column;color:#ffff;">
+          <div class="common-title">
+            Weekly Best-sellers
+        </div>
+        <div class="common-desc" style="text-decoration: underline;">
+          Check more
+        </div>
+         </div>
+          <picture>
+            <source srcset="
+            https://cdnimg.vivaia.com/VA/image/HomePage/20231129_6513/new%20arrival-m.jpg
+              " media="(max-width:768px)" />
+            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/HomePage/20231129_6513/new%20arrival-p.jpg"
+              alt="" />
+          </picture>
+        </a>
+        <a class="item" style="margin-bottom: 0;">
+        <div class="inner" style="position: absolute;display: flex;align-items: center;flex-direction: column;color:#ffff;">
+          <div class="common-title">
+            Instant Discount up to 70%
+        </div>
+        <div class="common-desc" style="text-decoration: underline;">
+          Buy now
+        </div>
+        </div>
+          <picture>
+            <source srcset="
+            https://cdnimg.vivaia.com/VA/image/HomePage/20231129_6513/best%20sellers-m.jpg
+              " media="(max-width:768px)" />
+            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/HomePage/20231129_6513/best%20sellers-p.jpg"
+              alt="" />
+          </picture>
+        </a>
+     
+      </div>
+    </div>
+   <!-- FAQ -->
+   <div class="fengniao_addition space-w" >
+    <div class="addition_title lp_title_one">FAQ</div>
+    <FAQ v-for="(item, i) in list" :key="i" :item="item"></FAQ>
+   </div>
+  
   </div>
 </template>
 
 <script>
+
+import swiper_one from './swiper_one.vue';
+import swiper_two from './swiper_two.vue';
+import swiper_three from './swiper_three.vue';
 import swiper_four from './swiper_four.vue';
-import Margot_Walker from './swiper_fif.vue';
-import New from './New.vue';
+import FAQ from './FAQ.vue';
 export default {
   components: {
-    Margot_Walker,
-
+    swiper_one,
+    FAQ,
     swiper_four,
-    New
-  },
-
+    swiper_two,
+    swiper_three
+},
+data() {
+  return {
+    list: [
+        {
+          title: '1.Can I get a VIVAIA coupon code for my first purchase?',
+          desc: ` <div>
+      Yes! VIVAIA welcomes new customers with:
+    
+      <li style="margin-left: 10px;">$10 coupon code when you subscribe to newsletter</li>
+      <li style="margin-left: 10px;">$15 off coupon when you subscribe to SMS</li>
+   
+    </div>`,
+    id:0
+    
+        },
+        {
+          title: '2.Does VIVAIA have free shipping?',
+          desc: ` <div>
+            Free shipping on orders over $99, with no VIVAIA coupon code necessary. >
+   
+    </div>`,
+    id:1
+        },
+        {
+          title: '3.Is it safe to shop on VIVAIA?',
+          desc: ` <div>
+            VIVAIA is PCI-certified for secure payments. Your information is encrypted, and we follow strict security protocols to ensure your data is protected. Supported payment methods: PayPal, VISA, MasterCard, American Express, Apple Pay, Discover, Google Pay, Klarna, Afterpay.
+   
+    </div>`,
+    id:2
+        },
+        {
+          title: "4.Can I return or exchange shoes for free if I don't like them or if the size doesn't fit?",
+          desc: ` <div>
+            Sure, during the holiday season (Until Jan 4 2024), we are extending the free return and exchange policy to 45 days from the date you receive items purchased online.
+   
+    </div>`,
+    id:3
+        }
+      ],
+  }
+},
 
 
 };
@@ -76,14 +156,76 @@ export default {
   margin: 0;
   padding: 0;
 }
+.fengniao_new .common-title{
+  font-family: Noto Serif;
+font-size: 1.667vw;
+font-weight: 400;
+line-height: 2.292vw;
+letter-spacing: 0px;
+text-align: left;
+margin-bottom: 0.417vw;
 
+}
+.fengniao_new .common-desc{
+  font-family: Roboto;
+font-size: 0.833vw;
+font-weight: 400;
+line-height: 0.99vw;
+letter-spacing: 0px;
+text-align: left;
+
+}
+.deal .list{
+    background: rgba(255, 255, 255, 1);
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding: 3.125vw 0 4.167vw;
+  
+    position: relative;
+    top: -4.167vw;
+    z-index: 10;
+    border: 1px solid rgba(0, 0, 0, .1);
+
+}
+.deal .list .item img{
+  width: 4.167vw;
+  height: 4.167vw;
+}
+.deal .list .item{
+  /* margin-left: 6.25vw; */
+ 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.deal .list .item:nth-child(1){
+  margin-left: 13.542vw;
+}
+.deal .list .item:nth-child(2){
+  margin:0 6.25vw;
+}
+.deal .list .item:nth-child(3){
+  margin-right: 13.542vw;
+}
+.deal .list .item span{
+  text-align: center;
+  font-family: Roboto;
+font-size: 1.042vw;
+font-weight: 400;
+line-height: 1.198vw;
+letter-spacing: 0px;
+text-align: center;
+color: #191817;
+}
 .swiper_btn svg {
   width: auto !important;
   height: auto !important;
 }
 
 .last_bottom {
-  padding: 5.2083333vw 0;
+  padding-bottom: 4.167vw;
   background: #ffffff;
 }
 
@@ -99,7 +241,7 @@ export default {
   font-weight: 400;
   line-height: 1.4583333vw;
 
-  width: 27.0833333vw;
+  width: 49.3%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -115,7 +257,25 @@ export default {
   top: 2.3958333vw;
   left: 2.0833333vw;
 }
+.fengniao_top_banner{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fengniao_top_banner .inner{
+  position: absolute;
+  color: #FFFFFF;
+  right: 13.49vw;
 
+}
+.fengniao_top_banner .inner .title{
+  
+font-size: 1.875vw;
+font-weight: 400;
+line-height: 2.552vw;
+
+
+}
 .fengniao_top_banner ._left .left_title_one {
   font-family: Roboto;
   font-size: 2.7083333vw;
@@ -173,12 +333,14 @@ export default {
 }
 
 .fengniao_new .new_title_one {
-  font-family: Roboto;
-  font-size: 0.833vw;
-  font-weight: 400;
-  line-height: 1.25vw;
-  margin-top: 4px;
-  text-align: left;
+
+font-family: Roboto;
+font-size: 0.729vw;
+font-weight: 400;
+line-height: 0.833vw;
+letter-spacing: 0px;
+text-align: left;
+margin-top: 0.625vw;
   overflow: hidden;
   /* 隐藏溢出内容 */
   white-space: nowrap;
@@ -228,16 +390,16 @@ export default {
   line-height: 1.719vw;
   letter-spacing: 0vw;
   text-align: center;
- 
+
 }
 
 .fengniao_new .fengniao_top_banner .info .info_desc {
   font-family: Noto Serif;
   font-size: 3.28125vw;
   font-weight: 400;
-  line-height:1;
+  line-height: 1;
   height: 3.0729167vw;
-  
+
   color: #804c1a;
 
   margin: 0 0 0.5729167vw;
@@ -246,7 +408,7 @@ export default {
 }
 
 .fengniao_new .fengniao_top_banner .info .info_title_one {
- 
+
   align-self: center;
   text-align: center;
   border-bottom: 1px solid #000;
@@ -260,7 +422,7 @@ export default {
   letter-spacing: 0vw;
   text-align: center;
   margin-top: 5.1041667vw;
-  
+
 }
 
 
@@ -280,7 +442,7 @@ export default {
 
 }
 
-.fengniao_new  .fengniao_margot-info .common_title {
+.fengniao_new .fengniao_margot-info .common_title {
   position: absolute;
   top: 18.8541667vw;
   width: 26.7708333vw;
@@ -288,7 +450,7 @@ export default {
 }
 
 
-.fengniao_new  .btn {
+.fengniao_new .btn {
   margin-left: 0 !important;
   margin-top: 1.0416667vw;
   color: #000;
@@ -300,14 +462,14 @@ export default {
   justify-content: center;
 }
 
-.fengniao_new  .btn {
+.fengniao_new .btn {
   background: #000;
   color: #ffffff;
   margin-top: 0.2083333vw;
   margin-left: 6.25vw !important;
 }
 
-.fengniao_new  .common_title .btn {
+.fengniao_new .common_title .btn {
   display: none !important;
 }
 
@@ -374,9 +536,10 @@ export default {
 }
 
 
-.fengniao_new .fengniao-outer .fengniao-margot{
-  padding-bottom: 5.208vw;
+.fengniao_new .fengniao-outer .fengniao-margot {
+  padding-bottom: 4.167vw;
 }
+
 .fengniao_new .fengniao-outer .fengniao-margot .fengniao-margot-all {
   display: flex;
   padding-top: 2.6041667vw;
@@ -422,7 +585,9 @@ export default {
   color: #ffffff;
   height: 2.5vw;
   width: 2.5vw;
-  top: 52%;
+  top: 46%;
+  transform: translateY(-50%);
+  margin-top: 0;
   border-radius: 50%;
 }
 
@@ -457,7 +622,7 @@ export default {
 }
 
 .fengniao_new .fengniao-outer .fengniao-margot .fengniao_margot-swiper .fengniao_swiper_one .swiper-slide .slide_info {
-  padding: 0.781vw 0 2.083vw;
+  padding:0 0 2.083vw;
 }
 
 .fengniao_new .fengniao-outer .fengniao-margot .fengniao_margot-swiper .fengniao_swiper_one .swiper-slide .slide_info p:nth-child(2) span:nth-child(1) {
@@ -485,9 +650,129 @@ export default {
   font-size: 0.8333333vw;
   line-height: 1.19;
 }
+@media screen and (min-width: 1024px) and (max-width: 1700px){
+  .fengniao_new .common-title{
+  font-family: Noto Serif;
+font-size: 24.005px;
+font-weight: 400;
+line-height: 33.005px;
+letter-spacing: 0px;
+text-align: left;
+margin-bottom: 6.005px;
 
+}
+.fengniao_new .common-desc{
+  font-family: Roboto;
+font-size: 13.995px;
+font-weight: 400;
+line-height: 16.256px;
+letter-spacing: 0px;
+text-align: left;
+
+}
+.deal .list .item span {
+    text-align: center;
+    font-family: Roboto;
+    font-size: 15.005px;
+    font-weight: 400;
+    line-height: 17.251px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #191817;
+}
+.fengniao_new .new_title_one {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.12;
+    letter-spacing: 0;
+    text-align: left;
+    margin-top: 9px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+}
 @media screen and (max-width: 768px) {
+  .deal .list{
+    background: rgba(255, 255, 255, 1);
+    /* background: red; */
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    padding:5.333vw 0 10.667vw;
+  flex-wrap: wrap;
+    position: relative;
+    top: -10.667vw;
+    z-index: 10;
+    
 
+}
+.deal .list .item img{
+  width: 13.333vw;
+  height:13.333vw;
+}
+.deal .list .item{
+ 
+ 
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+}
+.deal .list .item:nth-child(1){
+  margin-left:0;
+}
+.deal .list .item:nth-child(2){
+  margin:5.333vw 0;
+}
+.deal .list .item:nth-child(3){
+  margin-right: 0;
+}
+.deal .list .item span{
+  font-family: Roboto;
+font-size: 3.2vw;
+font-weight: 400;
+line-height: 3.733vw;
+letter-spacing: 0px;
+text-align: center;
+
+}
+  .fengniao_top_banner .inner{
+    top: 6.4vw;
+  }
+  .fengniao_top_banner .inner .title{
+  
+    font-family: Noto Serif;
+font-size: 5.333vw;
+font-weight: 400;
+line-height: 7.2vw;
+letter-spacing: 0px;
+text-align: center;
+
+  
+  
+  }
+  .fengniao_new .common-title{
+    font-family: Noto Serif;
+font-size: 5.333vw;
+font-weight: 400;
+line-height: 7.2vw;
+letter-spacing: 0px;
+text-align: left;
+
+margin-bottom: 2.133vw;
+}
+.fengniao_new .common-desc{
+  font-family: Roboto;
+font-size: 3.2vw;
+font-weight: 400;
+line-height: 3.733vw;
+letter-spacing: 0px;
+text-align: left;
+
+
+}
   .fengniao_new svg {
     width: 8.8vw;
     height: 8.8vw;
@@ -497,7 +782,7 @@ export default {
     font-family: Roboto;
     font-size: 3.2vw;
     font-weight: 500;
-    
+
     line-height: 5.3333333vw;
     height: 5.3333333vw;
     letter-spacing: 0px;
@@ -510,19 +795,19 @@ export default {
 
   }
 
- 
- 
+
+
   .fengniao_new .fengniao-outer .fengniao-margot .fengniao-margot-all {
     padding-top: 5.333vw;
   }
 
-  .fengniao_new  .common_title .btn {
+  .fengniao_new .common_title .btn {
     display: flex !important;
   }
 
   .last_bottom {
-   
-    padding:0 0 13.3333333vw;
+
+    padding: 0 0 10.667vw;
     background: #ffffff;
   }
 
@@ -538,7 +823,7 @@ export default {
     font-size: 4.2666667vw;
     margin-bottom: 2.6666667vw;
     font-weight: 500;
-    
+
     text-align: center;
 
     width: 89.3333333vw;
@@ -547,6 +832,15 @@ export default {
     align-items: center;
   }
 
+  .last_bottom .inner .item .common-desc{
+    font-family: Roboto;
+font-size: 4.267vw;
+font-weight: 500;
+line-height: 5.067vw;
+letter-spacing: 0px;
+text-align: right;
+
+  }
   .fengniao_new .new_title {
     font-size: 5.3333333vw;
     line-height: 7.2vw;
@@ -558,7 +852,7 @@ export default {
 
   }
 
-  
+
   .fengniao_new .show_big {
     display: none !important;
   }
@@ -624,27 +918,27 @@ export default {
     margin-top: 24vw;
     margin-bottom: 0;
     text-align: center;
-   
+
   }
 
   .fengniao_new .fengniao_top_banner .info .info_title_one {
-    
+
     opacity: 1;
     align-self: center;
     text-align: center;
-   
+
   }
 
 
-  
 
-  .fengniao_new  .fengniao_margot-info {
+
+  .fengniao_new .fengniao_margot-info {
     position: relative;
-   
+
 
   }
 
-  .fengniao_new  .fengniao_margot-info .common_title {
+  .fengniao_new .fengniao_margot-info .common_title {
     font-family: Noto Serif;
     display: flex;
     flex-direction: column;
@@ -659,10 +953,10 @@ export default {
     color: #000;
   }
 
- 
- 
 
-  
+
+
+
 
   .fengniao_new .fengniao-outer .norml_title {
     font-family: Noto Serif;
@@ -731,7 +1025,7 @@ export default {
   }
 
   .fengniao_new .fengniao-outer .fengniao-margot {
-    padding-bottom: 12.8vw;
+    padding-bottom:10.667vw;
   }
 
   .fengniao_new .fengniao-outer .fengniao-margot .fengniao-margot-all {
@@ -744,7 +1038,7 @@ export default {
 
   .fengniao_new .fengniao-outer .fengniao-margot .fengniao-margot-all .right {
     width: 100%;
-    
+
     background: #f6f6f6;
   }
 
@@ -756,7 +1050,7 @@ export default {
   .fengniao_new .fengniao-outer .fengniao-margot .fengniao_tab-container {
     display: flex;
     flex-wrap: wrap;
-    
+
   }
 
   .fengniao_new .fengniao-outer .fengniao-margot .fengniao_tab-container .fengniao-tab {
@@ -833,7 +1127,7 @@ export default {
     padding: 2.1333333vw 0 5.3333333vw;
   }
 
-  
+
   .fengniao_new .fengniao-outer .fengniao-margot .fengniao_margot-swiper .fengniao_swiper_one .swiper-slide .slide_info p:nth-child(2) {
     margin-top: 1.0666667vw;
   }
@@ -857,7 +1151,7 @@ export default {
     background: #191817;
   }
 
-  
+
   .fengniao_new .btn {
     margin-left: 0 !important;
     margin-top: 1.0416667vw;
@@ -872,16 +1166,16 @@ export default {
     justify-content: center;
   }
 
-  .fengniao_new  .btn {
+  .fengniao_new .btn {
     width: 24.5333333vw;
   }
 
- 
 
-  .fengniao_new  .right .btn{
+
+  .fengniao_new .right .btn {
     display: none !important;
   }
 
-  
+
 }
 </style>

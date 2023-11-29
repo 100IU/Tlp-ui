@@ -1,10 +1,10 @@
 <template>
   <div class="fengniao-margot space-w">
     <slot></slot>
-    <div class="fengniao_tab-container" v-if="tabs_item">
-      <div class="new_title fengniao-margot-title" v-if="show !== false">
+    <div class="fengniao_tab-container" v-if="tabs_item.length>0">
+      <!-- <div class="new_title fengniao-margot-title" v-if="show !== false">
         {{ swiper_name }}
-      </div>
+      </div> -->
 
       <div class="fengniao-tab">
         <div :class="`tab_item ${index === cur_index ? 'active' : ''}`" v-for="(item, index) in tabs_item" :key="index"
@@ -106,7 +106,7 @@ export default {
   },
 
   mounted () {
-    this.initSwiper()
+    // this.initSwiper()
   },
   methods: {
 
@@ -158,6 +158,9 @@ export default {
 }
 </script>
 <style  scoped>
+.fengniao_margot-swiper{
+  margin-top:2.083vw ;
+}
 .fengniao_new .fengniao-outer .fengniao-margot .fengniao_tab-container .fengniao-tab {
   display: flex;
   align-items: center;
@@ -187,6 +190,9 @@ export default {
 
 
 @media screen and (max-width: 768px) {
+  .fengniao_margot-swiper {
+    margin-top: 5.333vw
+}
   .fengniao_new .fengniao-outer .fengniao-margot .fengniao_tab-container .tab_item {
     font-family: Roboto;
     font-size: 3.2vw;
