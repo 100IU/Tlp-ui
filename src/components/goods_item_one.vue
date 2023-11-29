@@ -1,5 +1,5 @@
 <template>
-  <div class="fengniao-margot space-w margot_swiper">
+  <div class="fengniao-margot space-w margot_swiper" style="padding: 0;">
 
     <div class="fengniao_tab-container" v-if="tabs_item.length > 0">
 
@@ -21,7 +21,7 @@
             <img  v-lazy="item.goods_thumb"  style="height: auto;"/>
             
              <!-- <img src="https://cdnimg.vivaia.com/VA/image/Banner/20230919_6294/2862c4e09c5a8f67149e53a0d81d62fd.jpg" alt="" style="height: auto;"> -->
-            <div class="inner_btn">Shop Now</div>
+            <!-- <div class="inner_btn">Shop Now</div> -->
           </a>
 
           <div class="slide_info">
@@ -129,6 +129,7 @@ text-align: center;
   color: #FFFFFF;
   background: #191817;
 }
+
 .fengniao_new .fengniao-outer .fengniao-margot .fengniao_tab-container .fengniao-tab {
     display: flex;
     align-items: center;
@@ -138,6 +139,42 @@ text-align: center;
     height: 1.979vw;
     border-bottom: 2px solid rgba(186, 186, 186, 1);
 }
+.fengniao_new .fengniao-outer .fengniao-margot .fengniao_tab-container .fengniao-tab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2.604vw;
+  width: 100%;
+  height: 1.979vw;
+  border-bottom: 2px solid rgba(186, 186, 186, 1);
+}
+
+.fengniao_new .fengniao-outer .fengniao-margot .fengniao_tab-container .tab_item {
+  font-family: Roboto;
+  font-size: 1.042vw;
+  font-weight: 400;
+  line-height: 1.198vw;
+  letter-spacing: 0em;
+  text-align: center;
+  margin-right: 5.208vw;
+ opacity: .5;
+  height: 2.083vw;
+ 
+
+}
+
+.fengniao_new .fengniao-outer .fengniao-margot .fengniao_tab-container .tab_item:last-child {
+  margin-right: 0;
+}
+
+.fengniao_new .fengniao-outer .fengniao-margot .fengniao_tab-container .active {
+  opacity: 1;
+  font-weight: 500;
+  border-bottom: 2px solid #191817;
+  /* color: #FFFFFF; */
+  /* background: #191817; */
+}
+
 @media screen and (max-width: 768px) {
   .margot_swiper {
     margin-top: 5.3333333vw !important;

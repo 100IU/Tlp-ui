@@ -1,51 +1,71 @@
 <template>
-  <div class="fengniao-outer" id="go_to1">
-    <div class="fengniao_margot-info" id="section1"> 
-      <div class="inner">
-      <div class="inner_title">Running Heels</div>
-      <div class="inner-desc show_big">
-        Run and dance all day and night in comfortable elegance.
-      </div>
+  <div class="fengniao-outer common_walker">
+    <div class="last_title">
+      More Styles
     </div>
-      <picture>
-        <source srcset="
-        https://cdnimg.vivaia.com/VA/image/loadpage/20231120_6489/16.jpg
-            " media="(max-width:768px)" />
-        <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/loadpage/20231120_6489/7.jpg" alt="" />
-      </picture>
-     
-    </div>
-    <div class="fengniao-margot space-w">
-
-      <goods_item :goods_data="goods_data" swiper_name="Melody" ref="child"></goods_item>
-    </div>
+    <goods_item_one :goods_data="goods_data" swiper_name="Ryan Boots"  :tabs_item="tabs_item" @show="show" v-if="width>768" ></goods_item_one>
+      <goods_item :goods_data="goods_data" swiper_name="Ryan Boots" ref="child" :tabs_item="tabs_item1" @show="show" :show="false" v-else></goods_item>
   </div>
 </template>
 
 <script>
 let str1 = `
+10003770,
+10003588,
+10016829,
+10016861,
+10003596,
+10009518,
+10016797,
+10016845,
+10016504,
 10016520,
-10011923,
-10012726,
-10011027,
 10011907,
-10016472,
+10011923,
+10011059,
 10011091,
-10012710
+10010778,
+10010794,
+10011155,
+10011123,
+10012678,
+10012662,
+10012398,
+10012414,
+10013171,
+10013203,
 `
-import Goods_item from './goods_item.vue';
+import goods_item_one from './goods_item_one.vue';
+import goods_item from './goods_item.vue';
 export default {
   components:{
-    Goods_item,
+    goods_item_one,
+    goods_item
   },
   data () {
     return {
-      goods_data:[]
+      all_goods:[],
+     goods_data:[],
+     width:window.innerWidth,
+      tabs_item:[ 
+      {tab_name:'Fun-Filled Loafers'},
+      {tab_name:'Running Heels'},
+      {tab_name:'Sandals'}
+     
+    ],
+    tabs_item1:[ 
+      {tab_name:'Loafers'},
+      {tab_name:'Heels'},
+      {tab_name:'Sandals'}
+     
+    ],
     }
   },
+ 
   mounted () {
     this.getAllgoods()
   },
+
   methods:{
     async getAllgoods(){
      const res = await  window._fengniao_getGoods_list({
@@ -53,68 +73,54 @@ export default {
         disable_goods_number:1,
         is_app:1
      })
-    //  console.log(res)
+    
      
-     this.goods_data = res.result
-     
+     this.all_goods = [res.result.slice(0,8),res.result.slice(8,16),res.result.slice(16,24)]
+     this.goods_data = this.all_goods[0]
+  
+
      this.$nextTick(() => {
-      this.$refs.child.initSwiper();
+      
+      
+      this.$refs.child?.initSwiper();
     
     });
 
     },
+    show(index){ 
+      this.goods_data = this.all_goods[index]
+    }
   }
 }
 </script>
-<style scoped>
-.fengniao_margot-info{
+<style >
+.common_walker  .fengniao_margot-info{
   display: flex;
-  flex-direction: column;
- /* align-items: center; */
+  align-items: center;
   justify-content: center;
+  
+  
 }
-.fengniao_margot-info .inner{
-  position: absolute;
-  color: #191817;
-  /* right:8.333vw ; */
-  left: 8.333vw;
-}
-.fengniao_margot-info .inner .inner_title{
+.last_title{
   font-family: Noto Serif;
 font-size: 1.667vw;
 font-weight: 400;
-line-height: 1.198vw;
+line-height: 2.031vw;
 letter-spacing: 0px;
-/* text-align: right; */
-
-}
-.fengniao_margot-info .inner .inner-desc{
-  font-family: Roboto;
-font-size: 0.833vw;
-font-weight: 400;
-line-height:0.573vw;
-letter-spacing: 0px;
-/* text-align: right; */
 text-align: center;
-margin-top: 1.25vw;
+padding: 3.125vw 0 2.083vw;
 }
 @media screen and (max-width: 768px) {
-  .fengniao_margot-info .inner{
-  position: static;
-  margin: 10.667vw 0 5.333vw;
-  color: #FFFFFF;
-  /* right:8.333vw ; */
-}
-.fengniao_margot-info .inner .inner_title{
-  font-family: Noto Serif;
+  .last_title{
+ 
 font-size: 5.333vw;
-font-weight: 400;
-line-height: 7.2vw;
-letter-spacing: 0em;
-text-align: center;
-width: 64.667vw;
-margin: 0 auto;
-color: #191817;
+font-weight: 500;
+line-height: 6.133vw;
+letter-spacing: 0px;
+text-align:center;
+width: 100%;
+padding: 0;
+margin: 0 0 3.2vw;
 }
 }
 </style>
