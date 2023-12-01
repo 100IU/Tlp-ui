@@ -1,5 +1,5 @@
 <template>
-  <div class="fengniao_new" style="overflow-x: hidden;">
+  <div class="fengniao_new" style="overflow-x: hidden;background: #fff;">
     <div class="fengniao_top_banner" style="position: relative;">
 
       <picture>
@@ -10,27 +10,53 @@
       </picture>
       <div class="inner">
         <div class="title common-title">
-          Warm & Cozy Holiday 
+          Step into a Warm and Cozy Holiday 
         </div>
         <div class="common-desc">
-          Delight your holiday with our enchanting collection.
+          Brighten your holiday with our enchanting collection.
         </div>
       </div>
     </div>
     <div class="deal">
       <div class="list space-w">
         <div class="item">
-         <img src="https://cdnimg.vivaia.com/CO/image/Banner/20231025_6418/shipping.png" alt="">
+         
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M48.3333 22.5H28.75V20H50.8333V38.75H64.1667V41.25H48.3333V22.5Z" fill="#191817"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M37.5 53.3333H48.5417V55.8333H37.5V53.3333Z" fill="#191817"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M21.25 53.3333H27.5V55.8333H21.25V53.3333Z" fill="#191817"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M32.7085 58.3333C34.7796 58.3333 36.4585 56.6543 36.4585 54.5833C36.4585 52.5122 34.7796 50.8333 32.7085 50.8333C30.6374 50.8333 28.9585 52.5122 28.9585 54.5833C28.9585 56.6543 30.6374 58.3333 32.7085 58.3333ZM32.7085 60.8333C36.1603 60.8333 38.9585 58.035 38.9585 54.5833C38.9585 51.1315 36.1603 48.3333 32.7085 48.3333C29.2567 48.3333 26.4585 51.1315 26.4585 54.5833C26.4585 58.035 29.2567 60.8333 32.7085 60.8333Z" fill="#191817"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M52.7085 58.3333C54.7796 58.3333 56.4585 56.6543 56.4585 54.5833C56.4585 52.5122 54.7796 50.8333 52.7085 50.8333C50.6374 50.8333 48.9585 52.5122 48.9585 54.5833C48.9585 56.6543 50.6374 58.3333 52.7085 58.3333ZM52.7085 60.8333C56.1603 60.8333 58.9585 58.035 58.9585 54.5833C58.9585 51.1315 56.1603 48.3333 52.7085 48.3333C49.2567 48.3333 46.4585 51.1315 46.4585 54.5833C46.4585 58.035 49.2567 60.8333 52.7085 60.8333Z" fill="#191817"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19.1665 39.7917H32.7082V42.2917H19.1665V39.7917Z" fill="#191817"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M23.9585 31.4583H40.6252V33.9583H23.9585V31.4583Z" fill="#191817"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M57.2237 30.8333H48.5415V28.3333H58.6093L64.3748 37.5581V55.8333H56.8228V53.3333H61.8748V38.2751L57.2237 30.8333Z" fill="#191817"/>
+</svg>
+
           <span>Free shipping on orders over $99</span>
         </div>
         <div class="item">
-        <img src="https://cdnimg.vivaia.com/CO/image/Banner/20231025_6418/promotion.png" alt="">
+        
+<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M56.7936 20.9077L36.9696 20.9077L13.8416 44.0357L33.6656 63.8598L56.7936 40.7317V20.9077ZM54.2936 39.6962L33.6656 60.3242L17.3771 44.0357L38.0051 23.4077L54.2936 23.4077V39.6962Z" fill="#191817"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M59.1379 43.0743L57.9248 32.65L60.408 32.3611L61.7213 43.6463L48.365 65.3503L38.7322 60.9717L39.7667 58.6958L47.3917 62.1617L59.1379 43.0743Z" fill="#191817"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M35.6153 35.4129C36.2677 36.0653 37.3255 36.0653 37.9779 35.4129C38.6303 34.7605 38.6303 33.7027 37.9779 33.0503C37.3255 32.3979 36.2677 32.3979 35.6153 33.0503C34.9629 33.7027 34.9629 34.7605 35.6153 35.4129ZM33.8475 37.1806C35.4762 38.8094 38.1169 38.8094 39.7456 37.1806C41.3744 35.5519 41.3744 32.9112 39.7456 31.2825C38.1169 29.6538 35.4762 29.6538 33.8475 31.2825C32.2188 32.9112 32.2188 35.5519 33.8475 37.1806Z" fill="#191817"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M37.0896 48.6839C37.7421 49.3363 38.7998 49.3363 39.4522 48.6839C40.1047 48.0315 40.1047 46.9737 39.4522 46.3213C38.7998 45.6689 37.7421 45.6689 37.0896 46.3213C36.4372 46.9737 36.4372 48.0315 37.0896 48.6839ZM35.3219 50.4516C36.9506 52.0804 39.5913 52.0804 41.22 50.4516C42.8487 48.8229 42.8487 46.1822 41.22 44.5535C39.5913 42.9248 36.9506 42.9248 35.3219 44.5535C33.6932 46.1822 33.6932 48.8229 35.3219 50.4516Z" fill="#191817"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M45.6899 39.8911L30.2752 44.0214L29.6281 41.6066L45.0428 37.4762L45.6899 39.8911Z" fill="#191817"/>
+</svg>
+
          <span style="white-space: nowrap;">Instant discount + holiday code</span>
             </div>
         <div class="item">
        
-<img src="https://cdnimg.vivaia.com/CO/image/Banner/20231025_6418/return.png" alt="">
-          <span>30 + extended 15 days of Free Return & Exchange</span>
+
+          <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M57.5 22.5H22.5V29.1667H57.5V22.5ZM20 20V31.6667H60V20H20Z" fill="#191817"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M55.8334 31.6667H24.1667V56.6667H55.8334V31.6667ZM21.6667 29.1667V59.1667H58.3334V29.1667H21.6667Z" fill="#191817"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M32.4043 39.9972L36.1543 35.8306L38.0125 37.503L36.1401 39.5834H48.3334V42.0834H33.3334L32.4043 39.9972Z" fill="#191817"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M47.5957 46.6695L43.8457 50.8362L41.9875 49.1638L43.8599 47.0833H31.6666V44.5833H46.6666L47.5957 46.6695Z" fill="#191817"/>
+</svg>
+
+          <span>45-day extended return & exchange policy</span>
           </div>
       </div>
     </div>
@@ -44,13 +70,14 @@
 
     <div class="last_bottom" >
       <div class="inner space-w">
-        <a class="item" >
+        <a class="item" href="https://www.vivaia.com/category/best-sellers-by-category-c_910.html">
          <div class="inner" style="position: absolute;display: flex;align-items: center;flex-direction: column;color:#ffff;">
           <div class="common-title">
-            Weekly Best-sellers
+            Weekly Best Sellers
+
         </div>
         <div class="common-desc" style="text-decoration: underline;">
-          Check more
+          Buy Now
         </div>
          </div>
           <picture>
@@ -61,10 +88,10 @@
               alt="" />
           </picture>
         </a>
-        <a class="item" style="margin-bottom: 0;">
+        <a class="item" style="margin-bottom: 0;" href="https://www.vivaia.com/category/sale-c_511.html">
         <div class="inner" style="position: absolute;display: flex;align-items: center;flex-direction: column;color:#ffff;">
           <div class="common-title">
-            Instant Discount up to 70%
+            Instant Discounts up to 40%
         </div>
         <div class="common-desc" style="text-decoration: underline;">
           Buy now
@@ -113,8 +140,9 @@ data() {
           desc: ` <div>
       Yes! VIVAIA welcomes new customers with:
     
-      <li style="margin-left: 10px;">$10 coupon code when you subscribe to newsletter</li>
-      <li style="margin-left: 10px;">$15 off coupon when you subscribe to SMS</li>
+      <li style="margin-left: 10px;">-$10 coupon code when you subscribe to the newsletter.
+</li>
+      <li style="margin-left: 10px;">-$15 off coupon when you subscribe to SMS notifications.</li>
    
     </div>`,
     id:0
@@ -123,7 +151,7 @@ data() {
         {
           title: '2.Does VIVAIA have free shipping?',
           desc: ` <div>
-            Free shipping on orders over $99, with no VIVAIA coupon code necessary. >
+            Free shipping on orders over $99, with no VIVAIA coupon code necessary.
    
     </div>`,
     id:1
@@ -139,7 +167,7 @@ data() {
         {
           title: "4.Can I return or exchange shoes for free if I don't like them or if the size doesn't fit?",
           desc: ` <div>
-            Sure, during the holiday season (Until Jan 4 2024), we are extending the free return and exchange policy to 45 days from the date you receive items purchased online.
+            Sure, during the holiday season (until January 4, 2024), we are extending the free return and exchange policy to 45 days from the date you receive items purchased online.
    
     </div>`,
     id:3
@@ -189,13 +217,13 @@ text-align: left;
     border: 1px solid rgba(0, 0, 0, .1);
 
 }
-.deal .list .item img{
+.deal .list .item svg{
   width: 4.167vw;
   height: 4.167vw;
 }
 .deal .list .item{
   /* margin-left: 6.25vw; */
- 
+ height: 8.75vw;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -265,6 +293,7 @@ color: #191817;
 .fengniao_top_banner .inner{
   position: absolute;
   color: #FFFFFF;
+  top: 12.5vw;
   right: 13.49vw;
 
 }
@@ -682,7 +711,7 @@ text-align: left;
 }
 .fengniao_new .new_title_one {
     font-family: Roboto;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 400;
     line-height: 1.12;
     letter-spacing: 0;
@@ -692,6 +721,16 @@ text-align: left;
     white-space: nowrap;
     text-overflow: ellipsis;
 }
+.fengniao_addition .addition_item .item_container .item_title{
+  font-size: 1.25vw;
+   
+    line-height: 1.12;
+}
+.fengniao_addition .addition_item .item_info .item_desc{
+  font-size: 0.972vw;
+   
+    line-height: 1.12;
+}
 }
 @media screen and (max-width: 768px) {
   .deal .list{
@@ -700,7 +739,7 @@ text-align: left;
     display: flex;
     align-items: center;
     justify-content:space-between;
-    padding:5.333vw 0 10.667vw;
+    padding:5.333vw 0 ;
   flex-wrap: wrap;
     position: relative;
     top: -10.667vw;
@@ -713,18 +752,23 @@ text-align: left;
   height:13.333vw;
 }
 .deal .list .item{
- 
- 
+  width: 100%;
+ height: auto;
   display: flex;
   align-items: center;
-  flex-direction: column;
+  padding-left:5.333vw ;
+  flex-direction: row;
   width: 100%;
+}
+.deal .list .item svg{
+  width: 13.333vw;
+  height: 13.333vw;
 }
 .deal .list .item:nth-child(1){
   margin-left:0;
 }
 .deal .list .item:nth-child(2){
-  margin:5.333vw 0;
+  margin: 0;
 }
 .deal .list .item:nth-child(3){
   margin-right: 0;
@@ -739,7 +783,8 @@ text-align: center;
 
 }
   .fengniao_top_banner .inner{
-    top: 6.4vw;
+    top:10.667vw;
+    right: auto;
   }
   .fengniao_top_banner .inner .title{
   
@@ -752,6 +797,9 @@ text-align: center;
 
   
   
+  }
+  .fengniao_top_banner .inner .common-desc{
+    text-align: center;
   }
   .fengniao_new .common-title{
     font-family: Noto Serif;
@@ -821,7 +869,7 @@ text-align: left;
     position: relative;
     font-family: Roboto;
     font-size: 4.2666667vw;
-    margin-bottom: 2.6666667vw;
+    margin-bottom: 5.333vw;
     font-weight: 500;
 
     text-align: center;
@@ -833,13 +881,13 @@ text-align: left;
   }
 
   .last_bottom .inner .item .common-desc{
-    font-family: Roboto;
+    /* font-family: Roboto;
 font-size: 4.267vw;
 font-weight: 500;
 line-height: 5.067vw;
 letter-spacing: 0px;
-text-align: right;
-
+text-align: right; */
+font-weight: 500;
   }
   .fengniao_new .new_title {
     font-size: 5.3333333vw;

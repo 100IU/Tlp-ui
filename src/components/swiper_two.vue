@@ -8,7 +8,7 @@
             <div class="common-desc">
               <p>-Roomy toe box, wide feet friendly.</p>
                 <p>-Arch support and heel padding, ultra comfy heels you can wear all day. </p>
-                <p>-Knit uppers made from recycled plastic bottles, lightweight and flexible</p>
+                <p>-Knit uppers made from recycled plastic bottles, lightweight and flexible.</p>
             </div>
           </div>
           <picture>

@@ -83,7 +83,7 @@ export default {
 }
 
 .fengniao_addition {
-  padding: 4.167vw 0 3.125vw;
+  padding: 0 0 3.125vw;
 }
 
 .fengniao_addition .addition_title {

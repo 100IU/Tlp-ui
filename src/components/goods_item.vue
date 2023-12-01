@@ -39,10 +39,13 @@
         <div class="swiper-wrapper">
           <div class="swiper-slide" v-for="(item) in goods_data" :key="item.goods_sn
             ">
-            <a :href="`https://www.vivaia.com${item.goods_url}`">
+            <a :href="`https://www.vivaia.com${item.goods_url}`" style="position: relative;display: flex;align-items: center;justify-content: center;" class="a_link">
               <img  v-lazy="item.goods_thumb" />
               <!-- <img src="https://cdnimg.vivaia.com/VA/image/Banner/20230919_6294/2862c4e09c5a8f67149e53a0d81d62fd.jpg"
                 alt="" style="height: auto;"> -->
+                <div class="shop_btn" style="position: absolute;">
+                  Shop Now
+                </div>
             </a>
 
             <div class="slide_info">
@@ -186,8 +189,29 @@ export default {
   background: #191817;
   color: #ffffff;
 }
-
-
+.a_link:hover .shop_btn{
+  opacity: 1;
+ 
+}
+.shop_btn:hover{
+  color: #fff;
+    background: #191817;
+}
+.shop_btn{
+  bottom: 10px;
+    width: 91.6%;
+    opacity: 0;
+    margin: 0 auto;
+    background: #fff;
+    color: #191817;
+    padding: 0.625vw 0;
+    font-family: Roboto;
+    font-size: .833vw;
+    font-weight: 500;
+    line-height: 1.25vw;
+    letter-spacing: 0;
+    text-align: center;
+}
 
 @media screen and (max-width: 768px) {
   .fengniao_margot-swiper {
@@ -213,6 +237,8 @@ export default {
     background: #191817;
     color: #ffffff;
   }
-
+  .shop_btn{
+    display: none;
+  }
 }
 </style>
