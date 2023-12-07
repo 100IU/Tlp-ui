@@ -4,16 +4,16 @@
 
       <picture>
         <source srcset="
-        https://cdnimg.vivaia.com/VA/image/HomePage/20231129_6513/banner-a-M-.jpg
+        https://cdnimg.vivaia.com/VA/image/Banner/20231207_6527/m07.png
           " media="(max-width:768px)" />
-        <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/HomePage/20231129_6513/Rectangle%201.jpg" alt="" />
+        <img class="common-img" src="https://cdnimg.vivaia.com/CO/image/Banner/20231025_6418/pc10.jpg" alt="" />
       </picture>
       <div class="inner">
         <div class="title common-title">
-          Step into a Warm and Cozy Holiday 
+          Wonderful Holiday Gifts
         </div>
         <div class="common-desc">
-          Brighten your holiday with our enchanting collection.
+          Stay warm and stylish in a winter wonderland.
         </div>
       </div>
     </div>
@@ -44,7 +44,7 @@
 <path fill-rule="evenodd" clip-rule="evenodd" d="M45.6899 39.8911L30.2752 44.0214L29.6281 41.6066L45.0428 37.4762L45.6899 39.8911Z" fill="#191817"/>
 </svg>
 
-         <span style="white-space: nowrap;">Instant discount + holiday code</span>
+         <span style="white-space: nowrap;">Instant Discount Price: <span style="color: #804C1A;">$79</span> <span style="text-decoration: line-through;"> $97</span> <br>  + Extra Holiday Savings</span>
             </div>
         <div class="item">
        
@@ -56,60 +56,94 @@
 <path fill-rule="evenodd" clip-rule="evenodd" d="M47.5957 46.6695L43.8457 50.8362L41.9875 49.1638L43.8599 47.0833H31.6666V44.5833H46.6666L47.5957 46.6695Z" fill="#191817"/>
 </svg>
 
-          <span>45-day extended return & exchange policy</span>
+          <span>45-Day Free Returns & Exchanges</span>
           </div>
       </div>
     </div>
 
    
-    <swiper_one></swiper_one>
+    <!-- <swiper_one></swiper_one>
 
     <swiper_two></swiper_two>
-    <swiper_three></swiper_three>
+    <swiper_three></swiper_three> -->
   
 
     <div class="last_bottom" >
       <div class="inner space-w">
-        <a class="item" href="https://www.vivaia.com/category/best-sellers-by-category-c_910.html">
+        <a class="item" >
          <div class="inner" style="position: absolute;display: flex;align-items: center;flex-direction: column;color:#ffff;">
-          <div class="common-title">
-            Weekly Best Sellers
+          <div class="title">
+            Warm Chic Style
 
         </div>
-        <div class="common-desc" style="text-decoration: underline;">
-          Buy Now
-        </div>
+      
          </div>
           <picture>
             <source srcset="
-            https://cdnimg.vivaia.com/VA/image/HomePage/20231129_6513/new%20arrival-m.jpg
+            https://cdnimg.vivaia.com/VA/image/Banner/20231207_6527/m06.png
               " media="(max-width:768px)" />
-            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/HomePage/20231129_6513/new%20arrival-p.jpg"
+            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20231207_6527/pc04.png"
               alt="" />
           </picture>
         </a>
-        <a class="item" style="margin-bottom: 0;" href="https://www.vivaia.com/category/sale-c_511.html">
+        <a class="item">
         <div class="inner" style="position: absolute;display: flex;align-items: center;flex-direction: column;color:#ffff;">
-          <div class="common-title">
-            Instant Discounts up to 40%
+          <div class="title">
+            Perfect for Indoors & <br>
+Outdoors
         </div>
-        <div class="common-desc" style="text-decoration: underline;">
-          Buy now
-        </div>
+       
         </div>
           <picture>
             <source srcset="
-            https://cdnimg.vivaia.com/VA/image/HomePage/20231129_6513/best%20sellers-m.jpg
+            https://cdnimg.vivaia.com/VA/image/Banner/20231207_6527/m05.png
               " media="(max-width:768px)" />
-            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/HomePage/20231129_6513/best%20sellers-p.jpg"
+            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20231207_6527/pc05.png"
               alt="" />
           </picture>
         </a>
-     
+        <a class="item"  >
+        <div class="inner" style="position: absolute;display: flex;align-items: center;flex-direction: column;color:#ffff;">
+          <div class="title">
+            Recycled Faux Fur & <br>
+EVA Traction Sugarcane <br>
+ Outsole
+        </div>
+       
+        </div>
+          <picture>
+            <source srcset="
+            https://cdnimg.vivaia.com/VA/image/Banner/20231207_6527/m04.png
+              " media="(max-width:768px)" />
+            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20231207_6527/pc06.png"
+              alt="" />
+          </picture>
+        </a>
+        <a class="item" >
+        <div class="inner" style="position: absolute;display: flex;align-items: center;flex-direction: column;color:#ffff;">
+          <div class="title">
+            Machine Washable
+        </div>
+      
+        </div>
+          <picture>
+            <source srcset="
+            https://cdnimg.vivaia.com/VA/image/Banner/20231207_6527/m03.png
+              " media="(max-width:768px)" />
+            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20231207_6527/pc03.png"
+              alt="" />
+          </picture>
+        </a>
       </div>
     </div>
+    <swiper_one></swiper_one>
+    <div class="fengniao-outer" >
+      <goods_item_one :Allgoods="Allgoods" ref="child"   v-if="width<768">
+          </goods_item_one>
+    </div>
+   
    <!-- FAQ -->
-   <div class="fengniao_addition space-w" >
+   <div class="fengniao_addition space-w">
     <div class="addition_title lp_title_one">FAQ</div>
     <FAQ v-for="(item, i) in list" :key="i" :item="item"></FAQ>
    </div>
@@ -118,62 +152,92 @@
 </template>
 
 <script>
-
+let str ='10017505,10017569,10017521,10017585,10017553,10017537'
 import swiper_one from './swiper_one.vue';
 import swiper_two from './swiper_two.vue';
 import swiper_three from './swiper_three.vue';
 import swiper_four from './swiper_four.vue';
 import FAQ from './FAQ.vue';
+import goods_item_one from './goods_item_one.vue';
 export default {
   components: {
     swiper_one,
     FAQ,
-    swiper_four,
-    swiper_two,
-    swiper_three
+    goods_item_one
 },
 data() {
   return {
     list: [
         {
-          title: '1.Can I get a VIVAIA coupon code for my first purchase?',
+          title: '1. Will I receive this gift before Dec. 24?',
           desc: ` <div>
-      Yes! VIVAIA welcomes new customers with:
-    
-      <li style="margin-left: 10px;">-$10 coupon code when you subscribe to the newsletter.
-</li>
-      <li style="margin-left: 10px;">-$15 off coupon when you subscribe to SMS notifications.</li>
+            Of course, as long as you place your order before December 14th.
    
     </div>`,
     id:0
     
         },
         {
-          title: '2.Does VIVAIA have free shipping?',
+          title: '2. Do I need to buy a larger size if I have wider feet or a higher arch?',
           desc: ` <div>
-            Free shipping on orders over $99, with no VIVAIA coupon code necessary.
+            Yes, opting for a larger size that provides some extra room for wearing socks will likely make it more comfortable.
    
     </div>`,
     id:1
         },
         {
-          title: '3.Is it safe to shop on VIVAIA?',
+          title: '3. Can I get discount if this is my first purchase?',
           desc: ` <div>
-            VIVAIA is PCI-certified for secure payments. Your information is encrypted, and we follow strict security protocols to ensure your data is protected. Supported payment methods: PayPal, VISA, MasterCard, American Express, Apple Pay, Discover, Google Pay, Klarna, Afterpay.
+            Yes! VIVAIA welcomes new customers with:
+    
+    <li style="margin-left: 10px;">-$10 coupon code when you subscribe to the newsletter.
+</li>
+    <li style="margin-left: 10px;">-$15 off coupon when you subscribe to SMS notifications.</li>
    
     </div>`,
     id:2
         },
         {
-          title: "4.Can I return or exchange shoes for free if I don't like them or if the size doesn't fit?",
+          title: "4. How is the VIVAIA returns & exchanges policy in holiday?",
           desc: ` <div>
-            Sure, during the holiday season (until January 4, 2024), we are extending the free return and exchange policy to 45 days from the date you receive items purchased online.
+            VIVAIA has extended its returns and exchanges policy to 45 days until Jan 4.
+   
+    </div>`,
+    id:3
+        },
+        {
+          title: '5.  I need to choose a color for "Hannah," do you have any suggestions?',
+          desc: ` <div>
+            Purple is very unique on top of being elegant and enchanting. The combination of black and latte is sleek and stylish. White and pink makes you feel like a princess, although they are prone to getting dirty, but luckily these shoes are machine washable.
    
     </div>`,
     id:3
         }
       ],
+      Allgoods:[],
+      width:window.innerWidth
   }
+},
+mounted () {
+  this.getAllgoods()
+},
+methods: {
+  async getAllgoods(){
+     const res = await  window._fengniao_getGoods_list({
+        goods_id:str.replace(/\s/g,''),
+        disable_goods_number:1
+     })
+   
+    
+   this.Allgoods =res.result
+
+  
+     this.$nextTick(() => {
+      this.$refs.child.initSwiper();
+    
+    });
+
+    },
 },
 
 
@@ -212,7 +276,7 @@ text-align: left;
     padding: 3.125vw 0 4.167vw;
   
     position: relative;
-    top: -4.167vw;
+    top: -2.083vw;
     z-index: 10;
     border: 1px solid rgba(0, 0, 0, .1);
 
@@ -254,6 +318,7 @@ color: #191817;
 
 .last_bottom {
   padding-bottom: 4.167vw;
+  padding-top: 2.083vw;
   background: #ffffff;
 }
 
@@ -264,20 +329,23 @@ color: #191817;
 
 .last_bottom .inner .item {
   position: relative;
-  font-family: Roboto;
+  font-family: Noto Serif;
   font-size: 1.25vw;
   font-weight: 400;
   line-height: 1.4583333vw;
-
-  width: 49.3%;
+  width: 24%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .last_bottom .inner .item .title {
-  position: absolute;
+  /* position: absolute; */
   color: #ffffff;
+  font-size: 1.25vw;
+  font-weight: 400;
+  line-height: 1.4583333vw;
+  text-align: center;
 }
 
 .fengniao_top_banner ._left {
@@ -293,8 +361,8 @@ color: #191817;
 .fengniao_top_banner .inner{
   position: absolute;
   color: #FFFFFF;
-  top: 12.5vw;
-  right: 13.49vw;
+  top: 16.771vw;
+  left:8.333vw;
 
 }
 .fengniao_top_banner .inner .title{
@@ -551,7 +619,7 @@ margin-top: 0.625vw;
   margin-left: 6.25vw;
 }
 
-.fengniao_new .fengniao-outer .common_title {
+.fengniao_new  .common_title {
   font-family: Noto Serif;
   font-size: 1.6666667vw;
   font-weight: 400;
@@ -706,7 +774,7 @@ text-align: left;
     font-weight: 400;
     line-height: 17.251px;
     letter-spacing: 0px;
-    text-align: center;
+    text-align: left;
     color: #191817;
 }
 .fengniao_new .new_title_one {
@@ -779,12 +847,12 @@ font-size: 3.2vw;
 font-weight: 400;
 line-height: 3.733vw;
 letter-spacing: 0px;
-text-align: center;
+text-align:left;
 
 }
   .fengniao_top_banner .inner{
     top:10.667vw;
-    right: auto;
+    left: auto;
   }
   .fengniao_top_banner .inner .title{
   
@@ -854,30 +922,31 @@ text-align: left;
   }
 
   .last_bottom {
-
+margin-top:-5.333vw ;
     padding: 0 0 10.667vw;
     background: #ffffff;
   }
 
   .last_bottom .inner {
-    display: flex;
-    /* justify-content: space-between; */
-    flex-wrap: wrap;
+   display: grid;
+   grid-template-columns: 1fr 1fr; /* 两列 */
+  grid-template-rows: 1fr 1fr; 
+  gap: 10px; /* 可选，设置网格项之间的间距 */
   }
-
+.last_bottom .inner .item .title{
+  font-size:3.200vw;
+   line-height: 4.5vw;
+}
   .last_bottom .inner .item {
     position: relative;
-    font-family: Roboto;
-    font-size: 4.2666667vw;
-    margin-bottom: 5.333vw;
-    font-weight: 500;
+    
+    font-size:3.7773vw;
+   line-height: 1.12;
+ 
 
     text-align: center;
-
-    width: 89.3333333vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+width: auto;
+   
   }
 
   .last_bottom .inner .item .common-desc{

@@ -1,43 +1,12 @@
 <template>
   <div class="fengniao-margot space-w">
     <slot></slot>
-    <div class="fengniao_tab-container" v-if="tabs_item.length>0">
-      <!-- <div class="new_title fengniao-margot-title" v-if="show !== false">
-        {{ swiper_name }}
-      </div> -->
-
-      <div class="fengniao-tab">
-        <div :class="`tab_item ${index === cur_index ? 'active' : ''}`" v-for="(item, index) in tabs_item" :key="index"
-          @click="show_one(index)">
-          {{ item.tab_name }}
-        </div>
-
-
-      </div>
-    </div>
+   
     <div class="fengniao_margot-swiper" style="position: relative;">
-      <div class="fengniao_swiper_one swiper_one  space-w" style="overflow: hidden;" :ref="swiper_name">
-        <div class="swiper_btn show_big">
-          <div class="swiper-button swiper-button-prev">
-
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M10.0607 2.45129L9 1.39062L1.3934 8.99723L2.45406 10.0579L2.45412 10.0578L9.00013 16.6038L10.0608 15.5432L3.51478 8.99716L10.0607 2.45129Z"
-                fill="#FFFFFF" />
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M17 9.75H3V8.25H17V9.75Z" fill="#FFFFFF" />
-            </svg>
-          </div>
-          <div class="swiper-button swiper-button-next">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M7.93934 2.45129L9 1.39062L16.6066 8.99723L15.5459 10.0579L15.5459 10.0578L8.99987 16.6038L7.93921 15.5432L14.4852 8.99716L7.93934 2.45129Z"
-                fill="#FFFFFF" />
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M1 9.75H15V8.25H1V9.75Z" fill="#FFFFFF" />
-            </svg>
-          </div>
-        </div>
-        <div class="swiper-wrapper">
-          <div class="swiper-slide" v-for="(item) in goods_data" :key="item.goods_sn
+      <div class="fengniao_swiper_one swiper_one  space-w"  :ref="swiper_name">
+       
+        <div class="swiper-wrapper new_wrapper">
+          <div class="swiper-slide" v-for="(item) in goods_datas" :key="item.goods_sn
             ">
             <a :href="`https://www.vivaia.com${item.goods_url}`" style="position: relative;display: flex;align-items: center;justify-content: center;" class="a_link">
               <img  v-lazy="item.goods_thumb" />
@@ -49,7 +18,7 @@
             </a>
 
             <div class="slide_info">
-              <p class="new_title_one"> {{ item.goods_name }}</p>
+              <p class="new_title_one" :class="item.goods_sn==='1' ? 'new_weight' : ''"> {{ item.goods_name }}</p>
 
               <p class="new_title_one" v-if="item.pc_shop_price_converted !== item.old_shop_price_converted">
                 <span style="margin-right: 4px;">{{ item.pc_shop_price_converted }}</span>
@@ -65,22 +34,21 @@
             </div>
           </div>
         </div>
-        <div class="swiper-pagination"></div>
+      
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import Swiper from 'swiper'
-import 'swiper/css/swiper.css'
+
 export default {
   props: {
     swiper_name: {
       type: String,
 
     },
-    goods_data: {
+    goods_datas: {
       type: Array,
       default: () => []
     },
@@ -99,68 +67,25 @@ export default {
     }
 
   },
-  data () {
-    return {
-
-
-      swiperInstance: null,
-      cur_index: 0
-    }
-  },
-
-  mounted () {
-    // this.initSwiper()
-  },
-  methods: {
-
-    initSwiper () {
-
-      const self = this;
-      this.$nextTick(() => {
-        self.swiperInstance = new Swiper(this.$refs[this.swiper_name], {
-          allowTouchMove: true,
-          initialSlide: 0,
-          slidesPerView: "auto",
-          breakpoints: {
-            768: {
-              spaceBetween: 10,
-            },
-            1024: {
-              //当屏幕宽度大于等于768
-              spaceBetween: 15,
-            },
-            1730: {
-              spaceBetween: 20
-            }
-          },
-          pagination: {
-            el: ".swiper-pagination",
-            type: "progressbar",
-          },
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-        });
-      })
-
-
-
-
-    },
-    show_one (index) {
-      this.cur_index = index
-
-      this.$emit('show', index)
-      this.$nextTick(() => {
-        this.swiperInstance.update()
-        this.swiperInstance.slideTo(0, 0, false);//切换到第一个slide，速度为1秒
-      })
-    },
-  }
+ 
+  
+ 
 }
 </script>
 <style  scoped>
+.new_weight{
+   font-weight: 500 !important;
+}
+.new_wrapper{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 四列 */
+  grid-template-rows: repeat(2, 1fr); /* 两行 */
+  gap: 20px; /* 可选，设置网格项之间的间距 */
+}
+.new_wrapper .swiper-slide{
+  width: auto !important;
+}
+
 .fengniao_margot-swiper{
   margin-top:2.083vw ;
 }

@@ -1,61 +1,56 @@
 <template>
-  <div class="fengniao-margot space-w margot_swiper" style="padding: 0;">
-
-    <div class="fengniao_tab-container" v-if="tabs_item.length > 0">
-
-      <div class="fengniao-tab">
-
-        <div :class="`tab_item ${index === cur_index ? 'active' : ''}`" v-for="(item, index) in tabs_item" :key="index"
-          @click="show_one(index)" style="cursor: pointer;">
-          {{ item.tab_name }}
-        </div>
-      </div>
-    </div>
+  <div class="fengniao-margot space-w">
+    <slot></slot>
+   
     <div class="fengniao_margot-swiper" style="position: relative;">
-      <div class="fengniao_swiper_one swiper_one  space-w"
-        style="overflow: hidden;display: flex;flex-wrap: wrap;justify-content: space-between;">
+      <div class="fengniao_swiper_one swiper_one  space-w" style="overflow: hidden;" :ref="swiper_name">
+       
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" v-for="(item) in Allgoods" :key="item.goods_sn
+            ">
+            <a :href="`https://www.vivaia.com${item.goods_url}`" style="position: relative;display: flex;align-items: center;justify-content: center;" class="a_link">
+              <img  v-lazy="item.goods_thumb" />
+              <!-- <img src="https://cdnimg.vivaia.com/VA/image/Banner/20230919_6294/2862c4e09c5a8f67149e53a0d81d62fd.jpg"
+                alt="" style="height: auto;"> -->
+                <div class="shop_btn" style="position: absolute;">
+                  Shop Now
+                </div>
+            </a>
 
-        <div class="slide_item" v-for="(item) in goods_data" :key="item.goods_sn
-          " style="width: 24%;">
-          <a :href="`https://www.vivaia.com${item.goods_url}`" style="position: relative;display: flex;justify-content: center;">
-            <img  v-lazy="item.goods_thumb"  style="height: auto;"/>
-            
-             <!-- <img src="https://cdnimg.vivaia.com/VA/image/Banner/20230919_6294/2862c4e09c5a8f67149e53a0d81d62fd.jpg" alt="" style="height: auto;"> -->
-            <!-- <div class="inner_btn">Shop Now</div> -->
-          </a>
+            <div class="slide_info">
+              <p class="new_title_one"> {{ item.goods_name }}</p>
 
-          <div class="slide_info">
-            <p class="new_title_one"> {{ item.goods_name }}  </p>
-
-            <!-- <p class="new_title_one"> {{ item.title}}</p> -->
-
-            <p class="new_title_one" v-if="item.pc_shop_price_converted !== item.old_shop_price_converted">
-              <span style="margin-right: 4px;font-weight: 500;">{{ item.pc_shop_price_converted }}</span>
-              <span style="text-decoration: line-through;">{{ item.old_shop_price_converted
-              }}</span>
+              <p class="new_title_one" v-if="item.pc_shop_price_converted !== item.old_shop_price_converted">
+                <span style="margin-right: 4px;">{{ item.pc_shop_price_converted }}</span>
+                <span>{{ item.old_shop_price_converted
+                }} </span>
 
 
-            </p>
-            <p v-else class="new_title_one" style='font-weight: 500;'>
-              <span>{{ item.pc_shop_price_converted }} </span>
-            </p>
+              </p>
+              <p v-else class="new_title_one">
+                <span>{{ item.pc_shop_price_converted }}</span>
+              </p>
 
+            </div>
           </div>
         </div>
+      
       </div>
     </div>
   </div>
 </template>
 
 <script>
-
+import Swiper from 'swiper'
+import 'swiper/css/swiper.css'
 export default {
   props: {
     swiper_name: {
       type: String,
+      default:'hello'
 
     },
-    goods_data: {
+    Allgoods: {
       type: Array,
       default: () => []
     },
@@ -66,123 +61,146 @@ export default {
     str: {
       type: String,
       default: ''
+    },
+    show: {
+      default: Boolean,
+      // eslint-disable-next-line no-dupe-keys
+      default: true
     }
 
   },
   data () {
     return {
 
-      // all_goods:[],
 
-      
+      swiperInstance: null,
       cur_index: 0
     }
   },
+
   mounted () {
-
-
-
-  
+   
   },
-
   methods: {
 
-   
-    show_one (index) {
-      this.cur_index = index
+    initSwiper () {
 
-      this.$emit('show', index)
-     
+      const self = this;
+      this.$nextTick(() => {
+        self.swiperInstance = new Swiper(this.$refs[this.swiper_name], {
+          allowTouchMove: true,
+          initialSlide: 0,
+          slidesPerView: "auto",
+          breakpoints: {
+            768: {
+              spaceBetween: 10,
+            },
+            1024: {
+              //当屏幕宽度大于等于768
+              spaceBetween: 15,
+            },
+            1730: {
+              spaceBetween: 20
+            }
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            type: "progressbar",
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      })
+
+
+
+
     },
+   
   }
 }
 </script>
 <style  scoped>
-.margot_swiper {
-  margin-top: 3.125vw !important;
-}
-
-.slide_info{
-    padding: 0.833vw 0 2.083vw;
-  }
-  .fengniao-margot a:hover .inner_btn{
-opacity: 1;
-}
-.inner_btn{
-  position: absolute;
-  bottom: 10px;
-  width: 91.6%;
-  opacity: 0;
-  margin: 0 auto;
-  background: #FFFFFF;
-  color: #191817;
-  padding: 0.625vw 0;
-  font-family: Roboto;
-font-size: 0.833vw;
-font-weight: 500;
-line-height: 1.25vw;
-letter-spacing: 0px;
-text-align: center;
-
-}
-.inner_btn:hover{
-  color: #FFFFFF;
-  background: #191817;
-}
-
-.fengniao_new .fengniao-outer .fengniao-margot .fengniao_tab-container .fengniao-tab {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 2.604vw;
-    width: 100%;
-    height: 1.979vw;
-    border-bottom: 2px solid rgba(186, 186, 186, 1);
+.fengniao_margot-swiper{
+  margin-top:2.083vw ;
 }
 .fengniao_new .fengniao-outer .fengniao-margot .fengniao_tab-container .fengniao-tab {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin-bottom: 2.604vw;
-  width: 100%;
-  height: 1.979vw;
-  border-bottom: 2px solid rgba(186, 186, 186, 1);
+  margin-top: 0.5208333vw;
 }
 
 .fengniao_new .fengniao-outer .fengniao-margot .fengniao_tab-container .tab_item {
   font-family: Roboto;
-  font-size: 1.042vw;
-  font-weight: 400;
-  line-height: 1.198vw;
-  letter-spacing: 0em;
+  font-size: 0.833vw;
+  font-weight: 500;
+  line-height: 0.99vw;
   text-align: center;
-  margin-right: 5.208vw;
- opacity: .5;
-  height: 2.083vw;
- 
-
-}
-
-.fengniao_new .fengniao-outer .fengniao-margot .fengniao_tab-container .tab_item:last-child {
-  margin-right: 0;
+  padding: 0.417vw 1.25vw;
+  border-radius: 5.938vw;
+  margin-left: 0.833vw;
+  background-color: #ffffff;
+  border: 0.052vw solid #191817;
+  opacity: 0.3;
 }
 
 .fengniao_new .fengniao-outer .fengniao-margot .fengniao_tab-container .active {
   opacity: 1;
-  font-weight: 500;
-  border-bottom: 2px solid #191817;
-  /* color: #FFFFFF; */
-  /* background: #191817; */
+  background: #191817;
+  color: #ffffff;
+}
+.a_link:hover .shop_btn{
+  opacity: 1;
+ 
+}
+.shop_btn:hover{
+  color: #fff;
+    background: #191817;
+}
+.shop_btn{
+  bottom: 10px;
+    width: 91.6%;
+    opacity: 0;
+    margin: 0 auto;
+    background: #fff;
+    color: #191817;
+    padding: 0.625vw 0;
+    font-family: Roboto;
+    font-size: .833vw;
+    font-weight: 500;
+    line-height: 1.25vw;
+    letter-spacing: 0;
+    text-align: center;
 }
 
 @media screen and (max-width: 768px) {
-  .margot_swiper {
-    margin-top: 5.3333333vw !important;
-  }
-  .inner_btn{
-   display: none;
-
+  .fengniao_margot-swiper {
+    margin-top: 5.333vw
 }
+  .fengniao_new .fengniao-outer .fengniao-margot .fengniao_tab-container .tab_item {
+    font-family: Roboto;
+    font-size: 3.2vw;
+    font-weight: 500;
+    line-height: 3.7333333vw;
+    text-align: center;
+    padding: 1.6vw 4.2666667vw;
+    border-radius: 114px;
+    margin-right: 2.1333333vw;
+    margin-left: 0px;
+    background-color: #ffffff;
+    border: 1px solid #191817;
+    opacity: 0.3;
+  }
 
+  .fengniao_new .fengniao-outer .fengniao-margot .fengniao_tab-container .active {
+    opacity: 1;
+    background: #191817;
+    color: #ffffff;
+  }
+  .shop_btn{
+    display: none;
+  }
 }
 </style>
