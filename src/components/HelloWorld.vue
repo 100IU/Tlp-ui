@@ -32,7 +32,7 @@
 <path fill-rule="evenodd" clip-rule="evenodd" d="M57.2237 30.8333H48.5415V28.3333H58.6093L64.3748 37.5581V55.8333H56.8228V53.3333H61.8748V38.2751L57.2237 30.8333Z" fill="#191817"/>
 </svg>
 
-          <span>Free shipping on orders over $99</span>
+          <span>Free Shippings on Orders Over $99</span>
         </div>
         <div class="item">
         
@@ -141,7 +141,22 @@ EVA Traction Sugarcane <br>
       <goods_item_one :Allgoods="Allgoods" ref="child"   v-if="width<768">
           </goods_item_one>
     </div>
-   
+    <div class="new_m_slide show_small" style="margin-bottom: 10.667vw;">
+          <div class="title_" style="margin-bottom: 5.3333vw;">
+            Explore Another Warm Style
+              </div>
+              
+            <div class="outer">
+              <div class="inner">
+              
+               <a class="imgs" href="https://www.vivaia.com/item/round-toe-wool-slippers-hazel-p_10017969.html?gid=10017981
+">
+                 <img src="https://cdnimg.vivaia.com/VA/image/Banner/20231207_6527/m02.png" alt="">
+               </a>
+
+              </div>
+            </div>
+           </div>
    <!-- FAQ -->
    <div class="fengniao_addition space-w">
     <div class="addition_title lp_title_one">FAQ</div>

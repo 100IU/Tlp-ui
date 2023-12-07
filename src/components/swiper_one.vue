@@ -15,10 +15,7 @@
                   <img src="https://cdnimg.vivaia.com/VA/image/Banner/20231207_6527/m01.png" alt="">
                 </a>
 
-                <a class="imgs" href="https://www.vivaia.com/item/round-toe-wool-slippers-hazel-p_10017969.html?gid=10017981
-">
-                  <img src="https://cdnimg.vivaia.com/VA/image/Banner/20231207_6527/m02.png" alt="">
-                </a>
+               
 
                </div>
              </div>
@@ -80,7 +77,7 @@ methods: {
   }
 }
 </script>
-<style  scoped>
+<style >
  .title_{
   font-family: Noto Serif;
 font-size: 1.563vw;
