@@ -20,177 +20,199 @@
     <div class="deal">
       <div class="list space-w">
         <div class="item">
-         
-<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M48.3333 22.5H28.75V20H50.8333V38.75H64.1667V41.25H48.3333V22.5Z" fill="#191817"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M37.5 53.3333H48.5417V55.8333H37.5V53.3333Z" fill="#191817"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M21.25 53.3333H27.5V55.8333H21.25V53.3333Z" fill="#191817"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M32.7085 58.3333C34.7796 58.3333 36.4585 56.6543 36.4585 54.5833C36.4585 52.5122 34.7796 50.8333 32.7085 50.8333C30.6374 50.8333 28.9585 52.5122 28.9585 54.5833C28.9585 56.6543 30.6374 58.3333 32.7085 58.3333ZM32.7085 60.8333C36.1603 60.8333 38.9585 58.035 38.9585 54.5833C38.9585 51.1315 36.1603 48.3333 32.7085 48.3333C29.2567 48.3333 26.4585 51.1315 26.4585 54.5833C26.4585 58.035 29.2567 60.8333 32.7085 60.8333Z" fill="#191817"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M52.7085 58.3333C54.7796 58.3333 56.4585 56.6543 56.4585 54.5833C56.4585 52.5122 54.7796 50.8333 52.7085 50.8333C50.6374 50.8333 48.9585 52.5122 48.9585 54.5833C48.9585 56.6543 50.6374 58.3333 52.7085 58.3333ZM52.7085 60.8333C56.1603 60.8333 58.9585 58.035 58.9585 54.5833C58.9585 51.1315 56.1603 48.3333 52.7085 48.3333C49.2567 48.3333 46.4585 51.1315 46.4585 54.5833C46.4585 58.035 49.2567 60.8333 52.7085 60.8333Z" fill="#191817"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M19.1665 39.7917H32.7082V42.2917H19.1665V39.7917Z" fill="#191817"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M23.9585 31.4583H40.6252V33.9583H23.9585V31.4583Z" fill="#191817"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M57.2237 30.8333H48.5415V28.3333H58.6093L64.3748 37.5581V55.8333H56.8228V53.3333H61.8748V38.2751L57.2237 30.8333Z" fill="#191817"/>
-</svg>
+
+          <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M48.3333 22.5H28.75V20H50.8333V38.75H64.1667V41.25H48.3333V22.5Z" fill="#191817" />
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M37.5 53.3333H48.5417V55.8333H37.5V53.3333Z"
+              fill="#191817" />
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M21.25 53.3333H27.5V55.8333H21.25V53.3333Z" fill="#191817" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M32.7085 58.3333C34.7796 58.3333 36.4585 56.6543 36.4585 54.5833C36.4585 52.5122 34.7796 50.8333 32.7085 50.8333C30.6374 50.8333 28.9585 52.5122 28.9585 54.5833C28.9585 56.6543 30.6374 58.3333 32.7085 58.3333ZM32.7085 60.8333C36.1603 60.8333 38.9585 58.035 38.9585 54.5833C38.9585 51.1315 36.1603 48.3333 32.7085 48.3333C29.2567 48.3333 26.4585 51.1315 26.4585 54.5833C26.4585 58.035 29.2567 60.8333 32.7085 60.8333Z"
+              fill="#191817" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M52.7085 58.3333C54.7796 58.3333 56.4585 56.6543 56.4585 54.5833C56.4585 52.5122 54.7796 50.8333 52.7085 50.8333C50.6374 50.8333 48.9585 52.5122 48.9585 54.5833C48.9585 56.6543 50.6374 58.3333 52.7085 58.3333ZM52.7085 60.8333C56.1603 60.8333 58.9585 58.035 58.9585 54.5833C58.9585 51.1315 56.1603 48.3333 52.7085 48.3333C49.2567 48.3333 46.4585 51.1315 46.4585 54.5833C46.4585 58.035 49.2567 60.8333 52.7085 60.8333Z"
+              fill="#191817" />
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.1665 39.7917H32.7082V42.2917H19.1665V39.7917Z"
+              fill="#191817" />
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M23.9585 31.4583H40.6252V33.9583H23.9585V31.4583Z"
+              fill="#191817" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M57.2237 30.8333H48.5415V28.3333H58.6093L64.3748 37.5581V55.8333H56.8228V53.3333H61.8748V38.2751L57.2237 30.8333Z"
+              fill="#191817" />
+          </svg>
 
           <span>Free Shippings on Orders Over $99</span>
         </div>
         <div class="item">
-        
-<svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M56.7936 20.9077L36.9696 20.9077L13.8416 44.0357L33.6656 63.8598L56.7936 40.7317V20.9077ZM54.2936 39.6962L33.6656 60.3242L17.3771 44.0357L38.0051 23.4077L54.2936 23.4077V39.6962Z" fill="#191817"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M59.1379 43.0743L57.9248 32.65L60.408 32.3611L61.7213 43.6463L48.365 65.3503L38.7322 60.9717L39.7667 58.6958L47.3917 62.1617L59.1379 43.0743Z" fill="#191817"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M35.6153 35.4129C36.2677 36.0653 37.3255 36.0653 37.9779 35.4129C38.6303 34.7605 38.6303 33.7027 37.9779 33.0503C37.3255 32.3979 36.2677 32.3979 35.6153 33.0503C34.9629 33.7027 34.9629 34.7605 35.6153 35.4129ZM33.8475 37.1806C35.4762 38.8094 38.1169 38.8094 39.7456 37.1806C41.3744 35.5519 41.3744 32.9112 39.7456 31.2825C38.1169 29.6538 35.4762 29.6538 33.8475 31.2825C32.2188 32.9112 32.2188 35.5519 33.8475 37.1806Z" fill="#191817"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M37.0896 48.6839C37.7421 49.3363 38.7998 49.3363 39.4522 48.6839C40.1047 48.0315 40.1047 46.9737 39.4522 46.3213C38.7998 45.6689 37.7421 45.6689 37.0896 46.3213C36.4372 46.9737 36.4372 48.0315 37.0896 48.6839ZM35.3219 50.4516C36.9506 52.0804 39.5913 52.0804 41.22 50.4516C42.8487 48.8229 42.8487 46.1822 41.22 44.5535C39.5913 42.9248 36.9506 42.9248 35.3219 44.5535C33.6932 46.1822 33.6932 48.8229 35.3219 50.4516Z" fill="#191817"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M45.6899 39.8911L30.2752 44.0214L29.6281 41.6066L45.0428 37.4762L45.6899 39.8911Z" fill="#191817"/>
-</svg>
-
-         <span style="white-space: nowrap;">Instant Discount Price: <span style="color: #804C1A;">$79</span> <span style="text-decoration: line-through;"> $97</span> <br>  + Extra Holiday Savings</span>
-            </div>
-        <div class="item">
-       
 
           <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M57.5 22.5H22.5V29.1667H57.5V22.5ZM20 20V31.6667H60V20H20Z" fill="#191817"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M55.8334 31.6667H24.1667V56.6667H55.8334V31.6667ZM21.6667 29.1667V59.1667H58.3334V29.1667H21.6667Z" fill="#191817"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M32.4043 39.9972L36.1543 35.8306L38.0125 37.503L36.1401 39.5834H48.3334V42.0834H33.3334L32.4043 39.9972Z" fill="#191817"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M47.5957 46.6695L43.8457 50.8362L41.9875 49.1638L43.8599 47.0833H31.6666V44.5833H46.6666L47.5957 46.6695Z" fill="#191817"/>
-</svg>
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M56.7936 20.9077L36.9696 20.9077L13.8416 44.0357L33.6656 63.8598L56.7936 40.7317V20.9077ZM54.2936 39.6962L33.6656 60.3242L17.3771 44.0357L38.0051 23.4077L54.2936 23.4077V39.6962Z"
+              fill="#191817" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M59.1379 43.0743L57.9248 32.65L60.408 32.3611L61.7213 43.6463L48.365 65.3503L38.7322 60.9717L39.7667 58.6958L47.3917 62.1617L59.1379 43.0743Z"
+              fill="#191817" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M35.6153 35.4129C36.2677 36.0653 37.3255 36.0653 37.9779 35.4129C38.6303 34.7605 38.6303 33.7027 37.9779 33.0503C37.3255 32.3979 36.2677 32.3979 35.6153 33.0503C34.9629 33.7027 34.9629 34.7605 35.6153 35.4129ZM33.8475 37.1806C35.4762 38.8094 38.1169 38.8094 39.7456 37.1806C41.3744 35.5519 41.3744 32.9112 39.7456 31.2825C38.1169 29.6538 35.4762 29.6538 33.8475 31.2825C32.2188 32.9112 32.2188 35.5519 33.8475 37.1806Z"
+              fill="#191817" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M37.0896 48.6839C37.7421 49.3363 38.7998 49.3363 39.4522 48.6839C40.1047 48.0315 40.1047 46.9737 39.4522 46.3213C38.7998 45.6689 37.7421 45.6689 37.0896 46.3213C36.4372 46.9737 36.4372 48.0315 37.0896 48.6839ZM35.3219 50.4516C36.9506 52.0804 39.5913 52.0804 41.22 50.4516C42.8487 48.8229 42.8487 46.1822 41.22 44.5535C39.5913 42.9248 36.9506 42.9248 35.3219 44.5535C33.6932 46.1822 33.6932 48.8229 35.3219 50.4516Z"
+              fill="#191817" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M45.6899 39.8911L30.2752 44.0214L29.6281 41.6066L45.0428 37.4762L45.6899 39.8911Z" fill="#191817" />
+          </svg>
+
+          <span style="white-space: nowrap;">Instant Discount Price: <span style="color: #804C1A;">$79</span> <span
+              style="text-decoration: line-through;"> $97</span> <br> + Extra Holiday Savings</span>
+        </div>
+        <div class="item">
+
+
+          <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M57.5 22.5H22.5V29.1667H57.5V22.5ZM20 20V31.6667H60V20H20Z"
+              fill="#191817" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M55.8334 31.6667H24.1667V56.6667H55.8334V31.6667ZM21.6667 29.1667V59.1667H58.3334V29.1667H21.6667Z"
+              fill="#191817" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M32.4043 39.9972L36.1543 35.8306L38.0125 37.503L36.1401 39.5834H48.3334V42.0834H33.3334L32.4043 39.9972Z"
+              fill="#191817" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M47.5957 46.6695L43.8457 50.8362L41.9875 49.1638L43.8599 47.0833H31.6666V44.5833H46.6666L47.5957 46.6695Z"
+              fill="#191817" />
+          </svg>
 
           <span>45-Day Free Returns & Exchanges</span>
-          </div>
+        </div>
       </div>
     </div>
 
-   
-    <!-- <swiper_one></swiper_one>
 
-    <swiper_two></swiper_two>
-    <swiper_three></swiper_three> -->
-  
+  <swiper_two></swiper_two>
 
-    <div class="last_bottom" >
+    <div class="last_bottom">
       <div class="inner space-w">
-        <a class="item" >
-         <div class="inner" style="position: absolute;display: flex;align-items: center;flex-direction: column;color:#ffff;">
-          <div class="title">
-            Warm Chic Style
+        <a class="item">
+          <div class="inner"
+            style="position: absolute;display: flex;align-items: center;flex-direction: column;color:#ffff;">
+            <div class="title">
+              Warm Chic Style
 
-        </div>
-      
-         </div>
+            </div>
+
+          </div>
           <picture>
             <source srcset="
             https://cdnimg.vivaia.com/VA/image/Banner/20231207_6527/m06.png
               " media="(max-width:768px)" />
-            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20231207_6527/pc04.png"
-              alt="" />
+            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20231207_6527/pc04.png" alt="" />
           </picture>
         </a>
         <a class="item">
-        <div class="inner" style="position: absolute;display: flex;align-items: center;flex-direction: column;color:#ffff;">
-          <div class="title">
-            Perfect for Indoors & <br>
-Outdoors
-        </div>
-       
-        </div>
+          <div class="inner"
+            style="position: absolute;display: flex;align-items: center;flex-direction: column;color:#ffff;">
+            <div class="title">
+              Perfect for Indoors & <br>
+              Outdoors
+            </div>
+
+          </div>
           <picture>
             <source srcset="
             https://cdnimg.vivaia.com/VA/image/Banner/20231207_6527/m05.png
               " media="(max-width:768px)" />
-            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20231207_6527/pc05.png"
-              alt="" />
+            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20231207_6527/pc05.png" alt="" />
           </picture>
         </a>
-        <a class="item"  >
-        <div class="inner" style="position: absolute;display: flex;align-items: center;flex-direction: column;color:#ffff;">
-          <div class="title">
-            Recycled Faux Fur & <br>
-EVA Traction Sugarcane <br>
- Outsole
-        </div>
-       
-        </div>
+        <a class="item">
+          <div class="inner"
+            style="position: absolute;display: flex;align-items: center;flex-direction: column;color:#ffff;">
+            <div class="title">
+              Recycled Faux Fur & <br>
+              EVA Traction Sugarcane <br>
+              Outsole
+            </div>
+
+          </div>
           <picture>
             <source srcset="
             https://cdnimg.vivaia.com/VA/image/Banner/20231207_6527/m04.png
               " media="(max-width:768px)" />
-            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20231207_6527/pc06.png"
-              alt="" />
+            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20231207_6527/pc06.png" alt="" />
           </picture>
         </a>
-        <a class="item" >
-        <div class="inner" style="position: absolute;display: flex;align-items: center;flex-direction: column;color:#ffff;">
-          <div class="title">
-            Machine Washable
-        </div>
-      
-        </div>
+        <a class="item">
+          <div class="inner"
+            style="position: absolute;display: flex;align-items: center;flex-direction: column;color:#ffff;">
+            <div class="title">
+              Machine Washable
+            </div>
+
+          </div>
           <picture>
             <source srcset="
             https://cdnimg.vivaia.com/VA/image/Banner/20231207_6527/m03.png
               " media="(max-width:768px)" />
-            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20231207_6527/pc03.png"
-              alt="" />
+            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20231207_6527/pc03.png" alt="" />
           </picture>
         </a>
       </div>
     </div>
     <swiper_one></swiper_one>
-    <div class="fengniao-outer" >
-      <goods_item_one :Allgoods="Allgoods" ref="child"   v-if="width<768">
-          </goods_item_one>
+    <div class="fengniao-outer">
+      <goods_item_one :Allgoods="Allgoods" ref="child" v-if="width < 768">
+      </goods_item_one>
     </div>
     <div class="new_m_slide show_small" style="margin-bottom: 10.667vw;">
-          <div class="title_" style="margin-bottom: 5.3333vw;">
-            Explore Another Warm Style
-              </div>
-              
-            <div class="outer">
-              <div class="inner">
-              
-               <a class="imgs" href="https://www.vivaia.com/item/round-toe-wool-slippers-hazel-p_10017969.html?gid=10017981
-">
-                 <img src="https://cdnimg.vivaia.com/VA/image/Banner/20231207_6527/m02.png" alt="">
-               </a>
+      <div class="title_" style="margin-bottom: 5.3333vw;">
+        Explore Another Warm Style
+      </div>
 
-              </div>
-            </div>
-           </div>
-   <!-- FAQ -->
-   <div class="fengniao_addition space-w">
-    <div class="addition_title lp_title_one">FAQ</div>
-    <FAQ v-for="(item, i) in list" :key="i" :item="item"></FAQ>
-   </div>
-  
+      <div class="outer">
+        <div class="inner">
+
+          <a class="imgs" href="https://www.vivaia.com/item/round-toe-wool-slippers-hazel-p_10017969.html?gid=10017981
+">
+            <img src="https://cdnimg.vivaia.com/VA/image/Banner/20231207_6527/m02.png" alt="">
+          </a>
+
+        </div>
+      </div>
+    </div>
+    <!-- FAQ -->
+    <div class="fengniao_addition space-w">
+      <div class="addition_title lp_title_one">FAQ</div>
+      <FAQ v-for="(item, i) in list" :key="i" :item="item"></FAQ>
+    </div>
+
   </div>
 </template>
 
 <script>
-let str ='10017505,10017569,10017521,10017585,10017553,10017537'
+let str = '10017505,10017569,10017521,10017585,10017553,10017537'
 import swiper_one from './swiper_one.vue';
 import swiper_two from './swiper_two.vue';
-import swiper_three from './swiper_three.vue';
-import swiper_four from './swiper_four.vue';
-import FAQ from './FAQ.vue';
+import FAQ from './faq.vue';
 import goods_item_one from './goods_item_one.vue';
 export default {
   components: {
     swiper_one,
+    swiper_two,
     FAQ,
     goods_item_one
-},
-data() {
-  return {
-    list: [
+  },
+  data () {
+    return {
+      list: [
         {
           title: '1. Will I receive this gift before Dec. 24?',
           desc: ` <div>
             Of course, as long as you place your order before December 14th.
    
     </div>`,
-    id:0
-    
+          id: 0
+
         },
         {
           title: '2. Do I need to buy a larger size if I have wider feet or a higher arch?',
@@ -198,7 +220,7 @@ data() {
             Yes, opting for a larger size that provides some extra room for wearing socks will likely make it more comfortable.
    
     </div>`,
-    id:1
+          id: 1
         },
         {
           title: '3. Can I get discount if this is my first purchase?',
@@ -210,7 +232,7 @@ data() {
     <li style="margin-left: 10px;">-$15 off coupon when you subscribe to SMS notifications.</li>
    
     </div>`,
-    id:2
+          id: 2
         },
         {
           title: "4. How is the VIVAIA returns & exchanges policy in holiday?",
@@ -218,7 +240,7 @@ data() {
             VIVAIA has extended its returns and exchanges policy to 45 days until Jan 4.
    
     </div>`,
-    id:3
+          id: 3
         },
         {
           title: '5.  I need to choose a color for "Hannah," do you have any suggestions?',
@@ -226,34 +248,34 @@ data() {
             Purple is very unique on top of being elegant and enchanting. The combination of black and latte is sleek and stylish. White and pink makes you feel like a princess, although they are prone to getting dirty, but luckily these shoes are machine washable.
    
     </div>`,
-    id:3
+          id: 3
         }
       ],
-      Allgoods:[],
-      width:window.innerWidth
-  }
-},
-mounted () {
-  this.getAllgoods()
-},
-methods: {
-  async getAllgoods(){
-     const res = await  window._fengniao_getGoods_list({
-        goods_id:str.replace(/\s/g,''),
-        disable_goods_number:1
-     })
-   
-    
-   this.Allgoods =res.result
+      Allgoods: [],
+      width: window.innerWidth
+    }
+  },
+  mounted () {
+    this.getAllgoods()
+  },
+  methods: {
+    async getAllgoods () {
+      const res = await window._fengniao_getGoods_list({
+        goods_id: str.replace(/\s/g, ''),
+        disable_goods_number: 1
+      })
 
-  
-     this.$nextTick(() => {
-      this.$refs.child.initSwiper();
-    
-    });
+
+      this.Allgoods = res.result
+
+
+      this.$nextTick(() => {
+        this.$refs.child.initSwiper();
+
+      });
 
     },
-},
+  },
 
 
 };
@@ -263,69 +285,79 @@ methods: {
   margin: 0;
   padding: 0;
 }
-.fengniao_new .common-title{
+
+.fengniao_new .common-title {
   font-family: Noto Serif;
-font-size: 1.667vw;
-font-weight: 400;
-line-height: 2.292vw;
-letter-spacing: 0px;
-text-align: left;
-margin-bottom: 0.417vw;
+  font-size: 1.667vw;
+  font-weight: 400;
+  line-height: 2.292vw;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-bottom: 0.417vw;
 
 }
-.fengniao_new .common-desc{
+
+.fengniao_new .common-desc {
   font-family: Roboto;
-font-size: 0.833vw;
-font-weight: 400;
-line-height: 0.99vw;
-letter-spacing: 0px;
-text-align: left;
+  font-size: 0.833vw;
+  font-weight: 400;
+  line-height: 0.99vw;
+  letter-spacing: 0px;
+  text-align: left;
 
 }
-.deal .list{
-    background: rgba(255, 255, 255, 1);
-    /* background: red; */
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
-    padding: 3.125vw 0 4.167vw;
-  
-    position: relative;
-    top: -2.083vw;
-    z-index: 10;
-    border: 1px solid rgba(0, 0, 0, .1);
+
+.deal .list {
+  background: rgba(255, 255, 255, 1);
+  /* background: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 3.125vw 0 4.167vw;
+
+  position: relative;
+  top: -2.083vw;
+  z-index: 10;
+  border: 1px solid rgba(0, 0, 0, .1);
 
 }
-.deal .list .item svg{
+
+.deal .list .item svg {
   width: 4.167vw;
   height: 4.167vw;
 }
-.deal .list .item{
+
+.deal .list .item {
   /* margin-left: 6.25vw; */
- height: 8.75vw;
+  height: 8.75vw;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.deal .list .item:nth-child(1){
+
+.deal .list .item:nth-child(1) {
   margin-left: 13.542vw;
 }
-.deal .list .item:nth-child(2){
-  margin:0 6.25vw;
+
+.deal .list .item:nth-child(2) {
+  margin: 0 6.25vw;
 }
-.deal .list .item:nth-child(3){
+
+.deal .list .item:nth-child(3) {
   margin-right: 13.542vw;
 }
-.deal .list .item span{
+
+.deal .list .item span {
   text-align: center;
   font-family: Roboto;
-font-size: 1.042vw;
-font-weight: 400;
-line-height: 1.198vw;
-letter-spacing: 0px;
-text-align: center;
-color: #191817;
+  font-size: 1.042vw;
+  font-weight: 400;
+  line-height: 1.198vw;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #191817;
 }
+
 .swiper_btn svg {
   width: auto !important;
   height: auto !important;
@@ -368,26 +400,30 @@ color: #191817;
   top: 2.3958333vw;
   left: 2.0833333vw;
 }
-.fengniao_top_banner{
+
+.fengniao_top_banner {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.fengniao_top_banner .inner{
+
+.fengniao_top_banner .inner {
   position: absolute;
   color: #FFFFFF;
   top: 16.771vw;
-  left:8.333vw;
+  left: 8.333vw;
 
 }
-.fengniao_top_banner .inner .title{
-  
-font-size: 1.875vw;
-font-weight: 400;
-line-height: 2.552vw;
+
+.fengniao_top_banner .inner .title {
+
+  font-size: 1.875vw;
+  font-weight: 400;
+  line-height: 2.552vw;
 
 
 }
+
 .fengniao_top_banner ._left .left_title_one {
   font-family: Roboto;
   font-size: 2.7083333vw;
@@ -446,13 +482,13 @@ line-height: 2.552vw;
 
 .fengniao_new .new_title_one {
 
-font-family: Roboto;
-font-size: 0.729vw;
-font-weight: 400;
-line-height: 0.833vw;
-letter-spacing: 0px;
-text-align: left;
-margin-top: 0.625vw;
+  font-family: Roboto;
+  font-size: 0.729vw;
+  font-weight: 400;
+  line-height: 0.833vw;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-top: 0.625vw;
   overflow: hidden;
   /* 隐藏溢出内容 */
   white-space: nowrap;
@@ -634,7 +670,7 @@ margin-top: 0.625vw;
   margin-left: 6.25vw;
 }
 
-.fengniao_new  .common_title {
+.fengniao_new .common_title {
   font-family: Noto Serif;
   font-size: 1.6666667vw;
   font-weight: 400;
@@ -734,7 +770,7 @@ margin-top: 0.625vw;
 }
 
 .fengniao_new .fengniao-outer .fengniao-margot .fengniao_margot-swiper .fengniao_swiper_one .swiper-slide .slide_info {
-  padding:0 0 2.083vw;
+  padding: 0 0 2.083vw;
 }
 
 .fengniao_new .fengniao-outer .fengniao-margot .fengniao_margot-swiper .fengniao_swiper_one .swiper-slide .slide_info p:nth-child(2) span:nth-child(1) {
@@ -762,27 +798,30 @@ margin-top: 0.625vw;
   font-size: 0.8333333vw;
   line-height: 1.19;
 }
-@media screen and (min-width: 1024px) and (max-width: 1700px){
-  .fengniao_new .common-title{
-  font-family: Noto Serif;
-font-size: 24.005px;
-font-weight: 400;
-line-height: 33.005px;
-letter-spacing: 0px;
-text-align: left;
-margin-bottom: 6.005px;
 
-}
-.fengniao_new .common-desc{
-  font-family: Roboto;
-font-size: 13.995px;
-font-weight: 400;
-line-height: 16.256px;
-letter-spacing: 0px;
-text-align: left;
+@media screen and (min-width: 1024px) and (max-width: 1700px) {
+  .fengniao_new .common-title {
+    font-family: Noto Serif;
+    font-size: 24.005px;
+    font-weight: 400;
+    line-height: 33.005px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 6.005px;
 
-}
-.deal .list .item span {
+  }
+
+  .fengniao_new .common-desc {
+    font-family: Roboto;
+    font-size: 13.995px;
+    font-weight: 400;
+    line-height: 16.256px;
+    letter-spacing: 0px;
+    text-align: left;
+
+  }
+
+  .deal .list .item span {
     text-align: center;
     font-family: Roboto;
     font-size: 15.005px;
@@ -791,8 +830,9 @@ text-align: left;
     letter-spacing: 0px;
     text-align: left;
     color: #191817;
-}
-.fengniao_new .new_title_one {
+  }
+
+  .fengniao_new .new_title_one {
     font-family: Roboto;
     font-size: 14px;
     font-weight: 400;
@@ -803,107 +843,123 @@ text-align: left;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-}
-.fengniao_addition .addition_item .item_container .item_title{
-  font-size: 1.25vw;
-   
+  }
+
+  .fengniao_addition .addition_item .item_container .item_title {
+    font-size: 1.25vw;
+
     line-height: 1.12;
-}
-.fengniao_addition .addition_item .item_info .item_desc{
-  font-size: 0.972vw;
-   
+  }
+
+  .fengniao_addition .addition_item .item_info .item_desc {
+    font-size: 0.972vw;
+
     line-height: 1.12;
+  }
 }
-}
+
 @media screen and (max-width: 768px) {
-  .deal .list{
+  .deal .list {
     background: rgba(255, 255, 255, 1);
     /* background: red; */
     display: flex;
     align-items: center;
-    justify-content:space-between;
-    padding:5.333vw 0 ;
-  flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 5.333vw 0;
+    flex-wrap: wrap;
     position: relative;
     top: -10.667vw;
     z-index: 10;
-    
 
-}
-.deal .list .item img{
-  width: 13.333vw;
-  height:13.333vw;
-}
-.deal .list .item{
-  width: 100%;
- height: auto;
-  display: flex;
-  align-items: center;
-  padding-left:5.333vw ;
-  flex-direction: row;
-  width: 100%;
-}
-.deal .list .item svg{
-  width: 13.333vw;
-  height: 13.333vw;
-}
-.deal .list .item:nth-child(1){
-  margin-left:0;
-}
-.deal .list .item:nth-child(2){
-  margin: 0;
-}
-.deal .list .item:nth-child(3){
-  margin-right: 0;
-}
-.deal .list .item span{
-  font-family: Roboto;
-font-size: 3.2vw;
-font-weight: 400;
-line-height: 3.733vw;
-letter-spacing: 0px;
-text-align:left;
 
-}
-  .fengniao_top_banner .inner{
-    top:10.667vw;
+  }
+
+  .deal .list .item img {
+    width: 13.333vw;
+    height: 13.333vw;
+  }
+
+  .deal .list .item {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    padding-left: 5.333vw;
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .deal .list .item svg {
+    width: 13.333vw;
+    height: 13.333vw;
+  }
+
+  .deal .list .item:nth-child(1) {
+    margin-left: 0;
+  }
+
+  .deal .list .item:nth-child(2) {
+    margin: 0;
+  }
+
+  .deal .list .item:nth-child(3) {
+    margin-right: 0;
+  }
+
+  .deal .list .item span {
+    font-family: Roboto;
+    font-size: 3.2vw;
+    font-weight: 400;
+    line-height: 3.733vw;
+    letter-spacing: 0px;
+    text-align: left;
+
+  }
+
+  .fengniao_top_banner .inner {
+    top: 10.667vw;
     left: auto;
   }
-  .fengniao_top_banner .inner .title{
-  
-    font-family: Noto Serif;
-font-size: 5.333vw;
-font-weight: 400;
-line-height: 7.2vw;
-letter-spacing: 0px;
-text-align: center;
 
-  
-  
+  .fengniao_top_banner .inner .title {
+
+    font-family: Noto Serif;
+    font-size: 5.333vw;
+    font-weight: 400;
+    line-height: 7.2vw;
+    letter-spacing: 0px;
+    text-align: center;
+
+
+
   }
-  .fengniao_top_banner .inner .common-desc{
+
+  .fengniao_top_banner .inner .common-desc {
     text-align: center;
   }
-  .fengniao_new .common-title{
+
+  .fengniao_new .common-title {
     font-family: Noto Serif;
-font-size: 5.333vw;
-font-weight: 400;
-line-height: 7.2vw;
-letter-spacing: 0px;
-text-align: left;
+    font-size: 5.333vw;
+    font-weight: 400;
+    line-height: 7.2vw;
+    letter-spacing: 0px;
+    text-align: left;
 
-margin-bottom: 2.133vw;
-}
-.fengniao_new .common-desc{
-  font-family: Roboto;
-font-size: 3.2vw;
-font-weight: 400;
-line-height: 3.733vw;
-letter-spacing: 0px;
-text-align: left;
+    margin-bottom: 2.133vw;
+  }
+
+  .fengniao_new .common-desc {
+    font-family: Roboto;
+    font-size: 3.2vw;
+    font-weight: 400;
+    line-height: 3.733vw;
+    letter-spacing: 0px;
+    text-align: left;
 
 
-}
+  }
+
   .fengniao_new svg {
     width: 8.8vw;
     height: 8.8vw;
@@ -937,42 +993,47 @@ text-align: left;
   }
 
   .last_bottom {
-margin-top:-5.333vw ;
+    margin-top: -5.333vw;
     padding: 0 0 10.667vw;
     background: #ffffff;
   }
 
   .last_bottom .inner {
-   display: grid;
-   grid-template-columns: 1fr 1fr; /* 两列 */
-  grid-template-rows: 1fr 1fr; 
-  gap: 10px; /* 可选，设置网格项之间的间距 */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* 两列 */
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+    /* 可选，设置网格项之间的间距 */
   }
-.last_bottom .inner .item .title{
-  font-size:3.200vw;
-   line-height: 4.5vw;
-}
+
+  .last_bottom .inner .item .title {
+    font-size: 3.200vw;
+    line-height: 4.5vw;
+  }
+
   .last_bottom .inner .item {
     position: relative;
-    
-    font-size:3.7773vw;
-   line-height: 1.12;
- 
+
+    font-size: 3.7773vw;
+    line-height: 1.12;
+
 
     text-align: center;
-width: auto;
-   
+    width: auto;
+
   }
 
-  .last_bottom .inner .item .common-desc{
+  .last_bottom .inner .item .common-desc {
     /* font-family: Roboto;
 font-size: 4.267vw;
 font-weight: 500;
 line-height: 5.067vw;
 letter-spacing: 0px;
 text-align: right; */
-font-weight: 500;
+    font-weight: 500;
   }
+
   .fengniao_new .new_title {
     font-size: 5.3333333vw;
     line-height: 7.2vw;
@@ -1157,7 +1218,7 @@ font-weight: 500;
   }
 
   .fengniao_new .fengniao-outer .fengniao-margot {
-    padding-bottom:10.667vw;
+    padding-bottom: 10.667vw;
   }
 
   .fengniao_new .fengniao-outer .fengniao-margot .fengniao-margot-all {
@@ -1309,5 +1370,4 @@ font-weight: 500;
   }
 
 
-}
-</style>
+}</style>

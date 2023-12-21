@@ -69,10 +69,6 @@ methods: {
 
     },
    
-  //  show(index){
-  //   this.goods_data = this.Allgoods[index]
-     
-  //  }
 
   }
 }
