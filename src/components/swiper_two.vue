@@ -116,7 +116,25 @@ export default {
 mounted () {
   new Swiper('.mySwiper', {
   slidesPerView: "auto",
-loop:true,
+  breakpoints: {
+    375: {
+             spaceBetween: 14,
+           },
+          768:{
+            spaceBetween: 8,
+          },
+           1024: {
+             //当屏幕宽度大于等于768
+             spaceBetween: 10,
+           },
+           1440:{
+            spaceBetween: 10,
+           },
+           1730:{
+             spaceBetween:16
+           }
+          
+         },
 pagination: {
         el: ".swiper-pagination",
         type: "progressbar",
@@ -167,7 +185,7 @@ text-align: left;
 
  .info_two .right .swiper-slide {
   width: 17.083vw;
-  margin-right: 0.729vw;
+  /* margin-right: 0.729vw; */
 }
 
 .swiper_btn .swiper-button {
@@ -264,7 +282,7 @@ text-align: left;
 
    .info_two .right .swiper-slide {
     width: 78.933vw;
-    margin-right: 3.2vw;
+  
   }
 
 

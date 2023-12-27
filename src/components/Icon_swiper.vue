@@ -10,22 +10,34 @@
      </p>
   -->
       <div class="list_channel" style="width: 100%;">
-        <a class="channel_link" v-for="(item, i) in imgArr" :key="i" @mouseenter="handleEenter(i)" @mouseleave="handleLeave(i)">
+        <a class="channel_link" v-for="(item, i) in imgArr" :key="i" >
           <img :src="item.link" alt="">
 
         </a>
       </div>
 
     </div>
-    <div class="fengniao_scroll-swiper  show_small mySwiper_1" ref="imgList">
+    <div class="fengniao_scroll-swiper  show_small" ref="imgList">
 
-      <div class="swiper-wrapper">
-        <div class="swiper-slide" v-for="(item, i) in imgArr" :key="i">
-          <img :src="item.link" alt="VIVAIA" id="image">
-
-        </div>
-
+      <div class="marquee-container">
+    <div class="marquee" :style="{ left: -left_s + 'px' }">
+      <div class="item" v-for="(item, i) in imgArr" :key="i + 'a'">
+      
+            <img class="swiper-slide" :src="item.link" />
+       
       </div>
+      <div class="item" v-for="(item, i) in imgArr" :key="i + 'b'">
+       
+            <img class="swiper-slide" :src="item.link" />
+        
+      </div>
+      <div class="item" v-for="(item, i) in imgArr" :key="i + 's'">
+        
+            <img class="swiper-slide" :src="item.link" />
+        
+      </div>
+    </div>
+  </div>
 
 
 
@@ -89,110 +101,30 @@ export default {
         text: `"Shoppers Are Ditching Their Chanel Heels For These Comfortable Lookalikes They Can Wear “For Hours With No Foot or Back Pain"`,
         id: 'byrdie'
       },
-      ctimer:null
+      ctimer:null,
+      left_s: 0
 
 
     };
   },
   mounted () {
-
-    // this.autoplays();
-
-    const self = this;
-    this.mySwiper = new Swiper(".mySwiper_1", {
-      loop: true,
-      autoplay: {
-        delay: 2500, // 自动滚动的时间间隔，单位为毫秒
-        disableOnInteraction: false, // 用户操作后是否停止自动滚动
-      },
-      initialSlide: 2,
-      slidesPerView: 3.4,
-      on: {
-        slideChange: function () {
-          self.updateSlideStylesAndText(this.activeIndex + 1);
-        }
-      }
-    })
-
-    this.handleClick()
-
-
+    this.sliderGotoLeft()
   },
-
 
   methods: {
-    handleEenter (i) {
-      this.curIndex = i
-      // clearInterval(this.ctimer)
-    },
-    handleLeave(i){
-      // console.log(i);
-      // this.curIndex = i
-      // this.ctimer = setInterval(this.autoplays, 2500);
-     
-    },
-    updateSlideStylesAndText (index) {
-      const imglist = document.querySelectorAll('#image')
-
-      for (let i = 0; i < imglist.length; i++) {
-
-        imglist[i].style.opacity = i === index ? '1' : '0.25';
-
-      }
-
-
-
-
-    },
-   
-    handleClick () {
-      const self = this;
-      const clickHandler = function (index) {
-        if (index == self.mySwiper.activeIndex + 2) {
-          self.mySwiper.slideNext();
+    sliderGotoLeft () {
+      const w = window.innerWidth
+      const that = this
+      setInterval(() => {
+        if (that.left_s === 1400) {
+          that.left_s = 0
         }
-        if (index == self.mySwiper.activeIndex) {
-          self.mySwiper.slidePrev();
-        }
-      };
-
-      self.$refs.imgList
-        .querySelectorAll('.swiper-slide')
-        .forEach((slide1, index) => {
-          slide1.addEventListener('click', function () {
-            clickHandler(index);
-          });
-        });
-
-      this.clickHandler = clickHandler;
-    },
-
-    autoplays () {
-
-      this.ctimer = setInterval(() => {
-        if (this.curIndex > 5) {
-          this.curIndex = 0;
-        } else {
-          this.onItem = this.imgArr[this.curIndex];
-          this.curIndex++;
-        }
-
-      }, 2500)
-    },
-
-
+        that.left_s += 1
+      }, 20)
+    }
+  
   },
-  beforeDestroy() {
-
-    this.$refs.imgList
-      .querySelectorAll('.swiper-slide')
-      .forEach((slide1, index) => {
-        slide1.removeEventListener('click', this.clickHandler)
-      });
-
-    clearInterval(this.ctimer)
-
-  },
+ 
 };
 </script>
 
@@ -246,7 +178,28 @@ export default {
   
 }
 @media screen and (max-width: 768px) {
-
+  .marquee-container {
+  width: 100%;
+  overflow: hidden;
+}
+.marquee-container .marquee {
+  /* background: #f6f6f6; */
+  display: flex;
+  align-items: center;
+  width: 2100px;
+  height: 40px;
+  position: relative;
+}
+.marquee-container .marquee .item {
+  width: 25%;
+  min-width: 100px;
+  text-align: center;
+}
+.marquee-container .marquee .item img {
+  width: 80px;
+  height: 40px;
+  object-fit: fill;
+}
   .fengniao_lp .show_big {
     display: none;
   }

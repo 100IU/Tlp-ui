@@ -79,8 +79,8 @@
 
       <div class="list">
         <div class="inner">
-          <div class="common-title">From Jan 1 </div>
-          <div class="common-desc">Shop Nos.324-325 on the Third Floor of Hysan Place,No.500 Hennessy Road,Causeway Bay   </div>
+          <div class="common-title">Opening Jan 1 </div>
+          <div class="common-desc" style="white-space: nowrap;">Shop Nos.324-325 on the Third Floor of Hysan <br> Place,No.500 Hennessy Road,Causeway Bay   </div>
           <div class="common-desc desc_one">希慎广场店：香港銅鑼灣軒尼詩道500號希慎广场3楼324-325 </div>
         </div>
         <picture>
@@ -94,7 +94,7 @@
       <div class="list">
         <div class="inner">
           <div class="common-title">Jan 3 - Feb 29</div>
-          <div class="common-desc">New Wing Promotion Area, 6th Floor SOGO Causeway Bay </div>
+          <div class="common-desc" style="white-space: nowrap;">New Wing Promotion Area, 6th Floor SOGO <br> Causeway Bay </div>
           <div class="common-desc desc_one">SOGO快闪店：香港銅鑼灣崇光百貨六樓推廣專區 </div>
         </div>
         <picture>
@@ -982,8 +982,9 @@ text-align: center;
   }
 
   .deal .list .item svg {
-    width: 13.333vw;
-    height: 13.333vw;
+    width: 10.667vw;
+    height: 10.667vw;
+    margin-right:2.133vw ;
   }
 
   .deal .list .item:nth-child(1) {
