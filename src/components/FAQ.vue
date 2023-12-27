@@ -106,7 +106,7 @@ export default {
 
 .fengniao_addition .addition_item .item_container .item_title {
   font-family: Roboto;
-  font-size: 0.938vw;
+  font-size: 18px;
   margin-left: 5px;
 }
 
@@ -121,7 +121,7 @@ export default {
 .fengniao_addition .addition_item .item_info .item_desc {
   margin-left: 5px;
   font-family: Roboto;
-  font-size: 0.729vw;
+  font-size: 14px;
   max-width: 52.0833333vw;
 }
 @media screen and (min-width: 769px) and (max-width: 1440px) {

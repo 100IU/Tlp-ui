@@ -6,7 +6,7 @@
       <div class="fengniao_swiper_one swiper_one  space-w"  :ref="swiper_name">
        
         <div class="swiper-wrapper new_wrapper">
-          <div class="swiper-slide" v-for="(item) in goods_datas" :key="item.goods_sn
+          <div class="swiper-slide" v-for="(item) in goods_data" :key="item.goods_sn
             ">
             <a :href="`https://www.vivaia.com${item.goods_url}`" style="position: relative;display: flex;align-items: center;justify-content: center;" class="a_link">
               <img  v-lazy="item.goods_thumb" />
@@ -34,13 +34,15 @@
             </div>
           </div>
         </div>
-      
+        <div class="swiper-pagination "></div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
+import Swiper from 'swiper'
+import 'swiper/css/swiper.css'
 
 export default {
   props: {
@@ -48,7 +50,7 @@ export default {
       type: String,
 
     },
-    goods_datas: {
+    goods_data: {
       type: Array,
       default: () => []
     },
@@ -67,8 +69,56 @@ export default {
     }
 
   },
+  data() {
+    return {
+      swiperInstance:null
+    }
+  },
+//  mounted () {
+//   if(window.innerWidth<768){
+//     this.initSwiper()
+//   }
+//  },
+
+  methods:{
  
+ initSwiper () {
   
+   
+     const self = this;
+      this.$nextTick(()=>{
+       self.swiperInstance = new Swiper(this.$refs[this.swiper_name], {
+         allowTouchMove: true,
+         initialSlide: 0,
+         slidesPerView: "auto",
+         breakpoints: {
+           768: {
+             spaceBetween: 10,
+           },
+           1024: {
+             //当屏幕宽度大于等于768
+             spaceBetween: 15,
+           },
+           1730:{
+             spaceBetween:20
+           }
+         },
+         pagination: {
+           el: ".swiper-pagination",
+           type: "progressbar",
+         },
+         navigation: {
+           nextEl: ".swiper-button-next",
+           prevEl: ".swiper-button-prev",
+         },
+       });
+      })
+     
+
+     
+    
+   },
+  }
  
 }
 </script>
@@ -76,18 +126,10 @@ export default {
 .new_weight{
    font-weight: 500 !important;
 }
-.new_wrapper{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 四列 */
-  grid-template-rows: repeat(2, 1fr); /* 两行 */
-  gap: 20px; /* 可选，设置网格项之间的间距 */
-}
-.new_wrapper .swiper-slide{
-  width: auto !important;
-}
+
 
 .fengniao_margot-swiper{
-  margin-top:2.083vw ;
+  margin-top:1.042vw ;
 }
 .fengniao_new .fengniao-outer .fengniao-margot .fengniao_tab-container .fengniao-tab {
   display: flex;
@@ -129,18 +171,44 @@ export default {
     margin: 0 auto;
     background: #fff;
     color: #191817;
-    padding: 0.625vw 0;
+    padding: 12px 0;
     font-family: Roboto;
-    font-size: .833vw;
+    font-size: 0.833vw;
     font-weight: 500;
     line-height: 1.25vw;
     letter-spacing: 0;
     text-align: center;
 }
-
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .shop_btn{
+    font-size: 14px;
+    line-height: 1.14;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  .shop_btn{
+    font-size: 12px;
+    line-height: 1.12;
+  }
+}
+@media screen and (min-width:769px) {
+  .new_wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.new_wrapper .swiper-slide{
+  width: 19.896vw !important;
+}
+}
 @media screen and (max-width: 768px) {
   .fengniao_margot-swiper {
     margin-top: 5.333vw
+}
+
+.fengniao_new .fengniao-outer .fengniao-margot .fengniao_margot-swiper .fengniao_swiper_one .swiper-slide {
+    width: 59.4666667vw;
+    margin-right: 2.6666667vw
 }
   .fengniao_new .fengniao-outer .fengniao-margot .fengniao_tab-container .tab_item {
     font-family: Roboto;

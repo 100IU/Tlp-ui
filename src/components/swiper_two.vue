@@ -1,303 +1,166 @@
 <template>
-  <div class="info_two space-w">
-    <div class="left">
-      <div class="title">
-        Walk on My Way
-      </div>
-      <div class="desc">"Exploration Day" can include many options, like going to work, meeting up with friends, going
-        flower shopping, taking a stroll in the park, or going exploring solo or with friends. It’s about having fun
-        in life!</div>
-      <a class="button" href="">
-        Start A Journey
-      </a>
-    </div>
-    <div class="right mySwiper swiper-container-initialized swiper-container-horizontal">
-
-      <div class="swiper-wrapper" style="transform: translate3d(-1542.05px, 0px, 0px); transition-duration: 0ms;"><a
-          class="swiper-slide swiper-slide-duplicate"
-          href="https://www.vivaia.com/item/square-toe-mary-jane-margot-mary-jane-p_10015113.html?gid=10015113"
-          data-swiper-slide-index="0">
-          <span class="small_autjor">@natalialevsina</span>
-          <picture>
-            <source srcset="https://cdnimg.vivaia.com/VA/image/loadpage/20231128_6507/32.jpg" media="(max-width:768px)">
-            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/loadpage/20231128_6507/23.jpg" alt="VIVAIA">
-          </picture>
-        </a><a class="swiper-slide swiper-slide-duplicate"
-          href="https://www.vivaia.com/item/square-toe-water-repellent-boots-regina-pro-p_10017101.html?gid=10017109"
-          data-swiper-slide-index="1">
-
-          <span class="small_autjor">@anastasiagogolauri</span>
-          <picture>
-            <source srcset="https://cdnimg.vivaia.com/VA/image/loadpage/20231128_6507/26.jpg" media="(max-width:768px)">
-            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/loadpage/20231128_6507/36.jpg" alt="VIVAIA">
-          </picture>
-        </a><a class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev"
-          href="https://www.vivaia.com/item/pointed-toe-bow-loafers-michelle2-0-p_10016648.html?gid=10016648"
-          data-swiper-slide-index="2">
-          <span class="small_autjor">@yamashita_mami</span>
-          <picture>
-            <source srcset="https://cdnimg.vivaia.com/VA/image/loadpage/20231128_6507/40.jpg" media="(max-width:768px)">
-            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/loadpage/20231128_6507/40.jpg" alt="VIVAIA">
-          </picture>
-        </a><a class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
-          href="https://www.vivaia.com/item/square-toe-water-repellent-boots-regina-pro-p_10017101.html?gid=10017109"
-          data-swiper-slide-index="3">
-          <span class="small_autjor">@paniolimpu</span>
-          <picture>
-            <source srcset="https://cdnimg.vivaia.com/VA/image/loadpage/20231128_6507/29.jpg" media="(max-width:768px)">
-            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/loadpage/20231128_6507/33.jpg" alt="VIVAIA">
-          </picture>
-        </a><a class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
-          href="https://www.vivaia.com/item/square-toe-water-repellent-wool-knee-high-boots-p_10018185.html?gid=10018193"
-          data-swiper-slide-index="4">
-          <span class="small_autjor">@chasefortravel</span>
-          <picture>
-            <source srcset="https://cdnimg.vivaia.com/VA/image/loadpage/20231128_6507/37.jpg" media="(max-width:768px)">
-            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/loadpage/20231128_6507/27.jpg" alt="VIVAIA">
-          </picture>
-        </a><a class="swiper-slide swiper-slide-duplicate"
-          href="https://www.vivaia.com/item/square-toe-water-repellent-boots-regina-pro-p_10017053.html?gid=10017061"
-          data-swiper-slide-index="5">
-          <span class="small_autjor">@elleisalwayshere</span>
-          <picture>
-            <source srcset="https://cdnimg.vivaia.com/VA/image/loadpage/20231128_6507/39.jpg" media="(max-width:768px)">
-            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/loadpage/20231128_6507/28.jpg" alt="VIVAIA">
-          </picture>
-        </a><a class="swiper-slide swiper-slide-duplicate"
-          href="https://www.vivaia.com/item/pointed-toe-knot-sandals-p_10011155.html?gid=10011163"
-          data-swiper-slide-index="6">
-          <span class="small_autjor">@ encarniyoscar</span>
-          <picture>
-            <source srcset="https://cdnimg.vivaia.com/VA/image/loadpage/20231128_6507/35.jpg" media="(max-width:768px)">
-            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/loadpage/20231128_6507/24.jpg" alt="VIVAIA">
-          </picture>
-        </a>
-        <a class="swiper-slide"
-          href="https://www.vivaia.com/item/square-toe-mary-jane-margot-mary-jane-p_10015113.html?gid=10015113"
-          data-swiper-slide-index="0">
-          <span class="small_autjor">@natalialevsina</span>
-          <picture>
-            <source srcset="https://cdnimg.vivaia.com/VA/image/loadpage/20231128_6507/32.jpg" media="(max-width:768px)">
-            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/loadpage/20231128_6507/23.jpg" alt="VIVAIA">
-          </picture>
-        </a>
-        <a class="swiper-slide"
-          href="https://www.vivaia.com/item/square-toe-water-repellent-boots-regina-pro-p_10017101.html?gid=10017109"
-          data-swiper-slide-index="1">
-
-          <span class="small_autjor">@anastasiagogolauri</span>
-          <picture>
-            <source srcset="https://cdnimg.vivaia.com/VA/image/loadpage/20231128_6507/26.jpg" media="(max-width:768px)">
-            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/loadpage/20231128_6507/36.jpg" alt="VIVAIA">
-          </picture>
-        </a>
-        <a class="swiper-slide swiper-slide-prev"
-          href="https://www.vivaia.com/item/pointed-toe-bow-loafers-michelle2-0-p_10016648.html?gid=10016648"
-          data-swiper-slide-index="2">
-          <span class="small_autjor">@yamashita_mami</span>
-          <picture>
-            <source srcset="https://cdnimg.vivaia.com/VA/image/loadpage/20231128_6507/40.jpg" media="(max-width:768px)">
-            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/loadpage/20231128_6507/40.jpg" alt="VIVAIA">
-          </picture>
-        </a>
-        <a class="swiper-slide swiper-slide-active"
-          href="https://www.vivaia.com/item/square-toe-water-repellent-boots-regina-pro-p_10017101.html?gid=10017109"
-          data-swiper-slide-index="3">
-          <span class="small_autjor">@paniolimpu</span>
-          <picture>
-            <source srcset="https://cdnimg.vivaia.com/VA/image/loadpage/20231128_6507/29.jpg" media="(max-width:768px)">
-            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/loadpage/20231128_6507/33.jpg" alt="VIVAIA">
-          </picture>
-        </a>
-        <a class="swiper-slide swiper-slide-next"
-          href="https://www.vivaia.com/item/square-toe-water-repellent-wool-knee-high-boots-p_10018185.html?gid=10018193"
-          data-swiper-slide-index="4">
-          <span class="small_autjor">@chasefortravel</span>
-          <picture>
-            <source srcset="https://cdnimg.vivaia.com/VA/image/loadpage/20231128_6507/37.jpg" media="(max-width:768px)">
-            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/loadpage/20231128_6507/27.jpg" alt="VIVAIA">
-          </picture>
-        </a>
-     
-        <a class="swiper-slide"
-          href="https://www.vivaia.com/item/square-toe-water-repellent-boots-regina-pro-p_10017053.html?gid=10017061"
-          data-swiper-slide-index="5">
-          <span class="small_autjor">@elleisalwayshere</span>
-          <picture>
-            <source srcset="https://cdnimg.vivaia.com/VA/image/loadpage/20231128_6507/39.jpg" media="(max-width:768px)">
-            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/loadpage/20231128_6507/28.jpg" alt="VIVAIA">
-          </picture>
-        </a>
-
-
-
-
-        <a class="swiper-slide" href="https://www.vivaia.com/item/pointed-toe-knot-sandals-p_10011155.html?gid=10011163"
-          data-swiper-slide-index="6">
-          <span class="small_autjor">@ encarniyoscar</span>
-          <picture>
-            <source srcset="https://cdnimg.vivaia.com/VA/image/loadpage/20231128_6507/35.jpg" media="(max-width:768px)">
-            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/loadpage/20231128_6507/24.jpg" alt="VIVAIA">
-          </picture>
-        </a>
-  
-
-
-
-
-
-
-        <a class="swiper-slide swiper-slide-duplicate"
-          href="https://www.vivaia.com/item/square-toe-mary-jane-margot-mary-jane-p_10015113.html?gid=10015113"
-          data-swiper-slide-index="0">
-          <span class="small_autjor">@natalialevsina</span>
-          <picture>
-            <source srcset="https://cdnimg.vivaia.com/VA/image/loadpage/20231128_6507/32.jpg" media="(max-width:768px)">
-            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/loadpage/20231128_6507/23.jpg" alt="VIVAIA">
-          </picture>
-        </a><a class="swiper-slide swiper-slide-duplicate"
-          href="https://www.vivaia.com/item/square-toe-water-repellent-boots-regina-pro-p_10017101.html?gid=10017109"
-          data-swiper-slide-index="1">
-
-          <span class="small_autjor">@anastasiagogolauri</span>
-          <picture>
-            <source srcset="https://cdnimg.vivaia.com/VA/image/loadpage/20231128_6507/26.jpg" media="(max-width:768px)">
-            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/loadpage/20231128_6507/36.jpg" alt="VIVAIA">
-          </picture>
-        </a><a class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-prev"
-          href="https://www.vivaia.com/item/pointed-toe-bow-loafers-michelle2-0-p_10016648.html?gid=10016648"
-          data-swiper-slide-index="2">
-          <span class="small_autjor">@yamashita_mami</span>
-          <picture>
-            <source srcset="https://cdnimg.vivaia.com/VA/image/loadpage/20231128_6507/40.jpg" media="(max-width:768px)">
-            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/loadpage/20231128_6507/40.jpg" alt="VIVAIA">
-          </picture>
-        </a><a class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
-          href="https://www.vivaia.com/item/square-toe-water-repellent-boots-regina-pro-p_10017101.html?gid=10017109"
-          data-swiper-slide-index="3">
-          <span class="small_autjor">@paniolimpu</span>
-          <picture>
-            <source srcset="https://cdnimg.vivaia.com/VA/image/loadpage/20231128_6507/29.jpg" media="(max-width:768px)">
-            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/loadpage/20231128_6507/33.jpg" alt="VIVAIA">
-          </picture>
-        </a><a class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-next"
-          href="https://www.vivaia.com/item/square-toe-water-repellent-wool-knee-high-boots-p_10018185.html?gid=10018193"
-          data-swiper-slide-index="4">
-          <span class="small_autjor">@chasefortravel</span>
-          <picture>
-            <source srcset="https://cdnimg.vivaia.com/VA/image/loadpage/20231128_6507/37.jpg" media="(max-width:768px)">
-            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/loadpage/20231128_6507/27.jpg" alt="VIVAIA">
-          </picture>
-        </a><a class="swiper-slide swiper-slide-duplicate"
-          href="https://www.vivaia.com/item/square-toe-water-repellent-boots-regina-pro-p_10017053.html?gid=10017061"
-          data-swiper-slide-index="5">
-          <span class="small_autjor">@elleisalwayshere</span>
-          <picture>
-            <source srcset="https://cdnimg.vivaia.com/VA/image/loadpage/20231128_6507/39.jpg" media="(max-width:768px)">
-            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/loadpage/20231128_6507/28.jpg" alt="VIVAIA">
-          </picture>
-        </a><a class="swiper-slide swiper-slide-duplicate"
-          href="https://www.vivaia.com/item/pointed-toe-knot-sandals-p_10011155.html?gid=10011163"
-          data-swiper-slide-index="6">
-          <span class="small_autjor">@ encarniyoscar</span>
-          <picture>
-            <source srcset="https://cdnimg.vivaia.com/VA/image/loadpage/20231128_6507/35.jpg" media="(max-width:768px)">
-            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/loadpage/20231128_6507/24.jpg" alt="VIVAIA">
-          </picture>
-        </a>
-      </div>
-      <div class="swiper_btn">
-        <div class="swiper-button swiper-button-prev" tabindex="0" role="button" aria-label="Previous slide">
-
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M10.0607 2.45129L9 1.39062L1.3934 8.99723L2.45406 10.0579L2.45412 10.0578L9.00013 16.6038L10.0608 15.5432L3.51478 8.99716L10.0607 2.45129Z"
-              fill="#191817"></path>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M17 9.75H3V8.25H17V9.75Z" fill="#191817"></path>
-          </svg>
+ <div class="info_two space-w">
+      <div class="left">
+        <div class="title common-title">
+          Loved by over 1 Million Customers from over 60 Countries!
         </div>
-        <div class="swiper-button swiper-button-next" tabindex="0" role="button" aria-label="Next slide">
-          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M7.93934 2.45129L9 1.39062L16.6066 8.99723L15.5459 10.0579L15.5459 10.0578L8.99987 16.6038L7.93921 15.5432L14.4852 8.99716L7.93934 2.45129Z"
-              fill="#191817"></path>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M1 9.75H15V8.25H1V9.75Z" fill="#191817"></path>
-          </svg>
+        <div class="desc common-desc">
+          We founded VIVAIA to support everyday life. No matter where your journey is headed, you can always step into a pair of VIVAIA shoes and enjoy comfort and style along the way.
+          
+          <br><br>
+          We use high-quality accents and environmentally-friendly materials that are sourced from nature. We have recycled 16,801,900+ plastic bottles as of December 4, 2023. Each and every pair of shoes that we produce helps to divert waste from landfills while helping you look and feel great too.
         </div>
+        <!-- <a class="button" href="">
+          Start A Journey
+        </a> -->
       </div>
-      <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+      <div class="right mySwiper">
+
+        <div class="swiper-wrapper">
+          <a class="swiper-slide"
+           >
+          
+            <picture>
+              <source srcset="https://cdnimg.vivaia.com/VA/image/Banner/20231225_6556/ins-a-m1.jpg"
+                media="(max-width:768px)">
+              <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20231225_6556/wanghong1.jpg"
+                alt="VIVAIA">
+            </picture>
+          </a>
+          <a class="swiper-slide"
+           >
+
+           
+            <picture>
+              <source srcset="https://cdnimg.vivaia.com/VA/image/Banner/20231225_6556/ins-a-m2.jpg"
+                media="(max-width:768px)">
+              <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20231225_6556/wanghong2.jpg"
+                alt="VIVAIA">
+            </picture>
+          </a>
+          <a class="swiper-slide"
+            >
+          
+            <picture>
+              <source srcset="https://cdnimg.vivaia.com/VA/image/Banner/20231225_6556/ins-a-m4.jpg"
+                media="(max-width:768px)">
+              <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20231225_6556/wanghong3.jpg"
+                alt="VIVAIA">
+            </picture>
+          </a>
+          <a class="swiper-slide"
+           >
+           
+            <picture>
+              <source srcset="https://cdnimg.vivaia.com/VA/image/Banner/20231225_6556/ins-a-m3.jpg"
+                media="(max-width:768px)">
+              <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20231225_6556/wanghong4.jpg"
+                alt="VIVAIA">
+            </picture>
+          </a>
+          <a class="swiper-slide"
+            >
+            
+            <picture>
+              <source srcset="https://cdnimg.vivaia.com/VA/image/Banner/20231225_6556/ins-a-m5.jpg"
+                media="(max-width:768px)">
+              <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20231225_6556/wanghong5.jpg"
+                alt="VIVAIA">
+            </picture>
+          </a>
+    
+        
+
+
+
+       
+        
+
+
+
+
+
+
+        </div>
+        <div class="swiper_btn show_big">
+          <div class="swiper-button swiper-button-prev">
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M10.0607 2.45129L9 1.39062L1.3934 8.99723L2.45406 10.0579L2.45412 10.0578L9.00013 16.6038L10.0608 15.5432L3.51478 8.99716L10.0607 2.45129Z"
+                fill="#191817" />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M17 9.75H3V8.25H17V9.75Z" fill="#191817" />
+            </svg>
+          </div>
+          <div class="swiper-button swiper-button-next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M7.93934 2.45129L9 1.39062L16.6066 8.99723L15.5459 10.0579L15.5459 10.0578L8.99987 16.6038L7.93921 15.5432L14.4852 8.99716L7.93934 2.45129Z"
+                fill="#191817" />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M1 9.75H15V8.25H1V9.75Z" fill="#191817" />
+            </svg>
+          </div>
+        </div>
+        <div class="swiper-pagination show_small"></div>
+      </div>
     </div>
-  </div>
 </template>
   
 <script>
-
+import Swiper from 'swiper'
+import 'swiper/css/swiper.css'
 export default {
 
 
-  data () {
-    return {
-      goods_data: [],
-      Allgoods: [],
-      tabs_item: [
-        {
-          tab_name: 'Square-Toe',
-        },
-        {
-          tab_name: 'Pointed-Toe',
-        },
+  
+mounted () {
+  new Swiper('.mySwiper', {
+  slidesPerView: "auto",
+loop:true,
+pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+      },
+  navigation: {
+    prevEl: '.swiper-button-prev',
+    nextEl: '.swiper-button-next',
 
-      ],
-    }
   },
 
-  methods: {
-
-
-  }
+});
+},
+ 
 }
 </script>
 <style  scoped>
 
  .info_two {
   display: flex;
-  margin-top: 4.167vw;
-
+  padding-top: 4.167vw;
+justify-content: space-between;
 }
 
  .info_two .left {
   background: rgba(245, 245, 245, 1);
-  margin-right: 1.771vw;
-  width: 32.604vw;
+  /* margin-right: 1.771vw; */
+  width: 41.146vw;
+  box-sizing: border-box;
+  padding:0 4.167vw;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
- .info_two .left .title {
-  font-family: Noto Serif;
-  font-size: 1.875vw;
-  font-weight: 400;
-  line-height: 2.552vw;
-  letter-spacing: 0px;
-  text-align: center;
-  margin-bottom: 0.625vw;
 
-}
 
  .info_two .left .desc {
-  font-family: Roboto;
-  font-size: 0.833vw;
-  font-weight: 400;
-  line-height: 0.99vw;
-  letter-spacing: 0px;
-  text-align: center;
-  margin: 0 4.271vw;
+margin-top: 2.083vw;
+text-align: left;
 }
 
  .info_two .right {
-  width: 40.417vw;
+  width: 41.146vw;
   overflow: hidden;
   position: relative;
 }
@@ -312,10 +175,13 @@ export default {
   background: #fff;
   height: 2.083vw;
   width: 2.083vw;
-  top: 44%;
+  top: 50%;
   border-radius: 50%;
 }
-
+.swiper_btn .swiper-button svg{
+  width: 0.938vw !important;
+  height: 0.938vw !important;
+}
 .swiper_btn .swiper-button::after {
   display: none;
 }
@@ -335,7 +201,15 @@ export default {
   left: 0.625vw;
 
 }
+@media screen and (min-width: 1024px) and (max-width: 1440px){
 
+  .info_two .left .desc{
+    text-align: left;
+  }
+  .info_two .left .title{
+    text-align: left;
+  }
+}
 @media screen and (max-width: 768px) {
   .swiper_btn .swiper-button {
     color: #191817;
@@ -355,23 +229,21 @@ export default {
 
    .info_two {
     display: block;
-    padding: 10.667vw 0;
+    padding-top: 5.333vw;
+  }
+  .info_two .swiper-pagination{
+    top: auto;
+    bottom: 5.333vw;
   }
 
    .info_two .left {
     background-color: #fff;
-    width: 100%;
+    width:91.2vw ;
+    padding: 0 
   }
 
    .info_two .left .title {
-    font-family: Noto Serif;
-    font-size: 5.333vw;
-    font-weight: 400;
-    line-height: 7.2vw;
-    letter-spacing: 0px;
-    text-align: center;
-    margin-bottom: 2.667vw;
-
+   text-align: left;
   }
 
    .info_two .left .desc {
@@ -380,13 +252,14 @@ export default {
     font-weight: 400;
     line-height: 3.733vw;
     letter-spacing: 0px;
-    text-align: center;
-    margin: 0;
+   
+    
   }
 
    .info_two .right {
     width: 89.333vw;
-    margin-top: 10.667vw;
+    
+    padding:5.333vw 0 10.6667vw;
   }
 
    .info_two .right .swiper-slide {

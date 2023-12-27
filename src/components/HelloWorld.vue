@@ -4,16 +4,16 @@
 
       <picture>
         <source srcset="
-        https://cdnimg.vivaia.com/VA/image/Banner/20231207_6527/m07.png
+        https://cdnimg.vivaia.com/VA/image/Banner/20231225_6556/banner-a-M.jpg
           " media="(max-width:768px)" />
-        <img class="common-img" src="https://cdnimg.vivaia.com/CO/image/Banner/20231025_6418/pc10.jpg" alt="" />
+        <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20231225_6556/banner-p.jpg" alt="" />
       </picture>
       <div class="inner">
         <div class="title common-title">
-          Wonderful Holiday Gifts
+          Hong Kong—Early January
         </div>
-        <div class="common-desc">
-          Stay warm and stylish in a winter wonderland.
+        <div class="common-desc ">
+          Comfort & Style Makes Its Retail Debut!
         </div>
       </div>
     </div>
@@ -21,28 +21,16 @@
       <div class="list space-w">
         <div class="item">
 
-          <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M48.3333 22.5H28.75V20H50.8333V38.75H64.1667V41.25H48.3333V22.5Z" fill="#191817" />
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M37.5 53.3333H48.5417V55.8333H37.5V53.3333Z"
+          <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
+            <path
+              d="M39.474 37.7087C34.5202 37.7087 30.5415 33.6899 30.5415 28.7503C30.5415 23.8108 34.5202 19.792 39.474 19.792C44.4278 19.792 48.4582 23.8108 48.4582 28.7503C48.4582 33.6899 44.4278 37.7087 39.474 37.7087ZM39.474 22.9671C36.2761 22.9671 33.6741 25.5616 33.6741 28.7503C33.6741 31.939 36.2761 34.5336 39.474 34.5336C42.6719 34.5336 45.2739 31.939 45.2739 28.7503C45.2739 25.5616 42.6719 22.9671 39.474 22.9671Z"
               fill="#191817" />
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M21.25 53.3333H27.5V55.8333H21.25V53.3333Z" fill="#191817" />
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M32.7085 58.3333C34.7796 58.3333 36.4585 56.6543 36.4585 54.5833C36.4585 52.5122 34.7796 50.8333 32.7085 50.8333C30.6374 50.8333 28.9585 52.5122 28.9585 54.5833C28.9585 56.6543 30.6374 58.3333 32.7085 58.3333ZM32.7085 60.8333C36.1603 60.8333 38.9585 58.035 38.9585 54.5833C38.9585 51.1315 36.1603 48.3333 32.7085 48.3333C29.2567 48.3333 26.4585 51.1315 26.4585 54.5833C26.4585 58.035 29.2567 60.8333 32.7085 60.8333Z"
-              fill="#191817" />
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M52.7085 58.3333C54.7796 58.3333 56.4585 56.6543 56.4585 54.5833C56.4585 52.5122 54.7796 50.8333 52.7085 50.8333C50.6374 50.8333 48.9585 52.5122 48.9585 54.5833C48.9585 56.6543 50.6374 58.3333 52.7085 58.3333ZM52.7085 60.8333C56.1603 60.8333 58.9585 58.035 58.9585 54.5833C58.9585 51.1315 56.1603 48.3333 52.7085 48.3333C49.2567 48.3333 46.4585 51.1315 46.4585 54.5833C46.4585 58.035 49.2567 60.8333 52.7085 60.8333Z"
-              fill="#191817" />
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.1665 39.7917H32.7082V42.2917H19.1665V39.7917Z"
-              fill="#191817" />
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M23.9585 31.4583H40.6252V33.9583H23.9585V31.4583Z"
-              fill="#191817" />
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M57.2237 30.8333H48.5415V28.3333H58.6093L64.3748 37.5581V55.8333H56.8228V53.3333H61.8748V38.2751L57.2237 30.8333Z"
+            <path
+              d="M56.4835 59.2083C55.4749 59.2083 54.6545 58.425 54.6545 57.462C54.6545 49.4839 47.8559 42.9926 39.5 42.9926C31.1441 42.9926 24.3455 49.4839 24.3455 57.462C24.3455 58.425 23.5251 59.2083 22.5165 59.2083C21.5079 59.2083 20.6875 58.425 20.6875 57.462C20.6875 55.0372 21.1839 52.6871 22.1664 50.4718C23.1122 48.3313 24.4709 46.4104 26.1954 44.7639C27.9199 43.1174 29.9318 41.8201 32.1736 40.917C34.499 39.974 36.9603 39.5 39.5 39.5C42.0397 39.5 44.501 39.974 46.8212 40.912C49.063 41.8151 51.0749 43.1124 52.7994 44.7589C54.5239 46.4104 55.8825 48.3263 56.8284 50.4668C57.8161 52.6871 58.3125 55.0372 58.3125 57.462C58.3125 58.425 57.4921 59.2083 56.4835 59.2083Z"
               fill="#191817" />
           </svg>
 
-          <span>Free Shippings on Orders Over $99</span>
+          <span>In-Store Specialists</span>
         </div>
         <div class="item">
 
@@ -63,8 +51,8 @@
               d="M45.6899 39.8911L30.2752 44.0214L29.6281 41.6066L45.0428 37.4762L45.6899 39.8911Z" fill="#191817" />
           </svg>
 
-          <span style="white-space: nowrap;">Instant Discount Price: <span style="color: #804C1A;">$79</span> <span
-              style="text-decoration: line-through;"> $97</span> <br> + Extra Holiday Savings</span>
+          <span style="white-space: nowrap;">Holiday Sale Until Jan 4: <br>
+            Up to 40% Off</span>
         </div>
         <div class="item">
 
@@ -83,103 +71,110 @@
               fill="#191817" />
           </svg>
 
-          <span>45-Day Free Returns & Exchanges</span>
+          <span>Hassle-Free Returns</span>
         </div>
       </div>
     </div>
+    <div class="fengniao_product space-w">
 
+      <div class="list">
+        <div class="inner">
+          <div class="common-title">From Jan 1 </div>
+          <div class="common-desc">Shop Nos.324-325 on the Third Floor of Hysan Place,No.500 Hennessy Road,Causeway Bay   </div>
+          <div class="common-desc desc_one">希慎广场店：香港銅鑼灣軒尼詩道500號希慎广场3楼324-325 </div>
+        </div>
+        <picture>
+          <source srcset="
+          https://cdnimg.vivaia.com/VA/image/Banner/20231225_6556/hysan-m.jpg
+          " media="(max-width:768px)" />
+          <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20231225_6556/hysan-p.jpg"
+            alt="" />
+        </picture>
+      </div>
+      <div class="list">
+        <div class="inner">
+          <div class="common-title">Jan 3 - Feb 29</div>
+          <div class="common-desc">New Wing Promotion Area, 6th Floor SOGO Causeway Bay </div>
+          <div class="common-desc desc_one">SOGO快闪店：香港銅鑼灣崇光百貨六樓推廣專區 </div>
+        </div>
+        <picture>
+          <source srcset="
+          https://cdnimg.vivaia.com/VA/image/Banner/20231225_6556/sogo-m.jpg
+          " media="(max-width:768px)" />
+          <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20231225_6556/sogo-p.jpg"
+            alt="" />
+        </picture>
+      </div>
+    </div>
 
-  <swiper_two></swiper_two>
-
+    <swiper_two></swiper_two>
+    <Icon_swiper></Icon_swiper>
     <div class="last_bottom">
       <div class="inner space-w">
         <a class="item">
-          <div class="inner"
-            style="position: absolute;display: flex;align-items: center;flex-direction: column;color:#ffff;">
-            <div class="title">
-              Warm Chic Style
+          <div class="inner">
+            <div class="title common-title">
+              Classics Built with Comfort
 
             </div>
-
+            <div class="desc common-desc">
+              Roomy toe box and stretchy uppers free your feet!
+            </div>
           </div>
           <picture>
             <source srcset="
-            https://cdnimg.vivaia.com/VA/image/Banner/20231207_6527/m06.png
+            https://cdnimg.vivaia.com/VA/image/Banner/20231225_6556/flats-m.jpg
               " media="(max-width:768px)" />
-            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20231207_6527/pc04.png" alt="" />
+            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20231225_6556/flast-p.jpg" alt="" />
           </picture>
         </a>
         <a class="item">
-          <div class="inner"
-            style="position: absolute;display: flex;align-items: center;flex-direction: column;color:#ffff;">
-            <div class="title">
-              Perfect for Indoors & <br>
-              Outdoors
+          <div class="inner">
+            <div class="title common-title">
+              Stylish Water-Repellent Boots
             </div>
-
+            <div class="desc common-desc">Keep your feet protected rain or shine.</div>
           </div>
           <picture>
             <source srcset="
-            https://cdnimg.vivaia.com/VA/image/Banner/20231207_6527/m05.png
+            https://cdnimg.vivaia.com/VA/image/Banner/20231225_6556/boots-m.jpg
               " media="(max-width:768px)" />
-            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20231207_6527/pc05.png" alt="" />
+            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20231225_6556/boots-p.jpg" alt="" />
           </picture>
         </a>
         <a class="item">
-          <div class="inner"
-            style="position: absolute;display: flex;align-items: center;flex-direction: column;color:#ffff;">
-            <div class="title">
-              Recycled Faux Fur & <br>
-              EVA Traction Sugarcane <br>
-              Outsole
+          <div class="inner">
+            <div class="title common-title">
+              Everyday Fun-Filled Loafers
             </div>
-
+            <div class="desc common-desc" >Add more vatality to your daily life.</div>
           </div>
           <picture>
             <source srcset="
-            https://cdnimg.vivaia.com/VA/image/Banner/20231207_6527/m04.png
+            https://cdnimg.vivaia.com/VA/image/Banner/20231225_6556/loafers-m.jpg
               " media="(max-width:768px)" />
-            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20231207_6527/pc06.png" alt="" />
+            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20231225_6556/loafers-p.jpg" alt="" />
           </picture>
         </a>
         <a class="item">
-          <div class="inner"
-            style="position: absolute;display: flex;align-items: center;flex-direction: column;color:#ffff;">
-            <div class="title">
-              Machine Washable
+          <div class="inner">
+            <div class="title common-title">
+              Running Heels
             </div>
-
+            <div class="desc common-desc">Run and dance all day and night in comfortable elegance.</div>
           </div>
           <picture>
             <source srcset="
-            https://cdnimg.vivaia.com/VA/image/Banner/20231207_6527/m03.png
+            https://cdnimg.vivaia.com/VA/image/Banner/20231225_6556/heels-m.jpg
               " media="(max-width:768px)" />
-            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20231207_6527/pc03.png" alt="" />
+            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20231225_6556/heels-p-4.jpg" alt="" />
           </picture>
         </a>
       </div>
     </div>
     <swiper_one></swiper_one>
-    <div class="fengniao-outer">
-      <goods_item_one :Allgoods="Allgoods" ref="child" v-if="width < 768">
-      </goods_item_one>
-    </div>
-    <div class="new_m_slide show_small" style="margin-bottom: 10.667vw;">
-      <div class="title_" style="margin-bottom: 5.3333vw;">
-        Explore Another Warm Style
-      </div>
-
-      <div class="outer">
-        <div class="inner">
-
-          <a class="imgs" href="https://www.vivaia.com/item/round-toe-wool-slippers-hazel-p_10017969.html?gid=10017981
-">
-            <img src="https://cdnimg.vivaia.com/VA/image/Banner/20231207_6527/m02.png" alt="">
-          </a>
-
-        </div>
-      </div>
-    </div>
+  
+    
     <!-- FAQ -->
     <div class="fengniao_addition space-w">
       <div class="addition_title lp_title_one">FAQ</div>
@@ -193,88 +188,51 @@
 let str = '10017505,10017569,10017521,10017585,10017553,10017537'
 import swiper_one from './swiper_one.vue';
 import swiper_two from './swiper_two.vue';
-import FAQ from './faq.vue';
+import FAQ from './FAQ.vue';
 import goods_item_one from './goods_item_one.vue';
+import Icon_swiper from './Icon_swiper.vue';
 export default {
   components: {
     swiper_one,
     swiper_two,
     FAQ,
-    goods_item_one
+    goods_item_one,
+    Icon_swiper
   },
   data () {
     return {
       list: [
         {
-          title: '1. Will I receive this gift before Dec. 24?',
+          title: "1. Will VIVAIA's Hong Kong stores offer any promotional activities?",
           desc: ` <div>
-            Of course, as long as you place your order before December 14th.
+           Customers can enjoy our holiday discounts until January 4: HK$160 off for 2 pairs / HK$320 off for 3 pairs / HK$480 off for 4 pairs.
+
    
     </div>`,
           id: 0
 
         },
         {
-          title: '2. Do I need to buy a larger size if I have wider feet or a higher arch?',
+          title: '2. Between the VIVAIA store at Hysan Place and the VIVAIA pop-up store at Sogo, which one would you recommend I visit?',
           desc: ` <div>
-            Yes, opting for a larger size that provides some extra room for wearing socks will likely make it more comfortable.
+             Both stores are located close to each other, so you can conveniently visit both. However, if you only have time to visit one, we highly recommend Hysan Place.
+
    
     </div>`,
           id: 1
         },
         {
-          title: '3. Can I get discount if this is my first purchase?',
+          title: '3. Do the Hong Kong stores have all the styles that are available online?',
           desc: ` <div>
-            Yes! VIVAIA welcomes new customers with:
-    
-    <li style="margin-left: 10px;">-$10 coupon code when you subscribe to the newsletter.
-</li>
-    <li style="margin-left: 10px;">-$15 off coupon when you subscribe to SMS notifications.</li>
-   
+            A: Not all styles are available offline, but our most popular and comfortable styles will be available for you to experience. 
     </div>`,
           id: 2
         },
-        {
-          title: "4. How is the VIVAIA returns & exchanges policy in holiday?",
-          desc: ` <div>
-            VIVAIA has extended its returns and exchanges policy to 45 days until Jan 4.
-   
-    </div>`,
-          id: 3
-        },
-        {
-          title: '5.  I need to choose a color for "Hannah," do you have any suggestions?',
-          desc: ` <div>
-            Purple is very unique on top of being elegant and enchanting. The combination of black and latte is sleek and stylish. White and pink makes you feel like a princess, although they are prone to getting dirty, but luckily these shoes are machine washable.
-   
-    </div>`,
-          id: 3
-        }
+       
       ],
-      Allgoods: [],
+     
       width: window.innerWidth
     }
-  },
-  mounted () {
-    this.getAllgoods()
-  },
-  methods: {
-    async getAllgoods () {
-      const res = await window._fengniao_getGoods_list({
-        goods_id: str.replace(/\s/g, ''),
-        disable_goods_number: 1
-      })
-
-
-      this.Allgoods = res.result
-
-
-      this.$nextTick(() => {
-        this.$refs.child.initSwiper();
-
-      });
-
-    },
   },
 
 
@@ -288,23 +246,23 @@ export default {
 
 .fengniao_new .common-title {
   font-family: Noto Serif;
-  font-size: 1.667vw;
+  font-size: 32.006px;
   font-weight: 400;
-  line-height: 2.292vw;
+  line-height: 44.006px;
   letter-spacing: 0px;
   text-align: left;
-  margin-bottom: 0.417vw;
+ 
 
 }
 
 .fengniao_new .common-desc {
   font-family: Roboto;
-  font-size: 0.833vw;
+  font-size: 15.994px;
   font-weight: 400;
-  line-height: 0.99vw;
+  line-height: 19.008px;
   letter-spacing: 0px;
-  text-align: left;
-
+  text-align: center;
+  margin-top: 0.417vw;
 }
 
 .deal .list {
@@ -313,10 +271,10 @@ export default {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 3.125vw 0 4.167vw;
+  padding: 4.167vw 0;
 
   position: relative;
-  top: -2.083vw;
+  top: -4.167vw;
   z-index: 10;
   border: 1px solid rgba(0, 0, 0, .1);
 
@@ -328,8 +286,7 @@ export default {
 }
 
 .deal .list .item {
-  /* margin-left: 6.25vw; */
-  height: 8.75vw;
+  height: 7.448vw;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -358,6 +315,36 @@ export default {
   color: #191817;
 }
 
+.fengniao_product {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.fengniao_product .list {
+  width: 41.146vw;
+  position: relative;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fengniao_product .inner{
+  position:absolute;
+  width: 18.281vw;
+}
+.fengniao_product .inner .common-title{
+  text-align: center;
+}
+.fengniao_product .inner .desc_one{
+
+font-size: 12px;
+font-weight: 400;
+line-height: 14px;
+letter-spacing: 0px;
+text-align: center;
+
+}
 .swiper_btn svg {
   width: auto !important;
   height: auto !important;
@@ -365,35 +352,37 @@ export default {
 
 .last_bottom {
   padding-bottom: 4.167vw;
-  padding-top: 2.083vw;
+  /* padding-top: 2.083vw; */
   background: #ffffff;
 }
 
 .last_bottom .inner {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+
 }
 
 .last_bottom .inner .item {
   position: relative;
   font-family: Noto Serif;
-  font-size: 1.25vw;
-  font-weight: 400;
-  line-height: 1.4583333vw;
-  width: 24%;
+  color: #ffffff;
+  width: 41.146vw;
+  margin-top: 1.042vw;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.last_bottom .inner .item .title {
-  /* position: absolute; */
-  color: #ffffff;
-  font-size: 1.25vw;
-  font-weight: 400;
-  line-height: 1.4583333vw;
-  text-align: center;
+.last_bottom .item .inner {
+
+  position: absolute;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
+
+
 
 .fengniao_top_banner ._left {
   position: absolute;
@@ -409,9 +398,8 @@ export default {
 
 .fengniao_top_banner .inner {
   position: absolute;
-  color: #FFFFFF;
-  top: 16.771vw;
-  left: 8.333vw;
+  color: #191817;
+
 
 }
 
@@ -483,12 +471,12 @@ export default {
 .fengniao_new .new_title_one {
 
   font-family: Roboto;
-  font-size: 0.729vw;
+  font-size: 14px;
   font-weight: 400;
-  line-height: 0.833vw;
+  line-height: 16px;
   letter-spacing: 0px;
   text-align: left;
-  margin-top: 0.625vw;
+  margin-top: 12px;
   overflow: hidden;
   /* 隐藏溢出内容 */
   white-space: nowrap;
@@ -799,28 +787,33 @@ export default {
   line-height: 1.19;
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1700px) {
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+
   .fengniao_new .common-title {
     font-family: Noto Serif;
-    font-size: 24.005px;
+    font-size: 1.667vw;
     font-weight: 400;
-    line-height: 33.005px;
+    line-height: 2.292vw;
     letter-spacing: 0px;
-    text-align: left;
-    margin-bottom: 6.005px;
-
+    text-align: center;
+   
   }
 
   .fengniao_new .common-desc {
     font-family: Roboto;
-    font-size: 13.995px;
+    font-size: 13.997px;
     font-weight: 400;
-    line-height: 16.256px;
+    line-height: 16.258px;
     letter-spacing: 0px;
-    text-align: left;
+    text-align: center;;
 
   }
-
+  .fengniao_product .list {
+    width:49.3% ;
+  }
+  .fengniao_product .inner{
+    width: 70%;
+  }
   .deal .list .item span {
     text-align: center;
     font-family: Roboto;
@@ -828,8 +821,67 @@ export default {
     font-weight: 400;
     line-height: 17.251px;
     letter-spacing: 0px;
-    text-align: left;
+    text-align: center;;
     color: #191817;
+  }
+
+  .fengniao_new .new_title_one {
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.12;
+    letter-spacing: 0;
+    text-align: left;
+    margin-top: 9px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .fengniao_addition .addition_item .item_container .item_title {
+    font-size: 1.25vw;
+
+    line-height: 1.12;
+  }
+
+  .fengniao_addition .addition_item .item_info .item_desc {
+    font-size: 0.972vw;
+
+    line-height: 1.12;
+  }
+ 
+}
+@media screen and (min-width: 769px) and (max-width: 1023px){
+  .fengniao_new .common-title {
+    font-family: Noto Serif;
+    font-size: 1.8vw;
+    
+    line-height: 1.18;
+    
+   
+  }
+
+  .fengniao_new .common-desc {
+    font-family: Roboto;
+    font-size: 12px;
+  
+    line-height: 1.14;
+   
+
+  }
+  .fengniao_product .list {
+    width:49.3% ;
+  }
+  .fengniao_product .inner{
+    width: 70%;
+  }
+  .deal .list .item span {
+    text-align: center;
+    font-family: Roboto;
+    font-size: 14px;
+   
+    line-height: 1.16;
+  
   }
 
   .fengniao_new .new_title_one {
@@ -859,6 +911,46 @@ export default {
 }
 
 @media screen and (max-width: 768px) {
+  .fengniao_new .common-title {
+    font-family: Noto Serif;
+font-size: 5.333vw;
+font-weight: 400;
+line-height: 7.2vw;
+letter-spacing: 0px;
+text-align: center;
+
+ 
+
+}
+
+.fengniao_new .common-desc {
+  font-family: Roboto;
+font-size: 3.2vw;
+font-weight: 400;
+line-height: 3.733vw;
+letter-spacing: 0px;
+text-align: center;
+margin-top: 2.133vw;
+}
+  .fengniao_product {
+    flex-wrap: wrap;
+
+  }
+  .fengniao_product .inner{
+    width: 74.133vw;
+  }
+  .fengniao_product .list {
+    width: 100%;
+    margin-bottom: 5.3333vw;
+  }
+  .fengniao_product .inner .desc_one{
+    font-family: Roboto;
+font-size: 3.2vw;
+font-weight: 400;
+line-height: 3.733vw;
+letter-spacing: 0px;
+text-align: center;
+  }
   .deal .list {
     background: rgba(255, 255, 255, 1);
     /* background: red; */
@@ -875,8 +967,8 @@ export default {
   }
 
   .deal .list .item img {
-    width: 13.333vw;
-    height: 13.333vw;
+    width: 10.667vw;
+    height: 10.667vw;
   }
 
   .deal .list .item {
@@ -938,28 +1030,7 @@ export default {
     text-align: center;
   }
 
-  .fengniao_new .common-title {
-    font-family: Noto Serif;
-    font-size: 5.333vw;
-    font-weight: 400;
-    line-height: 7.2vw;
-    letter-spacing: 0px;
-    text-align: left;
-
-    margin-bottom: 2.133vw;
-  }
-
-  .fengniao_new .common-desc {
-    font-family: Roboto;
-    font-size: 3.2vw;
-    font-weight: 400;
-    line-height: 3.733vw;
-    letter-spacing: 0px;
-    text-align: left;
-
-
-  }
-
+  
   .fengniao_new svg {
     width: 8.8vw;
     height: 8.8vw;
@@ -993,45 +1064,41 @@ export default {
   }
 
   .last_bottom {
-    margin-top: -5.333vw;
     padding: 0 0 10.667vw;
-    background: #ffffff;
+
   }
 
-  .last_bottom .inner {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    /* 两列 */
-    grid-template-rows: 1fr 1fr;
-    gap: 10px;
-    /* 可选，设置网格项之间的间距 */
+  .last_bottom .item .inner {
+    flex-wrap: wrap;
+    width: 100%;
+    position: static;
+
   }
 
   .last_bottom .inner .item .title {
-    font-size: 3.200vw;
-    line-height: 4.5vw;
+   
+    width: 100%;
+text-align: left;
+  }
+
+  .last_bottom .inner .item .desc {
+    width: 100%;
+    text-align: left;
+margin-bottom: 2.667vw;
+
   }
 
   .last_bottom .inner .item {
-    position: relative;
-
-    font-size: 3.7773vw;
-    line-height: 1.12;
-
-
+    color: #191817;
+    flex-direction: column;
     text-align: center;
-    width: auto;
-
+    width: 100%;
+    margin-bottom: 10.667vw;
+    margin-top: 0;
   }
 
-  .last_bottom .inner .item .common-desc {
-    /* font-family: Roboto;
-font-size: 4.267vw;
-font-weight: 500;
-line-height: 5.067vw;
-letter-spacing: 0px;
-text-align: right; */
-    font-weight: 500;
+  .last_bottom .inner .item:last-child {
+    margin-bottom: 0;
   }
 
   .fengniao_new .new_title {
@@ -1061,6 +1128,12 @@ text-align: right; */
 
   .swiper-container-horizontal>.swiper-pagination-progressbar {
     height: 0.5333333vw;
+    background: #B0B0B0;
+  }
+
+  .swiper-pagination-progressbar-fill {
+    height: 0.5333333vw !important;
+    background: #191817 !important;
   }
 
   .fengniao_new .fengniao_top_banner {
