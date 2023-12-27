@@ -79,7 +79,7 @@
 
       <div class="list">
         <div class="inner">
-          <div class="common-title">Opening Jan 1 </div>
+          <div class="common-title" style="white-space: nowrap;">Grand Opening Jan 1 </div>
           <div class="common-desc" style="white-space: nowrap;">Shop Nos.324-325 on the Third Floor of Hysan <br> Place,No.500 Hennessy Road,Causeway Bay   </div>
           <div class="common-desc desc_one">希慎广场店：香港銅鑼灣軒尼詩道500號希慎广场3楼324-325 </div>
         </div>
@@ -93,7 +93,7 @@
       </div>
       <div class="list">
         <div class="inner">
-          <div class="common-title">Jan 3 - Feb 29</div>
+          <div class="common-title" style="white-space: nowrap;">Pop-Up Jan 3 – Feb 29</div>
           <div class="common-desc" style="white-space: nowrap;">New Wing Promotion Area, 6th Floor SOGO <br> Causeway Bay </div>
           <div class="common-desc desc_one">SOGO快闪店：香港銅鑼灣崇光百貨六樓推廣專區 </div>
         </div>
