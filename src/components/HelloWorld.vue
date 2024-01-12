@@ -51,8 +51,7 @@
               d="M45.6899 39.8911L30.2752 44.0214L29.6281 41.6066L45.0428 37.4762L45.6899 39.8911Z" fill="#191817" />
           </svg>
 
-          <span style="white-space: nowrap;">Holiday Sale Until Jan 4: <br>
-            Up to 40% Off</span>
+          <span style="white-space: nowrap;">DIY Charms Instant Discount: <br> 50% Off + Extra Savings</span>
         </div>
         <div class="item">
 
@@ -202,18 +201,19 @@ export default {
   data () {
     return {
       list: [
-        {
-          title: "1. Will VIVAIA's Hong Kong stores offer any promotional activities?",
-          desc: ` <div>
-           Customers can enjoy our holiday discounts until January 4: HK$160 off for 2 pairs / HK$320 off for 3 pairs / HK$480 off for 4 pairs.
+      
+    //     {
+    //       title: "1. Will VIVAIA's Hong Kong stores offer any promotional activities?",
+    //       desc: ` <div>
+    //        Customers can enjoy our holiday discounts until January 4: HK$160 off for 2 pairs / HK$320 off for 3 pairs / HK$480 off for 4 pairs.
 
    
-    </div>`,
-          id: 0
+    // </div>`,
+    //       id: 0
 
-        },
+    //     },
         {
-          title: '2. Between the VIVAIA store at Hysan Place and the VIVAIA pop-up store at Sogo, which one would you recommend I visit?',
+          title: '1. Between the VIVAIA store at Hysan Place and the VIVAIA pop-up store at Sogo, which one would you recommend I visit?',
           desc: ` <div>
              Both stores are located close to each other, so you can conveniently visit both. However, if you only have time to visit one, we highly recommend Hysan Place.
 
@@ -222,7 +222,7 @@ export default {
           id: 1
         },
         {
-          title: '3. Do the Hong Kong stores have all the styles that are available online?',
+          title: '2. Do the Hong Kong stores have all the styles that are available online?',
           desc: ` <div>
             A: Not all styles are available offline, but our most popular and comfortable styles will be available for you to experience. 
     </div>`,
@@ -331,7 +331,7 @@ export default {
 }
 .fengniao_product .inner{
   position:absolute;
-  width: 18.281vw;
+  /* width: 18.281vw; */
 }
 .fengniao_product .inner .common-title{
   text-align: center;
