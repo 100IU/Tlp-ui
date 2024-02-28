@@ -1,241 +1,579 @@
 <template>
-  <div class="fengniao_new" style="overflow-x: hidden;background: #fff;">
-    <div class="fengniao_top_banner" style="position: relative;">
-
+  <div class="women_day">
+    <div class="top_banner">
       <picture>
         <source srcset="
-        https://cdnimg.vivaia.com/VA/image/Banner/20231225_6556/banner-a-M.jpg
+            https://cdnimg.vivaia.com/VA/image/Banner/20240227_6656/banner-a-M.jpg
           " media="(max-width:768px)" />
-        <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20231225_6556/banner-p.jpg" alt="" />
+        <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20240227_6655/Rectangle-1.jpg" alt="" />
       </picture>
-      <div class="inner">
-        <div class="title common-title">
-          Hong Kong—Early January
+    </div>
+    <div class="po_box space-w">
+      <div class="po_text-area">
+        <div class="po_title">In Her Shoes</div>
+        <div class="po_desc desc_1" style="font-family: Roboto;font-weight: 500;">
+          Let’s Turn a Comfy Step Into a Giant Leap
         </div>
-        <div class="common-desc ">
-          Comfort & Style Makes Its Retail Debut!
+        <div class="po_desc">
+          At VIVAIA, we believe there is no limit to what women can accomplish.
+          Whether they want to be ballerinas, news anchors, chefs or doctors —
+          anything is possible. <br /><br />
+          In honor of Women’s History Month, we’ve partnered with 5 women from
+          our community to highlight their unique experiences in different
+          professions and to celebrate their success. <br /><br />
+          Our new campaign In Her Shoes delves into the challenges these women
+          have overcome and how they found support and empowerment through
+          different avenues, including fashion and comfortable footwear.
         </div>
       </div>
     </div>
-    <div class="deal">
-      <div class="list space-w">
-        <div class="item">
-
-          <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 80 80" fill="none">
-            <path
-              d="M39.474 37.7087C34.5202 37.7087 30.5415 33.6899 30.5415 28.7503C30.5415 23.8108 34.5202 19.792 39.474 19.792C44.4278 19.792 48.4582 23.8108 48.4582 28.7503C48.4582 33.6899 44.4278 37.7087 39.474 37.7087ZM39.474 22.9671C36.2761 22.9671 33.6741 25.5616 33.6741 28.7503C33.6741 31.939 36.2761 34.5336 39.474 34.5336C42.6719 34.5336 45.2739 31.939 45.2739 28.7503C45.2739 25.5616 42.6719 22.9671 39.474 22.9671Z"
-              fill="#191817" />
-            <path
-              d="M56.4835 59.2083C55.4749 59.2083 54.6545 58.425 54.6545 57.462C54.6545 49.4839 47.8559 42.9926 39.5 42.9926C31.1441 42.9926 24.3455 49.4839 24.3455 57.462C24.3455 58.425 23.5251 59.2083 22.5165 59.2083C21.5079 59.2083 20.6875 58.425 20.6875 57.462C20.6875 55.0372 21.1839 52.6871 22.1664 50.4718C23.1122 48.3313 24.4709 46.4104 26.1954 44.7639C27.9199 43.1174 29.9318 41.8201 32.1736 40.917C34.499 39.974 36.9603 39.5 39.5 39.5C42.0397 39.5 44.501 39.974 46.8212 40.912C49.063 41.8151 51.0749 43.1124 52.7994 44.7589C54.5239 46.4104 55.8825 48.3263 56.8284 50.4668C57.8161 52.6871 58.3125 55.0372 58.3125 57.462C58.3125 58.425 57.4921 59.2083 56.4835 59.2083Z"
-              fill="#191817" />
-          </svg>
-
-          <span>In-Store Specialists</span>
-        </div>
-        <div class="item">
-
-          <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M56.7936 20.9077L36.9696 20.9077L13.8416 44.0357L33.6656 63.8598L56.7936 40.7317V20.9077ZM54.2936 39.6962L33.6656 60.3242L17.3771 44.0357L38.0051 23.4077L54.2936 23.4077V39.6962Z"
-              fill="#191817" />
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M59.1379 43.0743L57.9248 32.65L60.408 32.3611L61.7213 43.6463L48.365 65.3503L38.7322 60.9717L39.7667 58.6958L47.3917 62.1617L59.1379 43.0743Z"
-              fill="#191817" />
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M35.6153 35.4129C36.2677 36.0653 37.3255 36.0653 37.9779 35.4129C38.6303 34.7605 38.6303 33.7027 37.9779 33.0503C37.3255 32.3979 36.2677 32.3979 35.6153 33.0503C34.9629 33.7027 34.9629 34.7605 35.6153 35.4129ZM33.8475 37.1806C35.4762 38.8094 38.1169 38.8094 39.7456 37.1806C41.3744 35.5519 41.3744 32.9112 39.7456 31.2825C38.1169 29.6538 35.4762 29.6538 33.8475 31.2825C32.2188 32.9112 32.2188 35.5519 33.8475 37.1806Z"
-              fill="#191817" />
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M37.0896 48.6839C37.7421 49.3363 38.7998 49.3363 39.4522 48.6839C40.1047 48.0315 40.1047 46.9737 39.4522 46.3213C38.7998 45.6689 37.7421 45.6689 37.0896 46.3213C36.4372 46.9737 36.4372 48.0315 37.0896 48.6839ZM35.3219 50.4516C36.9506 52.0804 39.5913 52.0804 41.22 50.4516C42.8487 48.8229 42.8487 46.1822 41.22 44.5535C39.5913 42.9248 36.9506 42.9248 35.3219 44.5535C33.6932 46.1822 33.6932 48.8229 35.3219 50.4516Z"
-              fill="#191817" />
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M45.6899 39.8911L30.2752 44.0214L29.6281 41.6066L45.0428 37.4762L45.6899 39.8911Z" fill="#191817" />
-          </svg>
-
-          <span style="white-space: nowrap;">DIY Charms Instant Discount: <br> 50% Off + Extra Savings</span>
-        </div>
-        <div class="item">
-
-
-          <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M57.5 22.5H22.5V29.1667H57.5V22.5ZM20 20V31.6667H60V20H20Z"
-              fill="#191817" />
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M55.8334 31.6667H24.1667V56.6667H55.8334V31.6667ZM21.6667 29.1667V59.1667H58.3334V29.1667H21.6667Z"
-              fill="#191817" />
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M32.4043 39.9972L36.1543 35.8306L38.0125 37.503L36.1401 39.5834H48.3334V42.0834H33.3334L32.4043 39.9972Z"
-              fill="#191817" />
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M47.5957 46.6695L43.8457 50.8362L41.9875 49.1638L43.8599 47.0833H31.6666V44.5833H46.6666L47.5957 46.6695Z"
-              fill="#191817" />
-          </svg>
-
-          <span>Hassle-Free Returns</span>
-        </div>
-      </div>
-    </div>
-    <div class="fengniao_product space-w">
-
-      <div class="list">
-        <div class="inner">
-          <div class="common-title" style="white-space: nowrap;">Shop Nos.324-325 </div>
-          <div class="common-desc" style="white-space: nowrap;">Third Floor of Hysan Place,No.500 Hennessy <br> Road,Causeway Bay   </div>
-          <div class="common-desc desc_one">希慎广场店：香港銅鑼灣軒尼詩道500號希慎广场3楼324-325 </div>
-        </div>
-        <picture>
-          <source srcset="
-          https://cdnimg.vivaia.com/VA/image/Banner/20231225_6556/new%20arrival-m.jpg
-          " media="(max-width:768px)" />
-          <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20231225_6556/new%20arrival-p.jpg"
-            alt="" />
-        </picture>
-      </div>
-      <div class="list">
-        <div class="inner">
-          <div class="common-title" style="white-space: nowrap;">New Wing Promotion Area</div>
-          <div class="common-desc" style="white-space: nowrap;">6th Floor SOGO Causeway Bay </div>
-          <div class="common-desc desc_one">SOGO快闪店：香港銅鑼灣崇光百貨六樓推廣專區 </div>
-        </div>
-        <picture>
-          <source srcset="
-          https://cdnimg.vivaia.com/VA/image/Banner/20231225_6556/best%20sellers-m.jpg
-          " media="(max-width:768px)" />
-          <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20231225_6556/best%20sellers-p.jpg"
-            alt="" />
-        </picture>
-      </div>
-    </div>
-
-    <swiper_two></swiper_two>
-    <Icon_swiper></Icon_swiper>
-    <div class="last_bottom">
-      <div class="inner space-w">
-        <a class="item">
-          <div class="inner">
-            <div class="title common-title">
-              Classics Built with Comfort
-
-            </div>
-            <div class="desc common-desc">
-              Roomy toe box and stretchy uppers free your feet!
-            </div>
-          </div>
-          <picture>
-            <source srcset="
-            https://cdnimg.vivaia.com/VA/image/Banner/20231225_6556/flats-m.jpg
-              " media="(max-width:768px)" />
-            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20231225_6556/flast-p.jpg" alt="" />
-          </picture>
-        </a>
-        <a class="item">
-          <div class="inner">
-            <div class="title common-title">
-              Stylish Water-Repellent Boots
-            </div>
-            <div class="desc common-desc">Keep your feet protected rain or shine.</div>
-          </div>
-          <picture>
-            <source srcset="
-            https://cdnimg.vivaia.com/VA/image/Banner/20231225_6556/boots-m.jpg
-              " media="(max-width:768px)" />
-            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20231225_6556/boots-p.jpg" alt="" />
-          </picture>
-        </a>
-        <a class="item">
-          <div class="inner">
-            <div class="title common-title">
-              Everyday Fun-Filled Loafers
-            </div>
-            <div class="desc common-desc" >Add more vatality to your daily life.</div>
-          </div>
-          <picture>
-            <source srcset="
-            https://cdnimg.vivaia.com/VA/image/Banner/20231225_6556/loafers-m.jpg
-              " media="(max-width:768px)" />
-            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20231225_6556/loafers-p.jpg" alt="" />
-          </picture>
-        </a>
-        <a class="item">
-          <div class="inner">
-            <div class="title common-title">
-              Running Heels
-            </div>
-            <div class="desc common-desc">Run and dance all day and night in comfortable elegance.</div>
-          </div>
-          <picture>
-            <source srcset="
-            https://cdnimg.vivaia.com/VA/image/Banner/20231225_6556/heels-m.jpg
-              " media="(max-width:768px)" />
-            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20231225_6556/heels-p-4.jpg" alt="" />
-          </picture>
-        </a>
-      </div>
-    </div>
-    <swiper_one></swiper_one>
-  
     
-    <!-- FAQ -->
-    <div class="fengniao_addition space-w">
-      <div class="addition_title lp_title_one">FAQ</div>
-      <FAQ v-for="(item, i) in list" :key="i" :item="item"></FAQ>
+    <div class="common_title space-w">Recommendations</div>
+    <div class="recommen_swiper space-w" style="position: relative">
+      <div class="recommen_swiper_inner" style="overflow: hidden">
+        <div class="swiper_btn show_big">
+          <div class="swiper-button swiper-button-prev">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M10.0607 2.45129L9 1.39062L1.3934 8.99723L2.45406 10.0579L2.45412 10.0578L9.00013 16.6038L10.0608 15.5432L3.51478 8.99716L10.0607 2.45129Z"
+                fill="#FFFFFF" />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M17 9.75H3V8.25H17V9.75Z" fill="#FFFFFF" />
+            </svg>
+          </div>
+          <div class="swiper-button swiper-button-next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M7.93934 2.45129L9 1.39062L16.6066 8.99723L15.5459 10.0579L15.5459 10.0578L8.99987 16.6038L7.93921 15.5432L14.4852 8.99716L7.93934 2.45129Z"
+                fill="#FFFFFF" />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M1 9.75H15V8.25H1V9.75Z" fill="#FFFFFF" />
+            </svg>
+          </div>
+        </div>
+        <div class="swiper-wrapper">
+          <!-- <div class="swiper-slide" v-for="item in goods_data" :key="item.goods_sn">
+            <a :href="`https://www.vivaia.com${item.goods_url}`" style="
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              " class="a_link">
+              <img v-lazy="item.goods_thumb" />
+              
+              <div class="shop_btn" style="position: absolute">Shop Now</div>
+            </a>
+
+            <div class="slide_info">
+              <p class="new_title_one" :class="item.goods_sn === '1' ? 'new_weight' : ''">
+                {{ item.goods_name }}
+              </p>
+
+              <p class="new_title_one" v-if="item.pc_shop_price_converted !== item.old_shop_price_converted
+                ">
+                <span style="margin-right: 4px">{{
+                  item.pc_shop_price_converted
+                }}</span>
+                <span>{{ item.old_shop_price_converted }} </span>
+              </p>
+              <p v-else class="new_title_one">
+                <span>{{ item.pc_shop_price_converted }}</span>
+              </p>
+            </div>
+          </div> -->
+          <div class="swiper-slide"><a
+              href="https://www.vivaia.com/item/pointed-toe-ballet-flats-p_10012694.html?gid=10012694" class="a_link"
+              style="position: relative; display: flex; align-items: center; justify-content: center;"><img
+                data-src="https://cdnimg.vivaia.com/vivaia/products/1683707387-23558e6b-3aa1-487f-8f37-e23e94836e5b.jpg?imresize=800x800"
+                src="https://cdnimg.vivaia.com/vivaia/products/1683707387-23558e6b-3aa1-487f-8f37-e23e94836e5b.jpg?imresize=800x800"
+                lazy="loaded">
+              <div class="shop_btn" style="position: absolute;"> Shop Now </div>
+            </a>
+            <div class="slide_info">
+              <p class="new_title_one"> Pointed-Toe Ballet Flats (Aria 5°)</p>
+              <p class="new_title_one"><span>HK$780.00</span></p>
+            </div>
+          </div>
+          <div class="swiper-slide"><a
+              href="https://www.vivaia.com/item/pointed-toe-ballet-flats-p_10012694.html?gid=10012694" class="a_link"
+              style="position: relative; display: flex; align-items: center; justify-content: center;"><img
+                data-src="https://cdnimg.vivaia.com/vivaia/products/1683707387-23558e6b-3aa1-487f-8f37-e23e94836e5b.jpg?imresize=800x800"
+                src="https://cdnimg.vivaia.com/vivaia/products/1683707387-23558e6b-3aa1-487f-8f37-e23e94836e5b.jpg?imresize=800x800"
+                lazy="loaded">
+              <div class="shop_btn" style="position: absolute;"> Shop Now </div>
+            </a>
+            <div class="slide_info">
+              <p class="new_title_one"> Pointed-Toe Ballet Flats (Aria 5°)</p>
+              <p class="new_title_one"><span>HK$780.00</span></p>
+            </div>
+          </div>
+          <div class="swiper-slide"><a
+              href="https://www.vivaia.com/item/pointed-toe-ballet-flats-p_10012694.html?gid=10012694" class="a_link"
+              style="position: relative; display: flex; align-items: center; justify-content: center;"><img
+                data-src="https://cdnimg.vivaia.com/vivaia/products/1683707387-23558e6b-3aa1-487f-8f37-e23e94836e5b.jpg?imresize=800x800"
+                src="https://cdnimg.vivaia.com/vivaia/products/1683707387-23558e6b-3aa1-487f-8f37-e23e94836e5b.jpg?imresize=800x800"
+                lazy="loaded">
+              <div class="shop_btn" style="position: absolute;"> Shop Now </div>
+            </a>
+            <div class="slide_info">
+              <p class="new_title_one"> Pointed-Toe Ballet Flats (Aria 5°)</p>
+              <p class="new_title_one"><span>HK$780.00</span></p>
+            </div>
+          </div>
+          <div class="swiper-slide"><a
+              href="https://www.vivaia.com/item/pointed-toe-ballet-flats-p_10012694.html?gid=10012694" class="a_link"
+              style="position: relative; display: flex; align-items: center; justify-content: center;"><img
+                data-src="https://cdnimg.vivaia.com/vivaia/products/1683707387-23558e6b-3aa1-487f-8f37-e23e94836e5b.jpg?imresize=800x800"
+                src="https://cdnimg.vivaia.com/vivaia/products/1683707387-23558e6b-3aa1-487f-8f37-e23e94836e5b.jpg?imresize=800x800"
+                lazy="loaded">
+              <div class="shop_btn" style="position: absolute;"> Shop Now </div>
+            </a>
+            <div class="slide_info">
+              <p class="new_title_one"> Pointed-Toe Ballet Flats (Aria 5°)</p>
+              <p class="new_title_one"><span>HK$780.00</span></p>
+            </div>
+          </div>
+          <div class="swiper-slide"><a
+              href="https://www.vivaia.com/item/pointed-toe-ballet-flats-p_10012694.html?gid=10012694" class="a_link"
+              style="position: relative; display: flex; align-items: center; justify-content: center;"><img
+                data-src="https://cdnimg.vivaia.com/vivaia/products/1683707387-23558e6b-3aa1-487f-8f37-e23e94836e5b.jpg?imresize=800x800"
+                src="https://cdnimg.vivaia.com/vivaia/products/1683707387-23558e6b-3aa1-487f-8f37-e23e94836e5b.jpg?imresize=800x800"
+                lazy="loaded">
+              <div class="shop_btn" style="position: absolute;"> Shop Now </div>
+            </a>
+            <div class="slide_info">
+              <p class="new_title_one"> Pointed-Toe Ballet Flats (Aria 5°)</p>
+              <p class="new_title_one"><span>HK$780.00</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
     </div>
+    <!-- <div class="recommen_swiper space-w" style="position: relative">
+      <div class="recommen_swiper_inner" style="overflow: hidden">
+        <div class="swiper_btn show_big">
+          <div class="swiper-button swiper-button-prev">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M10.0607 2.45129L9 1.39062L1.3934 8.99723L2.45406 10.0579L2.45412 10.0578L9.00013 16.6038L10.0608 15.5432L3.51478 8.99716L10.0607 2.45129Z"
+                fill="#FFFFFF" />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M17 9.75H3V8.25H17V9.75Z" fill="#FFFFFF" />
+            </svg>
+          </div>
+          <div class="swiper-button swiper-button-next">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M7.93934 2.45129L9 1.39062L16.6066 8.99723L15.5459 10.0579L15.5459 10.0578L8.99987 16.6038L7.93921 15.5432L14.4852 8.99716L7.93934 2.45129Z"
+                fill="#FFFFFF" />
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M1 9.75H15V8.25H1V9.75Z" fill="#FFFFFF" />
+            </svg>
+          </div>
+        </div>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" v-for="item in goods_data" :key="item.goods_sn">
+            <a :href="`https://www.vivaia.com${item.goods_url}`" style="
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              " class="a_link">
+              <img v-lazy="item.goods_thumb" />
+
+              <div class="shop_btn" style="position: absolute">Shop Now</div>
+            </a>
+
+            <div class="slide_info">
+              <p class="new_title_one">
+                {{ item.goods_name }}
+              </p>
+
+              <p class="new_title_one" v-if="item.pc_shop_price_converted !== item.old_shop_price_converted
+                ">
+                <span style="margin-right: 4px">{{
+                  item.pc_shop_price_converted
+                }}</span>
+                <span>{{ item.old_shop_price_converted }} </span>
+              </p>
+              <p v-else class="new_title_one">
+                <span>{{ item.pc_shop_price_converted }}</span>
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div> -->
+    <div class="videos space-w">
+    <div class="common_title title">
+      Watch as these five women walk you through their individual journeys
+      <br class="show_big" />
+      and explain how VIVAIA has played an important role in their lives.
+    </div>
+
+    <video id="myVideo" class="videos" autoplay="autoplay" loop="loop" muted="" controls="controls" width="100%"
+      playsinline="true" webkit-playsinline="true">
+      <source src="https://cdnimg.vivaia.com/CO/video/Banner/20240125_6604/video.mp4" type="video/mp4">
+    </video>
 
   </div>
+  <div class="bottom_swiper space-w">
+    <div class="bottom_swiper_inner show_big" style="overflow: hidden; position: relative">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <picture>
+            <source srcset="
+                https://cdnimg.vivaia.com/VA/image/Banner/20240227_6656/Rectangle%202326.jpg
+                " media="(max-width:768px)" />
+            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20240227_6655/Rectangle%202324.jpg"
+              alt="" />
+          </picture>
+
+          <div class="slide_area">
+            <div class="slide_desc desc_1">News Anchor</div>
+            <div class="common_title slide_title">Sara Lee Kessler</div>
+            <div class="slide_desc">
+              Sara Lee Kessler is a veteran TV and radio news anchor and
+              reporter with more than 40 years of experience and name
+              recognition in the New York market. <br />
+              <br />
+              She is a three-time Emmy Award winner for anchoring WWOR-TV's
+              coverage of the 1993 World Trade Center bombing, which was
+              carried nationally on CNN, and hosting and writing documentaries
+              on autism and bone marrow donation that aired on PBS.
+              <br />
+              <br />
+              Sara Lee says her favorite assignment was covering the late John
+              Lennon's 1976 immigration hearing in which he was given a green
+              card and he yelled out, "right on, brother" as she did her TV
+              news standup for WCBS, a historic moment immortalized in the
+              2009 film, U.S. v Lennon. Sara Lee Kessler has been with iHeart
+              Radio since 2013 and can be heard in New York on 710 WOR and
+              nationwide on NBC News Radio stations.
+            </div>
+            <div class="slide_desc">Instagram: @saraleekessler</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source srcset="
+                https://cdnimg.vivaia.com/VA/image/Banner/20240227_6656/Rectangle%202326.jpg
+                " media="(max-width:768px)" />
+            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20240227_6655/Rectangle%202324.jpg"
+              alt="" />
+          </picture>
+
+          <div class="slide_area">
+            <div class="slide_desc desc_1">News Anchor</div>
+            <div class="common_title slide_title">Sara Lee Kessler</div>
+            <div class="slide_desc">
+              Sara Lee Kessler is a veteran TV and radio news anchor and
+              reporter with more than 40 years of experience and name
+              recognition in the New York market. <br />
+              <br />
+              She is a three-time Emmy Award winner for anchoring WWOR-TV's
+              coverage of the 1993 World Trade Center bombing, which was
+              carried nationally on CNN, and hosting and writing documentaries
+              on autism and bone marrow donation that aired on PBS.
+              <br />
+              <br />
+              Sara Lee says her favorite assignment was covering the late John
+              Lennon's 1976 immigration hearing in which he was given a green
+              card and he yelled out, "right on, brother" as she did her TV
+              news standup for WCBS, a historic moment immortalized in the
+              2009 film, U.S. v Lennon. Sara Lee Kessler has been with iHeart
+              Radio since 2013 and can be heard in New York on 710 WOR and
+              nationwide on NBC News Radio stations.
+            </div>
+            <div class="slide_desc">Instagram: @saraleekessler</div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+    <div class="bottom_swiper_inner_m show_small" style="overflow: hidden; position: relative">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <picture>
+            <source srcset="
+                https://cdnimg.vivaia.com/VA/image/Banner/20240227_6656/Rectangle%202326.jpg
+                " media="(max-width:768px)" />
+            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20240227_6655/Rectangle%202324.jpg"
+              alt="" />
+          </picture>
+
+          <div class="slide_area">
+            <div class="slide_desc desc_1">News Anchor</div>
+            <div class="common_title slide_title">Sara Lee Kessler</div>
+            <div class="slide_desc">
+              Sara Lee Kessler is a veteran TV and radio news anchor and
+              reporter with more than 40 years of experience and name
+              recognition in the New York market. <br />
+              <br />
+              She is a three-time Emmy Award winner for anchoring WWOR-TV's
+              coverage of the 1993 World Trade Center bombing, which was
+              carried nationally on CNN, and hosting and writing documentaries
+              on autism and bone marrow donation that aired on PBS.
+              <br />
+              <br />
+              Sara Lee says her favorite assignment was covering the late John
+              Lennon's 1976 immigration hearing in which he was given a green
+              card and he yelled out, "right on, brother" as she did her TV
+              news standup for WCBS, a historic moment immortalized in the
+              2009 film, U.S. v Lennon. Sara Lee Kessler has been with iHeart
+              Radio since 2013 and can be heard in New York on 710 WOR and
+              nationwide on NBC News Radio stations.
+            </div>
+            <div class="slide_desc">Instagram: @saraleekessler</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source srcset="
+                https://cdnimg.vivaia.com/VA/image/Banner/20240227_6656/Rectangle%202326.jpg
+                " media="(max-width:768px)" />
+            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20240227_6655/Rectangle%202324.jpg"
+              alt="" />
+          </picture>
+
+          <div class="slide_area">
+            <div class="slide_desc desc_1">News Anchor</div>
+            <div class="common_title slide_title">Sara Lee Kessler</div>
+            <div class="slide_desc">
+              Sara Lee Kessler is a veteran TV and radio news anchor and
+              reporter with more than 40 years of experience and name
+              recognition in the New York market. <br />
+              <br />
+              She is a three-time Emmy Award winner for anchoring WWOR-TV's
+              coverage of the 1993 World Trade Center bombing, which was
+              carried nationally on CNN, and hosting and writing documentaries
+              on autism and bone marrow donation that aired on PBS.
+              <br />
+              <br />
+              Sara Lee says her favorite assignment was covering the late John
+              Lennon's 1976 immigration hearing in which he was given a green
+              card and he yelled out, "right on, brother" as she did her TV
+              news standup for WCBS, a historic moment immortalized in the
+              2009 film, U.S. v Lennon. Sara Lee Kessler has been with iHeart
+              Radio since 2013 and can be heard in New York on 710 WOR and
+              nationwide on NBC News Radio stations.
+            </div>
+            <div class="slide_desc">Instagram: @saraleekessler</div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <picture>
+            <source srcset="
+                https://cdnimg.vivaia.com/VA/image/Banner/20240227_6656/Rectangle%202326.jpg
+                " media="(max-width:768px)" />
+            <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20240227_6655/Rectangle%202324.jpg"
+              alt="" />
+          </picture>
+
+          <div class="slide_area">
+            <div class="slide_desc desc_1" >News Anchor</div>
+            <div class="common_title slide_title">Sara Lee Kessler</div>
+            <div class="slide_desc">
+              Sara Lee Kessler is a veteran TV and radio news anchor and
+              reporter with more than 40 years of experience and name
+              recognition in the New York market. <br />
+              <br />
+              She is a three-time Emmy Award winner for anchoring WWOR-TV's
+              coverage of the 1993 World Trade Center bombing, which was
+              carried nationally on CNN, and hosting and writing documentaries
+              on autism and bone marrow donation that aired on PBS.
+              <br />
+              <br />
+              Sara Lee says her favorite assignment was covering the late John
+              Lennon's 1976 immigration hearing in which he was given a green
+              card and he yelled out, "right on, brother" as she did her TV
+              news standup for WCBS, a historic moment immortalized in the
+              2009 film, U.S. v Lennon. Sara Lee Kessler has been with iHeart
+              Radio since 2013 and can be heard in New York on 710 WOR and
+              nationwide on NBC News Radio stations.
+            </div>
+            <div class="slide_desc">Instagram: @saraleekessler</div>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+  <div class="common_title space-w">In Her Shoes</div>
+  <div class="y_shoes space-w">
+    <picture>
+      <source srcset="
+            https://cdnimg.vivaia.com/VA/image/Banner/20240227_6656/review-m-1.jpg
+          " media="(max-width:768px)" />
+      <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20240227_6655/Untitled-1%201.jpg" alt="" />
+    </picture>
+    <div class="y_inner">
+      <div class="y_title">What's your story?</div>
+      <div class="y_desc">
+        Between February 29 to March 14, visit our Instagram account and share
+        what empowers you for a chance to win a pair of VIVAIA flats.
+      </div>
+      <a href="" class="y_btn">
+
+        <div class="desc">
+          <picture>
+            <source srcset="
+          https://cdnimg.vivaia.com/CO/image/Banner/20240125_6604/Group%20789.svg
+          " media="(max-width:768px)" />
+            <img class="common-img" src="https://cdnimg.vivaia.com/CO/image/Banner/20240125_6604/Group%20788.svg"
+              alt="" />
+          </picture>Share my story
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="bottom_icon">
+    <div class="items">
+      <div class="bottom_item">
+        <svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M39.2708 18.2812H23.3594V16.25H41.3021V31.4844H52.1354V33.5156H39.2708V18.2812Z" fill="#191817"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M30.4688 43.3333H39.4401V45.3645H30.4688V43.3333Z"
+            fill="#191817"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M17.2656 43.3335H22.3438V45.3647H17.2656V43.3335Z"
+            fill="#191817"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M26.5756 47.3958C28.2583 47.3958 29.6224 46.0316 29.6224 44.3489C29.6224 42.6661 28.2583 41.302 26.5756 41.302C24.8928 41.302 23.5287 42.6661 23.5287 44.3489C23.5287 46.0316 24.8928 47.3958 26.5756 47.3958ZM26.5756 49.427C29.3801 49.427 31.6537 47.1534 31.6537 44.3489C31.6537 41.5443 29.3801 39.2708 26.5756 39.2708C23.771 39.2708 21.4974 41.5443 21.4974 44.3489C21.4974 47.1534 23.771 49.427 26.5756 49.427Z"
+            fill="#191817"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M42.8254 47.3958C44.5082 47.3958 45.8723 46.0316 45.8723 44.3489C45.8723 42.6661 44.5082 41.302 42.8254 41.302C41.1427 41.302 39.7786 42.6661 39.7786 44.3489C39.7786 46.0316 41.1427 47.3958 42.8254 47.3958ZM42.8254 49.427C45.63 49.427 47.9036 47.1534 47.9036 44.3489C47.9036 41.5443 45.63 39.2708 42.8254 39.2708C40.0209 39.2708 37.7473 41.5443 37.7473 44.3489C37.7473 47.1534 40.0209 49.427 42.8254 49.427Z"
+            fill="#191817"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M15.573 32.3308H26.5756V34.3621H15.573V32.3308Z"
+            fill="#191817"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4661 25.5598H33.0077V27.5911H19.4661V25.5598Z"
+            fill="#191817"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M46.4943 25.052H39.4401V23.0208H47.6202L52.3046 30.5159V45.3645H46.1686V43.3333H50.2734V31.0985L46.4943 25.052Z"
+            fill="#191817"></path>
+        </svg>
+        <div class="title">Free shipping on orders over $99</div>
+      </div>
+      <div class="line"></div>
+      <div class="bottom_item">
+        <svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M46.7188 18.2812H18.2812V23.6979H46.7188V18.2812ZM16.25 16.25V25.7292H48.75V16.25H16.25Z" fill="#191817">
+          </path>
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M45.3645 25.729H19.6354V46.0415H45.3645V25.729ZM17.6041 23.6978V48.0728H47.3958V23.6978H17.6041Z"
+            fill="#191817"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M26.3285 32.4977L29.3754 29.1123L30.8852 30.4711L29.3638 32.1615H39.2709V34.1928H27.0834L26.3285 32.4977Z"
+            fill="#191817"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M38.6716 37.9188L35.6248 41.3042L34.1149 39.9454L35.6363 38.255H25.7292V36.2237H37.9167L38.6716 37.9188Z"
+            fill="#191817"></path>
+        </svg>
+        <div class="title">Free Exchanges &amp; Easy Returns</div>
+      </div>
+      <div class="line"></div>
+      <div class="bottom_item">
+        <svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M46.1446 16.9873L30.0376 16.9873L11.2461 35.7788L27.3531 51.8858L46.1446 33.0943L46.1446 16.9873ZM44.1134 32.2529L27.3531 49.0132L14.1187 35.7788L30.879 19.0186L44.1134 19.0186L44.1134 32.2529Z"
+            fill="#191817"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M48.0494 34.9976L47.0637 26.5279L49.0814 26.2931L50.1484 35.4624L39.2964 53.0969L31.4697 49.5393L32.3103 47.6901L38.5056 50.5062L48.0494 34.9976Z"
+            fill="#191817"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M28.9372 28.7727C29.4673 29.3028 30.3268 29.3028 30.8568 28.7727C31.3869 28.2427 31.3869 27.3832 30.8568 26.8531C30.3268 26.3231 29.4673 26.3231 28.9372 26.8531C28.4072 27.3832 28.4072 28.2427 28.9372 28.7727ZM27.5009 30.2091C28.8243 31.5324 30.9698 31.5324 32.2932 30.2091C33.6165 28.8857 33.6165 26.7402 32.2932 25.4168C30.9698 24.0935 28.8243 24.0935 27.5009 25.4168C26.1776 26.7402 26.1776 28.8857 27.5009 30.2091Z"
+            fill="#191817"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M30.1352 39.5554C30.6653 40.0855 31.5247 40.0855 32.0548 39.5554C32.5849 39.0253 32.5849 38.1659 32.0548 37.6358C31.5247 37.1057 30.6653 37.1057 30.1352 37.6358C29.6051 38.1659 29.6051 39.0253 30.1352 39.5554ZM28.6989 40.9917C30.0222 42.3151 32.1677 42.3151 33.4911 40.9917C34.8144 39.6684 34.8144 37.5229 33.4911 36.1995C32.1677 34.8762 30.0222 34.8762 28.6989 36.1995C27.3755 37.5229 27.3755 39.6684 28.6989 40.9917Z"
+            fill="#191817"></path>
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M37.1229 32.4113L24.5984 35.7672L24.0727 33.8051L36.5971 30.4492L37.1229 32.4113Z" fill="#191817"></path>
+        </svg>
+        <div class="title">$15 Off Your First Order</div>
+      </div>
+    </div>
+  </div>
+
+  </div>
+  
+
+
 </template>
 
 <script>
-let str = '10017505,10017569,10017521,10017585,10017553,10017537'
-import swiper_one from './swiper_one.vue';
-import swiper_two from './swiper_two.vue';
-import FAQ from './FAQ.vue';
-import goods_item_one from './goods_item_one.vue';
-import Icon_swiper from './Icon_swiper.vue';
+let str = '10017505,10017569,10017521,10017585,10017553,10017537';
+import Swiper from 'swiper';
+import 'swiper/css/swiper.css';
 export default {
-  components: {
-    swiper_one,
-    swiper_two,
-    FAQ,
-    goods_item_one,
-    Icon_swiper
-  },
   data () {
     return {
-      list: [
-      
-    //     {
-    //       title: "1. Will VIVAIA's Hong Kong stores offer any promotional activities?",
-    //       desc: ` <div>
-    //        Customers can enjoy our holiday discounts until January 4: HK$160 off for 2 pairs / HK$320 off for 3 pairs / HK$480 off for 4 pairs.
-
-   
-    // </div>`,
-    //       id: 0
-
-    //     },
-        {
-          title: '1. Between the VIVAIA store at Hysan Place and the VIVAIA pop-up store at Sogo, which one would you recommend I visit?',
-          desc: ` <div>
-             Both stores are located close to each other, so you can conveniently visit both. However, if you only have time to visit one, we highly recommend Hysan Place.
-
-   
-    </div>`,
-          id: 1
-        },
-        {
-          title: '2. Do the Hong Kong stores have all the styles that are available online?',
-          desc: ` <div>
-            A: Not all styles are available offline, but our most popular and comfortable styles will be available for you to experience. 
-    </div>`,
-          id: 2
-        },
-       
-      ],
-     
-      width: window.innerWidth
-    }
+      goods_data: [],
+    };
   },
+  created(){
+    // this.getAllgoods();
+  },
+  mounted () {
+   
+    new Swiper('.bottom_swiper_inner', {
+      slidesPerView: 'auto',
+      autoplay: true,
+      loop: true,
+      pagination: {
+        el: ' .swiper-pagination',
+        type: 'progressbar',
+      },
+    });
+    new Swiper('.bottom_swiper_inner_m', {
+      slidesPerView: 'auto',
+      // autoplay:true,
+      loop: true,
+      pagination: {
+        el: '.bottom_swiper_inner_m .swiper-pagination',
+        type: 'bullets',
+      },
+    });
+    //recommen_swiper_inner
+  setTimeout(() => {
+    new Swiper('.recommen_swiper_inner', {
+      // autoplay:true,
+      // loop: true,
+      breakpoints: {
+        310: {
+          spaceBetween: 10,
+          slidesPerView: 1.2,
+        },
+        1024: {
+          //当屏幕宽度大于等于768
+          slidesPerView: 4,
+          spaceBetween: 15,
+        },
+        1730: {
+          slidesPerView: 4,
+          spaceBetween: 24,
+        },
+      },
+      pagination: {
+        el: '.recommen_swiper_inner .swiper-pagination',
+        type: 'progressbar',
+      },
+      navigation: {
+        nextEl: '.recommen_swiper_inner .swiper-button-next',
+        prevEl: '.recommen_swiper_inner .swiper-button-prev',
+      },
+    });
+  }, 100);
+  
+  },
+  methods: {
+    async getAllgoods () {
+      const res = await window._fengniao_getGoods_list({
+        goods_id: str.replace(/\s/g, ''),
+        disable_goods_number: 1,
+      });
 
-
+      this.goods_data = res.result;
+    },
+  },
 };
 </script>
 <style>
@@ -244,1204 +582,678 @@ export default {
   padding: 0;
 }
 
-.fengniao_new .common-title {
-  font-family: Noto Serif;
-  font-size: 32.006px;
-  font-weight: 400;
-  line-height: 44.006px;
-  letter-spacing: 0px;
-  text-align: left;
- 
-
+.bottom_swiper_inner_m .swiper-horizontal>.swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: auto;
+  top: 440px;
 }
 
-.fengniao_new .common-desc {
-  font-family: Roboto;
-  font-size: 15.994px;
-  font-weight: 400;
-  line-height: 19.008px;
-  letter-spacing: 0px;
-  text-align: center;
-  margin-top: 0.417vw;
+.bottom_swiper_inner_m .swiper-pagination-bullet-active {
+  background-color: rgba(255, 255, 255, 1) !important;
 }
 
-.deal .list {
-  background: rgba(255, 255, 255, 1);
-  /* background: red; */
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 4.167vw 0;
-
-  position: relative;
-  top: -4.167vw;
-  z-index: 10;
-  border: 1px solid rgba(0, 0, 0, .1);
-
-}
-
-.deal .list .item svg {
-  width: 4.167vw;
-  height: 4.167vw;
-}
-
-.deal .list .item {
-  height: 7.448vw;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.deal .list .item:nth-child(1) {
-  margin-left: 13.542vw;
-}
-
-.deal .list .item:nth-child(2) {
-  margin: 0 6.25vw;
-}
-
-.deal .list .item:nth-child(3) {
-  margin-right: 13.542vw;
-}
-
-.deal .list .item span {
-  text-align: center;
-  font-family: Roboto;
-  font-size: 1.042vw;
-  font-weight: 400;
-  line-height: 1.198vw;
-  letter-spacing: 0px;
-  text-align: center;
-  color: #191817;
-}
-
-.fengniao_product {
-  display: flex;
-  justify-content: space-between;
-
-}
-
-.fengniao_product .list {
-  width: 41.146vw;
-  position: relative;
-  color: #FFFFFF;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.fengniao_product .inner{
-  position:absolute;
-  /* width: 18.281vw; */
-}
-.fengniao_product .inner .common-title{
-  text-align: center;
-}
-.fengniao_product .inner .desc_one{
-
-font-size: 12px;
-font-weight: 400;
-line-height: 14px;
-letter-spacing: 0px;
-text-align: center;
-
-}
-.swiper_btn svg {
-  width: auto !important;
-  height: auto !important;
-}
-
-.last_bottom {
-  padding-bottom: 4.167vw;
-  /* padding-top: 2.083vw; */
-  background: #ffffff;
-}
-
-.last_bottom .inner {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
-}
-
-.last_bottom .inner .item {
-  position: relative;
-  font-family: Noto Serif;
-  color: #ffffff;
-  width: 41.146vw;
-  margin-top: 1.042vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.last_bottom .item .inner {
-
-  position: absolute;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-
-
-.fengniao_top_banner ._left {
-  position: absolute;
-  top: 2.3958333vw;
-  left: 2.0833333vw;
-}
-
-.fengniao_top_banner {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.fengniao_top_banner .inner {
-  position: absolute;
-  color: #191817;
-
-
-}
-
-.fengniao_top_banner .inner .title {
-
-  font-size: 1.875vw;
-  font-weight: 400;
-  line-height: 2.552vw;
-
-
-}
-
-.fengniao_top_banner ._left .left_title_one {
-  font-family: Roboto;
-  font-size: 2.7083333vw;
-  font-weight: 600;
-  line-height: 3.1770833vw;
-  letter-spacing: 0px;
-  text-align: left;
-
-}
-
-.fengniao_top_banner ._left .left_title_two {
-  font-family: Roboto;
-  font-size: 1.25vw;
-  font-weight: 400;
-  line-height: 1.5625vw;
-  letter-spacing: 0px;
-  text-align: left;
-  margin: 0.78125vw 0 11.40625vw;
-
-}
-
-.fengniao_top_banner ._left .left_title_three {
-  font-family: Roboto;
-  font-size: 1.0416667vw;
-  font-weight: 400;
-  line-height: 1.1979167vw;
-  letter-spacing: 0px;
-  text-align: left;
-
-}
-
-.fengniao_top_banner ._right {
-  top: 16.1979167vw;
-  left: 25.9375vw;
-  font-family: Roboto;
-  font-size: 5vw;
-  font-weight: 600;
-  line-height: 5.8854167vw;
-  letter-spacing: 0px;
-  text-align: left;
-  color: #ffffff;
-
-}
-
-.fengniao_new svg {
-  width: 2.6041667vw;
-  height: 2.6041667vw;
-}
-
-.fengniao_new .new_title {
-  font-family: Roboto;
-  font-size: 1.667vw;
-  font-weight: 500;
-  line-height: 2.292vw;
-}
-
-.fengniao_new .new_title_one {
-
-  font-family: Roboto;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 16px;
-  letter-spacing: 0px;
-  text-align: left;
-  margin-top: 12px;
-  overflow: hidden;
-  /* 隐藏溢出内容 */
-  white-space: nowrap;
-  text-overflow: ellipsis
-}
-
-.fengniao_new .show_big {
-  display: block !important;
-}
-
-.fengniao_new .show_small {
-  display: none !important;
-}
-
-.fengniao_new .space-w {
-  width: 83.3333333vw;
-  margin: 0 auto;
-}
-
-.fengniao_new img {
-  width: 100%;
-  height: 100%;
-  display: block;
-}
-
-.fengniao_new .fengniao_top_banner {
-  width: 100%;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  /* margin-top: 3.4895833vw; */
-
-}
-
-.fengniao_new .fengniao_top_banner .info {
-  position: absolute;
-  top: 14.3229167vw;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.fengniao_new .fengniao_top_banner .info .info_title {
-  font-family: Roboto;
-  font-size: 1.458vw;
-  font-weight: 400;
-  line-height: 1.719vw;
-  letter-spacing: 0vw;
-  text-align: center;
-
-}
-
-.fengniao_new .fengniao_top_banner .info .info_desc {
-  font-family: Noto Serif;
-  font-size: 3.28125vw;
-  font-weight: 400;
-  line-height: 1;
-  height: 3.0729167vw;
-
-  color: #804c1a;
-
-  margin: 0 0 0.5729167vw;
-  letter-spacing: 0vw;
-  text-align: center;
-}
-
-.fengniao_new .fengniao_top_banner .info .info_title_one {
-
-  align-self: center;
-  text-align: center;
-  border-bottom: 1px solid #000;
-}
-
-.fengniao_new .fengniao_top_banner .info .info_bottom {
-  font-family: Roboto;
-  font-size: 0.8333333vw;
-  font-weight: 400;
-  line-height: 1.19;
-  letter-spacing: 0vw;
-  text-align: center;
-  margin-top: 5.1041667vw;
-
-}
-
-
-.fengniao_new .fengniao_margot-info .info-icon {
-  font-family: Roboto;
-  font-size: 12px;
-  font-weight: 500;
-  line-height: 1.25vw;
-  letter-spacing: 0px;
-  text-align: center;
-  border-radius: 1.0416667vw;
-  color: #FFFFFF;
-  background: #191817;
-  top: 1.71875vw;
-  padding: 0 0.625vw;
-  right: 2.0833333vw;
-
-}
-
-.fengniao_new .fengniao_margot-info .common_title {
-  position: absolute;
-  top: 18.8541667vw;
-  width: 26.7708333vw;
-  left: 36.9791667vw;
-}
-
-
-.fengniao_new .btn {
-  margin-left: 0 !important;
-  margin-top: 1.0416667vw;
-  color: #000;
-  background-color: #ffffff;
-  width: 12.6041667vw;
-  height: 2.65625vw;
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
-}
-
-.fengniao_new .btn {
-  background: #000;
-  color: #ffffff;
-  margin-top: 0.2083333vw;
-  margin-left: 6.25vw !important;
-}
-
-.fengniao_new .common_title .btn {
-  display: none !important;
-}
-
-
-
-
-.fengniao_new .fengniao-outer .norml_title {
-  font-family: Roboto;
-  font-size: 1.0416667vw;
-  font-weight: 500;
-  line-height: 1.1979167vw;
-  text-align: left;
-  margin-bottom: 1.0416667vw;
-}
-
-.fengniao_new .fengniao-outer .list {
-  display: flex;
-  flex-wrap: wrap;
-  padding-left: 6.25vw;
-  padding-right: 5.8333333vw;
-  justify-content: center;
-}
-
-.fengniao_new .fengniao-outer .list .item {
-  width: 50%;
-  margin-bottom: 1.0416667vw;
-  display: flex;
-  align-items: center;
-}
-
-.fengniao_new .fengniao-outer .list .item .right_title {
-  margin-left: 0.5208333vw;
-  font-family: Roboto;
-  font-size: 0.7291667vw;
-  font-weight: 400;
-  line-height: 1;
-  text-align: left;
-}
-
-.fengniao_new .fengniao-outer .btn {
-  color: #fff;
-  background-color: #191817;
-  font-family: Roboto;
-  font-size: 0.8333333vw;
-  /* padding: 0.833333vw 2.0833333vw; */
-  font-weight: 500;
-  line-height: 0.9895833vw;
-  text-transform: capitalize;
-  align-self: start;
-  margin-left: 6.25vw;
-}
-
-.fengniao_new .common_title {
-  font-family: Noto Serif;
-  font-size: 1.6666667vw;
-  font-weight: 400;
-  line-height: 2.2916667vw;
-  text-align: center;
-}
-
-
-.fengniao_new .fengniao-outer .fengniao_margot-info {
-  position: relative;
-}
-
-
-.fengniao_new .fengniao-outer .fengniao-margot {
-  padding-bottom: 4.167vw;
-}
-
-.fengniao_new .fengniao-outer .fengniao-margot .fengniao-margot-all {
-  display: flex;
-  padding-top: 2.6041667vw;
-}
-
-.fengniao_new .fengniao-outer .fengniao-margot .fengniao-margot-all .left {
-  width: 50%;
-}
-
-.fengniao_new .fengniao-outer .fengniao-margot .fengniao-margot-all .left video {
-  width: 100% !important;
-}
-
-.fengniao_new .fengniao-outer .fengniao-margot .fengniao-margot-all .right {
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: #f6f6f6;
-}
-
-.fengniao_new .fengniao-outer .fengniao-margot .fengniao-margot-all .right .title {
-  align-self: start;
-  margin-left: 6.25vw;
-  margin-bottom: 1.0416667vw;
-}
-
-.fengniao_new .fengniao-outer .fengniao-margot .fengniao_tab-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-
-
-.fengniao_new .fengniao-outer .fengniao-margot .fengniao-margot-title {
-  margin: 2.6041667vw 0 1.0416667vw;
-}
-
-.fengniao_new .fengniao-outer .fengniao-margot .fengniao_margot-swiper .fengniao_swiper_one .swiper_btn .swiper-button {
-  background: #191817;
-  color: #ffffff;
-  height: 2.5vw;
-  width: 2.5vw;
-  top: 46%;
-  transform: translateY(-50%);
-  margin-top: 0;
-  border-radius: 50%;
-}
-
-.fengniao_new .fengniao-outer .fengniao-margot .fengniao_margot-swiper .fengniao_swiper_one .swiper_btn .swiper-button::after {
+.swiper_btn .swiper-button:after {
   display: none;
 }
 
-.fengniao_new .fengniao-outer .fengniao-margot .fengniao_margot-swiper .fengniao_swiper_one .swiper_btn .swiper-button-next {
-  right: -4.7916667vw;
+.swiper_btn .swiper-button-prev {
+  left: -3.208333vw;
 }
 
-.fengniao_new .fengniao-outer .fengniao-margot .fengniao_margot-swiper .fengniao_swiper_one .swiper_btn .swiper-button-prev {
-  left: -4.7916667vw;
+.swiper_btn .swiper-button-next {
+  right: -3.208333vw;
 }
 
-.fengniao_new .fengniao-outer .fengniao-margot .fengniao_margot-swiper .fengniao_swiper_one .swiper-slide {
-  width: 24%;
-  position: relative;
-}
-
-.fengniao_new .fengniao-outer .fengniao-margot .fengniao_margot-swiper .fengniao_swiper_one .swiper-slide .count {
-  font-family: Roboto;
-  font-size: 0.625vw;
-  font-weight: 500;
-  position: absolute;
-  top: 0.8333333vw;
-  left: 0.8333333vw;
-  padding: 0.2604167vw 0.625vw;
+.swiper_btn .swiper-button {
   background: #191817;
-  border-radius: 2.6041667vw;
-  color: #ffffff;
+  color: #fff;
+  height: 2.083vw;
+  width: 2.083vw;
+  top: 44%;
+  border-radius: 50%;
 }
 
-.fengniao_new .fengniao-outer .fengniao-margot .fengniao_margot-swiper .fengniao_swiper_one .swiper-slide .slide_info {
-  padding: 0 0 2.083vw;
+/* .recommen_swiper .swiper-pagination {
+  bottom: 0;
+  top: auto;
+  width: calc(100% - 40px);
+  left: auto;
+} */
+
+.swiper-pagination-progressbar-fill {
+  background-color: #191817 !important;
 }
 
-.fengniao_new .fengniao-outer .fengniao-margot .fengniao_margot-swiper .fengniao_swiper_one .swiper-slide .slide_info p:nth-child(2) span:nth-child(1) {
-  font-weight: 500;
+.swiper-pagination-bullet {
+  width: 4px !important;
+  height: 4px !important;
 }
 
-.fengniao_new .fengniao-outer .fengniao-margot .fengniao_margot-swiper .fengniao_swiper_one .swiper-slide .slide_info p:nth-child(2) span:nth-child(2) {
-  font-weight: 400;
-  text-decoration: line-through;
-}
-
-.fengniao_new .fengniao-outer .fengniao-margot .fengniao_margot-swiper .fengniao_swiper_one .swiper-pagination {
-  top: 100%;
-  background: #d9d9d9;
-  color: #191817;
-}
-
-.fengniao_new .fengniao-outer .fengniao-margot .fengniao_margot-swiper .fengniao_swiper_one .swiper-pagination .swiper-pagination-progressbar-fill {
-  background: #191817;
-}
-
-
-
-.fengniao_new .fengniao_top_banner .info .info-title_one {
-  font-size: 0.8333333vw;
-  line-height: 1.19;
-}
-
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
-
-  .fengniao_new .common-title {
-    font-family: Noto Serif;
-    font-size: 1.667vw;
-    font-weight: 400;
-    line-height: 2.292vw;
-    letter-spacing: 0px;
-    text-align: center;
-   
-  }
-
-  .fengniao_new .common-desc {
-    font-family: Roboto;
-    font-size: 13.997px;
-    font-weight: 400;
-    line-height: 16.258px;
-    letter-spacing: 0px;
-    text-align: center;;
-
-  }
-  .fengniao_product .list {
-    width:49.3% ;
-  }
-  .fengniao_product .inner{
-    width: 70%;
-  }
-  .deal .list .item span {
-    text-align: center;
-    font-family: Roboto;
-    font-size: 15.005px;
-    font-weight: 400;
-    line-height: 17.251px;
-    letter-spacing: 0px;
-    text-align: center;;
-    color: #191817;
-  }
-
-  .fengniao_new .new_title_one {
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.12;
-    letter-spacing: 0;
-    text-align: left;
-    margin-top: 9px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-  }
-
-  .fengniao_addition .addition_item .item_container .item_title {
-    font-size: 1.25vw;
-
-    line-height: 1.12;
-  }
-
-  .fengniao_addition .addition_item .item_info .item_desc {
-    font-size: 0.972vw;
-
-    line-height: 1.12;
-  }
- 
-}
-@media screen and (min-width: 769px) and (max-width: 1023px){
-  .fengniao_new .common-title {
-    font-family: Noto Serif;
-    font-size: 1.8vw;
-    
-    line-height: 1.18;
-    
-   
-  }
-
-  .fengniao_new .common-desc {
-    font-family: Roboto;
-    font-size: 12px;
-  
-    line-height: 1.14;
-   
-
-  }
-  .fengniao_product .list {
-    width:49.3% ;
-  }
-  .fengniao_product .inner{
-    width: 70%;
-  }
-  .deal .list .item span {
-    text-align: center;
-    font-family: Roboto;
-    font-size: 14px;
-   
-    line-height: 1.16;
-  
-  }
-
-  .fengniao_new .new_title_one {
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 1.12;
-    letter-spacing: 0;
-    text-align: left;
-    margin-top: 9px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-  }
-
-  .fengniao_addition .addition_item .item_container .item_title {
-    font-size: 1.25vw;
-
-    line-height: 1.12;
-  }
-
-  .fengniao_addition .addition_item .item_info .item_desc {
-    font-size: 0.972vw;
-
-    line-height: 1.12;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .fengniao_new .common-title {
-    font-family: Noto Serif;
-font-size: 5.333vw;
-font-weight: 400;
-line-height: 7.2vw;
-letter-spacing: 0px;
-text-align: center;
-
- 
+.swiper-pagination-bullets {
+  top: 418px !important;
+  bottom: auto !important;
 
 }
+</style>
+<style lang="less">
 
-.fengniao_new .common-desc {
-  font-family: Roboto;
-font-size: 3.2vw;
-font-weight: 400;
-line-height: 3.733vw;
-letter-spacing: 0px;
-text-align: center;
-margin-top: 2.133vw;
-}
-  .fengniao_product {
-    flex-wrap: wrap;
-
-  }
-  .fengniao_product .inner{
-    width: 74.133vw;
-  }
-  .fengniao_product .list {
-    width: 100%;
-    margin-bottom: 5.3333vw;
-  }
-  .fengniao_product .inner .desc_one{
-    font-family: Roboto;
-font-size: 3.2vw;
-font-weight: 400;
-line-height: 3.733vw;
-letter-spacing: 0px;
-text-align: center;
-  }
-  .deal .list {
-    background: rgba(255, 255, 255, 1);
-    /* background: red; */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 5.333vw 0;
-    flex-wrap: wrap;
-    position: relative;
-    top: -10.667vw;
-    z-index: 10;
-
-
+.women_day {
+  padding: 0 0 80px;
+  background: #fff;
+  .show_big {
+    display: block;
   }
 
-  .deal .list .item img {
-    width: 10.667vw;
-    height: 10.667vw;
-  }
-
-  .deal .list .item {
-    width: 100%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    padding-left: 5.333vw;
-    flex-direction: row;
-    width: 100%;
-  }
-
-  .deal .list .item svg {
-    width: 10.667vw;
-    height: 10.667vw;
-    margin-right:2.133vw ;
-  }
-
-  .deal .list .item:nth-child(1) {
-    margin-left: 0;
-  }
-
-  .deal .list .item:nth-child(2) {
-    margin: 0;
-  }
-
-  .deal .list .item:nth-child(3) {
-    margin-right: 0;
-  }
-
-  .deal .list .item span {
-    font-family: Roboto;
-    font-size: 3.2vw;
-    font-weight: 400;
-    line-height: 3.733vw;
-    letter-spacing: 0px;
-    text-align: left;
-
-  }
-
-  .fengniao_top_banner .inner {
-    top: 10.667vw;
-    left: auto;
-  }
-
-  .fengniao_top_banner .inner .title {
-
-    font-family: Noto Serif;
-    font-size: 5.333vw;
-    font-weight: 400;
-    line-height: 7.2vw;
-    letter-spacing: 0px;
-    text-align: center;
-
-
-
-  }
-
-  .fengniao_top_banner .inner .common-desc {
-    text-align: center;
-  }
-
-  
-  .fengniao_new svg {
-    width: 8.8vw;
-    height: 8.8vw;
-  }
-
-  .fengniao_new .fengniao_margot-info .info-icon {
-    font-family: Roboto;
-    font-size: 3.2vw;
-    font-weight: 500;
-
-    line-height: 5.3333333vw;
-    height: 5.3333333vw;
-    letter-spacing: 0px;
-    text-align: center;
-    border-radius: 5.3333333vw;
-    top: 4vw;
-    width: 37.3333333vw;
-
-    right: 48vw;
-
-  }
-
-
-
-  .fengniao_new .fengniao-outer .fengniao-margot .fengniao-margot-all {
-    padding-top: 5.333vw;
-  }
-
-  .fengniao_new .common_title .btn {
-    display: flex !important;
-  }
-
-  .last_bottom {
-    padding: 0 0 10.667vw;
-
-  }
-
-  .last_bottom .item .inner {
-    flex-wrap: wrap;
-    width: 100%;
-    position: static;
-
-  }
-
-  .last_bottom .inner .item .title {
-   
-    width: 100%;
-text-align: left;
-  }
-
-  .last_bottom .inner .item .desc {
-    width: 100%;
-    text-align: left;
-margin-bottom: 2.667vw;
-
-  }
-
-  .last_bottom .inner .item {
-    color: #191817;
-    flex-direction: column;
-    text-align: center;
-    width: 100%;
-    margin-bottom: 10.667vw;
-    margin-top: 0;
-  }
-
-  .last_bottom .inner .item:last-child {
-    margin-bottom: 0;
-  }
-
-  .fengniao_new .new_title {
-    font-size: 5.3333333vw;
-    line-height: 7.2vw;
-  }
-
-  .fengniao_new .new_title_one {
-    font-size: 3.2vw;
-    line-height: 4.2vw;
-
-  }
-
-
-  .fengniao_new .show_big {
-    display: none !important;
-  }
-
-  .fengniao_new .show_small {
-    display: block !important;
-  }
-
-  .fengniao_new .space-w {
-    width: 89.3333333vw;
-    margin: 0 auto;
-  }
-
-  .swiper-container-horizontal>.swiper-pagination-progressbar {
-    height: 0.5333333vw;
-    background: #B0B0B0;
-  }
-
-  .swiper-pagination-progressbar-fill {
-    height: 0.5333333vw !important;
-    background: #191817 !important;
-  }
-
-  .fengniao_new .fengniao_top_banner {
-    width: 100%;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    /* top: 46px; */
-    /* margin-top: 46px; */
-  }
-
-  .fengniao_new .fengniao_top_banner .info {
-    top: 44.5333333vw;
-  }
-
-  .fengniao_new .fengniao_top_banner .info .info_title {
-    font-size: 4.8vw;
-    font-weight: 400;
-    line-height: 5.624vw;
-    letter-spacing: 0px;
-    /* margin-bottom: 0; */
-    text-align: center;
-  }
-
-  .fengniao_new .fengniao_top_banner .info .info-title_one {
-    font-size: 4.2666667vw;
-    line-height: 5.0666667vw;
-  }
-
-  .fengniao_new .fengniao_top_banner .info .info_desc {
-    font-family: Noto Serif;
-    font-size: 7.4666667vw;
-    font-weight: 700;
-    height: 26.4vw;
-    line-height: 9.6vw;
-    letter-spacing: 0px;
-    text-align: center;
-    margin: 1.0666667vw 0 3.7333333vw;
-  }
-
-  .fengniao_new .fengniao_top_banner .info .info_bottom {
-    font-family: Roboto;
-    font-size: 4.2666667vw;
-    font-weight: 400;
-    line-height: 5.0666667vw;
-    letter-spacing: 0px;
-    opacity: 1;
-    margin-top: 24vw;
-    margin-bottom: 0;
-    text-align: center;
-
-  }
-
-  .fengniao_new .fengniao_top_banner .info .info_title_one {
-
-    opacity: 1;
-    align-self: center;
-    text-align: center;
-
-  }
-
-
-
-
-  .fengniao_new .fengniao_margot-info {
-    position: relative;
-
-
-  }
-
-  .fengniao_new .fengniao_margot-info .common_title {
-    font-family: Noto Serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    font-size: 4.8vw;
-    font-weight: 400;
-    line-height: 6.6666667vw;
-    width: 64.5333333vw;
-    top: 11.6666667vw;
-    left: 12.5333333vw;
-    color: #000;
-  }
-
-
-
-
-
-
-  .fengniao_new .fengniao-outer .norml_title {
-    font-family: Noto Serif;
-    font-size: 4.8vw;
-    font-weight: 400;
-    line-height: 6.6666667vw;
-    letter-spacing: 0px;
-    margin-bottom: 3.2vw;
-    text-align: center;
-    text-align: center;
-  }
-
-  .fengniao_new .fengniao-outer .list {
-    padding-bottom: 4vw !important;
-  }
-
-  .fengniao_new .fengniao-outer .list .item {
-    width: 100%;
-    margin-bottom: 2.6666667vw;
-    display: flex;
-    align-items: center;
-  }
-
-  .fengniao_new .fengniao-outer .list .item svg {
-    width: 8.8vw;
-    height: 8.8vw;
-  }
-
-  .fengniao_new .fengniao-outer .list .item .right_title {
-    font-family: Roboto;
-    font-size: 3.7333333vw;
-    font-weight: 400;
-    line-height: 4.2666667vw;
-    margin-left: 2.6666667vw;
-    text-align: left;
-  }
-
-  .fengniao_new .fengniao-outer .btn {
-    color: #fff;
-    background-color: #191817;
-    font-family: Roboto;
-    font-size: 2.6666667vw;
-    font-weight: 500;
-    line-height: 3.2vw;
-    padding: 2.1333333vw 4.2666667vw;
-    letter-spacing: 0px;
-    text-align: center;
-    text-transform: capitalize;
-    align-self: start;
-    margin-left: 6.25vw;
-  }
-
-  .fengniao_new .fengniao-outer .common_title {
-    font-family: Noto Serif;
-    font-size: 5.3333333vw;
-    font-weight: 400;
-    line-height: 7.2vw;
-    letter-spacing: 0px;
-    text-align: center;
-  }
-
-  .fengniao_new .fengniao-outer .fengniao_margot-info {
-    position: relative;
-    width: 89.3333vw;
-    margin: 0 auto;
-  }
-
-  .fengniao_new .fengniao-outer .fengniao-margot {
-    padding-bottom: 10.667vw;
-  }
-
-  .fengniao_new .fengniao-outer .fengniao-margot .fengniao-margot-all {
-    flex-wrap: wrap;
-  }
-
-  .fengniao_new .fengniao-outer .fengniao-margot .fengniao-margot-all .left {
-    width: 100%;
-  }
-
-  .fengniao_new .fengniao-outer .fengniao-margot .fengniao-margot-all .right {
-    width: 100%;
-
-    background: #f6f6f6;
-  }
-
-  .fengniao_new .fengniao-outer .fengniao-margot .fengniao-margot-all .right .title {
-    margin-bottom: 3.7333333vw;
-    margin-top: 6.6666667vw;
-  }
-
-  .fengniao_new .fengniao-outer .fengniao-margot .fengniao_tab-container {
-    display: flex;
-    flex-wrap: wrap;
-
-  }
-
-  .fengniao_new .fengniao-outer .fengniao-margot .fengniao_tab-container .fengniao-tab {
-    width: 100%;
-    margin-bottom: 3.2vw;
-    margin-top: 0;
-  }
-
-  .fengniao_new .fengniao-outer .fengniao-margot .fengniao_tab-container .tab_item {
-    font-family: Roboto;
-    font-size: 3.2vw;
-    font-weight: 500;
-    line-height: 3.7333333vw;
-    text-align: center;
-    padding: 1.6vw 4.2666667vw;
-    border-radius: 114px;
-    margin-right: 2.1333333vw;
-    margin-left: 0px;
-    background-color: #ffffff;
-    border: 1px solid #191817;
-    opacity: 0.3;
-  }
-
-  .fengniao_new .fengniao-outer .fengniao-margot .fengniao_tab-container .active {
-    opacity: 1;
-    background: #191817;
-    color: #ffffff;
-  }
-
-  .fengniao_new .fengniao-outer .fengniao-margot .fengniao-margot-title {
-    margin: 8vw 0 3.2vw;
-  }
-
-  .fengniao_new .fengniao-outer .fengniao-margot .fengniao_margot-swiper .fengniao_swiper_one .swiper_btn .swiper-button {
-    background: #191817;
-    color: #ffffff;
-    height: 48px;
-    width: 48px;
-    top: 52%;
-    border-radius: 50%;
-  }
-
-  .fengniao_new .fengniao-outer .fengniao-margot .fengniao_margot-swiper .fengniao_swiper_one .swiper_btn .swiper-button::after {
+  .show_small {
     display: none;
   }
 
-  .fengniao_new .fengniao-outer .fengniao-margot .fengniao_margot-swiper .fengniao_swiper_one .swiper_btn .swiper-button-next {
-    right: -4.7916667vw;
+  img {
+    display: block;
+    width: 100%;
   }
 
-  .fengniao_new .fengniao-outer .fengniao-margot .fengniao_margot-swiper .fengniao_swiper_one .swiper_btn .swiper-button-prev {
-    left: -4.7916667vw;
+  .space-w {
+    width: calc(100% - 320px);
+    margin: 0 auto 80px;
   }
 
-  .fengniao_new .fengniao-outer .fengniao-margot .fengniao_margot-swiper .fengniao_swiper_one .swiper-slide {
-    width: 59.4666667vw;
-    margin-right: 2.6666667vw;
-  }
-
-  .fengniao_new .fengniao-outer .fengniao-margot .fengniao_margot-swiper .fengniao_swiper_one .swiper-slide .count {
-    font-family: Roboto;
-    font-size: 12px;
-    font-weight: 500;
-    position: absolute;
-    top: 0.8333333vw;
-    left: 0.8333333vw;
-    padding: 0.2604167vw 0.625vw;
-    background: #191817;
-    border-radius: 2.6041667vw;
-    color: #ffffff;
-  }
-
-  .fengniao_new .fengniao-outer .fengniao-margot .fengniao_margot-swiper .fengniao_swiper_one .swiper-slide .slide_info {
-    padding: 2.1333333vw 0 5.3333333vw;
-  }
-
-
-  .fengniao_new .fengniao-outer .fengniao-margot .fengniao_margot-swiper .fengniao_swiper_one .swiper-slide .slide_info p:nth-child(2) {
-    margin-top: 1.0666667vw;
-  }
-
-  .fengniao_new .fengniao-outer .fengniao-margot .fengniao_margot-swiper .fengniao_swiper_one .swiper-slide .slide_info p:nth-child(2) span:nth-child(1) {
-    font-weight: 500;
-  }
-
-  .fengniao_new .fengniao-outer .fengniao-margot .fengniao_margot-swiper .fengniao_swiper_one .swiper-slide .slide_info p:nth-child(2) span:nth-child(2) {
+  .common_title {
+    font-family: Noto Serif;
+    font-size: 32px;
     font-weight: 400;
-    text-decoration: line-through;
+    line-height: 44px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-bottom: 32px;
   }
 
-  .fengniao_new .fengniao-outer .fengniao-margot .fengniao_margot-swiper .fengniao_swiper_one .swiper-pagination {
-    top: 100%;
-    background: #d9d9d9;
-    color: #191817;
-  }
+  .top_banner {}
 
-  .fengniao_new .fengniao-outer .fengniao-margot .fengniao_margot-swiper .fengniao_swiper_one .swiper-pagination .swiper-pagination-progressbar-fill {
-    background: #191817;
-  }
-
-
-  .fengniao_new .btn {
-    margin-left: 0 !important;
-    margin-top: 1.0416667vw;
-    background: #000;
-    color: #ffffff;
-    width: 37.3333333vw;
-    padding: 0;
-    height: 9.6vw;
-    display: flex !important;
-
+  .po_box {
+    position: relative;
+    top: -80px;
+    display: flex;
     align-items: center;
     justify-content: center;
+    color: #191817;
+    background: #fcfbfb;
+
+    // border: 1px solid rgba(0, 0, 0, 1);
+    .po_text-area {
+      padding: 80px 425px;
+
+      .po_title {
+        font-family: Noto Serif;
+        font-size: 48px;
+        font-weight: 400;
+        line-height: 65px;
+        letter-spacing: 0px;
+        text-align: center;
+      }
+
+     
+
+      .po_desc {
+        font-family: Noto Serif;
+
+        font-size: 20px;
+        line-height: 27px;
+        letter-spacing: 0px;
+        text-align: center;
+      }
+      .desc_1 {
+        line-height: 1;
+        margin-bottom: 22px;
+        font-weight: 500;
+      }
+    }
   }
 
-  .fengniao_new .btn {
-    width: 24.5333333vw;
+  .recommen_swiper {
+    .recommen_swiper_inner {
+      .swiper-wrapper {
+        .swiper-slide {
+          .a_link {
+            position: relative;
+
+            &:hover .shop_btn {
+              opacity: 1;
+            }
+
+            .shop_btn {
+              bottom: 10px;
+              width: 91.6%;
+              opacity: 0;
+              margin: 0 auto;
+              background: #fff;
+              color: #191817;
+              padding: 12px 0;
+              font-family: Roboto;
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 1;
+              letter-spacing: 0;
+              text-align: center;
+            }
+          }
+
+          .slide_info {
+            margin-bottom: 40px;
+
+            p {
+              &:nth-child(2) {
+                span {
+                  &:first-child {
+                    font-weight: 500;
+                  }
+                }
+              }
+            }
+
+            p {
+              &:nth-child(2) {
+                span {
+                  &:nth-child(2) {
+                    font-weight: 500;
+                  }
+                }
+              }
+            }
+
+
+            .new_title_one {
+              font-family: Roboto;
+              font-size: 14px;
+              font-weight: 400;
+              line-height: 16px;
+              letter-spacing: 0;
+              text-align: left;
+              margin-top: 12px;
+              overflow: hidden;
+              white-space: nowrap;
+              text-overflow: ellipsis;
+              color: #191817;
+            }
+          }
+        }
+      }
+
+      .swiper-pagination {
+        bottom: 0;
+        top: auto;
+
+      }
+    }
+  }
+
+  .videos {
+    .title {
+      text-align: center;
+    }
+
+    #myVideo {}
+  }
+
+  .bottom_swiper {
+    .bottom_swiper_inner {
+      .swiper-wrapper {
+        .swiper-slide {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          //justify-content: flex-start;
+          position: relative;
+          color: #fff;
+
+          .slide_area {
+            position: absolute;
+            width: 492px;
+            left: 190px;
+
+            .desc_1 {
+              // margin-bottom: 11px;
+            }
+
+            .slide_desc {
+              font-family: Roboto;
+              font-size: 16px;
+              font-weight: 400;
+              line-height: 19px;
+              letter-spacing: 0px;
+              text-align: center;
+              &:last-child{
+                margin-top: 20px;
+              }
+            }
+
+            .slide_title {
+              text-align: center;
+              margin-bottom: 20px;
+            }
+          }
+        }
+      }
+
+      .swiper-pagination {
+        top: auto;
+        bottom: 40px;
+        width: 300px;
+        margin: 0 auto;
+        left: 646px;
+      }
+
+      .swiper-pagination-progressbar-fill {
+        background-color: #191817;
+      }
+    }
+  }
+
+  .y_shoes {
+    display: flex;
+    // justify-content: center;
+    position: relative;
+
+    .y_inner {
+      position: absolute;
+      top: 158px;
+      right: 220px;
+      width: 460px;
+
+      .y_title {
+        font-family: Roboto;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 23px;
+        letter-spacing: 0px;
+        text-align: left;
+      }
+
+      .y_desc {
+        font-family: Roboto;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0px;
+        text-align: left;
+        margin: 8px 0 24px 0;
+      }
+
+      .y_btn {
+        display: flex;
+        align-items: center;
+
+        .desc {
+          padding: 16px 40px;
+          background-color: #191817;
+          display: flex;
+          align-items: center;
+          color: #fff;
+          font-family: Roboto;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 19px;
+          letter-spacing: 0px;
+          text-align: left;
+
+          img {
+            width: 27px;
+            height: 27px;
+            margin-right: 8px;
+          }
+        }
+      }
+    }
+  }
+
+  .bottom_icon {
+    background: #ffffff;
+
+    .items {
+      width: 68.75vw;
+      margin: 0 auto 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #ffffff;
+      // padding: 25px 0px;
+      // border-top: 1px solid #eeeeee;
+      // border-bottom: 1px solid #eeeeee;
+
+      .bottom_item {
+        display: flex;
+        flex-wrap: wrap;
+        // flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        .title {
+          font-family: Roboto;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 18.75px;
+          letter-spacing: 0px;
+          text-align: center;
+          margin-left: 10px;
+        }
+
+        .desc {
+          font-family: Roboto;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 16px;
+          letter-spacing: 0px;
+          text-align: center;
+          color: rgba(102, 102, 102, 1);
+          margin: 0.417vw 0 1.823vw;
+          padding: 0 60px;
+          box-sizing: border-box;
+        }
+
+        a {
+          font-family: Roboto;
+          font-size: 16px;
+          font-weight: 400;
+          line-height: 19px;
+          letter-spacing: 0px;
+          text-align: center;
+          color: #191817;
+        }
+      }
+
+      .line {
+        width: 1px;
+        height: 64px;
+        background: #eeeeee;
+      }
+    }
+  }
+}
+
+@media screen and(max-width: 768px) {
+  .women_day {
+    padding: 0 0 40px;
+    .show_big {
+      display: none;
+    }
+
+    .show_small {
+      display: block;
+    }
+
+    img {
+      display: block;
+      width: 100%;
+    }
+
+    .space-w {
+      width: calc(100% - 40px);
+      margin: 0 auto 40px;
+    }
+
+    .common_title {
+      font-family: Noto Serif;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 27px;
+      letter-spacing: 0px;
+      text-align: left;
+      margin-bottom: 20px;
+    }
+
+    .top_banner {}
+
+    .po_box {
+      position: relative;
+      top: -40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #191817;
+      background: #fcfbfb;
+     margin-bottom: 0 !important;
+      .po_text-area {
+        padding: 40px 20px;
+
+        .po_title {
+          font-size: 26px;
+          font-weight: 400;
+          line-height: 35px;
+          letter-spacing: 0px;
+          text-align: center;
+        }
+
+      
+
+        .po_desc {
+          font-family: Noto Serif;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 19px;
+          letter-spacing: 0px;
+          text-align: center;
+        }
+        .desc_1 {
+          line-height: 1;
+          margin-bottom: 12px;
+        }
+      }
+    }
+
+    .recommen_swiper {
+      width: 100% !important;
+
+      .recommen_swiper_inner {
+        padding: 0 20px;
+        box-sizing: border-box;
+
+        .swiper-wrapper {
+          display: inline-flex;
+
+          .swiper-slide {
+            width: 250px;
+
+            .a_link {
+              .shop_btn {
+                display: none;
+              }
+            }
+
+            .slide_info {
+              margin-bottom: 20px;
+
+              .new_title_one {
+                font-size: 3.2vw;
+                line-height: 4.2vw;
+                margin-top: 10px;
+              }
+            }
+          }
+        }
+
+        .swiper-pagination {
+          width: calc(100% - 40px);
+          left: auto;
+          height: 2px;
+        }
+      }
+    }
+
+    .videos {
+      margin-bottom: 20px !important;
+      .title {
+        text-align: center;
+      }
+
+      #myVideo {
+        display: block;
+      }
+    }
+
+    .bottom_swiper {
+      .bottom_swiper_inner_m {
+        .swiper-wrapper {
+          display: flex;
+
+          .swiper-slide {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            color: #191817;
+
+            .slide_area {
+              position: static;
+              width: 100%;
+              padding: 40px 20px;
+              background-color: rgba(248, 248, 248, 1);
+
+              .desc_1 {
+                // margin-bottom: 11px;
+              }
+
+              .slide_desc {
+                font-family: Roboto;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 14px;
+                letter-spacing: 0px;
+                text-align: center;
+                &:last-child{
+                  margin-top: 8px;
+                }
+              }
+
+              .slide_title {
+                text-align: center;
+               margin-bottom: 8px;
+              }
+            }
+          }
+        }
+
+
+      }
+    }
+
+    .y_shoes {
+      display: flex;
+      // justify-content: center;
+      flex-wrap: wrap;
+      position: relative;
+
+      .y_inner {
+        position: static;
+        margin-top: 8px;
+
+        .y_title {
+          //styleName: App/Tittle1/16-Bold;
+          font-family: Roboto;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 19px;
+          letter-spacing: 0px;
+          text-align: left;
+
+        }
+
+        .y_desc {
+          //styleName: App/Body 1/14-Regular;
+          font-family: Roboto;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 16px;
+          letter-spacing: 0px;
+          text-align: left;
+          margin: 0px 0 12px 0;
+
+        }
+
+        .y_btn {
+          display: flex;
+
+          .desc {
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            font-family: Roboto;
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 14px;
+            letter-spacing: 0px;
+            text-align: left;
+
+            img {
+              width: 14px;
+              height: 14px;
+              margin-right: 8px;
+            }
+          }
+        }
+      }
+    }
+
+    .bottom_icon {
+      background: #ffffff;
+      padding-bottom: 0;
+
+      .items {
+        width: 78.667vw;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        border: none;
+        padding: 0px;
+
+        .bottom_item {
+          padding-bottom: 40px;
+          // flex-wrap: nowrap;
+
+          svg {
+            width: 10.667vw;
+            height: 10.667vw;
+          }
+
+          .title {
+            font-family: Roboto;
+            font-size: 4.267vw;
+            font-weight: 400;
+            line-height: 5.067vw;
+            letter-spacing: 0px;
+            text-align: center;
+            margin-top: 8px;
+            width: 100%;
+          }
+
+          .desc {
+            font-family: Roboto;
+            font-size: 3.733vw;
+            font-weight: 400;
+            line-height: 4.267vw;
+            letter-spacing: 0px;
+            text-align: center;
+
+            margin: 2.133vw 5.333vw;
+          }
+
+          a {
+            font-family: Roboto;
+            font-size: 3.733vw;
+            font-weight: 400;
+            line-height: 4.267vw;
+            letter-spacing: 0px;
+            text-align: center;
+          }
+        }
+
+        .line {
+          display: none;
+        }
+      }
+    }
   }
 
 
-
-  .fengniao_new .right .btn {
-    display: none !important;
-  }
-
-
-}</style>
+}
+</style>

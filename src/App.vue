@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <div class="snow-container"></div>
+   
     <text1></text1>
   </div>
 </template>

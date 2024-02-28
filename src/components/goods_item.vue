@@ -90,7 +90,7 @@ export default {
        self.swiperInstance = new Swiper(this.$refs[this.swiper_name], {
          allowTouchMove: true,
          initialSlide: 0,
-         slidesPerView: "auto",
+         slidesPerView: 4,
          breakpoints: {
            768: {
              spaceBetween: 10,
