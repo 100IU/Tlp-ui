@@ -15,15 +15,9 @@
           Let’s Turn a Comfy Step Into a Giant Leap
         </div>
         <div class="po_desc">
-          At VIVAIA, we believe there is no limit to what women can accomplish.
-          Whether they want to be ballerinas, news anchors, chefs or doctors —
-          anything is possible. <br /><br />
-          In honor of Women’s History Month, we’ve partnered with 5 women from
-          our community to highlight their unique experiences in different
-          professions and to celebrate their success. <br /><br />
-          Our new campaign In Her Shoes delves into the challenges these women
-          have overcome and how they found support and empowerment through
-          different avenues, including fashion and comfortable footwear.
+          At VIVAIA, we believe there is no limit to what women can accomplish. Whether they want to be ballerinas, news anchors, chefs or doctors — anything is possible.   <br /><br />
+          In honor of Women’s History Month, we’ve partnered with 5 women from our community to highlight their unique experiences in different professions and to celebrate their success.  <br /><br />
+          Our new campaign In Her Shoes delves into the challenges these women have overcome and how they found support and empowerment through different avenues, including fashion and comfortable footwear.
         </div>
       </div>
     </div>
@@ -418,7 +412,7 @@ Sara Lee says her favorite assignment was covering the late John Lennon's 1976 i
 let str = '10019821,10012470,10019159,10003434,10003114,10019721,10020205,10020069,10020051,10019907,10020155,10019705';
 import Swiper from 'swiper';
 import 'swiper/css/swiper.css';
-import data from '../../1.json'
+
 export default {
   data () {
     return {
@@ -603,7 +597,7 @@ export default {
 
   .po_box {
     position: relative;
-    top: -4.167vw;
+    top: -3.906vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -717,6 +711,7 @@ export default {
   }
 
   .videos {
+    margin-bottom: 1.667vw;
     .title {
       text-align: center;
     }
@@ -940,7 +935,7 @@ export default {
 
     .po_box {
       position: relative;
-      top: -4.167vw;
+      top: -3.906vw;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -1054,6 +1049,7 @@ margin-bottom: 0;
     }
 
     .videos {
+      margin-bottom: 1.667vw;
       .title {
         text-align: center;
       }
@@ -1282,7 +1278,7 @@ margin-bottom: 0;
 
     .po_box {
       position: relative;
-      top: -4.167vw;
+      top: -3.906vw;
       display: flex;
       align-items: center;
       justify-content: center;
@@ -1395,6 +1391,7 @@ margin-bottom: 0;
     }
 
     .videos {
+      margin-bottom: 1.667vw;
       .title {
         text-align: center;
       }
@@ -1728,7 +1725,7 @@ margin-bottom: 0;
               background-color: rgba(248, 248, 248, 1);
 
               .desc_1 {
-                // margin-bottom: 11px;
+                margin-bottom: 7px;
               }
 
               .slide_desc {
