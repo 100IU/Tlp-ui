@@ -1,6 +1,6 @@
 <template>
+  <!-- m -->
   <div class="fengniao-margot">
-    <!-- pc -->
     <slot></slot>
     <!-- <div class="tab_name">
       <span style="opacity: .7;">
@@ -15,10 +15,10 @@
       <div class="fengniao_swiper_one swiper_one" style="overflow: hidden;" :ref="swiper_name">
 
         <div class="swiper-wrapper new_wrapper">
-          <div class="swiper-slide" v-for="(item, i) in goods_data" :key="i
+          <div class="swiper-slide" v-for="(item,i) in goods_data" :key="i
             ">
-            <a :href="`https://www.vivaia.com${item.goods_url}`" style="position: relative;display: flex;align-items: center;justify-content: center;"
-              class="a_link">
+            <a :href="`https://www.vivaia.com${item.goods_url}`"
+              style="position: relative;display: flex;align-items: center;justify-content: center;" class="a_link">
               <img v-lazy="item.goods_thumb" />
               <!-- <img src="https://cdnimg.vivaia.com/VA/image/Banner/20230919_6294/2862c4e09c5a8f67149e53a0d81d62fd.jpg"
                 alt="" style="height: auto;"> -->
@@ -28,7 +28,6 @@
             </a>
 
             <div class="slide_info">
-              
               <p class="new_title_one" :class="item.goods_sn === '1' ? 'new_weight' : ''"> {{
                 item.goods_name }}</p>
 
@@ -46,7 +45,7 @@
             </div>
           </div>
         </div>
-        <div class="swiper-pagination" style="width: 89.333vw;margin: 0 auto;"></div>
+        <!-- <div class="swiper-pagination" style="width: 89.333vw;margin: 0 auto;" v-show="goods_data.length>2"></div> -->
       </div>
     </div>
   </div>
@@ -69,24 +68,96 @@ export default {
     },
     tabs_item: {
       type: String,
-
+      
     },
     tabs_item_one: {
       type: String,
-
+    
     },
-
+   
 
 
   },
+  data () {
+    return {
+      // swiperInstance: null
+    }
+  },
+  mounted () {
 
+    
+      this.initSwiper()    
+    
+   
+  },
+//   watch: {
+//     swiper_name(newValue, oldValue) {
+
+//       this.$nextTick(() => {
+//   this.swiperInstance.update()
+//   this.swiperInstance.slideTo(0, 0, false);//切换到第一个slide，速度为1秒
+// })
+
+//     }
+//   },
+
+  methods: {
+
+    initSwiper () {
+     
+
+      const self = this;
+      this.$nextTick(() => {
+       new Swiper(this.$refs[this.swiper_name], {
+          allowTouchMove: false,
+
+          initialSlide: 0,
+          slidesPerView: "auto",
+          breakpoints: {
+            375: {
+              // slidesPerView: 2,
+              // spaceBetween:7,
+            },
+            768: {
+              // spaceBetween:7,
+              // slidesPerView: 1.4
+            },
+            1024: {
+              //当屏幕宽度大于等于768
+              spaceBetween: 15,
+            },
+            1730: {
+              spaceBetween: 20
+            }
+          },
+          // pagination: {
+          //   el: ".swiper-pagination",
+          //   type: "progressbar",
+          // },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      })
+
+
+
+
+    },
+  }
 
 }
 </script>
 <style  lang="less">
-.swiper-pagination .swiper-pagination-progressbar-fill {
-  background: #191817 !important;
+.fengniao_margot-swiper{
+  // width: 89.333vw;
+  // overflow: hidden;
 }
+
+// .swiper-pagination .swiper-pagination-progressbar-fill {
+//   background: #191817 !important;
+// }
 
 .fengniao-margot {
   margin-bottom: 1.875vw;
@@ -118,24 +189,11 @@ export default {
     line-height: 16px;
     letter-spacing: 0px;
     text-align: left;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
 
   }
 
   .new_title_one:nth-child(2) {
     margin-top: 0.625vw;
-
-  }
-
-  .new_title_one:nth-child(2) span:nth-child(1) {
-    font-weight: 500;
-  }
-
-  .new_title_one:nth-child(2) span:nth-child(2) {
-    font-weight: 400;
-    text-decoration: line-through;
   }
 
   .a_link:hover .shop_btn {
@@ -191,42 +249,39 @@ export default {
   .new_wrapper .swiper-slide {
     // display: grid;
     width: 23.8%;
-
+   
   }
 }
 
 @media screen and (max-width: 1023px) {
+  .fengniao_margot-swiper .swiper-wrapper{
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.fengniao_margot-swiper .swiper-slide{
+  width:43.733vw ;
+}
   .fengniao-margot {
     padding: 0 5.333vw;
 
-    .tab_name {
-      font-family: Roboto;
-      font-size: 3.2vw !important;
-      font-weight: 500;
-      line-height: 3.733vw !important;
-      letter-spacing: 0px;
-      text-align: left;
-
-    svg{
-      width: 3.2vw;
-      height: 3.2vw;
-    }
-    }
 
   }
 
+  // .tab_name {
+  //   padding-left: 5.333vw;
+  // }
 
 
   .fengniao_swiper_one {
     width: 100% !important;
-    // margin-bottom: 10.667vw;
+    margin-bottom: 6.4vw;
     // padding: 0 5.333vw;
     box-sizing: border-box;
   }
 
   .fengniao_margot-swiper {
-    margin-top: 5.333vw;
-    width: 100%;
+    margin-top: 4.267vw;
+    width:100%;
     box-sizing: border-box;
   }
 
@@ -266,7 +321,7 @@ export default {
     height: 2px;
   }
 
-  .new_title_one {
+  .fengniao-margot  .new_title_one {
     font-family: Roboto;
     font-size: 3.2vw;
     font-weight: 400;
@@ -276,11 +331,12 @@ export default {
 
   }
 
-  .new_title_one:nth-child(2) {
+  .fengniao-margot .new_title_one:nth-child(2) {
     margin-top: 1.067vw;
   }
 
   .fengniao-margot .slide_info {
-    margin: 2.667vw 0 5.333vw;
+    margin:2.133vw 0 4.267vw;
   }
-}</style>
+}
+</style>

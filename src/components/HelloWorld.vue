@@ -1,606 +1,786 @@
 <template>
-  <div class="women_day">
+  <div class="fengniao_new">
     <div class="top_banner">
+      <div class="inner common_title">
+        Like a fine wine, the classics <br> only grow better with age.
+      </div>
       <picture>
         <source srcset="
-        https://cdnimg.vivaia.com/VA/image/Banner/20240227_6656/banner-a-M.jpg
+        https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/banner-a-M-new.jpg
           " media="(max-width:768px)" />
-        <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20240227_6655/Rectangle-1.jpg" alt="" />
+        <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc12.jpg"
+          alt="" />
       </picture>
     </div>
-    <div class="po_box space-w">
-      <div class="po_text-area">
-        <div class="po_title">In Her Shoes</div>
-        <div class="po_desc desc_1" style="font-family: Roboto; font-weight: 500">
-          Let’s Turn a Comfy Step Into a Giant Leap
-        </div>
-        <div class="po_desc show_big">
-          At VIVAIA, we believe there is no limit to what women can accomplish. Whether they want to be ballerinas, news anchors, chefs or doctors — anything is possible. <div style="height: 12px;"></div>
-          In honor of Women’s History Month, we’ve partnered with 5 women from our community to highlight their unique experiences in different professions and to celebrate their success. <div style="height: 12px;"></div>
-          Our new campaign In Her Shoes delves into the challenges these women have overcome and how they found support and empowerment through different avenues, including fashion and comfortable footwear.
-        </div>
-        <div class="po_desc show_small">
-          At VIVAIA, we believe there is no limit to what women can accomplish. Whether they want to be ballerinas, news anchors, chefs or doctors — anything is possible.   
-          <div style="height: 8px;"></div>
-          In honor of Women’s History Month, we’ve partnered with 5 women from our community to highlight their unique experiences in different professions and to celebrate their success. 
-          <div style="height: 8px;"></div>
-          Our new campaign In Her Shoes delves into the challenges these women have overcome and how they found support and empowerment through different avenues, including fashion and comfortable footwear.
-        </div>
-      </div>
+    <div class="fengniao_title">
+      <div class="biaodian">“</div>
+      <div class="title"> Transcend time with our Back to Timeless Collection. The always in fashion little black dress extends to footwear with elegant clean lines and contrasting colors that feel just as fashion-forward today as they did a century ago, with the added benefit of modern eco-friendly materials and all-day comfort.</div>
+
+      <div class="biaodian" style="margin-top: 20px;">”</div>
     </div>
+    <Icon_swiper></Icon_swiper>
 
-    <div class="common_title space-w">Recommendations</div>
-    <div class="recommen_swiper space-w" style="position: relative">
-      <div class="recommen_swiper_inner" style="overflow: hidden">
-        <div class="swiper_btn show_big">
-          <div class="swiper-button swiper-button-prev">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M10.0607 2.45129L9 1.39062L1.3934 8.99723L2.45406 10.0579L2.45412 10.0578L9.00013 16.6038L10.0608 15.5432L3.51478 8.99716L10.0607 2.45129Z"
-                fill="#FFFFFF" />
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M17 9.75H3V8.25H17V9.75Z" fill="#FFFFFF" />
-            </svg>
-          </div>
-          <div class="swiper-button swiper-button-next">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M7.93934 2.45129L9 1.39062L16.6066 8.99723L15.5459 10.0579L15.5459 10.0578L8.99987 16.6038L7.93921 15.5432L14.4852 8.99716L7.93934 2.45129Z"
-                fill="#FFFFFF" />
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M1 9.75H15V8.25H1V9.75Z" fill="#FFFFFF" />
-            </svg>
-          </div>
-        </div>
-        <div class="swiper-wrapper">
-          <div class="swiper-slide" v-for="item in goods_data" :key="item.goods_sn">
-            <a :href="`https://www.vivaia.com${item.goods_url}`" style="
-                position: relative;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-              " class="a_link">
-              <img v-lazy="item.goods_thumb" />
-
-              <div class="shop_btn" style="position: absolute">Shop Now</div>
-            </a>
-
-            <div class="slide_info">
-              <p class="new_title_one" :class="item.goods_sn === '1' ? 'new_weight' : ''">
-                {{ item.goods_name }}
-              </p>
-
-              <p class="new_title_one" v-if="item.pc_shop_price_converted !== item.old_shop_price_converted
-                ">
-                <span style="margin-right: 4px">{{
-                  item.pc_shop_price_converted
-                }}</span>
-                <span style="text-decoration: line-through;font-weight: 400;">{{ item.old_shop_price_converted }} </span>
-              </p>
-              <p v-else class="new_title_one">
-                <span>{{ item.pc_shop_price_converted }}</span>
-              </p>
-            </div>
-          </div>
-
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
+    <swiper_one @sort="handleSort" @sort_one="handleSort_one"></swiper_one>
+ 
+    <component :is="renderedComponent" :goods_data="goods_data" :tabs_item="tabs_item" :tabs_item_one="tabs_item_one"
+      ref="child" :swiper_name="swiper_name" />
+    <!--  -->
+    <div class="design_ins space-w">
+    
+      <picture>
+        <source srcset="
+        https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m3.jpg
+          " media="(max-width:768px)" />
+        <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc2.jpg" alt="" />
+      </picture>
     </div>
    
-    <div class="videos space-w">
-      <div class="common_title title">
-        Watch as these five women walk you through their individual journeys
-        <br class="show_big" />
-        and explain how VIVAIA has played an important role in their lives.
+    <div class="coming_soon space-w">
+      <div class="coming_title common_title">
+        Launched
       </div>
-
-    
-     
-      <div class="show_big">
-        <video id="myVideo" autoplay="autoplay" loop="loop" muted="" controls="controls" width="100%"
-        playsinline="true" webkit-playsinline="true">
-        <source src="https://cdnimg.vivaia.com/VA/video/Banner/20240227_6655/freecompress-campaign_final.mp4" type="video/mp4" />
-      </video>
-      </div>
-      <div class="show_small">
-        <video id="myVideo"  autoplay="autoplay" loop="loop" muted="" controls="controls" width="100%"
-        playsinline="true" webkit-playsinline="true">
-        <source src="https://cdnimg.vivaia.com/VA/video/Banner/20240227_6655/freecompress-campaign_final.mp4" type="video/mp4" />
-      </video>
-      </div>
-    </div>
-    <div class="bottom_swiper space-w" style="position: relative;">
-      <div class="swiper_btn show_big">
-          <div class="swiper-button swiper-button-prev">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M10.0607 2.45129L9 1.39062L1.3934 8.99723L2.45406 10.0579L2.45412 10.0578L9.00013 16.6038L10.0608 15.5432L3.51478 8.99716L10.0607 2.45129Z"
-                fill="#FFFFFF" />
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M17 9.75H3V8.25H17V9.75Z" fill="#FFFFFF" />
-            </svg>
-          </div>
-          <div class="swiper-button swiper-button-next">
-            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" fill="none">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M7.93934 2.45129L9 1.39062L16.6066 8.99723L15.5459 10.0579L15.5459 10.0578L8.99987 16.6038L7.93921 15.5432L14.4852 8.99716L7.93934 2.45129Z"
-                fill="#FFFFFF" />
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M1 9.75H15V8.25H1V9.75Z" fill="#FFFFFF" />
-            </svg>
-          </div>
-        </div>
-      <div class="bottom_swiper_inner show_big" style="overflow: hidden; position: relative">
-        
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <picture>
-              <source srcset="
-              https://cdnimg.vivaia.com/VA/image/Banner/20240227_6656/Rectangle%202338.jpg
-                " media="(max-width:768px)" />
-              <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20240227_6655/Group-337602_hn1.jpg"
-                alt="" />
-            </picture>
-
-            <div class="slide_area">
-              <div class="slide_desc desc_1">Ballerina </div>
-              <div class="common_title slide_title">Luna Montana</div>
-              <div class="slide_desc">
-                Luna Montana is a 23 year old classically trained ballerina and content creator from Los Angeles, CA.  She is known across social media for her endearing personality, eye for fashion, and her love for ballet. She has amassed nearly 2 million followers across all of her platforms.
-              </div>
-              <div class="slide_desc">Instagram: @lunamontana</div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <picture>
-              <source srcset="
-              https://cdnimg.vivaia.com/VA/image/Banner/20240227_6656/Rectangle%202326_0kk.jpg
-                " media="(max-width:768px)" />
-              <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20240227_6655/Rectangle-2324.jpg"
-                alt="" />
-            </picture>
-
-            <div class="slide_area">
-              <div class="slide_desc desc_1">News Anchor</div>
-              <div class="common_title slide_title">Sara Lee Kessler</div>
-              <div class="slide_desc">
-                Sara Lee Kessler is a veteran TV and radio news anchor and reporter with more than 40 years of experience and name recognition in the New York market. 
-                <div style="height: 12px;"></div>
-She is a three-time Emmy Award winner for anchoring WWOR-TV's coverage of the 1993 World Trade Center bombing, which was carried nationally on CNN, and hosting and writing documentaries on autism and bone marrow donation that aired on PBS. 
-<div style="height: 12px;"></div>
-Sara Lee says her favorite assignment was covering the late John Lennon's 1976 immigration hearing in which he was given a green card and he yelled out, "right on, brother" as she did her TV news standup for WCBS, a historic moment immortalized in the 2009 film, U.S. v Lennon.  Sara Lee Kessler has been with iHeart Radio since 2013 and can be heard in New York on 710 WOR and nationwide on NBC News Radio stations.
-              </div>
-              <div class="slide_desc">Instagram: @saraleekesslerofficial</div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <picture>
-              <source srcset="
-              https://cdnimg.vivaia.com/VA/image/Banner/20240227_6656/Rectangle%202326-1.jpg
-                " media="(max-width:768px)" />
-              <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20240227_6655/Group-337599_acc.jpg"
-                alt="" />
-            </picture>
-
-            <div class="slide_area">
-              <div class="slide_desc desc_1">Surgeon</div>
-              <div class="common_title slide_title">Heena Santry </div>
-              <div class="slide_desc">
-                Heena is an acute care surgeon, health services researcher, healthcare design consultant, and advocate for diversity, equity, and inclusion in the healthcare professions. Married for nearly 25 years, Heena has two children ages 20 and 16 and a pair of sweet lap dogs. 
-                <div style="height: 12px;"></div>
-                Heena loves bringing together friends, neighbors, and colleagues and considers throwing parties one of her main hobbies. In addition, she loves being a foodie, doing jigsaw puzzles and reading to relax when she can, and making sure she gets in a run or Orangetheory workout whenever she is not on call at the hospital.
-              </div>
-              <!-- <div class="slide_desc">Instagram: @saraleekesslerofficial</div> -->
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <picture>
-              <source srcset="
-              https://cdnimg.vivaia.com/VA/image/Banner/20240227_6656/Rectangle%202336.jpg
-                " media="(max-width:768px)" />
-              <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20240227_6655/Group-337601_hu5.jpg"
-                alt="" />
-            </picture>
-
-            <div class="slide_area">
-              <div class="slide_desc desc_1">Ballerina</div>
-              <div class="common_title slide_title">Alicia Mae Holloway</div>
-              <div class="slide_desc">
-                Alicia Mae Holloway is from Morgantown, West Virginia and began dancing when she was three years old at Kat and Company Dance Studio. She has trained at Central Pennsylvania Youth Ballet and the University of North Carolina School of the Arts before attending the School of American Ballet from 2011-2015.
-                <div style="height: 12px;"></div>
-                 From there, she began her professional career dancing with the Suzanne Farrell Ballet, and completed seven seasons with the Dance Theatre of Harlem where she worked with Alicia Keys, Aretha Franklin, and Gladys Knight. Recently, she served as a co-chairwoman of the School of American Ballet’s Visiting Faculty program for two years and is currently the principal role of ‘Lena’ in Josh Bergasse’s Sugarhill: The Ellington/Strayhorn Nutcracker.
-              </div>
-              <div class="slide_desc">Instagram: @aliciamaeholloway_</div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <picture>
-              <source srcset="
-              https://cdnimg.vivaia.com/VA/image/Banner/20240227_6656/Rectangle%202334.jpg
-                " media="(max-width:768px)" />
-              <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20240227_6655/Group-337600_zwk.jpg"
-                alt="" />
-            </picture>
-
-            <div class="slide_area">
-              <div class="slide_desc desc_1">Aspiring Chef</div>
-              <div class="common_title slide_title">Gwyneth Yuma</div>
-              <div class="slide_desc">
-                Aspiring Chef and Content Creator, Gwyneth, sees cooking as a bridge to her Okinawan-Japanese roots, while also igniting curiosity in others to venture into new culinary realms. Beyond the kitchen, she documents her experiences as a young Asian-American woman navigating life in her twenties through travel videos, daily vlogs, and creative endeavors. With plans to enroll in culinary school this summer, Gwyneth aims to hone her skills and fulfill her dream of becoming a seasoned culinary professional.
-              </div>
-              <div class="slide_desc">Instagram: @gwynethyuma</div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-      <div class="bottom_swiper_inner_m show_small" style="overflow: hidden; position: relative">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <picture>
-              <source srcset="
-              https://cdnimg.vivaia.com/VA/image/Banner/20240227_6656/Rectangle%202338.jpg
-                " media="(max-width:768px)" />
-              <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20240227_6655/Group-337602_hn1.jpg"
-                alt="" />
-            </picture>
-
-            <div class="slide_area">
-              <div class="slide_desc desc_1">Ballerina </div>
-              <div class="common_title slide_title">Luna Montana</div>
-              <div class="slide_desc">
-                Luna Montana is a 23 year old classically trained ballerina and content creator from Los Angeles, CA.  She is known across social media for her endearing personality, eye for fashion, and her love for ballet. She has amassed nearly 2 million followers across all of her platforms.
-              </div>
-              <div class="slide_desc">Instagram: @lunamontana</div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <picture>
-              <source srcset="
-              https://cdnimg.vivaia.com/VA/image/Banner/20240227_6656/Rectangle%202326_0kk.jpg
-                " media="(max-width:768px)" />
-              <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20240227_6655/Rectangle-2324.jpg"
-                alt="" />
-            </picture>
-
-            <div class="slide_area">
-              <div class="slide_desc desc_1">News Anchor</div>
-              <div class="common_title slide_title">Sara Lee Kessler</div>
-              <div class="slide_desc">
-                Sara Lee Kessler is a veteran TV and radio news anchor and reporter with more than 40 years of experience and name recognition in the New York market. 
-She is a three-time Emmy Award winner for anchoring WWOR-TV's coverage of the 1993 World Trade Center bombing, which was carried nationally on CNN, and hosting and writing documentaries on autism and bone marrow donation that aired on PBS.  
-Sara Lee says her favorite assignment was covering the late John Lennon's 1976 immigration hearing in which he was given a green card and he yelled out, "right on, brother" as she did her TV news standup for WCBS, a historic moment immortalized in the 2009 film, U.S. v Lennon.  Sara Lee Kessler has been with iHeart Radio since 2013 and can be heard in New York on 710 WOR and nationwide on NBC News Radio stations.
-              </div>
-              <div class="slide_desc">Instagram: @saraleekesslerofficial</div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <picture>
-              <source srcset="
-              https://cdnimg.vivaia.com/VA/image/Banner/20240227_6656/Rectangle%202326-1.jpg
-                " media="(max-width:768px)" />
-              <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20240227_6655/Group-337599_acc.jpg"
-                alt="" />
-            </picture>
-
-            <div class="slide_area">
-              <div class="slide_desc desc_1">Surgeon</div>
-              <div class="common_title slide_title">Heena Santry </div>
-              <div class="slide_desc">
-                Heena is an acute care surgeon, health services researcher, healthcare design consultant, and advocate for diversity, equity, and inclusion in the healthcare professions. Married for nearly 25 years, Heena has two children ages 20 and 16 and a pair of sweet lap dogs.
-                <div style="height: 8px;"></div>
-                Heena loves bringing together friends, neighbors, and colleagues and considers throwing parties one of her main hobbies. In addition, she loves being a foodie, doing jigsaw puzzles and reading to relax when she can, and making sure she gets in a run or Orangetheory workout whenever she is not on call at the hospital.
-              </div>
-              <!-- <div class="slide_desc">Instagram: @saraleekesslerofficial</div> -->
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <picture>
-              <source srcset="
-              https://cdnimg.vivaia.com/VA/image/Banner/20240227_6656/Rectangle%202336.jpg
-                " media="(max-width:768px)" />
-              <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20240227_6655/Group-337601_hu5.jpg"
-                alt="" />
-            </picture>
-
-            <div class="slide_area">
-              <div class="slide_desc desc_1">Ballerina</div>
-              <div class="common_title slide_title">Alicia Mae Holloway</div>
-              <div class="slide_desc">
-                Alicia Mae Holloway is from Morgantown, West Virginia and began dancing when she was three years old at Kat and Company Dance Studio. She has trained at Central Pennsylvania Youth Ballet and the University of North Carolina School of the Arts before attending the School of American Ballet from 2011-2015.
-                <div style="height: 8px;"></div>
-                 From there, she began her professional career dancing with the Suzanne Farrell Ballet, and completed seven seasons with the Dance Theatre of Harlem where she worked with Alicia Keys, Aretha Franklin, and Gladys Knight. Recently, she served as a co-chairwoman of the School of American Ballet’s Visiting Faculty program for two years and is currently the principal role of ‘Lena’ in Josh Bergasse’s Sugarhill: The Ellington/Strayhorn Nutcracker.
-              </div>
-              <div class="slide_desc">Instagram: @aliciamaeholloway_</div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <picture>
-              <source srcset="
-              https://cdnimg.vivaia.com/VA/image/Banner/20240227_6656/Rectangle%202334.jpg
-                " media="(max-width:768px)" />
-              <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20240227_6655/Group-337600_zwk.jpg"
-                alt="" />
-            </picture>
-
-            <div class="slide_area">
-              <div class="slide_desc desc_1">Aspiring Chef</div>
-              <div class="common_title slide_title">Gwyneth Yuma</div>
-              <div class="slide_desc">
-                Aspiring Chef and Content Creator, Gwyneth, sees cooking as a bridge to her Okinawan-Japanese roots, while also igniting curiosity in others to venture into new culinary realms. Beyond the kitchen, she documents her experiences as a young Asian-American woman navigating life in her twenties through travel videos, daily vlogs, and creative endeavors. With plans to enroll in culinary school this summer, Gwyneth aims to hone her skills and fulfill her dream of becoming a seasoned culinary professional.
-              </div>
-              <div class="slide_desc">Instagram: @gwynethyuma</div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-pagination"></div>
-      </div>
-    </div>
-    <div class="common_title space-w">In Your Shoes</div>
-    <div class="y_shoes space-w">
-      <picture>
-        <source srcset="
-        https://cdnimg.vivaia.com/VA/image/Banner/20240227_6656/review-m-1_68p.jpg
+      <div class="list">
+        <div class="item">
+          <picture>
+            <source srcset="
+            https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6612/new%20arrival-m_259.jpg
           " media="(max-width:768px)" />
-        <img class="common-img" src="https://cdnimg.vivaia.com/VA/image/Banner/20240227_6655/Untitled-1%201_fuu.jpg" alt="" />
-      </picture>
-      <div class="y_inner">
-        <div class="y_title">What's your story?</div>
-        <div class="y_desc">
-          Between February 29 to March 14, visit our Instagram account and share
-          what empowers you for a chance to win a pair of VIVAIA flats.
-        </div>
-        <a href="https://www.instagram.com/p/C37zeIxrkbJ" class="y_btn">
-          <div class="desc">
-            <picture>
-              <source srcset="
-                  https://cdnimg.vivaia.com/CO/image/Banner/20240125_6604/Group%20789.svg
-                " media="(max-width:768px)" />
-              <img class="common-img" src="https://cdnimg.vivaia.com/CO/image/Banner/20240125_6604/Group%20788.svg"
-                alt="" />
-            </picture>Share my story
+            <img class="common-img"
+              src="https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6612/Rectangle%201971PC_4d3.jpg" alt="" />
+          </picture>
+          <div class="inner">
+            <div class="title">
+              <span>Dots Collection</span>
+              <span>2024 / 02</span>
+            </div>
+            <a class="desc" href="https://www.vivaia.com/promotion/Dots-Collection-24SS.html">Discover <span
+                class="line"></span></a>
           </div>
-        </a>
+        </div>
+        <div class="item">
+
+          <picture>
+            <source srcset="
+            https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6612/new%20arrival-m_8f5.jpg
+          " media="(max-width:768px)" />
+            <img class="common-img"
+              src="https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6612/Rectangle%202098PC_yqb.jpg" alt="" />
+          </picture>
+          <div class="inner">
+            <div class="title">
+              <span>Cargo Collection</span>
+              <span>2024 / 02</span>
+            </div>
+            <a class="desc" href="https://www.vivaia.com/promotion/Cargo-Collection-24SS.html">Discover
+              <span class="line"></span>
+            </a>
+          </div>
+        </div>
+        <div class="item">
+          <a href="https://www.vivaia.com/promotion/Animal-Collection-24SS-6248.html"><picture><source srcset="https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6612/new%20arrival-m2.jpg" media="(max-width:1023px)"><img src="https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6612/Rectangle%202098PC2.jpg" alt="" class="common-img"></picture></a>
+          <div class="inner">
+            <div class="title"><span>Animal Collection </span><span class="month">2024 / 02</span></div>
+            <a class="desc" href="https://www.vivaia.com/promotion/Animal-Collection-24SS-6248.html">Discover
+              <span class="line"></span>
+            </a>
+          </div>
+        </div>
       </div>
     </div>
-    <div class="bottom_icon">
+    <div class="bottom_icon ">
       <div class="items">
         <div class="bottom_item">
-          <svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M39.2708 18.2812H23.3594V16.25H41.3021V31.4844H52.1354V33.5156H39.2708V18.2812Z" fill="#191817"></path>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M30.4688 43.3333H39.4401V45.3645H30.4688V43.3333Z"
-              fill="#191817"></path>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.2656 43.3335H22.3438V45.3647H17.2656V43.3335Z"
-              fill="#191817"></path>
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M26.5756 47.3958C28.2583 47.3958 29.6224 46.0316 29.6224 44.3489C29.6224 42.6661 28.2583 41.302 26.5756 41.302C24.8928 41.302 23.5287 42.6661 23.5287 44.3489C23.5287 46.0316 24.8928 47.3958 26.5756 47.3958ZM26.5756 49.427C29.3801 49.427 31.6537 47.1534 31.6537 44.3489C31.6537 41.5443 29.3801 39.2708 26.5756 39.2708C23.771 39.2708 21.4974 41.5443 21.4974 44.3489C21.4974 47.1534 23.771 49.427 26.5756 49.427Z"
-              fill="#191817"></path>
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M42.8254 47.3958C44.5082 47.3958 45.8723 46.0316 45.8723 44.3489C45.8723 42.6661 44.5082 41.302 42.8254 41.302C41.1427 41.302 39.7786 42.6661 39.7786 44.3489C39.7786 46.0316 41.1427 47.3958 42.8254 47.3958ZM42.8254 49.427C45.63 49.427 47.9036 47.1534 47.9036 44.3489C47.9036 41.5443 45.63 39.2708 42.8254 39.2708C40.0209 39.2708 37.7473 41.5443 37.7473 44.3489C37.7473 47.1534 40.0209 49.427 42.8254 49.427Z"
-              fill="#191817"></path>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M15.573 32.3308H26.5756V34.3621H15.573V32.3308Z"
-              fill="#191817"></path>
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M19.4661 25.5598H33.0077V27.5911H19.4661V25.5598Z"
-              fill="#191817"></path>
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M46.4943 25.052H39.4401V23.0208H47.6202L52.3046 30.5159V45.3645H46.1686V43.3333H50.2734V31.0985L46.4943 25.052Z"
-              fill="#191817"></path>
-          </svg>
-          <div class="title">Free shipping on orders over $99</div>
+          <svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M39.2708 18.2812H23.3594V16.25H41.3021V31.4844H52.1354V33.5156H39.2708V18.2812Z" fill="#191817"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M30.4688 43.3333H39.4401V45.3645H30.4688V43.3333Z" fill="#191817"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M17.2656 43.3335H22.3438V45.3647H17.2656V43.3335Z" fill="#191817"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M26.5756 47.3958C28.2583 47.3958 29.6224 46.0316 29.6224 44.3489C29.6224 42.6661 28.2583 41.302 26.5756 41.302C24.8928 41.302 23.5287 42.6661 23.5287 44.3489C23.5287 46.0316 24.8928 47.3958 26.5756 47.3958ZM26.5756 49.427C29.3801 49.427 31.6537 47.1534 31.6537 44.3489C31.6537 41.5443 29.3801 39.2708 26.5756 39.2708C23.771 39.2708 21.4974 41.5443 21.4974 44.3489C21.4974 47.1534 23.771 49.427 26.5756 49.427Z" fill="#191817"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M42.8254 47.3958C44.5082 47.3958 45.8723 46.0316 45.8723 44.3489C45.8723 42.6661 44.5082 41.302 42.8254 41.302C41.1427 41.302 39.7786 42.6661 39.7786 44.3489C39.7786 46.0316 41.1427 47.3958 42.8254 47.3958ZM42.8254 49.427C45.63 49.427 47.9036 47.1534 47.9036 44.3489C47.9036 41.5443 45.63 39.2708 42.8254 39.2708C40.0209 39.2708 37.7473 41.5443 37.7473 44.3489C37.7473 47.1534 40.0209 49.427 42.8254 49.427Z" fill="#191817"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M15.573 32.3308H26.5756V34.3621H15.573V32.3308Z" fill="#191817"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M19.4661 25.5598H33.0077V27.5911H19.4661V25.5598Z" fill="#191817"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M46.4943 25.052H39.4401V23.0208H47.6202L52.3046 30.5159V45.3645H46.1686V43.3333H50.2734V31.0985L46.4943 25.052Z" fill="#191817"></path></svg>
+          <div class="title">
+            Free shipping on orders over $99
+          </div>
+
+          <!-- <a href="">Learn More
+            <span class="line"></span>
+          </a> -->
         </div>
         <div class="line"></div>
         <div class="bottom_item">
-          <svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M46.7188 18.2812H18.2812V23.6979H46.7188V18.2812ZM16.25 16.25V25.7292H48.75V16.25H16.25Z" fill="#191817">
-            </path>
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M45.3645 25.729H19.6354V46.0415H45.3645V25.729ZM17.6041 23.6978V48.0728H47.3958V23.6978H17.6041Z"
-              fill="#191817"></path>
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M26.3285 32.4977L29.3754 29.1123L30.8852 30.4711L29.3638 32.1615H39.2709V34.1928H27.0834L26.3285 32.4977Z"
-              fill="#191817"></path>
-            <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M38.6716 37.9188L35.6248 41.3042L34.1149 39.9454L35.6363 38.255H25.7292V36.2237H37.9167L38.6716 37.9188Z"
-              fill="#191817"></path>
-          </svg>
-          <div class="title">Free Exchanges &amp; Easy Returns</div>
+         
+<svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="65" height="65" fill="#F5F5F5"/>
+<g clip-path="url(#clip0_3452_622)">
+<rect width="1920" height="7887" transform="translate(-928 -4224)" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M46.7187 18.2812H18.2812V23.6979H46.7187V18.2812ZM16.25 16.25V25.7292H48.75V16.25H16.25Z" fill="#191817"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M45.3645 25.729H19.6354V46.0415H45.3645V25.729ZM17.6041 23.6978V48.0728H47.3958V23.6978H17.6041Z" fill="#191817"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M26.3285 32.4977L29.3754 29.1123L30.8852 30.4711L29.3638 32.1615H39.2709V34.1928H27.0834L26.3285 32.4977Z" fill="#191817"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M38.6716 37.9188L35.6248 41.3042L34.1149 39.9454L35.6363 38.255H25.7292V36.2237H37.9167L38.6716 37.9188Z" fill="#191817"/>
+</g>
+<defs>
+<clipPath id="clip0_3452_622">
+<rect width="1920" height="7887" fill="white" transform="translate(-928 -4224)"/>
+</clipPath>
+</defs>
+</svg>
+
+          <div class="title">
+            Free Exchanges & Easy Returns
+          </div>
+
+          <!-- <a href="">Learn More<span class="line"></span></a> -->
+
         </div>
         <div class="line"></div>
         <div class="bottom_item">
-          <svg width="65" height="65" viewBox="0 0 65 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <svg xmlns="http://www.w3.org/2000/svg" width="65" height="65" viewBox="0 0 80 80" fill="none">
             <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M46.1446 16.9873L30.0376 16.9873L11.2461 35.7788L27.3531 51.8858L46.1446 33.0943L46.1446 16.9873ZM44.1134 32.2529L27.3531 49.0132L14.1187 35.7788L30.879 19.0186L44.1134 19.0186L44.1134 32.2529Z"
+              d="M56.7935 20.9077L36.9695 20.9077L13.8415 44.0357L33.6655 63.8598L56.7935 40.7317V20.9077ZM54.2935 39.6962L33.6655 60.3242L17.377 44.0357L38.005 23.4077L54.2935 23.4077V39.6962Z"
               fill="#191817"></path>
             <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M48.0494 34.9976L47.0637 26.5279L49.0814 26.2931L50.1484 35.4624L39.2964 53.0969L31.4697 49.5393L32.3103 47.6901L38.5056 50.5062L48.0494 34.9976Z"
+              d="M59.1378 43.0743L57.9247 32.65L60.408 32.3611L61.7212 43.6463L48.3649 65.3503L38.7321 60.9717L39.7666 58.6958L47.3917 62.1617L59.1378 43.0743Z"
               fill="#191817"></path>
             <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M28.9372 28.7727C29.4673 29.3028 30.3268 29.3028 30.8568 28.7727C31.3869 28.2427 31.3869 27.3832 30.8568 26.8531C30.3268 26.3231 29.4673 26.3231 28.9372 26.8531C28.4072 27.3832 28.4072 28.2427 28.9372 28.7727ZM27.5009 30.2091C28.8243 31.5324 30.9698 31.5324 32.2932 30.2091C33.6165 28.8857 33.6165 26.7402 32.2932 25.4168C30.9698 24.0935 28.8243 24.0935 27.5009 25.4168C26.1776 26.7402 26.1776 28.8857 27.5009 30.2091Z"
+              d="M35.6152 35.4129C36.2676 36.0653 37.3254 36.0653 37.9778 35.4129C38.6302 34.7605 38.6302 33.7027 37.9778 33.0503C37.3254 32.3979 36.2676 32.3979 35.6152 33.0503C34.9628 33.7027 34.9628 34.7605 35.6152 35.4129ZM33.8474 37.1806C35.4761 38.8094 38.1168 38.8094 39.7455 37.1806C41.3743 35.5519 41.3743 32.9112 39.7455 31.2825C38.1168 29.6538 35.4761 29.6538 33.8474 31.2825C32.2187 32.9112 32.2187 35.5519 33.8474 37.1806Z"
               fill="#191817"></path>
             <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M30.1352 39.5554C30.6653 40.0855 31.5247 40.0855 32.0548 39.5554C32.5849 39.0253 32.5849 38.1659 32.0548 37.6358C31.5247 37.1057 30.6653 37.1057 30.1352 37.6358C29.6051 38.1659 29.6051 39.0253 30.1352 39.5554ZM28.6989 40.9917C30.0222 42.3151 32.1677 42.3151 33.4911 40.9917C34.8144 39.6684 34.8144 37.5229 33.4911 36.1995C32.1677 34.8762 30.0222 34.8762 28.6989 36.1995C27.3755 37.5229 27.3755 39.6684 28.6989 40.9917Z"
+              d="M37.0896 48.6839C37.742 49.3363 38.7997 49.3363 39.4521 48.6839C40.1046 48.0315 40.1046 46.9737 39.4521 46.3213C38.7997 45.6689 37.742 45.6689 37.0896 46.3213C36.4371 46.9737 36.4371 48.0315 37.0896 48.6839ZM35.3218 50.4516C36.9505 52.0804 39.5912 52.0804 41.2199 50.4516C42.8486 48.8229 42.8486 46.1822 41.2199 44.5535C39.5912 42.9248 36.9505 42.9248 35.3218 44.5535C33.6931 46.1822 33.6931 48.8229 35.3218 50.4516Z"
               fill="#191817"></path>
             <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M37.1229 32.4113L24.5984 35.7672L24.0727 33.8051L36.5971 30.4492L37.1229 32.4113Z" fill="#191817"></path>
+              d="M45.6898 39.8911L30.2751 44.0214L29.628 41.6066L45.0427 37.4762L45.6898 39.8911Z" fill="#191817"></path>
           </svg>
-          <div class="title">$15 Off Your First Order</div>
+          <div class="title">
+            $15 Off Your First Order
+          </div>
+
+          <!-- <a href="">Learn More<span class="line"></span></a> -->
         </div>
+
       </div>
     </div>
   </div>
 </template>
 
 <script>
-let str = '10019821,10012470,10019159,10003434,10003114,10019721,10020205,10020069,10020051,10019907,10020155,10019705';
-import Swiper from 'swiper';
-import 'swiper/css/swiper.css';
+let str1 = `10019822,10012698,10019159,10020339,10012649,10020509, 10020389`;
+let str2 = `10011931,10016513`
+let str3 = `10018881`
+import swiper_one from './swiper_one.vue'
+import goods_item from './goods_item.vue'
+import goods_item_one from './goods_item_one.vue'
+import Icon_swiper from './Icon_swiper.vue'
 
 export default {
+ 
+  components: {
+    swiper_one,
+    goods_item,
+    goods_item_one,
+    Icon_swiper
+  },
   data () {
     return {
-      goods_data: [],
+      goods_data: [
+        {
+          src: 'https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6613/1SAMANTHA-shflatse2210170017-description-domestic%201.jpg',
+          link: 'https://www.vivaia.com/item/squared-toe-loafers-samantha-p_10016696.html?gid=10016710',
+          good_name: 'Square-Toe Loafers (Samantha)',
+          pc_shop_price_converted: '$97.00',
+          type: 'Loafers',
+          goods_type: 'Leopard'
+        },
+        {
+          src: 'https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6613/2Aria5%C2%B0-shflatse2206100003-product-domestic.jpg',
+          link: 'https://www.vivaia.com/item/pointed-toe-ballet-Flats-p_10003484.html?gid=10003482',
+          good_name: 'Pointed-Toe Ballet Flats (Aria 5°)',
+          pc_shop_price_converted: '$97.00',
+          type: 'Flats',
+          goods_type: 'Leopard'
+        },
+        {
+          src: 'https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6613/3Melia-shflatse2206020002-product-domestic.jpg',
+          link: 'https://www.vivaia.com/item/pointed-toe-Flats-p_10003502.html?gid=10003500',
+          good_name: 'Pointed-Toe Flats (Melia)',
+          old_shop_price_converted: '$97.00',
+          pc_shop_price_converted: '$79.00',
+          type: 'Flats',
+          goods_type: 'Leopard'
+        },
+        {
+          src: 'https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6613/4Margot-2.0--shflatse2207080002-W-product-domestic-1.jpg',
+          link: 'https://www.vivaia.com/item/square-toe-v-cut-Flats-p_10003898.html?gid=10011595',
+          good_name: 'Square-Toe V-Cut Flats (Margot 2.0)',
+          pc_shop_price_converted: '$97.00',
+          type: 'Flats',
+          goods_type: 'Leopard'
+        },
+
+        {
+          src: 'https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6613/5ARIA-WEDGE-PRO-shpumpse2209200003-product-domestic.jpg',
+          link: 'https://www.vivaia.com/item/pointed-toe-wedge-p_10010778.html?gid=10010778',
+          good_name: 'Pointed-Toe Wedge (Aria Wedge Pro)',
+          old_shop_price_converted: '$129.00',
+          pc_shop_price_converted: '$97.00',
+          type: 'Heels',
+          goods_type: 'Leopard'
+        },
+        {
+          src: 'https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6613/6JACKIE-shflatse2302130016-product-domestic.jpg',
+          link: 'https://www.vivaia.com/item/jackie-square-toe-loafers-p_10016877.html?gid=10016892',
+          good_name: 'Square-Toe Loafers (Jackie)',
+          pc_shop_price_converted: '$119.00',
+          type: 'Loafers',
+          goods_type: 'Leopard'
+        },
+        {
+          src: 'https://cdnimg.vivaia.com/vivaia/products/1683687687-d006f039-23e7-4210-9024-cb01313f43da.jpg?imresize=800x800',
+          link: 'https://www.vivaia.com/item/aria-walker-p_10012534.html?gid=10012550',
+          good_name: 'Lightweight Pointed-Ballet Flats (Aria Walker)',
+          pc_shop_price_converted: '$97.00',
+          type: 'Flats',
+          goods_type: 'Leopard'
+        },
+        {
+          src: 'https://cdnimg.vivaia.com/vivaia/products/1685094586-e1b5fa17-fe4b-4852-bb80-d8d50e5e906e.jpg?imresize=800x800',
+          link: 'https://www.vivaia.com/item/round-toe-flat-p_10013123.html?gid=10013131',
+          good_name: 'Round-Toe Flats (Claire)',
+          pc_shop_price_converted: '$97.00',
+          type: 'Flats',
+          goods_type: 'Leopard'
+        },
+        {
+          src: 'https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6613/9RYAN-PRO-shbootse2305260009-product-domestic.jpg',
+          link: 'https://www.vivaia.com/item/water-repellent-chelsea-boot-ryan-pro-p_10016156.html?gid=10016169',
+          good_name: 'Square-Toe Water-Repellent Ankle Boots (Ryan Pro)',
+          old_shop_price_converted: '$139.00',
+          pc_shop_price_converted: '$119.00',
+          type: 'Boots',
+          goods_type: 'Leopard'
+        },
+        {
+          src: 'https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6613/10BIBI-shflatse2305090004-description-domestic%2051.jpg',
+          link: 'https://www.vivaia.com/item/round-toe-knotted-flats-p_10014935.html?gid=10014936',
+          good_name: 'Round-Toe Knotted Flats (Bibi)',
+          pc_shop_price_converted: '$97.00',
+          type: 'Flats',
+          goods_type: 'Leopard'
+        },
+        {
+          src: 'https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6613/11ARIA%20WALKER%20MARY-JANE-shflatse2308080008-product%20description-domestic6.jpg',
+          link: 'https://www.vivaia.com/item/pointed-toe-mary-jane-aria-walker-mary-jane-p_10018585.html?gid=10018617',
+          good_name: 'Lightweight Pointed-Toe Mary-Jane (Aria Walker Mary-Jane)',
+          pc_shop_price_converted: '$97.00',
+          type: 'Flats',
+          goods_type: 'Leopard'
+        },
+        {
+          src: 'https://cdnimg.vivaia.com/vivaia/products/1689127794-6cc53926-afa4-4bbe-a39b-26e7cede9da3.jpg?imresize=800x800',
+          link: 'https://www.vivaia.com/item/almond-toe-ballet-flats-tamia-2-0-p_10012646.html?gid=10014935',
+          good_name: 'Round-Toe Knotted Flats (Bibi)',
+          pc_shop_price_converted: '$97.00',
+          type: 'Flats',
+          goods_type: 'Leopard'
+        },
+        {
+          src: 'https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6613/20240116-MARGOT%20MARY-JANE-shflatse2311200013-product-domestic7.jpg',
+          link: 'https://www.vivaia.com/item/square-toe-mary-jane-margot-mary-jane-p_10020121.html?gid=10020121',
+          good_name: 'Square-Toe Mary-Jane (Margot Mary-Jane)',
+          pc_shop_price_converted: '$97.00',
+          type: 'Flats',
+          goods_type: 'Leopard'
+        },
+        // 蛇纹
+        {
+          src: 'https://cdnimg.vivaia.com/CO/image/loadpage/20240129_6614/20240108-MARGOT%202.0%20-shflatse2308240018-product-domestic7.jpg',
+          link: 'https://www.vivaia.com/item/square-toe-v-cut-flats-margot-2-0-p_10019997.html?gid=10019997',
+          good_name: 'Square-Toe V-Cut Flats (Margot 2.0)',
+          pc_shop_price_converted: '$97.00',
+          type: 'Flats',
+          goods_type: 'Serpentine'
+        },
+        {
+          src: 'https://cdnimg.vivaia.com/CO/image/loadpage/20240129_6614/20240110-MARGOT%20MARY-JANE%20-shflatse2309110001-product-domestic5.jpg',
+          link: 'https://www.vivaia.com/item/square-toe-mary-jane-margot-mary-jane-p_10020069.html?gid=10020069',
+          good_name: 'Square-Toe Mary-Jane (Margot Mary-Jane)',
+          pc_shop_price_converted: '$97.00',
+          type: 'Flats',
+          goods_type: 'Serpentine'
+        },
+        {
+          src: 'https://cdnimg.vivaia.com/CO/image/loadpage/20240129_6614/20231023-MELODY-PRO-MARY-JANE-shpumpse2309060004-product-description-domestic6.jpg',
+          link: 'https://www.vivaia.com/item/square-toe-mary-jane-heels-melody-pro-mary-jane-p_10019245.html?gid=10019259',
+          good_name: 'Square-Toe Mary-Jane Heels (Melody Pro Mary-Jane)',
+          pc_shop_price_converted: '$139.00',
+          type: 'Heels',
+          goods_type: 'Serpentine'
+        },
+        {
+          src: 'https://cdnimg.vivaia.com/CO/image/loadpage/20240129_6614/202301017-RYAN-PRO-shbootse2309250005-product-domestic.jpg',
+          link: 'https://www.vivaia.com/item/square-toe-water-repellent-ankle-boots-ryan-pro-p_10019211.html?gid=10019221',
+          good_name: 'Square-Toe Water-Repellent Ankle Boots (Ryan Pro)',
+          pc_shop_price_converted: '$139.00',
+          type: 'Boots',
+          goods_type: 'Serpentine'
+        },
+        {
+          src: 'https://cdnimg.vivaia.com/CO/image/loadpage/20240129_6614/20240108-ARIA%205%C2%B0%20-shflatse2308240010-product-domestic7.jpg',
+          link: 'https://www.vivaia.com/item/pointed-toe-ballet-flats-aria-5-p_10019961.html?gid=10019961',
+          good_name: 'Pointed-Toe Ballet Flats (Aria 5°)',
+          pc_shop_price_converted: '$97.00',
+          type: 'Flats',
+          goods_type: 'Serpentine'
+        },
+        {
+          src: 'https://cdnimg.vivaia.com/CO/image/loadpage/20240129_6614/20240104-CLAIRE%20-shflatse2308250003-product-domestic7.jpg',
+          link: 'https://www.vivaia.com/item/round-toe-flats-claire-p_10019979.html?gid=10019979',
+          good_name: 'Round-Toe Flats (Claire)',
+          pc_shop_price_converted: '$97.00',
+          type: 'Flats',
+          goods_type: 'Serpentine'
+        },
+        {
+          src: 'https://cdnimg.vivaia.com/CO/image/loadpage/20240129_6614/20240112-TIANA-shflatse2310160005-product-domestic6.jpg',
+          link: 'https://www.vivaia.com/item/almond-toe-bow-flats-tiana-p_10019889.html?gid=10019889',
+          good_name: 'Almond-Toe Bow Flats (Tiana)',
+          pc_shop_price_converted: '$97.00',
+          type: 'Flats',
+          goods_type: 'Serpentine'
+        },
+        {
+          src: 'https://cdnimg.vivaia.com/CO/image/loadpage/20240129_6614/20240119-MELIA-shflatse2308280011-product-domestic7.jpg',
+          link: 'https://www.vivaia.com/item/pointed-toe-flats-melia-p_10020033.html?gid=10020033',
+          good_name: 'Pointed-Toe Flats (Melia)',
+          pc_shop_price_converted: '$97.00',
+          type: 'Flats',
+          goods_type: 'Serpentine'
+        },
+        {
+          src: 'https://cdnimg.vivaia.com/CO/image/loadpage/20240129_6614/20240118-MARGOT%20WALKER%20MARY-JANE%20-shflatse2311200027-product-domestic7.jpg',
+          link: 'https://www.vivaia.com/item/lightweight-square-toe-mary-jane-margot-walker-mary-jane-p_10020087.html?gid=10020087',
+          good_name: 'Lightweight Square-Toe Mary-Jane (Margot Walker Mary-Jane)',
+          pc_shop_price_converted: '$97.00',
+          type: 'Flats',
+          goods_type: 'Serpentine'
+        },
+        // {
+        //   src: 'https://cdnimg.vivaia.com/CO/image/loadpage/20240129_6614/20240117-SCARLETT%20-shpumpse2309080003-product-domestic7.jpg',
+        //   link: '',
+        //   good_name: 'Pointed-Toe Kitten Heels (Scarlett)',
+        //   pc_shop_price_converted: '$97.00',
+        //   type: 'Heels',
+        //   goods_type: 'Serpentine'
+        // },
+        // {
+        //   src: 'https://cdnimg.vivaia.com/CO/image/loadpage/20240129_6614/20240117-ARIA%20WEDGE%20PRO%20-shpumpse2309060006-product-domestic7.jpg',
+        //   link: '',
+        //   good_name: 'Pointed-Toe Wedge (Aria Wedge Pro)',
+        //   pc_shop_price_converted: '$97.00',
+        //   type: 'Flats',
+        //   goods_type: 'Serpentine'
+        // },
+        // {
+        //   src: 'https://cdnimg.vivaia.com/CO/image/loadpage/20240129_6614/20240130-TAMIA-SLINGBACK-WEDGE-PRO--shpumpse2309010002-product-domestic.jpg',
+        //   link: '',
+        //   good_name: 'Square-Toe V-Cut Flats (Margot 2.0)',
+        //   pc_shop_price_converted: '$97.00',
+        //   type: 'Flats',
+        //   goods_type: 'Serpentine'
+        // },
+        // {
+        //   src: 'https://cdnimg.vivaia.com/CO/image/loadpage/20240129_6614/20240130-YAFFA-PRO--shslippe2308310004-product-domestic1.jpg',
+        //   link: '',
+        //   good_name: 'Pointed-Toe Knot Sandals (Yaffa)',
+        //   pc_shop_price_converted: '$97.00',
+        //   type: 'Sandals',
+        //   goods_type: 'Serpentine'
+        // },
+        // 老虎-斑马
+        {
+          src: 'https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6615/20240108-ARIA%20WALKER%20-shflatse2308290006-product-domestic7.jpg',
+          link: 'https://www.vivaia.com/item/aria-walker-p_10012566.html?gid=10020051',
+          good_name: 'Lightweight Pointed-Ballet Flats (Aria Walker)',
+          pc_shop_price_converted: '$97.00',
+          type: 'Flats',
+          goods_type: 'Tiger'
+        },
+        {
+          src: 'https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6615/20240119-MELIA-shflatse2308280008-product-domestic7.jpg',
+          link: 'https://www.vivaia.com/item/pointed-toe-flats-melia-p_10020103.html?gid=10020103',
+          good_name: 'Pointed-Toe Flats (Melia)',
+          pc_shop_price_converted: '$97.00',
+          type: 'Flats',
+          goods_type: 'Tiger'
+        },
+        // {
+        //   src: 'https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6615/20240130-YAFFA-PRO--shslippe2312080001-product-domestic1.jpg',
+        //   link: '',
+        //   good_name: 'Pointed-Toe Knot Sandals (Yaffa)',
+        //   pc_shop_price_converted: '$97.00',
+        //   type: 'Sandals',
+        //   goods_type: 'Tiger'
+        // },
+        {
+          src: 'https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6615/20240119-ARIA-5%C2%B0-shflatse2308240001-product-domestic7.jpg',
+          link: 'https://www.vivaia.com/item/pointed-toe-ballet-flats-aria-5-p_10019943.html?gid=10019943',
+          good_name: 'Pointed-Toe Ballet Flats (Aria 5°)',
+          pc_shop_price_converted: '$97.00',
+          type: 'Flats',
+          goods_type: 'Tiger'
+        },
+        // Zebra
+        {
+          src: 'https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6615/20240112-TIANA-shflatse2310160002-product-domestic6.jpg',
+          link: 'https://www.vivaia.com/item/almond-toe-bow-flats-tiana-p_10019907.html?gid=10019907',
+          good_name: 'Almond-Toe Bow Flats (Tiana)',
+          pc_shop_price_converted: '$97.00',
+          type: 'Flats',
+          goods_type: 'Zebra'
+        }
+      ],
+      all_goods: [
+        {
+          src: 'https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6613/1SAMANTHA-shflatse2210170017-description-domestic%201.jpg',
+          link: 'https://www.vivaia.com/item/squared-toe-loafers-samantha-p_10016696.html?gid=10016710',
+          good_name: 'Square-Toe Loafers (Samantha)',
+          pc_shop_price_converted: '$97.00',
+          type: 'Loafers',
+          goods_type: 'Leopard'
+        },
+        {
+          src: 'https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6613/2Aria5%C2%B0-shflatse2206100003-product-domestic.jpg',
+          link: 'https://www.vivaia.com/item/pointed-toe-ballet-Flats-p_10003484.html?gid=10003482',
+          good_name: 'Pointed-Toe Ballet Flats (Aria 5°)',
+          pc_shop_price_converted: '$97.00',
+          type: 'Flats',
+          goods_type: 'Leopard'
+        },
+        {
+          src: 'https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6613/3Melia-shflatse2206020002-product-domestic.jpg',
+          link: 'https://www.vivaia.com/item/pointed-toe-Flats-p_10003502.html?gid=10003500',
+          good_name: 'Pointed-Toe Flats (Melia)',
+          old_shop_price_converted: '$97.00',
+          pc_shop_price_converted: '$79.00',
+          type: 'Flats',
+          goods_type: 'Leopard'
+        },
+        {
+          src: 'https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6613/4Margot-2.0--shflatse2207080002-W-product-domestic-1.jpg',
+          link: 'https://www.vivaia.com/item/square-toe-v-cut-Flats-p_10003898.html?gid=10011595',
+          good_name: 'Square-Toe V-Cut Flats (Margot 2.0)',
+          pc_shop_price_converted: '$97.00',
+          type: 'Flats',
+          goods_type: 'Leopard'
+        },
+
+        {
+          src: 'https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6613/5ARIA-WEDGE-PRO-shpumpse2209200003-product-domestic.jpg',
+          link: 'https://www.vivaia.com/item/pointed-toe-wedge-p_10010778.html?gid=10010778',
+          good_name: 'Pointed-Toe Wedge (Aria Wedge Pro)',
+          old_shop_price_converted: '$129.00',
+          pc_shop_price_converted: '$97.00',
+          type: 'Heels',
+          goods_type: 'Leopard'
+        },
+        {
+          src: 'https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6613/6JACKIE-shflatse2302130016-product-domestic.jpg',
+          link: 'https://www.vivaia.com/item/jackie-square-toe-loafers-p_10016877.html?gid=10016892',
+          good_name: 'Square-Toe Loafers (Jackie)',
+          pc_shop_price_converted: '$119.00',
+          type: 'Loafers',
+          goods_type: 'Leopard'
+        },
+        {
+          src: 'https://cdnimg.vivaia.com/vivaia/products/1683687687-d006f039-23e7-4210-9024-cb01313f43da.jpg?imresize=800x800',
+          link: 'https://www.vivaia.com/item/aria-walker-p_10012534.html?gid=10012550',
+          good_name: 'Lightweight Pointed-Ballet Flats (Aria Walker)',
+          pc_shop_price_converted: '$97.00',
+          type: 'Flats',
+          goods_type: 'Leopard'
+        },
+        {
+          src: 'https://cdnimg.vivaia.com/vivaia/products/1685094586-e1b5fa17-fe4b-4852-bb80-d8d50e5e906e.jpg?imresize=800x800',
+          link: 'https://www.vivaia.com/item/round-toe-flat-p_10013123.html?gid=10013131',
+          good_name: 'Round-Toe Flats (Claire)',
+          pc_shop_price_converted: '$97.00',
+          type: 'Flats',
+          goods_type: 'Leopard'
+        },
+        {
+          src: 'https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6613/9RYAN-PRO-shbootse2305260009-product-domestic.jpg',
+          link: 'https://www.vivaia.com/item/water-repellent-chelsea-boot-ryan-pro-p_10016156.html?gid=10016169',
+          good_name: 'Square-Toe Water-Repellent Ankle Boots (Ryan Pro)',
+          old_shop_price_converted: '$139.00',
+          pc_shop_price_converted: '$119.00',
+          type: 'Boots',
+          goods_type: 'Leopard'
+        },
+        {
+          src: 'https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6613/10BIBI-shflatse2305090004-description-domestic%2051.jpg',
+          link: 'https://www.vivaia.com/item/round-toe-knotted-flats-p_10014935.html?gid=10014936',
+          good_name: 'Round-Toe Knotted Flats (Bibi)',
+          pc_shop_price_converted: '$97.00',
+          type: 'Flats',
+          goods_type: 'Leopard'
+        },
+        {
+          src: 'https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6613/11ARIA%20WALKER%20MARY-JANE-shflatse2308080008-product%20description-domestic6.jpg',
+          link: 'https://www.vivaia.com/item/pointed-toe-mary-jane-aria-walker-mary-jane-p_10018585.html?gid=10018617',
+          good_name: 'Lightweight Pointed-Toe Mary-Jane (Aria Walker Mary-Jane)',
+          pc_shop_price_converted: '$97.00',
+          type: 'Flats',
+          goods_type: 'Leopard'
+        },
+        {
+          src: 'https://cdnimg.vivaia.com/vivaia/products/1689127794-6cc53926-afa4-4bbe-a39b-26e7cede9da3.jpg?imresize=800x800',
+          link: 'https://www.vivaia.com/item/almond-toe-ballet-flats-tamia-2-0-p_10012646.html?gid=10014935',
+          good_name: 'Round-Toe Knotted Flats (Bibi)',
+          pc_shop_price_converted: '$97.00',
+          type: 'Flats',
+          goods_type: 'Leopard'
+        },
+        {
+          src: 'https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6613/20240116-MARGOT%20MARY-JANE-shflatse2311200013-product-domestic7.jpg',
+          link: 'https://www.vivaia.com/item/square-toe-mary-jane-margot-mary-jane-p_10020121.html?gid=10020121',
+          good_name: 'Square-Toe Mary-Jane (Margot Mary-Jane)',
+          pc_shop_price_converted: '$97.00',
+          type: 'Flats',
+          goods_type: 'Leopard'
+        },
+        // 蛇纹
+        {
+          src: 'https://cdnimg.vivaia.com/CO/image/loadpage/20240129_6614/20240108-MARGOT%202.0%20-shflatse2308240018-product-domestic7.jpg',
+          link: 'https://www.vivaia.com/item/square-toe-v-cut-flats-margot-2-0-p_10019997.html?gid=10019997',
+          good_name: 'Square-Toe V-Cut Flats (Margot 2.0)',
+          pc_shop_price_converted: '$97.00',
+          type: 'Flats',
+          goods_type: 'Serpentine'
+        },
+        {
+          src: 'https://cdnimg.vivaia.com/CO/image/loadpage/20240129_6614/20240110-MARGOT%20MARY-JANE%20-shflatse2309110001-product-domestic5.jpg',
+          link: 'https://www.vivaia.com/item/square-toe-mary-jane-margot-mary-jane-p_10020069.html?gid=10020069',
+          good_name: 'Square-Toe Mary-Jane (Margot Mary-Jane)',
+          pc_shop_price_converted: '$97.00',
+          type: 'Flats',
+          goods_type: 'Serpentine'
+        },
+        {
+          src: 'https://cdnimg.vivaia.com/CO/image/loadpage/20240129_6614/20231023-MELODY-PRO-MARY-JANE-shpumpse2309060004-product-description-domestic6.jpg',
+          link: 'https://www.vivaia.com/item/square-toe-mary-jane-heels-melody-pro-mary-jane-p_10019245.html?gid=10019259',
+          good_name: 'Square-Toe Mary-Jane Heels (Melody Pro Mary-Jane)',
+          pc_shop_price_converted: '$139.00',
+          type: 'Heels',
+          goods_type: 'Serpentine'
+        },
+        {
+          src: 'https://cdnimg.vivaia.com/CO/image/loadpage/20240129_6614/202301017-RYAN-PRO-shbootse2309250005-product-domestic.jpg',
+          link: 'https://www.vivaia.com/item/square-toe-water-repellent-ankle-boots-ryan-pro-p_10019211.html?gid=10019221',
+          good_name: 'Square-Toe Water-Repellent Ankle Boots (Ryan Pro)',
+          pc_shop_price_converted: '$139.00',
+          type: 'Boots',
+          goods_type: 'Serpentine'
+        },
+        {
+          src: 'https://cdnimg.vivaia.com/CO/image/loadpage/20240129_6614/20240108-ARIA%205%C2%B0%20-shflatse2308240010-product-domestic7.jpg',
+          link: 'https://www.vivaia.com/item/pointed-toe-ballet-flats-aria-5-p_10019961.html?gid=10019961',
+          good_name: 'Pointed-Toe Ballet Flats (Aria 5°)',
+          pc_shop_price_converted: '$97.00',
+          type: 'Flats',
+          goods_type: 'Serpentine'
+        },
+        {
+          src: 'https://cdnimg.vivaia.com/CO/image/loadpage/20240129_6614/20240104-CLAIRE%20-shflatse2308250003-product-domestic7.jpg',
+          link: 'https://www.vivaia.com/item/round-toe-flats-claire-p_10019979.html?gid=10019979',
+          good_name: 'Round-Toe Flats (Claire)',
+          pc_shop_price_converted: '$97.00',
+          type: 'Flats',
+          goods_type: 'Serpentine'
+        },
+        {
+          src: 'https://cdnimg.vivaia.com/CO/image/loadpage/20240129_6614/20240112-TIANA-shflatse2310160005-product-domestic6.jpg',
+          link: 'https://www.vivaia.com/item/almond-toe-bow-flats-tiana-p_10019889.html?gid=10019889',
+          good_name: 'Almond-Toe Bow Flats (Tiana)',
+          pc_shop_price_converted: '$97.00',
+          type: 'Flats',
+          goods_type: 'Serpentine'
+        },
+        {
+          src: 'https://cdnimg.vivaia.com/CO/image/loadpage/20240129_6614/20240119-MELIA-shflatse2308280011-product-domestic7.jpg',
+          link: 'https://www.vivaia.com/item/pointed-toe-flats-melia-p_10020033.html?gid=10020033',
+          good_name: 'Pointed-Toe Flats (Melia)',
+          pc_shop_price_converted: '$97.00',
+          type: 'Flats',
+          goods_type: 'Serpentine'
+        },
+        {
+          src: 'https://cdnimg.vivaia.com/CO/image/loadpage/20240129_6614/20240118-MARGOT%20WALKER%20MARY-JANE%20-shflatse2311200027-product-domestic7.jpg',
+          link: 'https://www.vivaia.com/item/lightweight-square-toe-mary-jane-margot-walker-mary-jane-p_10020087.html?gid=10020087',
+          good_name: 'Lightweight Square-Toe Mary-Jane (Margot Walker Mary-Jane)',
+          pc_shop_price_converted: '$97.00',
+          type: 'Flats',
+          goods_type: 'Serpentine'
+        },
+        // {
+        //   src: 'https://cdnimg.vivaia.com/CO/image/loadpage/20240129_6614/20240117-SCARLETT%20-shpumpse2309080003-product-domestic7.jpg',
+        //   link: '',
+        //   good_name: 'Pointed-Toe Kitten Heels (Scarlett)',
+        //   pc_shop_price_converted: '$97.00',
+        //   type: 'Heels',
+        //   goods_type: 'Serpentine'
+        // },
+        // {
+        //   src: 'https://cdnimg.vivaia.com/CO/image/loadpage/20240129_6614/20240117-ARIA%20WEDGE%20PRO%20-shpumpse2309060006-product-domestic7.jpg',
+        //   link: '',
+        //   good_name: 'Pointed-Toe Wedge (Aria Wedge Pro)',
+        //   pc_shop_price_converted: '$97.00',
+        //   type: 'Flats',
+        //   goods_type: 'Serpentine'
+        // },
+        // {
+        //   src: 'https://cdnimg.vivaia.com/CO/image/loadpage/20240129_6614/20240130-TAMIA-SLINGBACK-WEDGE-PRO--shpumpse2309010002-product-domestic.jpg',
+        //   link: '',
+        //   good_name: 'Square-Toe V-Cut Flats (Margot 2.0)',
+        //   pc_shop_price_converted: '$97.00',
+        //   type: 'Flats',
+        //   goods_type: 'Serpentine'
+        // },
+        // {
+        //   src: 'https://cdnimg.vivaia.com/CO/image/loadpage/20240129_6614/20240130-YAFFA-PRO--shslippe2308310004-product-domestic1.jpg',
+        //   link: '',
+        //   good_name: 'Pointed-Toe Knot Sandals (Yaffa)',
+        //   pc_shop_price_converted: '$97.00',
+        //   type: 'Sandals',
+        //   goods_type: 'Serpentine'
+        // },
+        // 老虎-斑马
+        {
+          src: 'https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6615/20240108-ARIA%20WALKER%20-shflatse2308290006-product-domestic7.jpg',
+          link: 'https://www.vivaia.com/item/aria-walker-p_10012566.html?gid=10020051',
+          good_name: 'Lightweight Pointed-Ballet Flats (Aria Walker)',
+          pc_shop_price_converted: '$97.00',
+          type: 'Flats',
+          goods_type: 'Tiger'
+        },
+        {
+          src: 'https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6615/20240119-MELIA-shflatse2308280008-product-domestic7.jpg',
+          link: 'https://www.vivaia.com/item/pointed-toe-flats-melia-p_10020103.html?gid=10020103',
+          good_name: 'Pointed-Toe Flats (Melia)',
+          pc_shop_price_converted: '$97.00',
+          type: 'Flats',
+          goods_type: 'Tiger'
+        },
+        // {
+        //   src: 'https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6615/20240130-YAFFA-PRO--shslippe2312080001-product-domestic1.jpg',
+        //   link: '',
+        //   good_name: 'Pointed-Toe Knot Sandals (Yaffa)',
+        //   pc_shop_price_converted: '$97.00',
+        //   type: 'Sandals',
+        //   goods_type: 'Tiger'
+        // },
+        {
+          src: 'https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6615/20240119-ARIA-5%C2%B0-shflatse2308240001-product-domestic7.jpg',
+          link: 'https://www.vivaia.com/item/pointed-toe-ballet-flats-aria-5-p_10019943.html?gid=10019943',
+          good_name: 'Pointed-Toe Ballet Flats (Aria 5°)',
+          pc_shop_price_converted: '$97.00',
+          type: 'Flats',
+          goods_type: 'Tiger'
+        },
+        // Zebra
+        {
+          src: 'https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6615/20240112-TIANA-shflatse2310160002-product-domestic6.jpg',
+          link: 'https://www.vivaia.com/item/almond-toe-bow-flats-tiana-p_10019907.html?gid=10019907',
+          good_name: 'Almond-Toe Bow Flats (Tiana)',
+          pc_shop_price_converted: '$97.00',
+          type: 'Flats',
+          goods_type: 'Zebra'
+        }
+      ],
      
-    };
-  },
-
-  mounted () {
-   this.getAllgoods();
-    new Swiper('.bottom_swiper_inner', {
-      slidesPerView: 'auto',
-      autoplay:{
-        delay:8000
-      },
-      // loop: true,
-      pagination: {
-        el: ' .swiper-pagination',
-        type: 'progressbar',
-      },
-      navigation: {
-          nextEl: '.bottom_swiper .swiper-button-next',
-          prevEl: '.bottom_swiper .swiper-button-prev',
-        },
-    });
-    new Swiper('.bottom_swiper_inner_m', {
-      slidesPerView: 'auto',
-      // autoplay:true,
-      loop: true,
-      pagination: {
-        el: '.bottom_swiper_inner_m .swiper-pagination',
-        type: 'bullets',
-      },
-    });
+      tabs_item: 'Leopard',
+      tabs_item_one: 'All',
+      swiper_name: 'Leopard',
+      renderedComponent: null,
+      threshold: 1024,
 
 
-
-
-  },
-  methods: {
-    async getAllgoods () {
-      const res = await window._fengniao_getGoods_list({
-        goods_id: str.replace(/\s/g, ''),
-        disable_goods_number: 1,
-      });
-
-      let newArr = res.result.map(obj => {
-        // 使用对象解构赋值创建新对象，并添加新属性
-        return { ...obj, type: 'flat' }; // 这里的 0 是新属性的初始值，你可以根据需要修改
-      });
-      this.goods_data = newArr
-
-      console.log(this.goods_data);
-      this.$nextTick(() => {
-        this.initSwiper()
-      })
-    },
-    initSwiper () {
-      new Swiper('.recommen_swiper_inner', {
-        // autoplay:true,
-        // loop: true,
-        breakpoints: {
-          310: {
-            spaceBetween: 10,
-            slidesPerView: 1.2,
-          },
-          1024: {
-
-            slidesPerView: 4,
-            spaceBetween: 15,
-          },
-          1730: {
-            slidesPerView: 4,
-            spaceBetween: 24,
-          },
-        },
-        pagination: {
-          el: '.recommen_swiper_inner .swiper-pagination',
-          type: 'progressbar',
-        },
-        navigation: {
-          nextEl: '.recommen_swiper_inner .swiper-button-next',
-          prevEl: '.recommen_swiper_inner .swiper-button-prev',
-        },
-      });
     }
   },
-};
+  mounted () {
+
+    this.updateRenderedComponent();
+  //   Promise.all([
+  //   this.getAllgoods(str1, 'Flats'),
+  //   this.getAllgoods(str2, 'Heels'),
+  //   this.getAllgoods(str3, 'Boots')
+  // ]).then(results => {
+  //   // results 是一个包含三个请求结果的数组
+  //   let mergedArray = results.flat();
+  //   this.all_goods = mergedArray
+  //   this.goods_data = this.all_goods
+    
+  //   // 在这里处理合并后的数组
+  // });
+    // 监听窗口大小变化，动态更新渲染的组件
+    window.addEventListener('resize', this.updateRenderedComponent);
+    
+  
+   
+
+  },
+
+  methods: {
+    async getAllgoods(str, type) {
+    const res = await window._fengniao_getGoods_list({
+      goods_id: str.replace(/\s/g, ''),
+      disable_goods_number: 1,
+    });
+    return res.result.map(obj => {
+      return { ...obj, type: type };
+    });
+  },
+    handleSort (name) {
+
+   console.log(name)
+   
+      // this.tabs_item_one = 'All'
+
+      this.swiper_name = name
+      this.tabs_item = name
+      if (name === 'All') {
+        this.goods_data = this.all_goods
+      } else {
+        this.goods_data = this.all_goods.filter(
+          (item) => item.type === name
+        )
+      }
+
+
+
+    },
+
+    // // 更新swiper
+    updateSwiper () {
+
+      this.$nextTick(() => {
+        this.$refs.child.swiperInstance.update()
+        this.$refs.child.swiperInstance.slideTo(0, 0, false);//切换到第一个slide，速度为1秒
+      })
+
+    },
+    updateRenderedComponent () {
+      this.renderedComponent = window.innerWidth > this.threshold ? goods_item : goods_item_one;
+    },
+    beforeDestroy () {
+
+      window.addEventListener('resize', this.updateRenderedComponent);
+    },
+  },
+
+}
 </script>
-<style>
-* {
-  margin: 0;
-  padding: 0;
-}
 
-.bottom_swiper_inner_m .swiper-horizontal>.swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: auto;
-  top: 22.917vw;
-}
-
-.bottom_swiper_inner_m .swiper-pagination-bullet-active {
-  background-color: rgba(255, 255, 255, 1) !important;
-}
-
-.swiper_btn .swiper-button:after {
-  display: none;
-}
-
-.swiper_btn .swiper-button-prev {
-  left: -3.208333vw;
-}
-
-.swiper_btn .swiper-button-next {
-  right: -3.208333vw;
-}
-
-.swiper_btn .swiper-button {
-  background: #191817;
-  color: #fff;
-  height: 2.083vw;
-  width: 2.083vw;
-  top: 44%;
-  border-radius: 50%;
-}
-
-/* .recommen_swiper .swiper-pagination {
-  bottom: 0;
-  top: auto;
-  width: calc(100% - 40px);
-  left: auto;
-} */
-
-.swiper-pagination-progressbar-fill {
-  background-color: #191817 !important;
-}
-
-.swiper-pagination-bullet {
-  width: 4px !important;
-  height: 4px !important;
-}
-
-.swiper-pagination-bullets {
-  top: 111.467vw !important;
-  bottom: auto !important;
-}
-</style>
-<style lang="less">
-.women_day {
-  padding: 0 0 4.167vw;
+<style   lang="less">
+.fengniao_new {
   background: #fff;
-
-  .show_big {
-    display: block;
-  }
-
-  .show_small {
-    display: none;
-  }
-
-  img {
-    display: block;
-    width: 100%;
-  }
-
+  padding-bottom: 4.167vw;
+.new_title_one{
+  color: #191817;
+}
   .space-w {
-    width: calc(100% - 16.667vw);
+    padding: 0 15.625vw;
     margin: 0 auto 4.167vw;
   }
 
@@ -611,243 +791,162 @@ export default {
     line-height: 44px;
     letter-spacing: 0px;
     text-align: left;
-    margin-bottom: 32px;
+    color: #191817;
+    margin-bottom: 1.667vw;
   }
 
-  .top_banner {}
+  .show_big {
+    display: block;
+  }
 
-  .po_box {
+  .show_small {
+    display: none;
+  }
+
+  img {
+    width: 100%;
+    display: block;
+  }
+
+  .top_banner {
     position: relative;
-    top: -3.906vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #191817;
-    background: #fcfbfb;
-    margin-bottom: 0;
-
-    // border: 1px solid rgba(0, 0, 0, 1);
-    .po_text-area {
-      padding: 3.906vw 22.135vw;
-
-      .po_title {
-        font-family: Noto Serif;
-        font-size: 48px;
-        font-weight: 400;
-        line-height: 65px;
-        letter-spacing: 0px;
-        text-align: center;
-      }
-
-      .po_desc {
-        font-family: Noto Serif;
-
-        font-size: 20px;
-        line-height: 27px;
-        letter-spacing: 0px;
-        text-align: center;
-      }
-
-      .desc_1 {
-        line-height: 1;
-        margin-bottom: 22px;
-        font-weight: 500;
-      }
+  
+    .inner {
+      position: absolute;
+      left: 10.417vw;
+      top:16.979vw;
+      color: #fff;
+      
     }
   }
 
-  .recommen_swiper {
-    .recommen_swiper_inner {
-      .swiper-wrapper {
-        .swiper-slide {
-          .a_link {
-            position: relative;
-
-            &:hover .shop_btn {
-              opacity: 1;
-            }
-
-            .shop_btn {
-              bottom: 10px;
-              width: 91.6%;
-              opacity: 0;
-              margin: 0 auto;
-              background: #fff;
-              color: #191817;
-              padding: 12px 0;
-              font-family: Roboto;
-              font-size: 16px;
-              font-weight: 500;
-              line-height: 1;
-              letter-spacing: 0;
-              text-align: center;
-            }
-          }
-
-          .slide_info {
-            margin-bottom: 2.083vw;
-
-            p {
-              &:nth-child(2) {
-                span {
-                  &:first-child {
-                    font-weight: 500;
-                  }
-                }
-              }
-            }
-
-            p {
-              &:nth-child(2) {
-                span {
-                  &:nth-child(2) {
-                    font-weight: 500;
-                  }
-                }
-              }
-            }
-
-            .new_title_one {
-              font-family: Roboto;
-              font-size: 14px;
-              font-weight: 400;
-              line-height: 16px;
-              letter-spacing: 0;
-              text-align: left;
-              margin-top: 12px;
-              overflow: hidden;
-              white-space: nowrap;
-              text-overflow: ellipsis;
-              color: #191817;
-            }
-          }
-        }
-      }
-
-      .swiper-pagination {
-        bottom: 0;
-        top: auto;
-      }
-    }
-  }
-
-  .videos {
-    margin-bottom: 1.667vw;
-    .title {
-      text-align: center;
-    }
-
-    #myVideo {
-    display: block;
-  }
-  }
-
-  .bottom_swiper {
-    .bottom_swiper_inner {
-      .swiper-wrapper {
-        .swiper-slide {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          //justify-content: flex-start;
-          position: relative;
-          color: #fff;
-
-          .slide_area {
-            position: absolute;
-            width: 492px;
-            left: 9.896vw;
-
-            .desc_1 {
-              margin-bottom: 0.573vw;
-            }
-
-            .slide_desc {
-              font-family: Roboto;
-              font-size: 18px;
-              font-weight: 400;
-              line-height: 22px;
-              letter-spacing: 0px;
-              text-align: center;
-
-              &:last-child {
-                margin-top: 20px;
-              }
-            }
-
-            .slide_title {
-              text-align: center;
-              margin-bottom: 20px;
-            }
-          }
-        }
-      }
-
-      .swiper-pagination {
-        top: auto;
-        bottom: 2.083vw;
-        width: 300px;
-        margin: 0 auto;
-        left: 33.646vw;
-      }
-
-      .swiper-pagination-progressbar-fill {
-        background-color: #191817;
-      }
-    }
-  }
-
-  .y_shoes {
-    display: flex;
-    // justify-content: center;
+  .design_ins {
     position: relative;
 
-    .y_inner {
+    .inner {
       position: absolute;
-      top: 8.229vw;
-      right: 11.458vw;
-      width: 23.958vw;
+      left: 20.052vw;
+      bottom: 4.375vw;
+      width: 26.719vw;
 
-      .y_title {
-        font-family: Roboto;
-        font-size: 20px;
-        font-weight: 500;
-        line-height: 23px;
-        letter-spacing: 0px;
-        text-align: left;
-      }
-
-      .y_desc {
-        font-family: Roboto;
-        font-size: 14px;
+      .title {
+        font-family: Noto Serif;
+        font-size: 1.042vw;
         font-weight: 400;
-        line-height: 16px;
+        line-height: 1.406vw;
         letter-spacing: 0px;
-        text-align: left;
-        margin: 8px 0 24px 0;
+        text-align: center;
+        margin-bottom: 0.417vw;
       }
 
-      .y_btn {
-        display: flex;
-        align-items: center;
+      .desc {
+        font-family: Roboto;
+        font-size: 0.729vw;
+        font-weight: 400;
+        line-height: 0.833vw;
+        letter-spacing: 0px;
+        text-align: center;
+      }
+    }
+  }
 
-        .desc {
-          padding: 16px 40px;
-          background-color: #191817;
-          display: flex;
-          align-items: center;
-          color: #fff;
-          font-family: Roboto;
-          font-size: 16px;
-          font-weight: 400;
-          line-height: 19px;
-          letter-spacing: 0px;
-          text-align: left;
+  .fengniao_title {
+    padding: 4.167vw 0 2.083vw;
+    width: 68.75vw;
+    margin: 0 auto;
+    color: #191817;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    font-family: Noto Serif;
+    font-size: 36px;
+    font-weight: 400;
+    // line-height: 49px;
+    letter-spacing: 0px;
+    text-align: center;
 
-          img {
-            width: 27px;
-            height: 27px;
-            margin-right: 8px;
+    .biaodian {
+      display: flex;
+      height: 36px;
+      //  background: red;
+      align-items: center;
+    }
+  }
+
+  .coming_soon {
+    .list {
+      display: flex;
+      // align-items: center;
+      justify-content: space-between;
+
+      .item {
+        width: 31.8%;
+
+        .inner {
+          .title {
+            margin-top: 1.042vw;
+            margin-bottom: 0.417vw;
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 19px;
+            letter-spacing: 0px;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #191817;
+
+            &:last-child {
+              font-family: Roboto;
+              font-size: 20px;
+              font-weight: 400;
+              line-height: 23px;
+              letter-spacing: 0px;
+              text-align: left;
+
+            }
+
+            span {
+              &:nth-child(2) {
+                font-family: Roboto;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 14px;
+                letter-spacing: 0px;
+                text-align: right;
+              }
+            }
+          }
+
+          .desc {
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 16px;
+            letter-spacing: 0px;
+            text-align: center;
+            color: rgba(25, 24, 23, .5);
+            text-decoration: none;
+
+            &:hover {
+              .line {
+                width: 0;
+              }
+            }
+
+            .line {
+              width: 50px;
+              display: block;
+              height: 2px;
+              background: rgba(25, 24, 23, .5);
+              transition: all .3s;
+            }
+
           }
         }
       }
@@ -855,35 +954,42 @@ export default {
   }
 
   .bottom_icon {
-    background: #ffffff;
+    background: #fff;
+    // padding: 4.167vw 0;
 
     .items {
-      
-      margin: 0 15.885vw 0 14.01vw;
-    
-      // margin: 0 auto 0;
+      padding: 1.302vw 0;
+      width: 68.75vw;
+      margin: 0 auto 0;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      background: #ffffff;
-   
+      border-top: 1px solid #eee;
+      border-bottom: 1px solid #eee;
+
+      .line {
+        height: 91px;
+        width: 1px;
+        background: #eee;
+      }
 
       .bottom_item {
         display: flex;
-        flex-wrap: wrap;
-        // flex-direction: column;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 100%;
-   
+
         .title {
           font-family: Roboto;
           font-size: 16px;
-          font-weight: 400;
-          line-height: 18.75px;
+          font-weight: 500;
+          line-height: 19px;
           letter-spacing: 0px;
           text-align: center;
-          margin-left: 10px;
+
+          margin-top: 0.781vw;
+          margin-bottom: 0.417vw;
         }
 
         .desc {
@@ -893,10 +999,10 @@ export default {
           line-height: 16px;
           letter-spacing: 0px;
           text-align: center;
+
           color: rgba(102, 102, 102, 1);
-          margin: 0.417vw 0 1.823vw;
-          padding: 0 60px;
-          box-sizing: border-box;
+
+
         }
 
         a {
@@ -907,723 +1013,50 @@ export default {
           letter-spacing: 0px;
           text-align: center;
           color: #191817;
-        }
-      }
+          text-decoration: none;
 
-      .line {
-        width: 1px;
-        height: 45px;
-        margin-left:25px ;
-        background: rgba(217, 217, 217, 1);
-        // background: #eeeeee;
+          &:hover {
+            span {
+              width: 0;
+            }
+          }
+
+          span {
+            height: 2px;
+            background: #191817;
+            width: 100%;
+            display: block;
+            transition: all .3s;
+          }
+
+        }
       }
     }
   }
 }
 
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
-  .women_day {
-    padding: 0 0 4.167vw;
-    background: #fff;
+  .fengniao_new {
 
-    .show_big {
-      display: block;
-    }
-
-    .show_small {
-      display: none;
-    }
-
-    img {
-      display: block;
-      width: 100%;
-    }
-
-    .space-w {
-      width: calc(100% - 16.667vw);
-      margin: 0 auto 4.167vw;
+    .fengniao_title {
+      font-size: 24px;
+      line-height: 1.18;
     }
 
     .common_title {
-      font-family: Noto Serif;
-      font-size: 24.005px;
-      font-weight: 400;
-      line-height: 33.005px;
-      letter-spacing: 0px;
-      text-align: left;
-      margin-bottom: 24.005px;
-    }
-
-    .top_banner {}
-
-    .po_box {
-      position: relative;
-      top: -3.906vw;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #191817;
-      background: #fcfbfb;
-margin-bottom: 0;
-      // border: 1px solid rgba(0, 0, 0, 1);
-      .po_text-area {
-        padding: 3.906vw 22.135vw;
-
-        .po_title {
-          font-family: Noto Serif;
-          font-size: 36px;
-          font-weight: 400;
-          line-height: 48.744px;
-          letter-spacing: 0px;
-          text-align: center;
-        }
-
-        .po_desc {
-          font-family: Noto Serif;
-
-          font-size: 15.005px;
-          line-height: 20.246px;
-          letter-spacing: 0px;
-          text-align: center;
-        }
-
-        .desc_1 {
-          line-height: 1;
-          margin-bottom: 22px;
-          font-weight: 500;
-        }
-      }
-    }
-
-    .recommen_swiper {
-      .recommen_swiper_inner {
-        .swiper-wrapper {
-          .swiper-slide {
-            .a_link {
-              position: relative;
-
-              &:hover .shop_btn {
-                opacity: 1;
-                
-              }
-
-              .shop_btn {
-                bottom: 10px;
-                width: 91.6%;
-                opacity: 0;
-                margin: 0 auto;
-                background: #fff;
-                color: #191817;
-                padding: 9px 0;
-                font-family: Roboto;
-                font-size: 12px;
-                font-weight: 500;
-                line-height: 1;
-                letter-spacing: 0;
-                text-align: center;
-              }
-            }
-
-            .slide_info {
-              margin-bottom: 29.995px;
-
-              p {
-                &:nth-child(2) {
-                  span {
-                    &:first-child {
-                      font-weight: 500;
-                    }
-                  }
-                }
-              }
-
-              p {
-                &:nth-child(2) {
-                  span {
-                    &:nth-child(2) {
-                      font-weight: 500;
-                    }
-                  }
-                }
-              }
-
-              .new_title_one {
-                font-family: Roboto;
-                font-size: 12px;
-                font-weight: 400;
-                line-height: 14px;
-                letter-spacing: 0;
-                text-align: left;
-                margin-top: 9px;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                color: #191817;
-              }
-            }
-          }
-        }
-
-        .swiper-pagination {
-          bottom: 0;
-          top: auto;
-        }
-      }
-    }
-
-    .videos {
-      margin-bottom: 1.667vw;
-      .title {
-        text-align: center;
-      }
-
-      #myVideo {}
-    }
-
-    .bottom_swiper {
-      .bottom_swiper_inner {
-        .swiper-wrapper {
-          .swiper-slide {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            //justify-content: flex-start;
-            position: relative;
-            color: #fff;
-
-            .slide_area {
-              position: absolute;
-              width: 25.625vw;
-              left: 9.896vw;
-
-              .desc_1 {
-                // margin-bottom: 11px;
-              }
-
-              .slide_desc {
-                font-family: Roboto;
-                font-size: 1.111vw;
-                font-weight: 400;
-                line-height: 1.319vw;
-                letter-spacing: 0px;
-                text-align: center;
-
-                &:last-child {
-                  margin-top: 15.005px;
-                }
-              }
-
-              .slide_title {
-                text-align: center;
-                margin-bottom: 15.005px;
-              }
-            }
-          }
-        }
-
-        .swiper-pagination {
-          top: auto;
-          bottom: 2.083vw;
-          width: 20.833vw;
-          margin: 0 auto;
-          left: 33.646vw;
-        }
-
-        .swiper-pagination-progressbar-fill {
-          background-color: #191817;
-        }
-      }
-    }
-
-    .y_shoes {
-      display: flex;
-      // justify-content: center;
-      position: relative;
-
-      .y_inner {
-        position: absolute;
-        top: 8.229vw;
-        right: 11.458vw;
-        width: 23.958vw;
-
-        .y_title {
-          font-family: Roboto;
-          font-size: 15.005px;
-          font-weight: 500;
-          line-height: 17.251px;
-          letter-spacing: 0px;
-          text-align: left;
-        }
-
-        .y_desc {
-          font-family: Roboto;
-          font-size: 12px;
-          font-weight: 400;
-          line-height: 14px;
-          letter-spacing: 0px;
-          text-align: left;
-          margin: 0.417vw 0 1.25vw 0;
-        }
-
-        .y_btn {
-          display: flex;
-          align-items: center;
-
-          .desc {
-            padding: 0.833vw 2.083vw;
-            background-color: #191817;
-            display: flex;
-            align-items: center;
-            color: #fff;
-            font-family: Roboto;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 17px;
-            letter-spacing: 0px;
-            text-align: left;
-
-            img {
-              width: 20.246px;
-              height: 20.246px;
-              margin-right: 6.005px;
-            }
-          }
-        }
-      }
-    }
-
-    .bottom_icon {
-      background: #ffffff;
-      
-      .items {
-        margin: 0 8.333vw;
-
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: #ffffff;
-        // padding: 25px 0px;
-        // border-top: 1px solid #eeeeee;
-        // border-bottom: 1px solid #eeeeee;
-
-        .bottom_item {
-          display: flex;
-          flex-wrap: wrap;
-          // flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-
-          svg {
-            width: 3.385vw;
-            height: 3.385vw;
-          }
-
-          .title {
-            font-family: Roboto;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 17px;
-            letter-spacing: 0px;
-            text-align: center;
-            margin-left: 6px;
-          }
-
-          .desc {
-            font-family: Roboto;
-            font-size: 14px;
-            font-weight: 400;
-            line-height: 16px;
-            letter-spacing: 0px;
-            text-align: center;
-            color: rgba(102, 102, 102, 1);
-            margin: 0.417vw 0 1.823vw;
-            padding: 0 60px;
-            box-sizing: border-box;
-          }
-
-          a {
-            font-family: Roboto;
-            font-size: 16px;
-            font-weight: 400;
-            line-height: 19px;
-            letter-spacing: 0px;
-            text-align: center;
-            color: #191817;
-          }
-        }
-
-        .line {
-          width: 1px;
-          height: 30px;
-          background: rgba(217, 217, 217, 1);
-          // background: #eeeeee;
-        }
-      }
+      font-size: 22px;
+      line-height: 1.14;
     }
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1023px) {
-  .women_day {
-    padding: 0 0 4.167vw;
-    background: #fff;
-
-    .show_big {
-      display: block;
-    }
-
-    .show_small {
-      display: none;
-    }
-
-    img {
-      display: block;
-      width: 100%;
-    }
+@media screen and (max-width: 1024px) {
+  .fengniao_new {
+    padding-bottom: 10.167vw;
 
     .space-w {
-      width: calc(100% - 16.667vw);
-      margin: 0 auto 4.167vw;
-    }
-
-    .common_title {
-      font-family: Noto Serif;
-      font-size: 2.222vw;
-      font-weight: 400;
-      line-height: 3.056vw;
-      letter-spacing: 0px;
-      text-align: left;
-      margin-bottom: 2.222vw;
-    }
-
-    .top_banner {}
-
-    .po_box {
-      position: relative;
-      top: -3.906vw;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #191817;
-      background: #fcfbfb;
-    margin-bottom: 0;
-      // border: 1px solid rgba(0, 0, 0, 1);
-      .po_text-area {
-        padding: 3.906vw 22.135vw;
-
-        .po_title {
-          font-family: Noto Serif;
-          font-size: 3.333vw;
-          font-weight: 400;
-          line-height: 4.514vw;
-          letter-spacing: 0px;
-          text-align: center;
-        }
-
-        .po_desc {
-          font-family: Noto Serif;
-
-          font-size: 1.389vw;
-          line-height: 1.875vw;
-          letter-spacing: 0px;
-          text-align: center;
-        }
-
-        .desc_1 {
-          line-height: 1;
-          margin-bottom: 1.528vw;
-          font-weight: 500;
-        }
-      }
-    }
-
-    .recommen_swiper {
-      .recommen_swiper_inner {
-        .swiper-wrapper {
-          .swiper-slide {
-            .a_link {
-              position: relative;
-
-              &:hover .shop_btn {
-                opacity: 1;
-              }
-
-              .shop_btn {
-                bottom: 10px;
-                width: 91.6%;
-                opacity: 0;
-                margin: 0 auto;
-                background: #fff;
-                color: #191817;
-                padding: 12px 0;
-                font-family: Roboto;
-                font-size: 1.111vw;
-                font-weight: 500;
-                line-height: 1;
-                letter-spacing: 0;
-                text-align: center;
-              }
-            }
-
-            .slide_info {
-              margin-bottom: 2.083vw;
-
-              p {
-                &:nth-child(2) {
-                  span {
-                    &:first-child {
-                      font-weight: 500;
-                    }
-                  }
-                }
-              }
-
-              p {
-                &:nth-child(2) {
-                  span {
-                    &:nth-child(2) {
-                      font-weight: 500;
-                    }
-                  }
-                }
-              }
-
-              .new_title_one {
-                font-family: Roboto;
-                font-size: 0.972vw;
-                font-weight: 400;
-                line-height: 1.111vw;
-                letter-spacing: 0;
-                text-align: left;
-                margin-top: 12px;
-                overflow: hidden;
-                white-space: nowrap;
-                text-overflow: ellipsis;
-                color: #191817;
-              }
-            }
-          }
-        }
-
-        .swiper-pagination {
-          bottom: 0;
-          top: auto;
-        }
-      }
-    }
-
-    .videos {
-      margin-bottom: 1.667vw;
-      .title {
-        text-align: center;
-      }
-
-      #myVideo {}
-    }
-
-    .bottom_swiper {
-      .bottom_swiper_inner {
-        .swiper-wrapper {
-          .swiper-slide {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            //justify-content: flex-start;
-            position: relative;
-            color: #fff;
-
-            .slide_area {
-              position: absolute;
-              width: 25.625vw;
-              left: 9.896vw;
-
-              .desc_1 {
-                // margin-bottom: 11px;
-              }
-
-              .slide_desc {
-                font-family: Roboto;
-                font-size: 1.111vw;
-                font-weight: 400;
-                line-height: 1.319vw;
-                letter-spacing: 0px;
-                text-align: center;
-
-                &:last-child {
-                  margin-top: 1.389vw;
-                }
-              }
-
-              .slide_title {
-                text-align: center;
-                margin-bottom: 1.389vw;
-              }
-            }
-          }
-        }
-
-        .swiper-pagination {
-          top: auto;
-          bottom: 2.083vw;
-          width: 20.833vw;
-          margin: 0 auto;
-          left: 33.646vw;
-        }
-
-        .swiper-pagination-progressbar-fill {
-          background-color: #191817;
-        }
-      }
-    }
-
-    .y_shoes {
-      display: flex;
-      // justify-content: center;
-      position: relative;
-
-      .y_inner {
-        position: absolute;
-        top: 8.229vw;
-        right: 11.458vw;
-        width: 23.958vw;
-
-        .y_title {
-          font-family: Roboto;
-          font-size: 1.389vw;
-          font-weight: 500;
-          line-height: 1.597vw;
-          letter-spacing: 0px;
-          text-align: left;
-        }
-
-        .y_desc {
-          font-family: Roboto;
-          font-size: 0.972vw;
-          font-weight: 400;
-          line-height: 1.111vw;
-          letter-spacing: 0px;
-          text-align: left;
-          margin: 0.556vw 0 1.667vw 0;
-        }
-
-        .y_btn {
-          display: flex;
-          align-items: center;
-
-          .desc {
-            padding: 1.111vw 2.778vw;
-            background-color: #191817;
-            display: flex;
-            align-items: center;
-            color: #fff;
-            font-family: Roboto;
-            font-size: 1.111vw;
-            font-weight: 400;
-            line-height: 1.319vw;
-            letter-spacing: 0px;
-            text-align: left;
-
-            img {
-              width: 27px;
-              height: 27px;
-              margin-right: 8px;
-            }
-          }
-        }
-      }
-    }
-
-    .bottom_icon {
-      background: #ffffff;
-
-      .items {
-
-
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        background: #ffffff;
-        // padding: 25px 0px;
-        // border-top: 1px solid #eeeeee;
-        // border-bottom: 1px solid #eeeeee;
-
-        .bottom_item {
-          display: flex;
-          flex-wrap: wrap;
-          // flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-
-          svg {
-            width: 3.385vw;
-            height: 3.385vw;
-          }
-
-          .title {
-            font-family: Roboto;
-            font-size: 1.111vw;
-            font-weight: 400;
-            line-height: 1.302vw;
-            letter-spacing: 0px;
-            text-align: center;
-            margin-left: 0.694vw;
-          }
-
-          .desc {
-            font-family: Roboto;
-            font-size: 0.972vw;
-            font-weight: 400;
-            line-height: 1.111vw;
-            letter-spacing: 0px;
-            text-align: center;
-            color: rgba(102, 102, 102, 1);
-            margin: 0.417vw 0 1.823vw;
-            padding: 0 4.167vw;
-            box-sizing: border-box;
-          }
-
-          a {
-            font-family: Roboto;
-            font-size: 1.111vw;
-            font-weight: 400;
-            line-height: 1.319vw;
-            letter-spacing: 0px;
-            text-align: center;
-            color: #191817;
-          }
-        }
-
-        .line {
-          width: 1px;
-          height: 4.444vw;
-          background: #eeeeee;
-        }
-      }
-    }
-  }
-}
-
-@media screen and(max-width: 768px) {
-  .women_day {
-    padding: 0 0 10.667vw;
-
-    .show_big {
-      display: none;
-    }
-
-    .show_small {
-      display: block;
-    }
-
-    img {
-      display: block;
-      width: 100%;
-    }
-
-    .space-w {
-      width: calc(100% - 10.667vw);
+      // width: 89.333vw;
+      padding: 0 5.333vw;
       margin: 0 auto 10.667vw;
     }
 
@@ -1637,194 +1070,143 @@ margin-bottom: 0;
       margin-bottom: 5.333vw;
     }
 
-    .top_banner {}
-
-    .po_box {
-      position: relative;
-      top: -10.667vw;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #191817;
-      background: #fcfbfb;
-      margin-bottom: 0 !important;
-
-      .po_text-area {
-        padding: 10.667vw 5.333vw;
-
-        .po_title {
-          font-size: 6.933vw;
-          font-weight: 400;
-          line-height: 9.333vw;
-          letter-spacing: 0px;
-          text-align: center;
-        }
-
-        .po_desc {
-          font-family: Noto Serif;
-          font-size: 3.733vw;
-          font-weight: 400;
-          line-height: 5.067vw;
-          letter-spacing: 0px;
-          text-align: center;
-        }
-
-        .desc_1 {
-          line-height: 1;
-          margin-bottom: 3.2vw;
-        }
-      }
+    .show_big {
+      display: none;
     }
 
-    .recommen_swiper {
-      width: 100% !important;
-
-      .recommen_swiper_inner {
-        padding: 0 5.333vw;
-        box-sizing: border-box;
-
-        .swiper-wrapper {
-          display: inline-flex;
-
-          .swiper-slide {
-            width: 66.667vw;
-
-            .a_link {
-              .shop_btn {
-                display: none;
-              }
-            }
-
-            .slide_info {
-              margin-bottom: 5.333vw;
-
-              .new_title_one {
-                font-size: 3.2vw;
-                line-height: 4.2vw;
-                margin-top: 10px;
-              }
-            }
-          }
-        }
-
-        .swiper-pagination {
-          width: calc(100% - 10.667vw);
-          left: auto;
-          height: 2px;
-        }
-      }
+    .show_small {
+      display: block;
     }
 
-    .videos {
-      margin-bottom: 5.333vw !important;
+    img {
+      width: 100%;
+      display: block;
+    }
 
-      .title {
+    .top_banner {
+
+      .common_title {
         text-align: center;
+        margin-bottom: 0;
       }
 
-      #myVideo {
-        display: block;
+      .inner {
+       color: #191817;
+        left: auto;
+        top: 10.667vw;
+      
+
       }
     }
 
-    .bottom_swiper {
-      .bottom_swiper_inner_m {
-        .swiper-wrapper {
-          display: flex;
+    .fengniao_title {
+      padding: 10.667vw 0 5.333vw;
+      width: 89.333vw;
+      margin: 0 auto;
+      color: #191817;
+      font-family: Noto Serif;
+      font-size: 5.333vw;
+      font-weight: 400;
+      line-height: 7.2vw;
+      letter-spacing: 0px;
+      text-align: center;
 
-          .swiper-slide {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            flex-wrap: wrap;
+      .biaodian {
+        display: flex;
+        height: 5.333vw;
+        //  background: red;
+        font-size: 9.6vw;
+        line-height: 1;
+        align-items: center;
+      }
+    }
 
-            color: #191817;
+    .design_ins {
+      // width: 100% !important;
+      position: relative;
 
-            .slide_area {
-              position: static;
-              width: 100%;
-              padding: 10.667vw 5.333vw 0 5.333vw;
-              height: 105.6vw;
-              background-color: rgba(248, 248, 248, 1);
+      .inner {
+        position: absolute;
+        left: 10.667vw;
+        bottom: 8vw;
+        width: 78.933vw;
 
-              .desc_1 {
-                margin-bottom: 7px;
+        .title {
+          font-family: Noto Serif;
+          font-size: 5.333vw;
+          font-weight: 400;
+          line-height: 7.2vw;
+          letter-spacing: 0px;
+          text-align: center;
+          margin-bottom: 2.133vw;
+        }
+
+        .desc {
+          font-family: Roboto;
+          font-size: 3.2vw;
+          font-weight: 400;
+          line-height: 3.733vw;
+          letter-spacing: 0px;
+          text-align: center;
+        }
+      }
+    }
+
+    .coming_soon {
+      .list {
+        display: flex;
+        flex-wrap: wrap;
+
+        .item {
+          width: 100%;
+          margin-bottom: 5.333vw;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+
+          .inner {
+            .title {
+              margin-top: 2.667vw;
+              margin-bottom: 1.6vw;
+              font-family: Roboto;
+              font-size: 3.733vw;
+              font-weight: 500;
+              line-height: 4.373vw;
+              letter-spacing: 0px;
+              text-align: left;
+
+              &:last-child {
+                font-size: 3.733vw;
+                font-weight: 500;
+                line-height: 4.267vw;
               }
 
-              .slide_desc {
-                font-family: Roboto;
-                font-size: 3.2vw;
-                font-weight: 400;
-                line-height: 3.733vw;
-                letter-spacing: 0px;
-                text-align: center;
-
-                &:last-child {
-                  margin-top: 8px;
+              span {
+                &:nth-child(2) {
+                  font-family: Roboto;
+                  font-size: 3.2vw;
+                  font-weight: 400;
+                  line-height: 3.733vw;
+                  letter-spacing: 0px;
+                  text-align: right;
                 }
               }
-
-              .slide_title {
-                text-align: center;
-                margin-bottom: 8px;
-              }
             }
-          }
-        }
-      }
-    }
 
-    .y_shoes {
-      display: flex;
-      // justify-content: center;
-      flex-wrap: wrap;
-      position: relative;
+            .desc {
+              font-family: Roboto;
+              font-size: 3.2vw;
+              font-weight: 500;
+              line-height: 3.2vw;
+              letter-spacing: 0px;
+              text-align: right;
 
-      .y_inner {
-        position: static;
-        margin-top: 8px;
-        width: auto;
+              .line {
+                width: 12.533vw;
+                height: 1px;
+              }
 
-        .y_title {
-          //styleName: App/Tittle1/16-Bold;
-          font-family: Roboto;
-          font-size: 4.267vw;
-          font-weight: 500;
-          line-height: 5.067vw;
-          letter-spacing: 0px;
-          text-align: left;
-          margin-bottom: 1.067vw;
-        }
-
-        .y_desc {
-          //styleName: App/Body 1/14-Regular;
-          font-family: Roboto;
-          font-size: 3.733vw;
-          font-weight: 400;
-          line-height: 4.267vw;
-          letter-spacing: 0px;
-          text-align: left;
-          margin: 0px 0 3.2vw 0;
-        }
-
-        .y_btn {
-          display: flex;
-
-          .desc {
-            padding: 2.667vw 5.333vw;
-            display: flex;
-            align-items: center;
-            font-family: Roboto;
-            font-size: 3.2vw;
-            font-weight: 500;
-            line-height: 3.733vw;
-            letter-spacing: 0px;
-            text-align: left;
-
-            img {
-              width: 3.733vw;
-              height: 3.733vw;
-              margin-right: 2.133vw;
             }
           }
         }
@@ -1832,21 +1214,19 @@ margin-bottom: 0;
     }
 
     .bottom_icon {
-      
+      // padding-top: 10.667vw;
+      padding-bottom: 0;
 
-      padding: 10.667vw 0 0 ;
-      background: rgba(248, 248, 248, 1);
       .items {
-        width: 78.667vw;
-        background: rgba(248, 248, 248, 1);
+        padding: 0 10.667vw;
         margin: 0 auto;
         flex-wrap: wrap;
-        border: none;
-        padding: 0px;
-
+        border: 0;
+.line{
+  display: none;
+}
         .bottom_item {
           padding-bottom: 10.667vw;
-          // flex-wrap: nowrap;
 
           svg {
             width: 10.667vw;
@@ -1855,13 +1235,13 @@ margin-bottom: 0;
 
           .title {
             font-family: Roboto;
-            font-size: 4.267vw;
+            font-size: 3.733vw;
             font-weight: 400;
-            line-height: 5.067vw;
+            line-height: 4.267vw;
             letter-spacing: 0px;
             text-align: center;
-            margin-top: 8px;
-            width: 100%;
+
+            margin-top: 2.133vw;
           }
 
           .desc {
@@ -1872,7 +1252,7 @@ margin-bottom: 0;
             letter-spacing: 0px;
             text-align: center;
 
-            margin: 2.133vw 5.333vw;
+            margin: 2.133vw 0 0;
           }
 
           a {
@@ -1884,12 +1264,7 @@ margin-bottom: 0;
             text-align: center;
           }
         }
-
-        .line {
-          display: none;
-        }
       }
     }
   }
-}
-</style>
+}</style>
