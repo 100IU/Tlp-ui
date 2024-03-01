@@ -14,9 +14,16 @@
         <div class="po_desc desc_1" style="font-family: Roboto; font-weight: 500">
           Let’s Turn a Comfy Step Into a Giant Leap
         </div>
-        <div class="po_desc">
-          At VIVAIA, we believe there is no limit to what women can accomplish. Whether they want to be ballerinas, news anchors, chefs or doctors — anything is possible.   <br /><br />
-          In honor of Women’s History Month, we’ve partnered with 5 women from our community to highlight their unique experiences in different professions and to celebrate their success.  <br /><br />
+        <div class="po_desc show_big">
+          At VIVAIA, we believe there is no limit to what women can accomplish. Whether they want to be ballerinas, news anchors, chefs or doctors — anything is possible. <div style="height: 12px;"></div>
+          In honor of Women’s History Month, we’ve partnered with 5 women from our community to highlight their unique experiences in different professions and to celebrate their success. <div style="height: 12px;"></div>
+          Our new campaign In Her Shoes delves into the challenges these women have overcome and how they found support and empowerment through different avenues, including fashion and comfortable footwear.
+        </div>
+        <div class="po_desc show_small">
+          At VIVAIA, we believe there is no limit to what women can accomplish. Whether they want to be ballerinas, news anchors, chefs or doctors — anything is possible.   
+          <div style="height: 8px;"></div>
+          In honor of Women’s History Month, we’ve partnered with 5 women from our community to highlight their unique experiences in different professions and to celebrate their success. 
+          <div style="height: 8px;"></div>
           Our new campaign In Her Shoes delves into the challenges these women have overcome and how they found support and empowerment through different avenues, including fashion and comfortable footwear.
         </div>
       </div>
@@ -86,10 +93,20 @@
         and explain how VIVAIA has played an important role in their lives.
       </div>
 
-      <video id="myVideo" class="videos" autoplay="autoplay" loop="loop" muted="" controls="controls" width="100%"
+    
+     
+      <div class="show_big">
+        <video id="myVideo" autoplay="autoplay" loop="loop" muted="" controls="controls" width="100%"
         playsinline="true" webkit-playsinline="true">
-        <source src="https://cdnimg.vivaia.com/CO/video/Banner/20240125_6604/video.mp4" type="video/mp4" />
+        <source src="https://cdnimg.vivaia.com/CO/video/Banner/20240125_6604/teaser_16x9_final.mp4" type="video/mp4" />
       </video>
+      </div>
+      <div class="show_small">
+        <video id="myVideo"  autoplay="autoplay" loop="loop" muted="" controls="controls" width="100%"
+        playsinline="true" webkit-playsinline="true">
+        <source src="https://cdnimg.vivaia.com/CO/video/Banner/20240125_6604/teaser_9x16_final.mp4" type="video/mp4" />
+      </video>
+      </div>
     </div>
     <div class="bottom_swiper space-w" style="position: relative;">
       <div class="swiper_btn show_big">
@@ -144,11 +161,13 @@
               <div class="slide_desc desc_1">News Anchor</div>
               <div class="common_title slide_title">Sara Lee Kessler</div>
               <div class="slide_desc">
-                Sara Lee Kessler is a veteran TV and radio news anchor and reporter with more than 40 years of experience and name recognition in the New York market. <br><br>
-She is a three-time Emmy Award winner for anchoring WWOR-TV's coverage of the 1993 World Trade Center bombing, which was carried nationally on CNN, and hosting and writing documentaries on autism and bone marrow donation that aired on PBS.  <br><br>
+                Sara Lee Kessler is a veteran TV and radio news anchor and reporter with more than 40 years of experience and name recognition in the New York market. 
+                <div style="height: 12px;"></div>
+She is a three-time Emmy Award winner for anchoring WWOR-TV's coverage of the 1993 World Trade Center bombing, which was carried nationally on CNN, and hosting and writing documentaries on autism and bone marrow donation that aired on PBS. 
+<div style="height: 12px;"></div>
 Sara Lee says her favorite assignment was covering the late John Lennon's 1976 immigration hearing in which he was given a green card and he yelled out, "right on, brother" as she did her TV news standup for WCBS, a historic moment immortalized in the 2009 film, U.S. v Lennon.  Sara Lee Kessler has been with iHeart Radio since 2013 and can be heard in New York on 710 WOR and nationwide on NBC News Radio stations.
               </div>
-              <div class="slide_desc">Instagram: @saraleekessler</div>
+              <div class="slide_desc">Instagram: @saraleekesslerofficial</div>
             </div>
           </div>
           <div class="swiper-slide">
@@ -164,9 +183,11 @@ Sara Lee says her favorite assignment was covering the late John Lennon's 1976 i
               <div class="slide_desc desc_1">Surgeon</div>
               <div class="common_title slide_title">Heena Santry </div>
               <div class="slide_desc">
-                Heena is an acute care surgeon, health services researcher, healthcare design consultant, and advocate for diversity, equity, and inclusion in the healthcare professions. Married for nearly 25 years, Heena has two children ages 20 and 16 and a pair of sweet lap dogs. Heena loves bringing together friends, neighbors, and colleagues and considers throwing parties one of her main hobbies. In addition, she loves being a foodie, doing jigsaw puzzles and reading to relax when she can, and making sure she gets in a run or Orangetheory workout whenever she is not on call at the hospital.
+                Heena is an acute care surgeon, health services researcher, healthcare design consultant, and advocate for diversity, equity, and inclusion in the healthcare professions. Married for nearly 25 years, Heena has two children ages 20 and 16 and a pair of sweet lap dogs. 
+                <div style="height: 12px;"></div>
+                Heena loves bringing together friends, neighbors, and colleagues and considers throwing parties one of her main hobbies. In addition, she loves being a foodie, doing jigsaw puzzles and reading to relax when she can, and making sure she gets in a run or Orangetheory workout whenever she is not on call at the hospital.
               </div>
-              <!-- <div class="slide_desc">Instagram: @saraleekessler</div> -->
+              <!-- <div class="slide_desc">Instagram: @saraleekesslerofficial</div> -->
             </div>
           </div>
           <div class="swiper-slide">
@@ -179,13 +200,12 @@ Sara Lee says her favorite assignment was covering the late John Lennon's 1976 i
             </picture>
 
             <div class="slide_area">
-              <div class="slide_desc desc_1">Professional ballet dancer</div>
-              <div class="common_title slide_title">Alicia Mae Holloway - Ballerina</div>
+              <div class="slide_desc desc_1">Ballerina</div>
+              <div class="common_title slide_title">Alicia Mae Holloway</div>
               <div class="slide_desc">
-                Sara Lee Kessler is a veteran TV and radio news anchor and reporter with more than 40 years of experience and name recognition in the New York market. 
-                <br><br>
-She is a three-time Emmy Award winner for anchoring WWOR-TV's coverage of the 1993 World Trade Center bombing, which was carried nationally on CNN, and hosting and writing documentaries on autism and bone marrow donation that aired on PBS.<br><br>  
-Sara Lee says her favorite assignment was covering the late John Lennon's 1976 immigration hearing in which he was given a green card and he yelled out, "right on, brother" as she did her TV news standup for WCBS, a historic moment immortalized in the 2009 film, U.S. v Lennon.  Sara Lee Kessler has been with iHeart Radio since 2013 and can be heard in New York on 710 WOR and nationwide on NBC News Radio stations.
+                Alicia Mae Holloway is from Morgantown, West Virginia and began dancing when she was three years old at Kat and Company Dance Studio. She has trained at Central Pennsylvania Youth Ballet and the University of North Carolina School of the Arts before attending the School of American Ballet from 2011-2015.
+                <div style="height: 12px;"></div>
+                 From there, she began her professional career dancing with the Suzanne Farrell Ballet, and completed seven seasons with the Dance Theatre of Harlem where she worked with Alicia Keys, Aretha Franklin, and Gladys Knight. Recently, she served as a co-chairwoman of the School of American Ballet’s Visiting Faculty program for two years and is currently the principal role of ‘Lena’ in Josh Bergasse’s Sugarhill: The Ellington/Strayhorn Nutcracker.
               </div>
               <div class="slide_desc">Instagram: @aliciamaeholloway_</div>
             </div>
@@ -244,11 +264,11 @@ Sara Lee says her favorite assignment was covering the late John Lennon's 1976 i
               <div class="slide_desc desc_1">News Anchor</div>
               <div class="common_title slide_title">Sara Lee Kessler</div>
               <div class="slide_desc">
-                Sara Lee Kessler is a veteran TV and radio news anchor and reporter with more than 40 years of experience and name recognition in the New York market. <br><br>
-She is a three-time Emmy Award winner for anchoring WWOR-TV's coverage of the 1993 World Trade Center bombing, which was carried nationally on CNN, and hosting and writing documentaries on autism and bone marrow donation that aired on PBS.  <br><br>
+                Sara Lee Kessler is a veteran TV and radio news anchor and reporter with more than 40 years of experience and name recognition in the New York market. 
+She is a three-time Emmy Award winner for anchoring WWOR-TV's coverage of the 1993 World Trade Center bombing, which was carried nationally on CNN, and hosting and writing documentaries on autism and bone marrow donation that aired on PBS.  
 Sara Lee says her favorite assignment was covering the late John Lennon's 1976 immigration hearing in which he was given a green card and he yelled out, "right on, brother" as she did her TV news standup for WCBS, a historic moment immortalized in the 2009 film, U.S. v Lennon.  Sara Lee Kessler has been with iHeart Radio since 2013 and can be heard in New York on 710 WOR and nationwide on NBC News Radio stations.
               </div>
-              <div class="slide_desc">Instagram: @saraleekessler</div>
+              <div class="slide_desc">Instagram: @saraleekesslerofficial</div>
             </div>
           </div>
           <div class="swiper-slide">
@@ -264,9 +284,11 @@ Sara Lee says her favorite assignment was covering the late John Lennon's 1976 i
               <div class="slide_desc desc_1">Surgeon</div>
               <div class="common_title slide_title">Heena Santry </div>
               <div class="slide_desc">
-                Heena is an acute care surgeon, health services researcher, healthcare design consultant, and advocate for diversity, equity, and inclusion in the healthcare professions. Married for nearly 25 years, Heena has two children ages 20 and 16 and a pair of sweet lap dogs. Heena loves bringing together friends, neighbors, and colleagues and considers throwing parties one of her main hobbies. In addition, she loves being a foodie, doing jigsaw puzzles and reading to relax when she can, and making sure she gets in a run or Orangetheory workout whenever she is not on call at the hospital.
+                Heena is an acute care surgeon, health services researcher, healthcare design consultant, and advocate for diversity, equity, and inclusion in the healthcare professions. Married for nearly 25 years, Heena has two children ages 20 and 16 and a pair of sweet lap dogs.
+                <div style="height: 8px;"></div>
+                Heena loves bringing together friends, neighbors, and colleagues and considers throwing parties one of her main hobbies. In addition, she loves being a foodie, doing jigsaw puzzles and reading to relax when she can, and making sure she gets in a run or Orangetheory workout whenever she is not on call at the hospital.
               </div>
-              <!-- <div class="slide_desc">Instagram: @saraleekessler</div> -->
+              <!-- <div class="slide_desc">Instagram: @saraleekesslerofficial</div> -->
             </div>
           </div>
           <div class="swiper-slide">
@@ -279,13 +301,12 @@ Sara Lee says her favorite assignment was covering the late John Lennon's 1976 i
             </picture>
 
             <div class="slide_area">
-              <div class="slide_desc desc_1">Professional ballet dancer</div>
-              <div class="common_title slide_title">Alicia Mae Holloway - Ballerina</div>
+              <div class="slide_desc desc_1">Ballerina</div>
+              <div class="common_title slide_title">Alicia Mae Holloway</div>
               <div class="slide_desc">
-                Sara Lee Kessler is a veteran TV and radio news anchor and reporter with more than 40 years of experience and name recognition in the New York market. 
-                <br><br>
-She is a three-time Emmy Award winner for anchoring WWOR-TV's coverage of the 1993 World Trade Center bombing, which was carried nationally on CNN, and hosting and writing documentaries on autism and bone marrow donation that aired on PBS.<br><br>  
-Sara Lee says her favorite assignment was covering the late John Lennon's 1976 immigration hearing in which he was given a green card and he yelled out, "right on, brother" as she did her TV news standup for WCBS, a historic moment immortalized in the 2009 film, U.S. v Lennon.  Sara Lee Kessler has been with iHeart Radio since 2013 and can be heard in New York on 710 WOR and nationwide on NBC News Radio stations.
+                Alicia Mae Holloway is from Morgantown, West Virginia and began dancing when she was three years old at Kat and Company Dance Studio. She has trained at Central Pennsylvania Youth Ballet and the University of North Carolina School of the Arts before attending the School of American Ballet from 2011-2015.
+                <div style="height: 8px;"></div>
+                 From there, she began her professional career dancing with the Suzanne Farrell Ballet, and completed seven seasons with the Dance Theatre of Harlem where she worked with Alicia Keys, Aretha Franklin, and Gladys Knight. Recently, she served as a co-chairwoman of the School of American Ballet’s Visiting Faculty program for two years and is currently the principal role of ‘Lena’ in Josh Bergasse’s Sugarhill: The Ellington/Strayhorn Nutcracker.
               </div>
               <div class="slide_desc">Instagram: @aliciamaeholloway_</div>
             </div>
@@ -312,7 +333,7 @@ Sara Lee says her favorite assignment was covering the late John Lennon's 1976 i
         <div class="swiper-pagination"></div>
       </div>
     </div>
-    <div class="common_title space-w">In Her Shoes</div>
+    <div class="common_title space-w">In Your Shoes</div>
     <div class="y_shoes space-w">
       <picture>
         <source srcset="
@@ -326,7 +347,7 @@ Sara Lee says her favorite assignment was covering the late John Lennon's 1976 i
           Between February 29 to March 14, visit our Instagram account and share
           what empowers you for a chance to win a pair of VIVAIA flats.
         </div>
-        <a href="" class="y_btn">
+        <a href="https://www.instagram.com/p/C37zeIxrkbJ" class="y_btn">
           <div class="desc">
             <picture>
               <source srcset="
@@ -422,13 +443,13 @@ export default {
   },
 
   mounted () {
-    this.getAllgoods();
+   this.getAllgoods();
     new Swiper('.bottom_swiper_inner', {
       slidesPerView: 'auto',
       autoplay:{
-        delay:3000
+        delay:8000
       },
-      loop: true,
+      // loop: true,
       pagination: {
         el: ' .swiper-pagination',
         type: 'progressbar',
@@ -607,7 +628,7 @@ export default {
 
     // border: 1px solid rgba(0, 0, 0, 1);
     .po_text-area {
-      padding: 4.167vw 22.135vw;
+      padding: 3.906vw 22.135vw;
 
       .po_title {
         font-family: Noto Serif;
@@ -716,7 +737,9 @@ export default {
       text-align: center;
     }
 
-    #myVideo {}
+    #myVideo {
+    display: block;
+  }
   }
 
   .bottom_swiper {
@@ -732,18 +755,18 @@ export default {
 
           .slide_area {
             position: absolute;
-            width: 25.625vw;
+            width: 492px;
             left: 9.896vw;
 
             .desc_1 {
-              // margin-bottom: 11px;
+              margin-bottom: 0.573vw;
             }
 
             .slide_desc {
               font-family: Roboto;
-              font-size: 16px;
+              font-size: 18px;
               font-weight: 400;
-              line-height: 19px;
+              line-height: 22px;
               letter-spacing: 0px;
               text-align: center;
 
@@ -835,16 +858,15 @@ export default {
     background: #ffffff;
 
     .items {
-      // width: 68.75vw;
-      margin: 0 14.01vw 0 15.885vw;
+      
+      margin: 0 15.885vw 0 14.01vw;
+    
       // margin: 0 auto 0;
       display: flex;
       justify-content: space-between;
       align-items: center;
       background: #ffffff;
-      // padding: 25px 0px;
-      // border-top: 1px solid #eeeeee;
-      // border-bottom: 1px solid #eeeeee;
+   
 
       .bottom_item {
         display: flex;
@@ -853,7 +875,7 @@ export default {
         justify-content: center;
         align-items: center;
         width: 100%;
-
+   
         .title {
           font-family: Roboto;
           font-size: 16px;
@@ -890,7 +912,8 @@ export default {
 
       .line {
         width: 1px;
-        height: 64px;
+        height: 45px;
+        margin-left:25px ;
         background: rgba(217, 217, 217, 1);
         // background: #eeeeee;
       }
@@ -944,7 +967,7 @@ export default {
 margin-bottom: 0;
       // border: 1px solid rgba(0, 0, 0, 1);
       .po_text-area {
-        padding: 4.167vw 22.135vw;
+        padding: 3.906vw 22.135vw;
 
         .po_title {
           font-family: Noto Serif;
@@ -1079,9 +1102,9 @@ margin-bottom: 0;
 
               .slide_desc {
                 font-family: Roboto;
-                font-size: 12px;
+                font-size: 1.111vw;
                 font-weight: 400;
-                line-height: 14.256px;
+                line-height: 1.319vw;
                 letter-spacing: 0px;
                 text-align: center;
 
@@ -1171,7 +1194,7 @@ margin-bottom: 0;
 
     .bottom_icon {
       background: #ffffff;
-
+      
       .items {
         margin: 0 8.333vw;
 
@@ -1232,7 +1255,7 @@ margin-bottom: 0;
 
         .line {
           width: 1px;
-          height: 3.333vw;
+          height: 30px;
           background: rgba(217, 217, 217, 1);
           // background: #eeeeee;
         }
@@ -1287,7 +1310,7 @@ margin-bottom: 0;
     margin-bottom: 0;
       // border: 1px solid rgba(0, 0, 0, 1);
       .po_text-area {
-        padding: 4.167vw 22.135vw;
+        padding: 3.906vw 22.135vw;
 
         .po_title {
           font-family: Noto Serif;
@@ -1720,7 +1743,7 @@ margin-bottom: 0;
             .slide_area {
               position: static;
               width: 100%;
-              padding: 0 5.333vw;
+              padding: 10.667vw 5.333vw 0 5.333vw;
               height: 105.6vw;
               background-color: rgba(248, 248, 248, 1);
 
@@ -1770,6 +1793,7 @@ margin-bottom: 0;
           line-height: 5.067vw;
           letter-spacing: 0px;
           text-align: left;
+          margin-bottom: 1.067vw;
         }
 
         .y_desc {
@@ -1808,11 +1832,13 @@ margin-bottom: 0;
     }
 
     .bottom_icon {
-      background: #ffffff;
-      padding-bottom: 0;
+      
 
+      padding: 10.667vw 0 0 ;
+      background: rgba(248, 248, 248, 1);
       .items {
         width: 78.667vw;
+        background: rgba(248, 248, 248, 1);
         margin: 0 auto;
         flex-wrap: wrap;
         border: none;
