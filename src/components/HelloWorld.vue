@@ -98,13 +98,13 @@
       <div class="show_big">
         <video id="myVideo" autoplay="autoplay" loop="loop" muted="" controls="controls" width="100%"
         playsinline="true" webkit-playsinline="true">
-        <source src="https://cdnimg.vivaia.com/CO/video/Banner/20240125_6604/teaser_16x9_final.mp4" type="video/mp4" />
+        <source src="https://cdnimg.vivaia.com/VA/video/Banner/20240227_6655/freecompress-campaign_final.mp4" type="video/mp4" />
       </video>
       </div>
       <div class="show_small">
         <video id="myVideo"  autoplay="autoplay" loop="loop" muted="" controls="controls" width="100%"
         playsinline="true" webkit-playsinline="true">
-        <source src="https://cdnimg.vivaia.com/CO/video/Banner/20240125_6604/teaser_9x16_final.mp4" type="video/mp4" />
+        <source src="https://cdnimg.vivaia.com/VA/video/Banner/20240227_6655/freecompress-campaign_final.mp4" type="video/mp4" />
       </video>
       </div>
     </div>
@@ -1004,7 +1004,7 @@ margin-bottom: 0;
 
               &:hover .shop_btn {
                 opacity: 1;
-                background: #191817;
+                
               }
 
               .shop_btn {
