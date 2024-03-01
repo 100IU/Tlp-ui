@@ -144,9 +144,57 @@ export default {
         },
         {
           left_src:
+            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc9.jpg',
+          left_src_m:
+            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m10.jpg',
+          right_src:
+            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc3.jpg',
+          right_src_m:
+            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m12.jpg',
+          main_src:
+            'https://cdnimg.vivaia.com/vivaia/products/1708668525-2602cd17-e114-482e-8822-3d7d8a59f351.jpg?imresize=800x800',
+          title: 'Almond-Toe Knotted Flats (Bibi)',
+          link:'https://www.vivaia.com/item/round-toe-knotted-flats-bibi-p_10020339.html?gid=10020339',
+        
+          type: 'Flats'
+        },
+        {
+          left_src:
+            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc10.jpg',
+          left_src_m:
+            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m11.jpg',
+          right_src:
+            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc3.jpg',
+          right_src_m:
+            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m12.jpg',
+          main_src:
+            'https://cdnimg.vivaia.com/vivaia/products/1708668525-2602cd17-e114-482e-8822-3d7d8a59f351.jpg?imresize=800x800',
+          title: 'Almond-Toe Knotted Flats (Bibi)',
+          link:'https://www.vivaia.com/item/round-toe-knotted-flats-bibi-p_10020339.html?gid=10020339',
+        
+          type: 'Flats'
+        },
+        {
+          left_src:
             'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc4.jpg',
           left_src_m:
             'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m4.jpg',
+            right_src:
+            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc3.jpg',
+          right_src_m:
+            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m12.jpg',
+          main_src:
+            'https://cdnimg.vivaia.com/vivaia/products/1684736989-5d54aff0-add6-4ec2-9bb5-d21184b5af62.jpg?imresize=800x800',
+            link:'https://www.vivaia.com/item/round-toe-chunky-heels-p_10011923.html?gid=10011931',
+          title: 'Round-Toe Chunky Heels (Julie Pro)',
+        
+          type: 'Heels'
+        },
+        {
+          left_src:
+            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc5.jpg',
+          left_src_m:
+            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m5.jpg',
             right_src:
             'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc3.jpg',
           right_src_m:
@@ -233,13 +281,15 @@ export default {
         slideChange: function() {
          
           const index = this.activeIndex
+          console.log(index)
+          
           self.activeIndex = index
           self.curIndex = index
           self.sortIndex = 0
           self.sort_name ='All'
-          self.curName = self.tabs[index].name
+          // self.curName = self.tabs[index].name
           // self.$emit('sort_one', 'All')
-          self.$emit('sort', self.curName)
+          // self.$emit('sort', self.curName)
 }
       }
     })
