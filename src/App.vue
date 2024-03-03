@@ -1,7 +1,7 @@
 <template>
   <div id="app">
 
-    <texts :all_data="all_data"></texts>
+    <texts ></texts>
   </div>
 </template>
 
@@ -19,7 +19,7 @@ export default {
     }
   },
   mounted () {
-  
+      
   },
   methods: {
    

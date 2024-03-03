@@ -20,9 +20,9 @@
     </div>
     <Icon_swiper></Icon_swiper>
 
-    <swiper_one @sort="handleSort" @sort_one="handleSort_one"></swiper_one>
+    <swiper_one @sort="handleSort" ></swiper_one>
  
-    <component :is="renderedComponent" :goods_data="goods_data" :tabs_item="tabs_item" :tabs_item_one="tabs_item_one"
+    <component :is="renderedComponent" :goods_data="goods_data" :tabs_item="tabs_item" 
       ref="child" :swiper_name="swiper_name" />
     <!--  -->
     <div class="design_ins space-w">
@@ -690,7 +690,7 @@ export default {
       ],
      
       tabs_item: 'Leopard',
-      tabs_item_one: 'All',
+   
       swiper_name: 'Leopard',
       renderedComponent: null,
       threshold: 1024,
@@ -733,12 +733,14 @@ export default {
   },
     handleSort (name) {
 
-   console.log(name)
+  // console.log(name)
    
       // this.tabs_item_one = 'All'
 
       this.swiper_name = name
       this.tabs_item = name
+     // console.log(this.tabs_item)
+      
       if (name === 'All') {
         this.goods_data = this.all_goods
       } else {

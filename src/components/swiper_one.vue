@@ -3,7 +3,7 @@
     <div class="tabs common_title space-w" style="position: relative;">
       <div class="item_info">
         <div class="item" v-for="(item, i) in tabs" :key="i" :class="{ active: curIndex == i }"
-          @click="handleSort(i,item)">{{
+          @click="handleSort(i,item.name)">{{
             item.name }}</div>
       </div>
       <!-- <div class="sort">
@@ -89,26 +89,19 @@ export default {
   data () {
     return {
       curIndex: 0,
-      sortIndex: 0,
+    
       isShow: false,
-      curName: 'Leopard',
+      curName: '',
        swiperIntance:null,
-      sort_name: 'All',
+     
       //  Tiger     Zebra
       tabs: [
-        { name: 'All' },
-        { name: 'Flats' },
-        { name: 'Heels' },
-        { name: 'Boots' }
+        { name: 'All',id:1 },
+        { name: 'Flats',id:2 },
+        { name: 'Heels',id:3 },
+        { name: 'Boots',id:4 }
       ],
-      // sort_list: [
-      //   { name: 'All' },
-      //   { name: 'Flats' },
-      //   { name: 'Boots' },
-      //   { name: 'Heels' },
-      //   { name: 'Loafers' },
-      //   { name: 'Sandals' }
-      // ],
+    
       imgList: [
         {
           left_src:
@@ -245,7 +238,7 @@ export default {
     const self = this
    this.swiperIntance = new Swiper('.swiper_one_swiper', {
       //  loop: true,
-      initialSlide: 0,
+    //  initialSlide: 0,
       slidesPerView: 'auto',
       normalizeSlideIndex:false,
       // effect: 'fade',
@@ -278,7 +271,7 @@ export default {
       },
      
       on:{
-        slideChange: function() {
+       /*  slideChange: function() {
          
           const index = this.activeIndex
           console.log(index)
@@ -290,35 +283,78 @@ export default {
           // self.curName = self.tabs[index].name
           // self.$emit('sort_one', 'All')
           // self.$emit('sort', self.curName)
-}
+} */
+  
+    slideChangeTransitionEnd: function(){
+    // console.log(this.activeIndex);//切换结束时，告诉我现在是第几个slide
+     if(this.activeIndex==0){
+      self.curName = self.tabs[0].name
+       // console.log(self.curName)
+        self.curIndex =0
+        self.$emit('sort', self.curName)
+     }
+     if(this.activeIndex >0&&this.activeIndex <=3){
+     self.curName = self.tabs[1].name
+       // console.log(self.curName)
+self.curIndex=1
+        self.$emit('sort', self.curName)
+    }
+       if(this.activeIndex >3&&this.activeIndex<=5){
+        self.curIndex = 2
+        //  self.handleSort(4,'Heels')
+        self.curName = self.tabs[2].name
+       // console.log(self.curName)
+        
+        self.$emit('sort', self.curName)
+       
+       }
+       if(this.activeIndex >5&&this.activeIndex<=7){
+        self.curIndex = 3
+        //  self.handleSort(4,'Heels')
+        self.curName = self.tabs[3].name
+       
+        
+        self.$emit('sort', self.curName)
+       
+       }
+
+    }
       }
     })
     
     
   },
-  // watch: {
-  //   'swiperIntance.realIndex'(newIndex, oldIndex) {
-  //    console.log(newIndex,oldIndex,'newIndex','oldIndex');
-  //     this.curIndex = newIndex
-  //     // this.swiperIntance.slideTo(newIndex);   
-  //     this.sortIndex = 0
-  //     this.sort_name ='All'
-  //     this.curName = this.tabs[newIndex].name
-  //     this.$emit('sort_one', 'All')
-  //     this.$emit('sort', this.curName)
 
-  //   },
-  //   immediate: true, 
-  // },
   methods: {
+
     handleSort (i,item) {
-      console.log(i,item)
+     
       
       // console.log(i,this.curIndex);
-      this.curIndex = i
-      this.swiperIntance.slideTo(this.curIndex);
+      // this.curIndex = i
+      if(item==='All'){
+        this.swiperIntance.slideTo(0);
+        this.curIndex = 0
+      }
+      if(item==='Flats'){
+        this.swiperIntance.slideTo(1);
+        this.curIndex = 1
+        console.log(this.curIndex);
+        
+      }
+      if(item=='Heels'){
+        console.log(this.curIndex);
+        this.curIndex=2
+        this.swiperIntance.slideTo(4);
+      }
+      if(item=='Boots'){
+        console.log(this.curIndex);
+        this.curIndex =3
+        this.swiperIntance.slideTo(7);
+      }
+      // 
       // this.sort_name = 'All'
-      this.curName = item.name    
+    this.curName = item 
      this.$emit('sort', this.curName)
       
      
