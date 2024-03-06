@@ -114,7 +114,7 @@ export default {
             'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m12.jpg',
           main_src:
             'https://cdnimg.vivaia.com/vivaia/products/1708668525-2602cd17-e114-482e-8822-3d7d8a59f351.jpg?imresize=800x800',
-          title: 'Almond-Toe Knotted Flats (Bibi)',
+          title: 'Almond-Toe Knotted Flats',
           link:'https://www.vivaia.com/item/round-toe-knotted-flats-bibi-p_10020339.html?gid=10020339',
         
           type: 'Flats'
@@ -130,7 +130,7 @@ export default {
             'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m12.jpg',
           main_src:
             'https://cdnimg.vivaia.com/vivaia/products/1700186821-4188b206-95e1-47e1-9dc2-9a713ae605ed.jpg?imresize=800x800',
-          title: 'Square-Toe Mary-Jane (Margot Mary-Jane)',
+          title: 'Square-Toe Mary-Jane',
           link:'https://www.vivaia.com/item/square-toe-mary-jane-margot-mary-jane-p_10019159.html?gid=10019159',
         
           type: 'Flats'
@@ -145,9 +145,9 @@ export default {
           right_src_m:
             'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m12.jpg',
           main_src:
-            'https://cdnimg.vivaia.com/vivaia/products/1708668525-2602cd17-e114-482e-8822-3d7d8a59f351.jpg?imresize=800x800',
-          title: 'Almond-Toe Knotted Flats (Bibi)',
-          link:'https://www.vivaia.com/item/round-toe-knotted-flats-bibi-p_10020339.html?gid=10020339',
+            'https://cdnimg.vivaia.com/vivaia/products/1700187414-781d5c25-9bbb-4dd5-aec3-41edae85e5df.jpg?imresize=800x800',
+          title: 'Square-Toe Mary-Jane',
+          link:'https://www.vivaia.com/item/square-toe-mary-jane-margot-mary-jane-p_10019177.html?gid=10019177',
         
           type: 'Flats'
         },
@@ -161,9 +161,9 @@ export default {
           right_src_m:
             'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m12.jpg',
           main_src:
-            'https://cdnimg.vivaia.com/vivaia/products/1708668525-2602cd17-e114-482e-8822-3d7d8a59f351.jpg?imresize=800x800',
-          title: 'Almond-Toe Knotted Flats (Bibi)',
-          link:'https://www.vivaia.com/item/round-toe-knotted-flats-bibi-p_10020339.html?gid=10020339',
+            'https://cdnimg.vivaia.com/vivaia/products/1683707387-23558e6b-3aa1-487f-8f37-e23e94836e5b.jpg?imresize=800x800',
+          title: 'Pointed-Toe Ballet Flats',
+          link:'https://www.vivaia.com/item/pointed-toe-ballet-flats-p_10012694.html?gid=10012702',
         
           type: 'Flats'
         },
@@ -179,23 +179,23 @@ export default {
           main_src:
             'https://cdnimg.vivaia.com/vivaia/products/1684736989-5d54aff0-add6-4ec2-9bb5-d21184b5af62.jpg?imresize=800x800',
             link:'https://www.vivaia.com/item/round-toe-chunky-heels-p_10011923.html?gid=10011931',
-          title: 'Round-Toe Chunky Heels (Julie Pro)',
+          title: 'Round-Toe Chunky Heels',
         
           type: 'Heels'
         },
         {
           left_src:
-            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc5.jpg',
+            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc6.jpg',
           left_src_m:
-            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m5.jpg',
+            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m6.jpg',
             right_src:
             'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc3.jpg',
           right_src_m:
             'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m12.jpg',
           main_src:
-            'https://cdnimg.vivaia.com/vivaia/products/1684736989-5d54aff0-add6-4ec2-9bb5-d21184b5af62.jpg?imresize=800x800',
-            link:'https://www.vivaia.com/item/round-toe-chunky-heels-p_10011923.html?gid=10011931',
-          title: 'Round-Toe Chunky Heels (Julie Pro)',
+            'https://cdnimg.vivaia.com/vivaia/products/1690962107-791c53fe-3444-4224-8a26-10b23de68980.jpg?imresize=800x800',
+            link:'https://cdnimg.vivaia.com/vivaia/products/1690962107-791c53fe-3444-4224-8a26-10b23de68980.jpg?imresize=800x800',
+          title: 'Pointed-Toe Kitten Heels',
         
           type: 'Heels'
         },
@@ -210,7 +210,7 @@ export default {
             'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m12.jpg',
             main_src:
             'https://cdnimg.vivaia.com/vivaia/products/1697611348-c3131a94-e141-4903-a997-0bdfde133b1d.jpg?imresize=800x800',
-          title: 'Pointed-Toe Boots (Sophia)',
+          title: 'Pointed-Toe Boots',
           link:'https://www.vivaia.com/item/pointed-toe-boots-sophia-p_10018873.html?gid=10018881',
           desc: 'Doubled Arch Support / Pressure-Relief Insole / Stretchy Upper',
           type: 'Boots'
@@ -650,7 +650,7 @@ self.curIndex=1
                 line-height: 17px;
                 letter-spacing: 0px;
                 text-align: center;
-                color: #fff;
+                color: #191817;
                 &:hover{
                 .line{
                   width: 0;
@@ -659,7 +659,7 @@ self.curIndex=1
               .line{
                 width: 100%;
                 height: 2px;
-                background: #fff;
+                background: #191817;
                 transition:all .3s;
                 display: block;
               }
