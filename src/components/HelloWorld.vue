@@ -177,9 +177,9 @@ export default {
       goods_data: [],
       all_goods: [],
      
-      tabs_item: 'Leopard',
+      tabs_item: 'All',
    
-      swiper_name: 'Leopard',
+      swiper_name: 'All',
       renderedComponent: null,
       threshold: 1024,
 
@@ -187,7 +187,7 @@ export default {
     }
   },
   mounted () {
-
+    
     this.updateRenderedComponent();
     Promise.all([
     this.getAllgoods(str1, 'Flats'),
@@ -203,10 +203,7 @@ export default {
   });
   //   监听窗口大小变化，动态更新渲染的组件
     window.addEventListener('resize', this.updateRenderedComponent);
-    
-  
-   
-
+ 
   },
 
   methods: {
@@ -223,14 +220,10 @@ export default {
   },
     handleSort (name) {
 
-  // console.log(name)
-   
-      // this.tabs_item_one = 'All'
 
       this.swiper_name = name
       this.tabs_item = name
-     // console.log(this.tabs_item)
-      
+   
       if (name === 'All') {
         this.goods_data = this.all_goods
       } else {
