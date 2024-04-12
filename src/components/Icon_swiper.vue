@@ -44,18 +44,18 @@ export default {
    
    
 imgArr:[
-  {title:'Timeless'},
-  {title:'Classic'},
-  {title:'Always in Style'},
+  {title:'COLORFUL'},
+  {title:'Stylish'},
+  {title:'versatile'},
   {title:'Chic'},
-  {title:'Ageless'},
-  {title:'Iconic'},
-  {title:'Timeless'},
-  {title:'Classic'},
-  {title:'Always in Style'},
+  {title:'summer'},
+  {title:'vibrant'},
+  {title:'COLORFUL'},
+  {title:'Stylish'},
+  {title:'versatile'},
   {title:'Chic'},
-  {title:'Ageless'},
-  {title:'Iconic'}
+  {title:'summer'},
+  {title:'vibrant'},
 ],
 
       ctimer: null,

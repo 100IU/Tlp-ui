@@ -1,20 +1,22 @@
 <template>
 	<div class="fengniao_new">
 		<div class="top_banner">
-			<div class="inner common_title">
-				Like a fine wine, the classics <br />
-				only grow better with age.
+			<div class="inner common_title show_big" style="margin-bottom: 0">
+        Slingback Sandals: The Hottest Shoe Trend <br> of Spring 2024 That You Can't Miss
+			</div>
+      <div class="inner common_title show_small">
+        Slingback Sandals:<br> The Hottest Shoe Trend of Spring <br> 2024 That You Can't Miss
 			</div>
 			<picture>
 				<source
 					srcset="
-						https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/banner-a-M-new.jpg
+          https://cdnimg.vivaia.com/VA/image/Banner/20240411_6751/m.jpg
 					"
 					media="(max-width:768px)"
 				/>
 				<img
 					class="common-img"
-					src="https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc12.jpg"
+					src="https://cdnimg.vivaia.com/VA/image/Banner/20240411_6751/pc.jpg"
 					alt=""
 				/>
 			</picture>
@@ -22,11 +24,7 @@
 		<div class="fengniao_title">
 			<div class="biaodian">“</div>
 			<div class="title">
-				Transcend time with our Back to Timeless Collection. The always
-				in fashion little black dress extends to footwear with elegant
-				clean lines and contrasting colors that feel just as
-				fashion-forward today as they did a century ago, with the added
-				benefit of modern eco-friendly materials and all-day comfort.
+				With a focus on clean lines and enduring appeal, we're entering into the season of the slingback. Influencers, stylists, and fashion enthusiasts alike are captivated by the fusion of style and comfort that slingback shoes effortlessly offer.
 			</div>
 
 			<div class="biaodian" style="margin-top: 20px">”</div>
@@ -47,13 +45,13 @@
 			<picture>
 				<source
 					srcset="
-						https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m3.jpg
+          https://cdnimg.vivaia.com/VA/image/Banner/20240411_6751/m-7.jpg
 					"
 					media="(max-width:768px)"
 				/>
 				<img
 					class="common-img"
-					src="https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc2.jpg"
+					src="https://cdnimg.vivaia.com/VA/image/Banner/20240411_6751/pc-4.jpg"
 					alt=""
 				/>
 			</picture>
@@ -365,9 +363,9 @@
 </template>
 
 <script>
-let str1 = `10019822,10012698,10019159,10020339,10012649,10020509,10020389,10019177,10020641`;
-let str2 = `10011931,10016513`;
-let str3 = `10018881`;
+let str1 = ` 10021316,10021248,10021280,10021298,10021232,10021216,10021268`;
+let str2 = `10021184,10021126,10021136,10021168,10021152,10021200`;
+let str3 = `10021416,10021400,10021384,10021470,10021452,10021434`;
 import swiper_one from "./swiper_one.vue";
 import goods_item from "./goods_item.vue";
 import goods_item_one from "./goods_item_one.vue";
@@ -395,17 +393,19 @@ export default {
 	mounted() {
 		this.updateRenderedComponent();
 		Promise.all([
-			this.getAllgoods(str1, "Flats"),
-			this.getAllgoods(str2, "Heels"),
-			this.getAllgoods(str3, "Boots"),
+			this.getAllgoods(str1, "Droplet-Shaped Heel"),
+			this.getAllgoods(str2, "Stiletto Heel"),
+			this.getAllgoods(str3, "Wedge Heel"),
 		]).then((results) => {
 			// results 是一个包含三个请求结果的数组
 			let mergedArray = results.flat();
 			this.all_goods = mergedArray;
-			this.goods_data = this.all_goods;
-
+      this.goods_data = this.all_goods.filter(
+					(item) => item.type === 'Droplet-Shaped Heel'
+				);
 			// 在这里处理合并后的数组
 		});
+
 		//   监听窗口大小变化，动态更新渲染的组件
 		window.addEventListener("resize", this.updateRenderedComponent);
 	},
@@ -425,14 +425,11 @@ export default {
 		handleSort(name) {
 			this.swiper_name = name;
 			this.tabs_item = name;
-
-			if (name === "All") {
-				this.goods_data = this.all_goods;
-			} else {
-				this.goods_data = this.all_goods.filter(
+      this.goods_data = this.all_goods.filter(
 					(item) => item.type === name
 				);
-			}
+	
+			
 		},
 
 		// // 更新swiper
@@ -503,9 +500,8 @@ export default {
 
 		.inner {
 			position: absolute;
-			left: 10.417vw;
-			top: 16.979vw;
-			color: #fff;
+		  left: 4.167vw;
+			color: #191817;
 		}
 	}
 
@@ -541,7 +537,7 @@ export default {
 
 	.fengniao_title {
 		padding: 4.167vw 0 2.083vw;
-		width: 68.75vw;
+		width: 77.083vw;
 		margin: 0 auto;
 		color: #191817;
 		display: flex;
@@ -784,7 +780,8 @@ export default {
 			.inner {
 				color: #191817;
 				left: auto;
-				top: 10.667vw;
+				top: auto;
+        bottom: 10.667vw;
 			}
 		}
 

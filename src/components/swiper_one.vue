@@ -2,36 +2,11 @@
   <div class="fengniao_sort">
     <div class="tabs common_title space-w" style="position: relative;">
       <div class="item_info">
-        <div class="item" v-for="(item, i) in tabs" :key="i" :class="{ active: curIndex == i }"
+        <div class="item" v-for="(item, i) in tabs" :key="`item.name-${i}`" :class="{ active: curIndex == i }"
           @click="handleSort(i, item.name)">{{
           item.name }}</div>
       </div>
-      <!-- <div class="sort">
-        <div class="sort_list">
-          <div @click="isShow = !isShow" class="sort_inner">
-            <span style="margin-right: 4px;white-space: nowrap;"> Sort by: {{ sort_name }}</span>
-            <template v-if="!isShow">
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                <path d="M14.6666 5.16663L8.32348 11.5098L1.98033 5.16663" stroke="#191817" />
-              </svg>
-            </template>
-
-<template v-else>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17" fill="none">
-                <path d="M14.6667 11.8334L8.3236 5.49023L1.98046 11.8334" stroke="#191817" />
-              </svg>
-            </template>
-</div>
-
-<div v-show="isShow" class="list_inner">
-  <span class="sort_item" v-for="(item, i) in sort_list" :key="i" :class="{ active: sortIndex == i }"
-    @click="handleSort_one(item, i)">{{ item.name
-    }}
-  </span>
-</div>
-</div>
-</div> -->
-
+   
     </div>
 
     <div class="swiper_one">
@@ -65,7 +40,7 @@
               <img :src="item.right_src" alt="" class="show_big">
               <div class="inner">
                 <img :src="item.main_src" alt="" style="height: auto;">
-                <div class="title" style="color: #191817;">{{ item.title }}</div>
+                <div class="title">{{ item.title }}</div>
 
                 <span class="button">
                   Discover
@@ -97,125 +72,124 @@ export default {
 
       //  Tiger     Zebra
       tabs: [
-        { name: 'All', id: 1 },
-        { name: 'Flats', id: 2 },
-        { name: 'Heels', id: 3 },
-        { name: 'Boots', id: 4 }
+        { name: 'Droplet-Shaped Heel'},
+        { name: 'Stiletto Heel' },
+        { name: 'Wedge Heel' }
       ],
 
       imgList: [
         {
           left_src:
-            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc7.jpg',
+            'https://cdnimg.vivaia.com/VA/image/Banner/20240411_6751/pc-1.jpg',
           left_src_m:
-            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m8.jpg',
+            'https://cdnimg.vivaia.com/VA/image/Banner/20240411_6751/m-1.jpg',
           right_src:
-            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc3.jpg',
+            'https://cdnimg.vivaia.com/VA/image/Banner/20240411_6751/pc-1-1.jpg',
           right_src_m:
-            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m12.jpg',
+            'https://cdnimg.vivaia.com/VA/image/Banner/20240411_6751/m-1-1.jpg',
           main_src:
-            'https://cdnimg.vivaia.com/vivaia/products/1708668525-2602cd17-e114-482e-8822-3d7d8a59f351.jpg?imresize=800x800',
-          title: 'Almond-Toe Knotted Flats',
-          link: 'https://www.vivaia.com/item/round-toe-knotted-flats-bibi-p_10020339.html?gid=10020339',
+            'https://cdnimg.vivaia.com/VA/image/Banner/20240411_6751/pc-1-11.jpg',
+          title: 'Mesh Point-Toe Slingback Sandals',
+          link: 'https://www.vivaia.com/item/pointed-toe-slingback-sandals-leah-pro-p_10021248.html?gid=10021298',
 
           type: 'Flats'
         },
         {
           left_src:
-            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc8.jpg',
+            'https://cdnimg.vivaia.com/VA/image/Banner/20240411_6751/pc-2.jpg',
           left_src_m:
-            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m9.jpg',
+            'https://cdnimg.vivaia.com/VA/image/Banner/20240411_6751/m-2.jpg',
           right_src:
-            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc3.jpg',
+            'https://cdnimg.vivaia.com/VA/image/Banner/20240411_6751/pc-2-1.jpg',
           right_src_m:
-            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m12.jpg',
+            'https://cdnimg.vivaia.com/VA/image/Banner/20240411_6751/m-2-1.jpg',
           main_src:
-            'https://cdnimg.vivaia.com/vivaia/products/1700186821-4188b206-95e1-47e1-9dc2-9a713ae605ed.jpg?imresize=800x800',
-          title: 'Square-Toe Mary-Jane',
-          link: 'https://www.vivaia.com/item/square-toe-mary-jane-margot-mary-jane-p_10019159.html?gid=10019159',
+            'https://cdnimg.vivaia.com/VA/image/Banner/20240411_6751/pc-2-11.jpg',
+          title: 'Pointed-Toe Slingback Sandals',
+          link: 'https://www.vivaia.com/item/pointed-toe-slingback-sandals-addison-p_10021184.html?gid=10021192',
 
           type: 'Flats'
         },
         {
           left_src:
-            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc9.jpg',
+            'https://cdnimg.vivaia.com/VA/image/Banner/20240411_6751/pc-3.jpg',
           left_src_m:
-            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m10.jpg',
+            'https://cdnimg.vivaia.com/VA/image/Banner/20240411_6751/m-3-1.jpg',
           right_src:
-            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc3.jpg',
+            'https://cdnimg.vivaia.com/VA/image/Banner/20240411_6751/pc-3-1.jpg',
           right_src_m:
-            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m12.jpg',
+            'https://cdnimg.vivaia.com/VA/image/Banner/20240411_6751/m-3.jpg',
           main_src:
-            'https://cdnimg.vivaia.com/vivaia/products/1700187414-781d5c25-9bbb-4dd5-aec3-41edae85e5df.jpg?imresize=800x800',
-          title: 'Square-Toe Mary-Jane',
-          link: 'https://www.vivaia.com/item/square-toe-mary-jane-margot-mary-jane-p_10019177.html?gid=10019177',
+            'https://cdnimg.vivaia.com/VA/image/Banner/20240411_6751/pc-3-11.jpg',
+          title: 'Almond-Toe Slingback Wedge Heeled Sandal',
+          link: 'https://www.vivaia.com/item/almond-toe-slingback-wedge-sandals-tamia-slingback-p_10021400.html?gid=10021400',
 
           type: 'Flats'
         },
-        {
-          left_src:
-            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc10.jpg',
-          left_src_m:
-            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m11.jpg',
-          right_src:
-            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc3.jpg',
-          right_src_m:
-            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m12.jpg',
-          main_src:
-            'https://cdnimg.vivaia.com/vivaia/products/1683707387-23558e6b-3aa1-487f-8f37-e23e94836e5b.jpg?imresize=800x800',
-          title: 'Pointed-Toe Ballet Flats',
-          link: 'https://www.vivaia.com/item/pointed-toe-ballet-flats-p_10012694.html?gid=10012702',
+        // {
+        //   left_src:
+        //     'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc10.jpg',
+        //   left_src_m:
+        //     'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m11.jpg',
+        //   right_src:
+        //     'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc3.jpg',
+        //   right_src_m:
+        //     'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m12.jpg',
+        //   main_src:
+        //     'https://cdnimg.vivaia.com/vivaia/products/1683707387-23558e6b-3aa1-487f-8f37-e23e94836e5b.jpg?imresize=800x800',
+        //   title: 'Pointed-Toe Ballet Flats',
+        //   link: 'https://www.vivaia.com/item/pointed-toe-ballet-flats-p_10012694.html?gid=10012702',
 
-          type: 'Flats'
-        },
-        {
-          left_src:
-            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc4.jpg',
-          left_src_m:
-            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m4.jpg',
-          right_src:
-            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc3.jpg',
-          right_src_m:
-            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m12.jpg',
-          main_src:
-            'https://cdnimg.vivaia.com/vivaia/products/1684736989-5d54aff0-add6-4ec2-9bb5-d21184b5af62.jpg?imresize=800x800',
-          link: 'https://www.vivaia.com/item/round-toe-chunky-heels-p_10011923.html?gid=10011931',
-          title: 'Round-Toe Chunky Heels',
+        //   type: 'Flats'
+        // },
+        // {
+        //   left_src:
+        //     'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc4.jpg',
+        //   left_src_m:
+        //     'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m4.jpg',
+        //   right_src:
+        //     'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc3.jpg',
+        //   right_src_m:
+        //     'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m12.jpg',
+        //   main_src:
+        //     'https://cdnimg.vivaia.com/vivaia/products/1684736989-5d54aff0-add6-4ec2-9bb5-d21184b5af62.jpg?imresize=800x800',
+        //   link: 'https://www.vivaia.com/item/round-toe-chunky-heels-p_10011923.html?gid=10011931',
+        //   title: 'Round-Toe Chunky Heels',
 
-          type: 'Heels'
-        },
-        {
-          left_src:
-            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc6.jpg',
-          left_src_m:
-            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m6.jpg',
-          right_src:
-            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc3.jpg',
-          right_src_m:
-            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m12.jpg',
-          main_src:
-            'https://cdnimg.vivaia.com/vivaia/products/1690962107-791c53fe-3444-4224-8a26-10b23de68980.jpg?imresize=800x800',
-          link: 'https://cdnimg.vivaia.com/vivaia/products/1690962107-791c53fe-3444-4224-8a26-10b23de68980.jpg?imresize=800x800',
-          title: 'Pointed-Toe Kitten Heels',
+        //   type: 'Heels'
+        // },
+        // {
+        //   left_src:
+        //     'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc6.jpg',
+        //   left_src_m:
+        //     'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m6.jpg',
+        //   right_src:
+        //     'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc3.jpg',
+        //   right_src_m:
+        //     'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m12.jpg',
+        //   main_src:
+        //     'https://cdnimg.vivaia.com/vivaia/products/1690962107-791c53fe-3444-4224-8a26-10b23de68980.jpg?imresize=800x800',
+        //   link: 'https://cdnimg.vivaia.com/vivaia/products/1690962107-791c53fe-3444-4224-8a26-10b23de68980.jpg?imresize=800x800',
+        //   title: 'Pointed-Toe Kitten Heels',
 
-          type: 'Heels'
-        },
-        {
-          left_src:
-            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc1.jpg',
-          left_src_m:
-            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m2.jpg',
-          right_src:
-            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc3.jpg',
-          right_src_m:
-            'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m12.jpg',
-          main_src:
-            'https://cdnimg.vivaia.com/vivaia/products/1697611348-c3131a94-e141-4903-a997-0bdfde133b1d.jpg?imresize=800x800',
-          title: 'Pointed-Toe Boots',
-          link: 'https://www.vivaia.com/item/pointed-toe-boots-sophia-p_10018873.html?gid=10018881',
-          desc: 'Doubled Arch Support / Pressure-Relief Insole / Stretchy Upper',
-          type: 'Boots'
-        },
+        //   type: 'Heels'
+        // },
+        // {
+        //   left_src:
+        //     'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc1.jpg',
+        //   left_src_m:
+        //     'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m2.jpg',
+        //   right_src:
+        //     'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc3.jpg',
+        //   right_src_m:
+        //     'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m12.jpg',
+        //   main_src:
+        //     'https://cdnimg.vivaia.com/vivaia/products/1697611348-c3131a94-e141-4903-a997-0bdfde133b1d.jpg?imresize=800x800',
+        //   title: 'Pointed-Toe Boots',
+        //   link: 'https://www.vivaia.com/item/pointed-toe-boots-sophia-p_10018873.html?gid=10018881',
+        //   desc: 'Doubled Arch Support / Pressure-Relief Insole / Stretchy Upper',
+        //   type: 'Boots'
+        // },
         // {
         //   left_src:
         //     'https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6612/Rectangle%202343-PC.jpg',
@@ -290,13 +264,11 @@ export default {
 
           if (this.activeIndex === 0) {
             self.curIndex = 0
-          } else if (this.activeIndex <= 3) {
+          } else if (this.activeIndex === 1) {
             self.curIndex = 1
-          } else if (this.activeIndex <= 5) {
+          } else if (this.activeIndex === 2) {
             self.curIndex = 2
-          } else if (this.activeIndex <= 7) {
-            self.curIndex = 3
-          }
+          } 
           self.curName = self.tabs[self.curIndex].name
           self.$emit('sort', self.curName)
         }
@@ -309,13 +281,12 @@ export default {
   methods: {
 
     handleSort (i, item) {
-
-
+   
       const itemMapping = {
-        'All': { index: 0, slideTo: 0 },
-        'Flats': { index: 1, slideTo: 1 },
-        'Heels': { index: 2, slideTo: 4 },
-        'Boots': { index: 3, slideTo: 7 }
+        'Droplet-Shaped Heel': { index: 0, slideTo: 0 },
+        'Stiletto Heel': { index: 1, slideTo: 1 },
+        'Wedge Heel': { index: 2, slideTo: 2 },
+       
       };
 
       if (item in itemMapping) {
@@ -422,6 +393,7 @@ export default {
               margin-top: 1.25vw;
               margin-bottom: 0.625vw;
               white-space: nowrap;
+              color:#ffffff;
             }
 
             .desc {
@@ -443,19 +415,20 @@ export default {
               text-align: center;
               color: #191817;
               text-decoration: none;
-
-              &:hover {
-                .line {
-                  width: 0;
-                }
-              }
+              padding: 16px 40px;
+              background: #ffffff;
+              // &:hover {
+              //   .line {
+              //     width: 0;
+              //   }
+              // }
 
               .line {
-                width: 100%;
-                height: 2px;
-                background: #191817;
-                transition: all .3s;
-                display: block;
+                // width: 100%;
+                // height: 2px;
+                // background: #191817;
+                // transition: all .3s;
+                // display: block;
               }
 
               // background: #fff;
@@ -602,7 +575,7 @@ export default {
                 line-height: 20px;
                 letter-spacing: 0px;
                 text-align: center;
-
+                color:#ffffff;
               }
 
               .desc {
@@ -623,20 +596,20 @@ export default {
                 letter-spacing: 0px;
                 text-align: center;
                 color: #191817;
+                padding: 10px 30px;
+                // &:hover {
+                //   .line {
+                //     width: 0;
+                //   }
+                // }
 
-                &:hover {
-                  .line {
-                    width: 0;
-                  }
-                }
-
-                .line {
-                  width: 100%;
-                  height: 2px;
-                  background: #191817;
-                  transition: all .3s;
-                  display: block;
-                }
+                // .line {
+                //   width: 100%;
+                //   height: 2px;
+                //   background: #191817;
+                //   transition: all .3s;
+                //   display: block;
+                // }
 
                 // color: #191817;
                 // background: #fff;
@@ -672,7 +645,8 @@ export default {
 
           ._right {
             width: 100%;
-
+        align-items: start;
+       
             .inner {
               position: absolute;
               display: flex;
@@ -681,6 +655,7 @@ export default {
               align-items: center;
               width: 78.667vw;
               color: #fff;
+              padding-top: 8vw;
 
               img {
                 width: 37.867vw;
@@ -695,6 +670,7 @@ export default {
                 text-align: center;
                 margin-top: 4vw;
                 margin-bottom: 2.667vw;
+                color:#ffffff;
               }
 
               .desc {
@@ -713,7 +689,18 @@ export default {
                 line-height: 3.733vw;
                 letter-spacing: 0px;
                 text-align: center;
+                padding: 0;
+                background: transparent;
+                color: #ffffff;
+   .line {
+                  width: 100%;
+                  height: 2px;
+                  background: #ffffff;
+                  transition: all .3s;
+                  display: block;
+                }
 
+              
               }
             }
           }
