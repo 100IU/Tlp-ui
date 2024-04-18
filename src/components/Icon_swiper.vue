@@ -1,35 +1,20 @@
 <template>
   <div class="fengniao_icon">
-
-
-
     <div class="fengniao_scroll-swiper" ref="imgList">
-
       <div class="marquee-container">
         <div class="marquee" :style="{ left: -left_s + 'px' }">
           <div class="item" v-for="(item, i) in imgArr" :key="i + 'a'">
-
             <div class="title">{{ item.title }}</div>
-
           </div>
           <div class="item" v-for="(item, i) in imgArr" :key="i + 'b'">
-
             <div class="title">{{ item.title }}</div>
-
           </div>
           <div class="item" v-for="(item, i) in imgArr" :key="i + 's'">
             <div class="title">{{ item.title }}</div>
-
-
           </div>
         </div>
       </div>
-
-
-
     </div>
-
-
   </div>
 </template>
 
@@ -37,56 +22,53 @@
 // import Swiper from 'swiper'
 // import 'swiper/css/swiper.css'
 export default {
-  data () {
+  data() {
     return {
       curIndex: 0,
       mySwiper: null,
-   
-   
-imgArr:[
-  {title:'COLORFUL'},
-  {title:'Stylish'},
-  {title:'versatile'},
-  {title:'Chic'},
-  {title:'summer'},
-  {title:'vibrant'},
-  {title:'COLORFUL'},
-  {title:'Stylish'},
-  {title:'versatile'},
-  {title:'Chic'},
-  {title:'summer'},
-  {title:'vibrant'},
-],
+
+      imgArr: [
+        { title: 'Cushioned footbed' },
+        { title: 'Casual' },
+        { title: 'easy to wear' },
+        { title: 'Best Beach Sandals  ' },
+        { title: 'AdaptAll Strap™' },
+        { title: 'FLEXIBLE' },
+        { title: 'DURABLE' },
+        { title: 'Cushioned footbed' },
+        { title: 'Casual' },
+        { title: 'easy to wear' },
+        { title: 'Best Beach Sandals  ' },
+        { title: 'AdaptAll Strap™' },
+        { title: 'FLEXIBLE' },
+        { title: 'DURABLE' },
+      ],
 
       ctimer: null,
-      left_s: 0
-
-
+      left_s: 0,
     };
   },
-  mounted () {
-    this.sliderGotoLeft()
+  mounted() {
+    this.sliderGotoLeft();
   },
 
   methods: {
-    sliderGotoLeft () {
-
-      const that = this
+    sliderGotoLeft() {
+      const that = this;
       setInterval(() => {
         if (that.left_s === 1400) {
-          that.left_s = 0
+          that.left_s = 0;
         }
-        that.left_s += 1
-      },15)
-    }
-
+        that.left_s += 1;
+      }, 15);
+    },
   },
-
 };
 </script>
 
 <style scoped lang="less">
-@media screen and (min-width: 1024px) and (max-width: 1440px) {}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+}
 
 .fengniao_icon {
   margin-bottom: 4.167vw;
@@ -98,14 +80,13 @@ imgArr:[
 
   .marquee-container {
     .marquee {
-      background: #F8F7F5;
+      background: #f8f7f5;
       width: 4000px;
       display: flex;
       align-items: center;
       position: relative;
 
       .item {
-       
         padding: 8px 0;
         margin-right: 80px;
         text-align: center;
@@ -141,8 +122,6 @@ imgArr:[
       justify-content: center;
     }
   }
-
-
 }
 
 @media screen and (max-width: 1023px) {
@@ -163,24 +142,21 @@ imgArr:[
         position: relative;
 
         .item {
-        
           padding: 2.667vw 0;
           margin-right: 10.133vw;
           text-align: center;
 
           .title {
             font-family: Roboto;
-font-size: 4.267vw;
-font-weight: 400;
-line-height: 5.067vw;
-letter-spacing: 0px;
-text-align: left;
-
+            font-size: 4.267vw;
+            font-weight: 400;
+            line-height: 5.067vw;
+            letter-spacing: 0px;
+            text-align: left;
           }
         }
       }
     }
-
 
     .fengniao_scroll-swiper {
       .swiper-slide {
@@ -188,7 +164,6 @@ text-align: left;
         justify-content: center;
       }
     }
-
-
   }
-}</style>
+}
+</style>

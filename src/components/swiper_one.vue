@@ -1,45 +1,72 @@
 <template>
   <div class="fengniao_sort">
-    <div class="tabs common_title space-w" style="position: relative;">
-      <div class="item_info">
-        <div class="item" v-for="(item, i) in tabs" :key="`item.name-${i}`" :class="{ active: curIndex == i }"
-          @click="handleSort(i, item.name)">{{
-          item.name }}</div>
-      </div>
-   
-    </div>
-
     <div class="swiper_one">
-      <div class="swiper_one_swiper" style="overflow: hidden;position: relative;">
+      <div
+        class="swiper_one_swiper"
+        style="overflow: hidden; position: relative"
+      >
         <div class="swiper_btn show_big">
-          <div class="swiper-button swiper-button-prev "><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-              viewBox="0 0 18 18" fill="none">
-              <path fill-rule="evenodd" clip-rule="evenodd"
+          <div class="swiper-button swiper-button-prev">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
                 d="M10.0607 2.45129L9 1.39062L1.3934 8.99723L2.45406 10.0579L2.45412 10.0578L9.00013 16.6038L10.0608 15.5432L3.51478 8.99716L10.0607 2.45129Z"
-                fill="#FFFFFF"></path>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M17 9.75H3V8.25H17V9.75Z" fill="#FFFFFF">
-              </path>
-            </svg></div>
-          <div class="swiper-button swiper-button-next"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="18"
-              viewBox="0 0 18 18" fill="none">
-              <path fill-rule="evenodd" clip-rule="evenodd"
+                fill="#FFFFFF"
+              ></path>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M17 9.75H3V8.25H17V9.75Z"
+                fill="#FFFFFF"
+              ></path>
+            </svg>
+          </div>
+          <div class="swiper-button swiper-button-next">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+              fill="none"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
                 d="M7.93934 2.45129L9 1.39062L16.6066 8.99723L15.5459 10.0579L15.5459 10.0578L8.99987 16.6038L7.93921 15.5432L14.4852 8.99716L7.93934 2.45129Z"
-                fill="#FFFFFF"></path>
-              <path fill-rule="evenodd" clip-rule="evenodd" d="M1 9.75H15V8.25H1V9.75Z" fill="#FFFFFF">
-              </path>
-            </svg></div>
+                fill="#FFFFFF"
+              ></path>
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M1 9.75H15V8.25H1V9.75Z"
+                fill="#FFFFFF"
+              ></path>
+            </svg>
+          </div>
         </div>
         <div class="swiper-wrapper">
-          <a class="swiper-slide" v-for="(item, i) in imgList" :key="i" :href="item.link">
+          <a
+            class="swiper-slide"
+            v-for="(item, i) in imgList"
+            :key="i"
+            :href="item.link"
+          >
             <div class="_left">
-              <img :src="item.left_src_m" alt="" class="show_small">
-              <img :src="item.left_src" alt="" class="show_big">
+              <img :src="item.left_src_m" alt="" class="show_small" />
+              <img :src="item.left_src" alt="" class="show_big" />
             </div>
             <div class="_right">
-              <img :src="item.right_src_m" alt="" class="show_small">
-              <img :src="item.right_src" alt="" class="show_big">
+              <img :src="item.right_src_m" alt="" class="show_small" />
+              <img :src="item.right_src" alt="" class="show_big" />
               <div class="inner">
-                <img :src="item.main_src" alt="" style="height: auto;">
+                <img :src="item.main_src" alt="" style="height: auto" />
                 <div class="title">{{ item.title }}</div>
 
                 <span class="button">
@@ -49,7 +76,6 @@
               </div>
             </div>
           </a>
-
         </div>
         <div class="swiper-pagination show_small"></div>
       </div>
@@ -58,270 +84,103 @@
 </template>
 
 <script>
-import Swiper from 'swiper'
-import 'swiper/css/swiper.css'
+import Swiper from 'swiper';
+import 'swiper/css/swiper.css';
 export default {
-
-  data () {
+  data() {
     return {
-      curIndex: 0,
-
-      isShow: false,
-      curName: '',
       swiperIntance: null,
-
-      //  Tiger     Zebra
-      tabs: [
-        { name: 'Droplet-Shaped Heel'},
-        { name: 'Stiletto Heel' },
-        { name: 'Wedge Heel' }
-      ],
-
       imgList: [
         {
           left_src:
-            'https://cdnimg.vivaia.com/VA/image/Banner/20240411_6751/pc-1.jpg',
+            'https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/pc-fs-1.jpg',
           left_src_m:
-            'https://cdnimg.vivaia.com/VA/image/Banner/20240411_6751/m-1.jpg',
+            'https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/m-fs-1.jpg',
           right_src:
-            'https://cdnimg.vivaia.com/VA/image/Banner/20240411_6751/pc-1-1.jpg',
+            'https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/pc-fs-3.jpg',
           right_src_m:
-            'https://cdnimg.vivaia.com/VA/image/Banner/20240411_6751/m-1-1.jpg',
+            'https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/m-fs-3.jpg',
           main_src:
-            'https://cdnimg.vivaia.com/VA/image/Banner/20240411_6751/pc-1-11.jpg',
-          title: 'Mesh Point-Toe Slingback Sandals',
+            'https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/pc-fs-2.jpg',
+          title: 'AdaptAll™ Sling Footbed Sandal (Isla)',
           link: 'https://www.vivaia.com/item/pointed-toe-slingback-sandals-leah-pro-p_10021248.html?gid=10021298',
 
-          type: 'Flats'
+          type: 'Flats',
         },
         {
           left_src:
-            'https://cdnimg.vivaia.com/VA/image/Banner/20240411_6751/pc-2.jpg',
+            'https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/pc-he-1.jpg',
           left_src_m:
-            'https://cdnimg.vivaia.com/VA/image/Banner/20240411_6751/m-2.jpg',
+            'https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/m-hs-1.jpg',
           right_src:
-            'https://cdnimg.vivaia.com/VA/image/Banner/20240411_6751/pc-2-1.jpg',
+            'https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/pc-hs-3.jpg',
           right_src_m:
-            'https://cdnimg.vivaia.com/VA/image/Banner/20240411_6751/m-2-1.jpg',
+            'https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/m-hs-3.jpg',
           main_src:
-            'https://cdnimg.vivaia.com/VA/image/Banner/20240411_6751/pc-2-11.jpg',
-          title: 'Pointed-Toe Slingback Sandals',
+            'https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/pc-hs-2.jpg',
+          title: 'AdaptAll™ Soft Footbed Sandal (Isadora)',
           link: 'https://www.vivaia.com/item/pointed-toe-slingback-sandals-addison-p_10021184.html?gid=10021192',
 
-          type: 'Flats'
+          type: 'Flats',
         },
-        {
-          left_src:
-            'https://cdnimg.vivaia.com/VA/image/Banner/20240411_6751/pc-3.jpg',
-          left_src_m:
-            'https://cdnimg.vivaia.com/VA/image/Banner/20240411_6751/m-3-1.jpg',
-          right_src:
-            'https://cdnimg.vivaia.com/VA/image/Banner/20240411_6751/pc-3-1.jpg',
-          right_src_m:
-            'https://cdnimg.vivaia.com/VA/image/Banner/20240411_6751/m-3.jpg',
-          main_src:
-            'https://cdnimg.vivaia.com/VA/image/Banner/20240411_6751/pc-3-11.jpg',
-          title: 'Almond-Toe Slingback Wedge Heeled Sandal',
-          link: 'https://www.vivaia.com/item/almond-toe-slingback-wedge-sandals-tamia-slingback-p_10021400.html?gid=10021400',
-
-          type: 'Flats'
-        },
-        // {
-        //   left_src:
-        //     'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc10.jpg',
-        //   left_src_m:
-        //     'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m11.jpg',
-        //   right_src:
-        //     'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc3.jpg',
-        //   right_src_m:
-        //     'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m12.jpg',
-        //   main_src:
-        //     'https://cdnimg.vivaia.com/vivaia/products/1683707387-23558e6b-3aa1-487f-8f37-e23e94836e5b.jpg?imresize=800x800',
-        //   title: 'Pointed-Toe Ballet Flats',
-        //   link: 'https://www.vivaia.com/item/pointed-toe-ballet-flats-p_10012694.html?gid=10012702',
-
-        //   type: 'Flats'
-        // },
-        // {
-        //   left_src:
-        //     'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc4.jpg',
-        //   left_src_m:
-        //     'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m4.jpg',
-        //   right_src:
-        //     'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc3.jpg',
-        //   right_src_m:
-        //     'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m12.jpg',
-        //   main_src:
-        //     'https://cdnimg.vivaia.com/vivaia/products/1684736989-5d54aff0-add6-4ec2-9bb5-d21184b5af62.jpg?imresize=800x800',
-        //   link: 'https://www.vivaia.com/item/round-toe-chunky-heels-p_10011923.html?gid=10011931',
-        //   title: 'Round-Toe Chunky Heels',
-
-        //   type: 'Heels'
-        // },
-        // {
-        //   left_src:
-        //     'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc6.jpg',
-        //   left_src_m:
-        //     'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m6.jpg',
-        //   right_src:
-        //     'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc3.jpg',
-        //   right_src_m:
-        //     'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m12.jpg',
-        //   main_src:
-        //     'https://cdnimg.vivaia.com/vivaia/products/1690962107-791c53fe-3444-4224-8a26-10b23de68980.jpg?imresize=800x800',
-        //   link: 'https://cdnimg.vivaia.com/vivaia/products/1690962107-791c53fe-3444-4224-8a26-10b23de68980.jpg?imresize=800x800',
-        //   title: 'Pointed-Toe Kitten Heels',
-
-        //   type: 'Heels'
-        // },
-        // {
-        //   left_src:
-        //     'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc1.jpg',
-        //   left_src_m:
-        //     'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m2.jpg',
-        //   right_src:
-        //     'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/pc3.jpg',
-        //   right_src_m:
-        //     'https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/m12.jpg',
-        //   main_src:
-        //     'https://cdnimg.vivaia.com/vivaia/products/1697611348-c3131a94-e141-4903-a997-0bdfde133b1d.jpg?imresize=800x800',
-        //   title: 'Pointed-Toe Boots',
-        //   link: 'https://www.vivaia.com/item/pointed-toe-boots-sophia-p_10018873.html?gid=10018881',
-        //   desc: 'Doubled Arch Support / Pressure-Relief Insole / Stretchy Upper',
-        //   type: 'Boots'
-        // },
-        // {
-        //   left_src:
-        //     'https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6612/Rectangle%202343-PC.jpg',
-        //   left_src_m:
-        //     'https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6612/image%20444fhtr-2.jpg',
-        //   right_src:
-        //     'https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6612/Rectangle%202344-PC.jpg',
-        //   right_src_m:
-        //     'https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6612/image%20513.jpg',
-        //   main_src:
-        //     'https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6612/Rectangle%2023223-PC.jpg',
-        //     link:"https://www.vivaia.com/item/almond-toe-bow-flats-tiana-p_10019907.html?gid=10019907",
-        //   title: 'Almond-Toe Bow Flats (Tiana)',
-        //   desc: 'Doubled Arch Support / Pressure-Relief Insole / Stretchy Upper',
-        //   type: 'zebra-stripe'
-        // }
-      ]
-    }
+      
+      ],
+    };
   },
-  mounted () {
-    const self = this
+  mounted() {
     this.swiperIntance = new Swiper('.swiper_one_swiper', {
-      //  loop: true,
-      //  initialSlide: 0,
       slidesPerView: 'auto',
       normalizeSlideIndex: false,
-      // effect: 'fade',
+
       breakpoints: {
         375: {
           spaceBetween: 10,
-          slidesPerView: 1
+          slidesPerView: 1,
         },
         768: {
           spaceBetween: 10,
-          slidesPerView: 1
+          slidesPerView: 1,
         },
         1024: {
           //当屏幕宽度大于等于768
-          spaceBetween: 20
+          spaceBetween: 20,
           // slidesPerView:1.4
         },
         1730: {
-          spaceBetween: 20
+          spaceBetween: 20,
           // slidesPerView:1.4
-        }
+        },
       },
       pagination: {
         el: '.swiper_one .swiper-pagination',
-        type: 'bullets'
+        type: 'bullets',
       },
       navigation: {
         nextEl: '.swiper_one .swiper-button-next',
-        prevEl: '.swiper_one .swiper-button-prev'
+        prevEl: '.swiper_one .swiper-button-prev',
       },
-
-      on: {
-        /*  slideChange: function() {
-          
-           const index = this.activeIndex
-           console.log(index)
-           
-           self.activeIndex = index
-           self.curIndex = index
-           self.sortIndex = 0
-           self.sort_name ='All'
-           // self.curName = self.tabs[index].name
-           // self.$emit('sort_one', 'All')
-           // self.$emit('sort', self.curName)
- } */
-
-        slideChangeTransitionEnd: function () {
-
-          if (this.activeIndex === 0) {
-            self.curIndex = 0
-          } else if (this.activeIndex === 1) {
-            self.curIndex = 1
-          } else if (this.activeIndex === 2) {
-            self.curIndex = 2
-          } 
-          self.curName = self.tabs[self.curIndex].name
-          self.$emit('sort', self.curName)
-        }
-      }
-    })
-
-
+    });
   },
-
-  methods: {
-
-    handleSort (i, item) {
-   
-      const itemMapping = {
-        'Droplet-Shaped Heel': { index: 0, slideTo: 0 },
-        'Stiletto Heel': { index: 1, slideTo: 1 },
-        'Wedge Heel': { index: 2, slideTo: 2 },
-       
-      };
-
-      if (item in itemMapping) {
-        const { index, slideTo } = itemMapping[item];
-        this.curIndex = index;
-        this.swiperIntance.slideTo(slideTo);
-      }
-
-      this.curName = item;
-      this.$emit('sort', this.curName);
-
-
-    },
-
-  }
-}
+};
 </script>
 
-<style>
-.swiper-button-prev::after {
+<style >
+.Sandals_new .swiper-button-prev::after {
   display: none;
 }
 
-.swiper-button-next::after {
+.Sandals_new .swiper-button-next::after {
   display: none;
 }
 
-.swiper-pagination-bullet {}
 
-.swiper-pagination-bullet-active {
+
+.Sandals_new .swiper-pagination-bullet-active {
   background: #ffff;
 }
 
 @media screen and (max-width: 1023px) {
-  .swiper-pagination-bullet {
+ .Sandals_new .swiper-pagination-bullet {
     border-radius: 50% !important;
     width: 4px;
     height: 4px;
@@ -329,12 +188,12 @@ export default {
     background: #fff !important;
   }
 
-  .swiper-container-horizontal>.swiper-pagination-bullets {
+ .Sandals_new .swiper-container-horizontal > .swiper-pagination-bullets {
     bottom: 4.333vw !important;
     /* top: auto; */
   }
 
-  .swiper-pagination-bullet-active {
+ .Sandals_newSandals_new .swiper-pagination-bullet-active {
     background: #ffff;
   }
 }
@@ -355,7 +214,6 @@ export default {
     box-sizing: border-box;
 
     .swiper-wrapper {
-
       .swiper-slide {
         display: flex;
         align-items: center;
@@ -393,7 +251,7 @@ export default {
               margin-top: 1.25vw;
               margin-bottom: 0.625vw;
               white-space: nowrap;
-              color:#ffffff;
+              color: #ffffff;
             }
 
             .desc {
@@ -493,7 +351,6 @@ export default {
     }
 
     .sort {
-
       font-family: Roboto;
       font-size: 16px;
       font-weight: 500;
@@ -528,7 +385,6 @@ export default {
         .sort_inner {
           display: flex;
           align-items: center;
-
         }
 
         .sort_item {
@@ -546,7 +402,6 @@ export default {
             margin-bottom: 0;
           }
         }
-
       }
     }
   }
@@ -575,7 +430,7 @@ export default {
                 line-height: 20px;
                 letter-spacing: 0px;
                 text-align: center;
-                color:#ffffff;
+                color: #ffffff;
               }
 
               .desc {
@@ -645,8 +500,8 @@ export default {
 
           ._right {
             width: 100%;
-        align-items: start;
-       
+            align-items: start;
+
             .inner {
               position: absolute;
               display: flex;
@@ -670,7 +525,7 @@ export default {
                 text-align: center;
                 margin-top: 4vw;
                 margin-bottom: 2.667vw;
-                color:#ffffff;
+                color: #ffffff;
               }
 
               .desc {
@@ -692,15 +547,13 @@ export default {
                 padding: 0;
                 background: transparent;
                 color: #ffffff;
-   .line {
+                .line {
                   width: 100%;
                   height: 2px;
                   background: #ffffff;
-                  transition: all .3s;
+                  transition: all 0.3s;
                   display: block;
                 }
-
-              
               }
             }
           }
@@ -799,9 +652,7 @@ export default {
               width: 3.2vw;
               height: 3.2vw;
             }
-
           }
-
         }
       }
     }
