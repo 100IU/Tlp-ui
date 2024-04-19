@@ -18,7 +18,7 @@
         :ref="swiper_name"
       >
         <div class="swiper-wrapper new_wrapper">
-          <div class="swiper-slide" v-for="(item, i) in goods_data" :key="i">
+          <div class="swiper-slide" v-for="(item) in goods_data" :key="item.goods_sn">
             <a
               :href="`https://www.vivaia.com${item.goods_url}`"
               style="
@@ -174,23 +174,16 @@ export default {
   }
 }
 
-// @media screen and (min-width: 769px) and (max-width: 1023px) {
-//   .shop_btn {
-//     font-size: 12px;
-//     line-height: 1.12;
-//   }
-// }
 
 @media screen and (min-width: 1024px) {
   .new_wrapper {
     display: flex;
     column-gap: 1.042vw;
     flex-wrap: wrap;
-    // justify-content: space-between;
+    
   }
 
   .new_wrapper .swiper-slide {
-    // display: grid;
     width: 23.8%;
   }
 }
@@ -216,13 +209,13 @@ export default {
     }
   }
 
-  .fengniao_swiper_one {
+  .Sandals_new .fengniao_swiper_one {
     width: 100% !important;
 
     box-sizing: border-box;
   }
 
-  .fengniao_margot-swiper {
+  .Sandals_new  .fengniao_margot-swiper {
     margin-top: 5.333vw;
     width: 100%;
     box-sizing: border-box;
@@ -267,17 +260,17 @@ export default {
     color: #ffffff;
   }
 
-  .shop_btn {
+  .Sandals_new .shop_btn {
     display: none;
   }
 
-  .fengniao_swiper_one .swiper-pagination {
+  .Sandals_new .fengniao_swiper_one .swiper-pagination {
     top: auto;
     bottom: 0;
     height: 2px;
   }
 
-  .new_title_one {
+  .Sandals_new .new_title_one {
     font-family: Roboto;
     font-size: 3.2vw;
     font-weight: 400;
@@ -286,11 +279,11 @@ export default {
     text-align: left;
   }
 
-  .new_title_one:nth-child(2) {
+  .Sandals_new .new_title_one:nth-child(2) {
     margin-top: 1.067vw;
   }
 
-  .fengniao-margot .slide_info {
+  .Sandals_new .fengniao-margot .slide_info {
     margin: 2.667vw 0 5.333vw;
   }
 }

@@ -1,25 +1,33 @@
 <template>
   <div class="Sandals_new">
     <div class="top_banner">
-      <div class="inner common_title show_big" style="margin-bottom: 0">
-        Our Best Supportive & Flexible Footbed Sandals for Walking
+      <div
+        class="inner common_title show_big"
+        style="margin-bottom: 0; text-align: center"
+      >
+        Our Best Supportive & Flexible <br />
+        Footbed Sandals for Walking
       </div>
       <div class="inner common_title show_small">
-        Our Best Supportive & Flexible Footbed Sandals for Walking
+        Our Best Supportive & Flexible <br />
+        Footbed Sandals for Walking
       </div>
-      <picture>
-        <source
-          srcset="
-            https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/m-banner.jpg
-          "
-          media="(max-width:768px)"
-        />
-        <img
-          class="common-img"
-          src="https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/pc-banner.jpg"
-          alt=""
-        />
-      </picture>
+      <a
+        href="https://www.vivaia.com/item/adaptall-soft-footbed-sandal-isadora-p_10022554.html?gid=10022554"
+      >
+        <picture>
+          <source
+            srcset="
+              https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/m-banner.jpg
+            "
+            media="(max-width:768px)"
+          />
+          <img
+            class="common-img"
+            src="https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/pc-banner.jpg"
+            alt=""
+          /> </picture
+      ></a>
     </div>
     <div class="fengniao_title">
       <div class="biaodian">“</div>
@@ -54,7 +62,8 @@
       <div class="outer_scroll">
         <div class="list">
           <div class="item">
-            <picture>
+            <a href="https://www.vivaia.com/item/adaptall-sling-footbed-sandal-isla-p_10022442.html?gid=10022442">
+               <picture>
               <source
                 srcset="
                   https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/pc-m-cp-1.jpg
@@ -67,6 +76,8 @@
                 alt=""
               />
             </picture>
+            </a>
+           
             <div class="inner">
               <div class="title">
                 <span>Arch Support for Pressure Relief and Stability</span>
@@ -74,7 +85,7 @@
             </div>
           </div>
           <div class="item">
-            <picture>
+            <a href="https://www.vivaia.com/item/adaptall-sling-footbed-sandal-isla-p_10022442.html?gid=10022442"> <picture>
               <source
                 srcset="
                   https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/pc-m-cp-2.jpg
@@ -86,7 +97,8 @@
                 src="https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/pc-m-cp-2.jpg"
                 alt=""
               />
-            </picture>
+            </picture></a>
+           
             <div class="inner">
               <div class="title">
                 <span>Dual-Layer PU Sole Comfort with Deep Heel Cup</span>
@@ -96,7 +108,7 @@
 
           <div class="item">
             <a
-              href="https://www.vivaia.com/promotion/Animal-Collection-24SS-6248.html"
+              href="https://www.vivaia.com/item/adaptall-sling-footbed-sandal-isla-p_10022442.html?gid=10022442"
               ><picture
                 ><source
                   srcset="
@@ -115,7 +127,7 @@
             </div>
           </div>
           <div class="item">
-            <picture>
+            <a href="https://www.vivaia.com/item/adaptall-sling-footbed-sandal-isla-p_10022442.html?gid=10022442"> <picture>
               <source
                 srcset="
                   https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/pc-m-cp-4.gif
@@ -127,7 +139,8 @@
                 src="https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/pc-m-cp-4.gif"
                 alt=""
               />
-            </picture>
+            </picture></a>
+           
 
             <div class="inner">
               <div class="title">
@@ -138,18 +151,25 @@
         </div>
       </div>
     </div>
-    <FAQ v-for="item in Faq_list" :key="item.title" :item="item">
-      <div>
+    <div class="fengniao_addition space-w">
+      <div class="addition_title">FAQs</div>
+      <div class="addition_desc">
         Below are some frequently asked questions and answers. Still have
-        questions? Email support@vivaia.com, and we’ll reply as soon as
-        possible.
+        questions? Email
+        <a
+          href="mailto:support@vivaia.com"
+          target="_blank"
+          style="text-decoration: underline; color: #191817"
+          >support@vivaia.com</a
+        >, and we’ll reply as soon as possible.
       </div>
-    </FAQ>
+      <FAQ v-for="item in faq_list" :key="item.title" :item="item"></FAQ>
+    </div>
   </div>
 </template>
 
 <script>
-let str = ` 10021316,10021248,10021280,10021298,10021232,10021216,10021268`;
+let str = `10022554,10022506,10022442,10022490,10022586,10022570,10022458,10022474`;
 
 import swiper_one from './swiper_one.vue';
 import goods_item from './goods_item.vue';
@@ -168,7 +188,8 @@ export default {
     return {
       isPc: true,
       threshold: 1024,
-      Faq_list: [
+      swiper_name: 'sandals',
+      faq_list: [
         {
           title: '1. Do the Footbed Sandals come in narrow / wide versions?',
           desc: ` <div>
@@ -189,6 +210,7 @@ export default {
           desc: ` <div>Every style’s page includes a sizing guide when selecting your shoes size. Just follow the instructions to find your perfect fit. If you have any questions, please feel free to contact customer service.</div>`,
         },
       ],
+      goods_data: [],
     };
   },
   mounted() {
@@ -218,6 +240,7 @@ export default {
 
 <style lang="less">
 .Sandals_new {
+  overflow-x: hidden;
   background: #fff;
   padding-bottom: 4.167vw;
   .no_bottom {
@@ -264,7 +287,7 @@ export default {
 
     .inner {
       position: absolute;
-      left: 4.167vw;
+
       color: #191817;
     }
   }
@@ -464,6 +487,17 @@ export default {
       font-size: 22px;
       line-height: 1.14;
     }
+    .coming_soon {
+      .list {
+        .item {
+          .inner {
+            .title {
+              font-size: 16px;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
@@ -510,13 +544,13 @@ export default {
         color: #191817;
         left: auto;
         top: auto;
-        bottom: 10.667vw;
+        top: 10.667vw;
       }
     }
 
     .fengniao_title {
       padding: 10.667vw 0 5.333vw;
-      width: 89.333vw;
+      width: 89.867vw;
       margin: 0 auto;
       color: #191817;
       font-family: Noto Serif;

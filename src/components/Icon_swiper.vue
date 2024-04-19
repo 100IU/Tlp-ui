@@ -67,66 +67,9 @@ export default {
 </script>
 
 <style scoped lang="less">
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
-}
-
-.fengniao_icon {
-  margin-bottom: 4.167vw;
-
-  .marquee-container {
-    width: 100%;
-    overflow: hidden;
-  }
-
-  .marquee-container {
-    .marquee {
-      background: #f8f7f5;
-      width: 4000px;
-      display: flex;
-      align-items: center;
-      position: relative;
-
-      .item {
-        padding: 8px 0;
-        margin-right: 80px;
-        text-align: center;
-
-        .title {
-          font-family: Roboto;
-          font-size: 20px;
-          font-weight: 400;
-          line-height: 23px;
-          letter-spacing: 0px;
-          text-align: center;
-          text-transform: uppercase;
-          white-space: nowrap;
-          color: rgba(128, 76, 26, 1);
-        }
-      }
-    }
-  }
-
+.Sandals_new {
   .fengniao_icon {
-    .show_big {
-      display: none;
-    }
-
-    .show_small {
-      display: block;
-    }
-  }
-
-  .fengniao_scroll-swiper {
-    .swiper-slide {
-      display: flex;
-      justify-content: center;
-    }
-  }
-}
-
-@media screen and (max-width: 1023px) {
-  .fengniao_icon {
-    margin-bottom: 10.667vw;
+    margin-bottom: 4.167vw;
 
     .marquee-container {
       width: 100%;
@@ -135,26 +78,39 @@ export default {
 
     .marquee-container {
       .marquee {
-        background: #f6f6f6;
-        width: 2100px;
+        background: #f8f7f5;
+        width: 4000px;
         display: flex;
         align-items: center;
         position: relative;
 
         .item {
-          padding: 2.667vw 0;
-          margin-right: 10.133vw;
+          padding: 8px 0;
+          margin-right: 80px;
           text-align: center;
 
           .title {
             font-family: Roboto;
-            font-size: 4.267vw;
+            font-size: 20px;
             font-weight: 400;
-            line-height: 5.067vw;
+            line-height: 23px;
             letter-spacing: 0px;
-            text-align: left;
+            text-align: center;
+            text-transform: uppercase;
+            white-space: nowrap;
+            color: rgba(128, 76, 26, 1);
           }
         }
+      }
+    }
+
+    .fengniao_icon {
+      .show_big {
+        display: none;
+      }
+
+      .show_small {
+        display: block;
       }
     }
 
@@ -162,6 +118,51 @@ export default {
       .swiper-slide {
         display: flex;
         justify-content: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1023px) {
+  .Sandals_new {
+    .fengniao_icon {
+      margin-bottom: 10.667vw;
+
+      .marquee-container {
+        width: 100%;
+        overflow: hidden;
+      }
+
+      .marquee-container {
+        .marquee {
+          background: #f6f6f6;
+          width: 2100px;
+          display: flex;
+          align-items: center;
+          position: relative;
+
+          .item {
+            padding: 2.667vw 0;
+            margin-right: 10.133vw;
+            text-align: center;
+
+            .title {
+              font-family: Roboto;
+              font-size: 4.267vw;
+              font-weight: 400;
+              line-height: 5.067vw;
+              letter-spacing: 0px;
+              text-align: left;
+            }
+          }
+        }
+      }
+
+      .fengniao_scroll-swiper {
+        .swiper-slide {
+          display: flex;
+          justify-content: center;
+        }
       }
     }
   }

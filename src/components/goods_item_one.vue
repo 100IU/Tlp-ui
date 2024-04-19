@@ -10,7 +10,7 @@
         :ref="swiper_name"
       >
         <div class="swiper-wrapper new_wrapper">
-          <div class="swiper-slide" v-for="(item, i) in goods_data" :key="i">
+          <div class="swiper-slide" v-for="(item) in goods_data" :key="item.goods_sn">
             <a
               :href="`https://www.vivaia.com${item.goods_url}`"
               style="
@@ -22,8 +22,11 @@
               class="a_link"
             >
               <img v-lazy="item.goods_thumb" />
-              <!-- <img src="https://cdnimg.vivaia.com/VA/image/Banner/20230919_6294/2862c4e09c5a8f67149e53a0d81d62fd.jpg"
-                alt="" style="height: auto;"> -->
+              <!-- <img
+                src="https://cdnimg.vivaia.com/VA/image/Banner/20230919_6294/2862c4e09c5a8f67149e53a0d81d62fd.jpg"
+                alt=""
+                style="height: auto"
+              /> -->
               <div class="shop_btn" style="position: absolute">Shop Now</div>
             </a>
 
@@ -84,7 +87,7 @@ export default {
     };
   },
   mounted() {
-    this.initSwiper();
+    // this.initSwiper();
   },
 
   methods: {
@@ -127,63 +130,65 @@ export default {
 };
 </script>
 <style lang="less" scoped>
-.fengniao-margot {
-  margin-bottom: 1.875vw;
-  padding: 0 15.625vw;
+.Sandals_new {
+  .fengniao-margot {
+    margin-bottom: 1.875vw;
+    padding: 0 15.625vw;
 
-  .tab_name {
-    font-family: Roboto;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 19px;
-    letter-spacing: 0px;
-    text-align: left;
-    margin-bottom: 1.042vw;
-    display: flex;
-    align-items: center;
-  }
+    .tab_name {
+      font-family: Roboto;
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 19px;
+      letter-spacing: 0px;
+      text-align: left;
+      margin-bottom: 1.042vw;
+      display: flex;
+      align-items: center;
+    }
 
-  .slide_info {
-    margin-top: 0.625vw;
-    margin-bottom: 2.292vw;
-  }
+    .slide_info {
+      margin-top: 0.625vw;
+      margin-bottom: 2.292vw;
+    }
 
-  .new_title_one {
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 16px;
-    letter-spacing: 0px;
-    text-align: left;
-  }
+    .new_title_one {
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0px;
+      text-align: left;
+    }
 
-  .new_title_one:nth-child(2) {
-    margin-top: 0.625vw;
-  }
+    .new_title_one:nth-child(2) {
+      margin-top: 0.625vw;
+    }
 
-  .a_link:hover .shop_btn {
-    opacity: 1;
-  }
+    .a_link:hover .shop_btn {
+      opacity: 1;
+    }
 
-  .shop_btn:hover {
-    color: #fff;
-    background: #191817;
-  }
+    .shop_btn:hover {
+      color: #fff;
+      background: #191817;
+    }
 
-  .shop_btn {
-    bottom: 10px;
-    width: 91.6%;
-    opacity: 0;
-    margin: 0 auto;
-    background: #fff;
-    color: #191817;
-    padding: 12px 0;
-    font-family: Roboto;
-    font-size: 0.833vw;
-    font-weight: 500;
-    line-height: 1.25vw;
-    letter-spacing: 0;
-    text-align: center;
+    .shop_btn {
+      bottom: 10px;
+      width: 91.6%;
+      opacity: 0;
+      margin: 0 auto;
+      background: #fff;
+      color: #191817;
+      padding: 12px 0;
+      font-family: Roboto;
+      font-size: 0.833vw;
+      font-weight: 500;
+      line-height: 1.25vw;
+      letter-spacing: 0;
+      text-align: center;
+    }
   }
 }
 
@@ -208,29 +213,25 @@ export default {
 }
 
 @media screen and (max-width: 1023px) {
-  .fengniao_margot-swiper .swiper-wrapper {
+  .Sandals_new .fengniao_margot-swiper .swiper-wrapper {
     flex-wrap: wrap;
     justify-content: space-between;
   }
-  .fengniao_margot-swiper .swiper-slide {
+  .Sandals_new .fengniao_margot-swiper .swiper-slide {
     width: 43.733vw;
   }
-  .fengniao-margot {
+  .Sandals_new .fengniao-margot {
     padding: 0 5.333vw;
   }
 
-  // .tab_name {
-  //   padding-left: 5.333vw;
-  // }
-
-  .fengniao_swiper_one {
+  .Sandals_new .fengniao_swiper_one {
     width: 100% !important;
     margin-bottom: 6.4vw;
     // padding: 0 5.333vw;
     box-sizing: border-box;
   }
 
-  .fengniao_margot-swiper {
+  .Sandals_new .fengniao_margot-swiper {
     margin-top: 4.267vw;
     width: 100%;
     box-sizing: border-box;
@@ -275,17 +276,17 @@ export default {
     color: #ffffff;
   }
 
-  .shop_btn {
+  .Sandals_new .shop_btn {
     display: none;
   }
 
-  .fengniao_swiper_one .swiper-pagination {
+  .Sandals_new .fengniao_swiper_one .swiper-pagination {
     top: auto;
     bottom: 0;
     height: 2px;
   }
 
-  .fengniao-margot .new_title_one {
+  .Sandals_new .fengniao-margot .new_title_one {
     font-family: Roboto;
     font-size: 3.2vw;
     font-weight: 400;
@@ -294,11 +295,11 @@ export default {
     text-align: left;
   }
 
-  .fengniao-margot .new_title_one:nth-child(2) {
+  .Sandals_new .fengniao-margot .new_title_one:nth-child(2) {
     margin-top: 1.067vw;
   }
 
-  .fengniao-margot .slide_info {
+  .Sandals_new .fengniao-margot .slide_info {
     margin: 2.133vw 0 4.267vw;
   }
 }

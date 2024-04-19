@@ -67,137 +67,128 @@ export default {
   },
 };
 </script>
-<style scoped>
-.fengniao_addition svg {
-  width: auto !important;
-  height: auto !important;
+<style lang="less">
+.Sandals_new {
+  .fengniao_addition {
+    padding: 0 0 3.125vw;
+    svg {
+      width: auto !important;
+      height: auto !important;
+    }
+    .addition_title {
+      font-family: Noto Serif;
+      font-size: 32px;
+      font-weight: 400;
+      line-height: 43.58px;
+      text-align: left;
+    }
+    .addition_desc {
+      font-family: Roboto;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 21.09px;
+      text-align: left;
+      margin: 10px 0 0;
+    }
+    .addition_item {
+      padding: 1.5625vw 0;
+      border-bottom: 1px solid #e1e1e1;
+      cursor: pointer;
+      .item_container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .item_title {
+          font-family: Roboto;
+          font-size: 18px;
+          margin-left: 5px;
+        }
+      }
+      .item_info {
+        margin-top: 1.5625vw;
+        transition: 0.4s;
+        color: rgba(25, 24, 23, 0.7);
+        display: flex;
+        align-items: start;
+        .item_desc {
+          margin-left: 5px;
+          font-family: Roboto;
+          font-size: 16px;
+          max-width: 52.0833333vw;
+        }
+      }
+    }
+  }
 }
 
-.space-w {
-  padding: 0 15.625vw;
-  margin: 0 auto;
-}
-
-.lp_title_one {
-  font-family: Noto Serif;
-  font-size: 1.667vw;
-  font-weight: 400;
-  line-height: 2.292vw;
-  padding-bottom: 1.823vw;
-}
-
-.fengniao_addition {
-  padding: 0 0 3.125vw;
-}
-
-.fengniao_addition .addition_title {
-  border-bottom: 1px solid #e1e1e1;
-}
-
-.fengniao_addition .addition_item {
-  padding: 1.5625vw 0;
-  border-bottom: 1px solid #e1e1e1;
-  cursor: pointer;
-}
-
-.fengniao_addition .addition_item .item_container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.fengniao_addition .addition_item .item_container .item_title {
-  font-family: Roboto;
-  font-size: 18px;
-  margin-left: 5px;
-}
-
-.fengniao_addition .addition_item .item_info {
-  margin-top: 1.5625vw;
-  transition: 0.4s;
-  color: rgba(25, 24, 23, 0.7);
-  display: flex;
-  align-items: start;
-}
-
-.fengniao_addition .addition_item .item_info .item_desc {
-  margin-left: 5px;
-  font-family: Roboto;
-  font-size: 14px;
-  max-width: 52.0833333vw;
-}
 @media screen and (min-width: 769px) and (max-width: 1440px) {
-  .lp_title_one {
-    font-size: 24px;
-    line-height: 1.12;
-    padding-bottom: 20px;
-  }
-  .fengniao_addition .addition_item .item_container .item_title {
-    font-size: 16px;
-  }
-  .fengniao_addition .addition_item .item_info .item_desc {
-    font-size: 14px;
+  .Sandals_new {
+    .fengniao_addition {
+      .addition_item {
+        .item_container {
+          .item_title {
+            font-size: 16px;
+          }
+        }
+        .item_info {
+          .item_desc {
+            font-size: 14px;
+          }
+        }
+      }
+    }
   }
 }
 
 @media screen and (max-width: 1023px) {
-  .space-w {
-    /* width: 89.3333333vw; */
-    padding: 0 5.333vw;
+  .Sandals_new {
+    .fengniao_addition {
+      padding: 0 0 10.667vw;
+      .addition_title {
+        font-family: Noto Serif;
+        font-size: 4.8vw;
+        font-weight: 400;
+        line-height: 6.6666667vw;
+      }
+      .addition_desc {
+        font-family: Roboto;
+        font-size: 3.733vw;
+        font-weight: 400;
+        line-height: 4.533vw;
+        text-align: left;
+        margin: 2.667vw 0 0;
+      }
+      .addition_item {
+        padding: 5.3333333vw 0;
+        .item_container {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          .item_title {
+            font-family: Noto Serif;
+            font-size: 3.733vw;
+            font-weight: 400;
+            line-height: 5.067vw;
+            letter-spacing: 0px;
+            text-align: left;
+            max-width: 73.333vw;
+          }
+        }
+        .item_info {
+          margin-top: 5.3333333vw;
+          .item_desc {
+            width: 73.3333333vw;
+            margin-left: 2.6666667vw;
+            max-width: 100%;
+            font-size: 3.733vw;
+            font-weight: 400;
+            line-height: 4.533vw;
+            text-align: left;
+          }
+        }
+      }
+    }
   }
 
-  .lp_title_one {
-    font-size: 4.8vw;
-    font-weight: 400;
-    line-height: 6.667vw;
-    padding-bottom: 5.333vw;
-  }
-
-  .fengniao_addition {
-    padding: 0 0 10.667vw;
-  }
-
-  .fengniao_addition .addition_title {
-    font-family: Noto Serif;
-    font-size: 4.8vw;
-    font-weight: 400;
-    line-height: 6.6666667vw;
-  }
-
-  .fengniao_addition .addition_item {
-    padding: 5.3333333vw 0;
-  }
-
-  .fengniao_addition .addition_item .item_container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .fengniao_addition .addition_item .item_container .item_title {
-    font-family: Noto Serif;
-    font-size: 3.733vw;
-    font-weight: 400;
-    line-height: 5.067vw;
-    letter-spacing: 0px;
-    text-align: left;
-    max-width: 73.333vw;
-  }
-
-  .fengniao_addition .addition_item .item_info {
-    margin-top: 5.3333333vw;
-  }
-
-  .fengniao_addition .addition_item .item_info .item_desc {
-    width: 73.3333333vw;
-    margin-left: 2.6666667vw;
-    max-width: 100%;
-
-    font-size: 3.733vw;
-    font-weight: 400;
-    line-height: 4.533vw;
-
-    text-align: left;
-  }
 }
 </style>
