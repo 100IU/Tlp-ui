@@ -81,7 +81,7 @@ export default {
   .head {
     width: 100%;
     padding: 0 160px;
-    position: sticky;
+    position: fixed;
     height: 100px;
     margin: 0 auto;
     top: 0;
@@ -104,7 +104,7 @@ export default {
       left: 0;
       width: 250px;
       margin-left: 200px;
-
+      overflow: scroll;
       height: 100%;
       border-right: 2px solid rgba(144, 147, 153, .3);
 
@@ -146,7 +146,7 @@ export default {
       // bottom: 100px;
       right: 0;
       width: 70%;
-      height: 100vh;
+      // height: 100vh;
 
     }
   }
