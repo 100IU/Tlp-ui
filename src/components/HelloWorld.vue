@@ -150,6 +150,162 @@
         </div>
       </div>
     </div>
+    <div class="coming-launched space-w">
+			<div class="coming_title common_title">Launched</div>
+			<div class="list">
+				<div class="item">
+					<a
+						href="https://www.vivaia.com/promotion/Cargo-Collection-24SS.html"
+					>
+						<picture>
+							<source
+								srcset="
+									https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6612/new%20arrival-m_8f5.jpg
+								"
+								media="(max-width:1023px)"
+							/>
+							<img
+								class="common-img"
+								src="https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6612/Rectangle%202098PC_yqb.jpg"
+								alt=""
+							/>
+						</picture>
+					</a>
+					<div class="inner">
+						<div class="title">
+							<span>Cargo Collection</span>
+							<span class="month">2024/02</span>
+						</div>
+						<div class="m-desc-outer">
+							<a
+								class="desc"
+								href="https://www.vivaia.com/promotion/Cargo-Collection-24SS.html"
+							>
+								Discover
+								<div class="desc-line"></div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<a
+						href="https://www.vivaia.com/promotion/Cargo-Collection-24SS.html"
+					>
+						<picture>
+							<source
+								srcset="
+									https://cdnimg.vivaia.com/VA/image/Banner/20240131_6630/new%20arrival-m.jpg
+								"
+								media="(max-width:1023px)"
+							/>
+							<img
+								class="common-img"
+								src="https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6612/Rectangle%201971PC_4d3.jpg"
+								alt=""
+							/>
+						</picture>
+					</a>
+					<div class="inner">
+						<div class="title">
+							<span>Dots Collection</span>
+							<span class="month">2024/02</span>
+						</div>
+						<div class="m-desc-outer">
+							<a
+								class="desc"
+								href="https://www.vivaia.com/promotion/Cargo-Collection-24SS.html"
+							>
+								Discover
+								<div class="desc-line"></div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<a
+						href="https://www.vivaia.com/promotion/Animal-Collection-24SS-6248.html"
+					>
+						<picture>
+							<source
+								srcset="
+									https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6612/new%20arrival-m2.jpg
+								"
+								media="(max-width:1023px)"
+							/>
+							<img
+								class="common-img"
+								src="https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6612/Rectangle%202098PC2.jpg"
+								alt=""
+							/>
+						</picture>
+					</a>
+					<div class="inner">
+						<div class="title">
+							<span>Animal Collection </span>
+							<span class="month">2024/02</span>
+						</div>
+						<div class="m-desc-outer">
+							<a
+								class="desc"
+								href="https://www.vivaia.com/promotion/Animal-Collection-24SS-6248.html"
+							>
+								Discover
+								<div class="desc-line"></div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="item">
+					<a
+						href="https://www.vivaia.com/promotion/VIVAIA-Timeless-Chic-Collection-24SS-6270.html"
+					>
+						<picture>
+							<source
+								srcset="
+									https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/x-m.jpg
+								"
+								media="(max-width:1023px)"
+							/>
+							<img
+								class="common-img"
+								src="https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/x-pc.jpg"
+								alt=""
+							/>
+						</picture>
+					</a>
+					<div class="inner">
+						<div class="title">
+							<span>Timeless Collection </span>
+							<span class="month">2024/03</span>
+						</div>
+						<div class="m-desc-outer">
+							<a
+								class="desc"
+								href="hhttps://www.vivaia.com/promotion/VIVAIA-Timeless-Chic-Collection-24SS-6270.html"
+							>
+								Discover
+								<div class="desc-line"></div>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="item no_bottom">
+					<picture>
+						<source
+							srcset="
+								https://cdnimg.vivaia.com/VA/image/Banner/20240131_6630/Group%20337545_q7d.jpg
+							"
+							media="(max-width:768px)"
+						/>
+						<img
+							src="https://cdnimg.vivaia.com/VA/image/Banner/20240131_6630/Group%20337551.jpg"
+							alt=""
+							class="common-img"
+						/>
+					</picture>
+				</div>
+			</div>
+		</div>
     <div class="fengniao_addition space-w">
       <div class="addition_title">FAQs</div>
       <div class="addition_desc">
@@ -396,6 +552,74 @@ export default {
     }
   }
 
+  .coming-launched {
+		.list {
+			display: flex;
+			flex-wrap: wrap;
+			-moz-column-gap: 1.563vw;
+			column-gap: 1.563vw;
+			justify-content: start;
+
+			.item {
+				width: 31.8%;
+				margin-bottom: 1.667vw;
+				.inner {
+					.title {
+						margin-top: 1.042vw;
+						margin-bottom: 0.417vw;
+						font-family: Roboto;
+						font-size: 16px;
+						font-weight: 500;
+						line-height: 19px;
+						letter-spacing: 0px;
+						text-align: left;
+						display: flex;
+						justify-content: space-between;
+						align-items: center;
+						color: #191817;
+						span {
+							&:nth-child(2) {
+								font-family: Roboto;
+								font-size: 12px;
+								font-weight: 400;
+								line-height: 14px;
+								letter-spacing: 0px;
+								text-align: right;
+							}
+						}
+					}
+
+					.desc {
+						font-family: Roboto;
+						font-size: 14px;
+						font-weight: 500;
+						letter-spacing: 0px;
+						text-align: center;
+						color: rgba(25, 24, 23, 1);
+						text-decoration: none;
+						cursor: pointer;
+						opacity: 0.5;
+						display: inline;
+						transition: all 0.3s;
+						.desc-line {
+							transition: all 0.3s;
+							width: 100%;
+							height: 1px;
+							background: rgba(25, 24, 23, 1);
+						}
+						&:hover {
+							transition: all 0.3s;
+							.desc-line {
+								transition: all 0.3s;
+								width: 0%;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
   .bottom_icon {
     background: #fff;
     // padding: 4.167vw 0;
@@ -497,6 +721,15 @@ export default {
         }
       }
     }
+    .coming-launched {
+		.list {
+			.item {
+				&:nth-child(4) {
+					margin-bottom: 0;
+				}
+			}
+		}
+	}
   }
 }
 
@@ -634,6 +867,60 @@ export default {
         }
       }
     }
+
+    .coming-launched {
+			.list {
+				display: flex;
+				flex-wrap: wrap;
+				.item {
+					width: 100%;
+					margin-bottom: 20px;
+
+					&:last-child {
+						margin-bottom: 0;
+					}
+
+					.inner {
+						display: flex;
+						flex-direction: column;
+						justify-content: flex-start;
+						.title {
+							margin-top: 10px;
+							margin-bottom: 6px;
+							font-family: Roboto;
+							font-size: 14px;
+							font-weight: 500;
+							line-height: 16.4px;
+							letter-spacing: 0px;
+
+							span {
+								&:nth-child(1) {
+									font-size: 14px;
+								}
+								&:nth-child(2) {
+									font-family: Roboto;
+									font-size: 12px;
+									font-weight: 400;
+									line-height: 4.267vw;
+									letter-spacing: 0px;
+									text-align: right;
+								}
+							}
+						}
+
+						.desc {
+							font-family: Roboto;
+							display: inline-block;
+							font-size: 12px;
+							line-height: 12px;
+							font-weight: 500;
+							letter-spacing: 0px;
+							text-align: left;
+						}
+					}
+				}
+			}
+		}
 
     .bottom_icon {
       // padding-top: 10.667vw;
