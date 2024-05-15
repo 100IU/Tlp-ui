@@ -736,7 +736,7 @@ export default {
     }
 
     .img-sec {
-      aspect-ratio: 335/350;
+      aspect-ratio: 335/250;
     }
 
     .space-w {
