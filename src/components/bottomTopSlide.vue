@@ -24,7 +24,7 @@
             <div class="title">Versatile & Softer Birken-Style Slides</div>
           </div>
         </div>
-      <a href="#" class="shop-now">Discover Now</a>
+      <a href="https://www.vivaia.com/category/kara-c_1037.html" class="shop-now">Discover Now</a>
 
       </div>
     </div>
