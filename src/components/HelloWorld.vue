@@ -12,13 +12,11 @@
         Our Best Supportive & Lightweight Flexible Sport Sandals for Ultimate
         Comfort
       </div>
-      <a
-        href="#"
-      >
+      <a href="#">
         <picture>
           <source
             srcset="
-            https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/m.jpg
+              https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/m.jpg
             "
             media="(max-width:768px)"
           />
@@ -44,23 +42,21 @@
     <Icon_swiper></Icon_swiper>
 
     <div class="ima-banner space-w">
-      <a
-            href="https://www.vivaia.com/category/sports-sandals-c_1039.html"
-          >
-            <picture>
-              <source
-                srcset="
-                https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/m-01.jpg
-                "
-                media="(max-width:768px)"
-              />
-              <img
-                class="common-img"
-                src="https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-15.jpg"
-                alt=""
-              />
-            </picture>
-          </a>
+      <a href="https://www.vivaia.com/category/sports-sandals-c_1039.html">
+        <picture>
+          <source
+            srcset="
+              https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/m-01.jpg
+            "
+            media="(max-width:768px)"
+          />
+          <img
+            class="common-img"
+            src="https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-15.jpg"
+            alt=""
+          />
+        </picture>
+      </a>
     </div>
     <swiper_one></swiper_one>
 
@@ -91,7 +87,7 @@
               <picture>
                 <source
                   srcset="
-                  https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-5.jpg
+                    https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-5.jpg
                   "
                   media="(max-width:768px)"
                 />
@@ -115,7 +111,7 @@
               <picture>
                 <source
                   srcset="
-                  https://cdnimg.vivaia.com/VA/image/Banner/20240514_6841/315-420.gif
+                    https://cdnimg.vivaia.com/VA/image/Banner/20240514_6841/315-420.gif
                   "
                   media="(max-width:768px)"
                 />
@@ -133,12 +129,11 @@
             </div>
           </div>
           <div class="item">
-            <a
-              href="https://www.vivaia.com/category/sports-sandals-c_1039.html"
+            <a href="https://www.vivaia.com/category/sports-sandals-c_1039.html"
               ><picture
                 ><source
                   srcset="
-                  https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-6.jpg
+                    https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-6.jpg
                   "
                   media="(max-width:768px)" />
                 <img
@@ -159,7 +154,7 @@
               <picture>
                 <source
                   srcset="
-                  https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-7.jpg
+                    https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-7.jpg
                   "
                   media="(max-width:768px)"
                 />
@@ -190,7 +185,7 @@
             <picture>
               <source
                 srcset="
-                https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-8.jpg
+                  https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-8.jpg
                 "
                 media="(max-width:768px)"
               />
@@ -218,11 +213,13 @@
           </div>
         </div>
         <div class="item">
-          <a href="https://www.vivaia.com/promotion/Manuella-The-Best-Walking-Slide-Sandal.html">
+          <a
+            href="https://www.vivaia.com/promotion/Manuella-The-Best-Walking-Slide-Sandal.html"
+          >
             <picture>
               <source
                 srcset="
-                https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-9.jpg
+                  https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-9.jpg
                 "
                 media="(max-width:768px)"
               />
@@ -256,7 +253,7 @@
             <picture>
               <source
                 srcset="
-                https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-10.jpg
+                  https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-10.jpg
                 "
                 media="(max-width:768px)"
               />
@@ -376,7 +373,7 @@ export default {
     display: block;
   }
 
-  .goods_title{
+  .goods_title {
     font-family: Noto Serif;
     font-size: 32px;
     font-weight: 400;
@@ -651,6 +648,11 @@ export default {
 
 @media screen and (min-width: 769px) and (max-width: 1440px) {
   .Sandals_new {
+    .goods_title {
+      font-size: 22px;
+      line-height: 1.14;
+    }
+
     .fengniao_title {
       font-size: 24px;
       line-height: 1.18;
@@ -710,6 +712,16 @@ export default {
       width: 89.333vw;
       // padding: 0 5.333vw;
       margin: 0 auto 10.667vw;
+    }
+
+    .goods_title {
+      font-family: Noto Serif;
+      font-size: 5.333vw;
+      font-weight: 400;
+      line-height: 7.2vw;
+      letter-spacing: 0px;
+      text-align: left;
+      margin-bottom: 5.333vw;
     }
 
     .common_title {
