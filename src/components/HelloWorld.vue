@@ -50,12 +50,14 @@
       :swiper_name="swiper_name"
       v-if="isPc"
     ></goods_item>
+
     <goods_item_one
       v-else
       :goods_data="goods_data"
       ref="child"
       :swiper_name="swiper_name"
     ></goods_item_one>
+
     <div class="coming_soon space-w">
       <div class="coming_title common_title">More Highlights</div>
       <div class="outer_scroll">
@@ -150,6 +152,7 @@
         </div>
       </div>
     </div>
+
     <div class="coming-launched space-w">
 			<div class="coming_title common_title">Launched</div>
 			<div class="list">
@@ -306,20 +309,7 @@
 				</div>
 			</div>
 		</div>
-    <div class="fengniao_addition space-w">
-      <div class="addition_title">FAQs</div>
-      <div class="addition_desc">
-        Below are some frequently asked questions and answers. Still have
-        questions? Email
-        <a
-          href="mailto:support@vivaia.com"
-          target="_blank"
-          style="text-decoration: underline; color: #191817"
-          >support@vivaia.com</a
-        >, and we’ll reply as soon as possible.
-      </div>
-      <FAQ v-for="item in faq_list" :key="item.title" :item="item"></FAQ>
-    </div>
+
   </div>
 </template>
 
@@ -330,41 +320,18 @@ import swiper_one from './swiper_one.vue';
 import goods_item from './goods_item.vue';
 import goods_item_one from './goods_item_one.vue';
 import Icon_swiper from './Icon_swiper.vue';
-import FAQ from './FAQ.vue';
 export default {
   components: {
     swiper_one,
     goods_item,
     goods_item_one,
     Icon_swiper,
-    FAQ,
   },
   data() {
     return {
       isPc: true,
       threshold: 1024,
       swiper_name: 'sandals',
-      faq_list: [
-        {
-          title: '1. Do the Footbed Sandals come in narrow / wide versions?',
-          desc: ` <div>
-            The sandals themselves have a roomy toe box, and the AdaptAll Strap™, in particular, ensures a snug fit that adapts to different foot shapes.</div>`,
-        },
-        {
-          title: '2. Does VIVAIA have free returns & exchanges policy?',
-          desc: ` <div> Yes, we have 30-day no-hassle free returns and exchanges policy for every customer. </div>`,
-        },
-        {
-          title: '3. Is there any discount for a first-time purchase?',
-          desc: ` <div> Yes, VIVAIA welcomes new customers with: <br>
-                  -$10 coupon code when you subscribe to the newsletter.<br>
-                  -$15 coupon code when you subscribe to SMS notifications. </div>`,
-        },
-        {
-          title: '4. How to find the perfect size?',
-          desc: ` <div>Every style’s page includes a sizing guide when selecting your shoes size. Just follow the instructions to find your perfect fit. If you have any questions, please feel free to contact customer service.</div>`,
-        },
-      ],
       goods_data: [],
     };
   },
