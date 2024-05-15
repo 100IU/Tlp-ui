@@ -41,16 +41,16 @@
               <p
                 class="new_title_one"
                 v-if="
-                  item.pc_shop_price_converted !== item.old_shop_price_converted
+                  item.shop_price_converted !== item.old_shop_price_converted
                 "
               >
                 <span style="margin-right: 4px">{{
-                  item.pc_shop_price_converted
+                  item.shop_price_converted
                 }}</span>
                 <span>{{ item.old_shop_price_converted }} </span>
               </p>
               <p v-else class="new_title_one">
-                <span>{{ item.pc_shop_price_converted }}</span>
+                <span>{{ item.shop_price_converted }}</span>
               </p>
             </div>
           </div>
