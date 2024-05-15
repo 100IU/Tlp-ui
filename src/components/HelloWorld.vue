@@ -5,8 +5,7 @@
         class="inner common_title show_big"
         style="margin-bottom: 0; text-align: center"
       >
-        Our Best Supportive & Flexible <br />
-        Footbed Sandals for Walking
+      Our Best Supportive & Lightweight Flexible <br> Sport Sandals for Ultimate Comfort
       </div>
       <div class="inner common_title show_small">
         Our Best Supportive & Flexible <br />

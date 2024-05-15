@@ -1,7 +1,7 @@
 <template>
   <div class="fengniao_sort">
     <div class="swiper_one">
-      <div class="swiper_btn">
+      <div class="swiper_btn show_big">
         <div class="swiper-button swiper-button-prev">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -82,7 +82,7 @@
             </div>
           </a>
         </div>
-        <!-- <div class="swiper-pagination show_small"></div> -->
+        <div class="swiper-pagination show_small"></div>
       </div>
     </div>
   </div>
