@@ -13,7 +13,7 @@
         Our Best Supportive & Lightweight Flexible Sport Sandals for Ultimate
         Comfort
       </div>
-      <a href="#">
+      <a href="#" style="display: inline-block ;width: 100%">
         <picture>
           <source
             srcset="
@@ -26,6 +26,7 @@
             class="common-img img-fir"
             src="https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-1.jpg"
             alt=""
+            style="width: 100%;"
           /> </picture
       ></a>
     </div>
@@ -44,7 +45,7 @@
     <Icon_swiper></Icon_swiper>
 
     <div class="ima-banner space-w">
-      <a href="https://www.vivaia.com/category/sports-sandals-c_1039.html">
+      <a href="https://www.vivaia.com/category/sports-sandals-c_1039.html" style="display: inline-block ;width: 100%">
         <picture>
           <source
             srcset="
@@ -57,6 +58,7 @@
             class="common-img img-sec"
             src="https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/Group%203365682.jpg"
             alt=""
+            style="width: 100%;"
           />
         </picture>
       </a>
