@@ -9,7 +9,7 @@
             :key="index"
             class="show_big"
           >
-            <img :src="item.src" alt="vivaia" />
+            <img loading="lazy" :src="item.src" alt="vivaia" />
           </a>
           <a
             :href="item.link"
@@ -17,14 +17,14 @@
             :key="index"
             class="show_small"
           >
-            <img :src="item.src" alt="vivaia" />
+            <img loading="lazy" :src="item.src" alt="vivaia" />
           </a>
 
           <div class="title-color">
             <div class="title">2x Arch Support Sandals for Long Walks</div>
           </div>
         </div>
-      <a href="https://www.vivaia.com/category/kara-c_1037.html" class="shop-now">Discover Now</a>
+      <a href="https://www.vivaia.com/category/kiara-c_1043.html" class="shop-now">Discover Now</a>
 
       </div>
     </div>

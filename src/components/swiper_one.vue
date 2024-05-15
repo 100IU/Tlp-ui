@@ -59,14 +59,14 @@
             :href="item.link"
           >
             <div class="_left">
-              <img :src="item.left_src_m" alt="" class="show_small" />
-              <img :src="item.left_src" alt="" class="show_big" />
+              <img loading="lazy" :src="item.left_src_m" alt="" class="show_small" style="aspect-ratio: 335/400;"/>
+              <img loading="lazy" :src="item.left_src" alt="" class="show_big" style="aspect-ratio: 660/739;"/>
             </div>
             <div class="_right">
-              <img :src="item.right_src_m" alt="" class="show_small" />
-              <img :src="item.right_src" alt="" class="show_big" />
+              <img loading="lazy" :src="item.right_src_m" alt="" class="show_small" style="aspect-ratio: 335/287;"/>
+              <img loading="lazy" :src="item.right_src" alt="" class="show_big" style="aspect-ratio: 660/739;"/>
               <div class="inner">
-                <img :src="item.main_src" alt="" style="height: auto" />
+                <img loading="lazy" :src="item.main_src" alt="" style="height: auto;aspect-ratio: 1" />
                 <div class="title" :style="{ color: item.color }">
                   {{ item.title }}
                 </div>

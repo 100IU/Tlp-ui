@@ -22,7 +22,8 @@
             media="(max-width:768px)"
           />
           <img
-            class="common-img"
+            loading="lazy"
+            class="common-img img-fir"
             src="https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-1.jpg"
             alt=""
           /> </picture
@@ -52,7 +53,8 @@
             media="(max-width:768px)"
           />
           <img
-            class="common-img"
+            loading="lazy"
+            class="common-img img-sec"
             src="https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/Group%203365682.jpg"
             alt=""
           />
@@ -93,6 +95,7 @@
                   media="(max-width:768px)"
                 />
                 <img
+                  loading="lazy"
                   class="common-img"
                   src="https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-5.jpg"
                   alt=""
@@ -117,6 +120,7 @@
                   media="(max-width:768px)"
                 />
                 <img
+                  loading="lazy"
                   class="common-img"
                   src="https://cdnimg.vivaia.com/VA/image/Banner/20240514_6841/315-420.gif"
                   alt=""
@@ -138,6 +142,7 @@
                   "
                   media="(max-width:768px)" />
                 <img
+                  loading="lazy"
                   src="https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-6.jpg"
                   alt=""
                   class="common-img" /></picture
@@ -160,6 +165,7 @@
                   media="(max-width:768px)"
                 />
                 <img
+                  loading="lazy"
                   class="common-img"
                   src="https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-7.jpg"
                   alt=""
@@ -191,6 +197,7 @@
                 media="(max-width:768px)"
               />
               <img
+                loading="lazy"
                 class="common-img"
                 src="https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-8.jpg"
                 alt=""
@@ -225,6 +232,7 @@
                 media="(max-width:768px)"
               />
               <img
+                loading="lazy"
                 class="common-img"
                 src="https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-9.jpg"
                 alt=""
@@ -259,6 +267,7 @@
                 media="(max-width:768px)"
               />
               <img
+                loading="lazy"
                 class="common-img"
                 src="https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-10.jpg"
                 alt=""
@@ -300,7 +309,7 @@ export default {
     goods_item,
     goods_item_one,
     Icon_swiper,
-    bottomTopSlide
+    bottomTopSlide,
   },
   data() {
     return {
@@ -374,6 +383,14 @@ export default {
   img {
     width: 100%;
     display: block;
+  }
+
+  .img-fir {
+    aspect-ratio: 1920/900;
+  }
+
+  .img-sec {
+    aspect-ratio: 1320/660;
   }
 
   .goods_title {
@@ -652,6 +669,14 @@ export default {
 
 @media screen and (min-width: 769px) and (max-width: 1440px) {
   .Sandals_new {
+    .img-fir {
+      aspect-ratio: 375/565;
+    }
+
+    .img-sec {
+      aspect-ratio: 335/350;
+    }
+
     .goods_title {
       font-size: 22px;
       line-height: 1.14;
