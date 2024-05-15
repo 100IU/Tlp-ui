@@ -1,5 +1,6 @@
 <template>
   <div class="Sandals_new">
+    <bottomTopSlide></bottomTopSlide>
     <div class="top_banner">
       <div
         class="inner common_title show_big"
@@ -52,7 +53,7 @@
           />
           <img
             class="common-img"
-            src="https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-15.jpg"
+            src="https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/Group%203365682.jpg"
             alt=""
           />
         </picture>
@@ -292,12 +293,14 @@ import swiper_one from "./swiper_one.vue";
 import goods_item from "./goods_item.vue";
 import goods_item_one from "./goods_item_one.vue";
 import Icon_swiper from "./Icon_swiper.vue";
+import bottomTopSlide from "./bottomTopSlide.vue";
 export default {
   components: {
     swiper_one,
     goods_item,
     goods_item_one,
     Icon_swiper,
+    bottomTopSlide
   },
   data() {
     return {
@@ -533,6 +536,7 @@ export default {
                 line-height: 14px;
                 letter-spacing: 0px;
                 text-align: right;
+                visibility: hidden;
               }
             }
           }

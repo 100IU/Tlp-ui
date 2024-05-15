@@ -1,7 +1,7 @@
 <template>
   <div class="fengniao_sort">
     <div class="swiper_one">
-      <div class="swiper_btn show_big">
+      <div class="swiper_btn ">
         <div class="swiper-button swiper-button-prev">
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -123,8 +123,8 @@ export default {
             'https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/m-4.jpg',
           main_src:
             'https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-3.jpg',
-          title: 'Sport Sandals (Katarina)',
-          link: 'https://www.vivaia.com/category/katarina-c_1042.html',
+          title: 'AdaptAll™ Sport Sandals (Kara)',
+          link: 'https://www.vivaia.com/category/kara-c_1037.html',
           color: '#191817',
           type: 'Flats',
         },
@@ -139,8 +139,8 @@ export default {
             'https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/m-6.jpg',
           main_src:
             'https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-4.jpg',
-          title: 'AdaptAll™ Sport Sandals (Kara)',
-          link: 'https://www.vivaia.com/category/kara-c_1037.html',
+          title: 'Sport Sandals (Katarina)',
+          link: 'https://www.vivaia.com/category/katarina-c_1042.html',
           color: '#191817',
           type: 'Flats',
         },
@@ -165,11 +165,11 @@ export default {
         1024: {
           //当屏幕宽度大于等于768
           spaceBetween: 20,
-          // slidesPerView:1.4
+          slidesPerView:1
         },
         1730: {
           spaceBetween: 20,
-          // slidesPerView:1.4
+          slidesPerView:1
         },
       },
       pagination: {
