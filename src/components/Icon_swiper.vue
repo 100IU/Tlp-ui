@@ -28,22 +28,16 @@ export default {
       mySwiper: null,
 
       imgArr: [
-        { title: 'Cushioned footbed' },
+        { title: 'Atheletic chic' },
         { title: 'Casual' },
         { title: 'easy to wear' },
-        { title: 'Best Beach Sandals  ' },
-        { title: 'AdaptAll Strap™' },
-        { title: 'FLEXIBLE' },
-        { title: 'DURABLE' },
-        { title: 'Cushioned footbed' },
-        { title: 'Casual' },
-        { title: 'easy to wear' },
-        { title: 'Best Beach Sandals  ' },
-        { title: 'AdaptAll Strap™' },
-        { title: 'FLEXIBLE' },
-        { title: 'DURABLE' },
+        { title: 'long walkS' },
+        { title: 'BEACH READY' },
+        { title: 'Practical' },
+        { title: 'lightweight' },
+        { title: 'Empowering' },
+        { title: '2x arch support' },
       ],
-
       ctimer: null,
       left_s: 0,
     };
@@ -56,7 +50,7 @@ export default {
     sliderGotoLeft() {
       const that = this;
       setInterval(() => {
-        if (that.left_s === 1400) {
+        if (that.left_s === 1021) {
           that.left_s = 0;
         }
         that.left_s += 1;

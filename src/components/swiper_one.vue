@@ -98,36 +98,53 @@ export default {
       imgList: [
         {
           left_src:
-            'https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/pc-fs-1.jpg',
+            'https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-17.jpg',
           left_src_m:
-            'https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/m-fs-1.jpg',
+            'https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/m-2.jpg',
           right_src:
-            'https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/pc-fs-3.jpg',
+            'https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-16.jpg',
           right_src_m:
-            'https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/m-fs-3.jpg',
+            'https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/m-5.jpg',
           main_src:
-            'https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/pc-fs-2.jpg',
-          title: 'AdaptAll™ Sling Footbed Sandal (Isla)',
-          link: 'https://www.vivaia.com/item/adaptall-sling-footbed-sandal-isla-p_10022442.html?gid=10022442',
+            'https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-2.jpg',
+          title: 'Quick Adjustable Velcro Sport Sandals (Kiara)',
+          link: 'https://www.vivaia.com/category/kiara-c_1043.html',
           color: '#191817',
           type: 'Flats',
         },
         {
           left_src:
-            'https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/pc-he-1.jpg',
+            'https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-14.jpg',
           left_src_m:
-            'https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/m-hs-1.jpg',
+            'https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/m-1.jpg',
           right_src:
-            'https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/pc-hs-3.jpg',
+            'https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-13.jpg',
           right_src_m:
-            'https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/m-hs-3.jpg',
+            'https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/m-4.jpg',
           main_src:
-            'https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/pc-hs-2.jpg',
-          title: 'AdaptAll™ Soft Footbed Sandal (Isadora)',
-          link: 'https://www.vivaia.com/item/adaptall-soft-footbed-sandal-isadora-p_10022538.html?gid=10022538',
-          color: '#FFFFFF',
+            'https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-3.jpg',
+          title: 'Sport Sandals (Katarina)',
+          link: 'https://www.vivaia.com/category/katarina-c_1042.html',
+          color: '#191817',
           type: 'Flats',
         },
+        {
+          left_src:
+            'https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-12.jpg',
+          left_src_m:
+            'https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/m-33.jpg',
+          right_src:
+            'https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-11.jpg',
+          right_src_m:
+            'https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/m-6.jpg',
+          main_src:
+            'https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-4.jpg',
+          title: 'AdaptAll™ Sport Sandals (Kara)',
+          link: 'https://www.vivaia.com/category/kara-c_1037.html',
+          color: '#191817',
+          type: 'Flats',
+        },
+
       ],
     };
   },
@@ -222,6 +239,7 @@ export default {
           align-items: center;
           justify-content: center;
           box-sizing: border-box;
+          user-select: none;
 
           //  opacity: .5;
           ._left {
@@ -253,8 +271,8 @@ export default {
                 text-align: center;
                 margin-top: 1.25vw;
                 margin-bottom: 0.625vw;
-                white-space: nowrap;
                 color: #ffffff;
+                white-space: nowrap;
               }
 
               .desc {
@@ -430,7 +448,8 @@ export default {
                 color: #fff;
 
                 .title {
-                  white-space: nowrap;
+                  white-space: break-spaces;
+                  width: 200%;
                   font-family: Roboto;
                   font-size: 18px;
                   font-weight: 500;
@@ -554,6 +573,7 @@ export default {
                   margin-top: 4vw;
                   margin-bottom: 2.667vw;
                   color: #ffffff;
+                  white-space: unset;
                 }
 
                 .desc {

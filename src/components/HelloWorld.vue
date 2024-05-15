@@ -13,18 +13,18 @@
         Comfort
       </div>
       <a
-        href="https://www.vivaia.com/item/adaptall-soft-footbed-sandal-isadora-p_10022554.html?gid=10022554"
+        href="#"
       >
         <picture>
           <source
             srcset="
-              https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/m-banner.jpg
+            https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/m.jpg
             "
             media="(max-width:768px)"
           />
           <img
             class="common-img"
-            src="https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/pc-banner.jpg"
+            src="https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-1.jpg"
             alt=""
           /> </picture
       ></a>
@@ -32,18 +32,39 @@
     <div class="fengniao_title">
       <div class="biaodian">“</div>
       <div class="title">
-        Are you ready? Summer adventure awaits! Whether you prefer local strolls
-        or embarking on unknown journeys, the heat can make sneakers feel hot
-        and tiresome. But fear not, VIVAIA presents its new footbed sandals,
-        giving you a fresh summer experience that lets you stay cool, supported,
-        and comfortable on any journey.
+        What kind of sandals do you need? Cushioned? Lightweight? With a toe
+        spring? Shock absorbing? Excellent arch support? And you need them to be
+        refreshing and comfortable for hot summer day? Look no further because
+        the VIVAIA Sport Sandals Collection does it all and more.
       </div>
 
       <div class="biaodian" style="margin-top: 20px">”</div>
     </div>
+
     <Icon_swiper></Icon_swiper>
 
+    <div class="ima-banner space-w">
+      <a
+            href="https://www.vivaia.com/category/sports-sandals-c_1039.html"
+          >
+            <picture>
+              <source
+                srcset="
+                https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/m-01.jpg
+                "
+                media="(max-width:768px)"
+              />
+              <img
+                class="common-img"
+                src="https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-15.jpg"
+                alt=""
+              />
+            </picture>
+          </a>
+    </div>
     <swiper_one></swiper_one>
+
+    <div class="goods_title space-w">More Styles</div>
 
     <goods_item
       :goods_data="goods_data"
@@ -65,95 +86,93 @@
         <div class="list">
           <div class="item">
             <a
-              href="https://www.vivaia.com/item/adaptall-sling-footbed-sandal-isla-p_10022442.html?gid=10022442"
+              href="https://www.vivaia.com/category/sports-sandals-c_1039.html"
             >
               <picture>
                 <source
                   srcset="
-                    https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/pc-m-cp-1.jpg
+                  https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-5.jpg
                   "
                   media="(max-width:768px)"
                 />
                 <img
                   class="common-img"
-                  src="https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/pc-m-cp-1.jpg"
+                  src="https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-5.jpg"
                   alt=""
                 />
               </picture>
             </a>
-
             <div class="inner">
               <div class="title">
-                <span>Arch Support for Pressure Relief and Stability</span>
+                <span>Lightweight & Cushioned Soles with 2x Arch Support</span>
               </div>
             </div>
           </div>
           <div class="item">
             <a
-              href="https://www.vivaia.com/item/adaptall-sling-footbed-sandal-isla-p_10022442.html?gid=10022442"
+              href="https://www.vivaia.com/category/sports-sandals-c_1039.html"
             >
               <picture>
                 <source
                   srcset="
-                    https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/pc-m-cp-2.jpg
+                  https://cdnimg.vivaia.com/VA/image/Banner/20240514_6841/315-420.gif
                   "
                   media="(max-width:768px)"
                 />
                 <img
                   class="common-img"
-                  src="https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/pc-m-cp-2.jpg"
+                  src="https://cdnimg.vivaia.com/VA/image/Banner/20240514_6841/315-420.gif"
                   alt=""
                 /> </picture
             ></a>
 
             <div class="inner">
               <div class="title">
-                <span>Dual-Layer PU Sole Comfort with Deep Heel Cup</span>
+                <span>Odor-Resistant & Moisture-Wicking Insoles</span>
               </div>
             </div>
           </div>
-
           <div class="item">
             <a
-              href="https://www.vivaia.com/item/adaptall-sling-footbed-sandal-isla-p_10022442.html?gid=10022442"
+              href="https://www.vivaia.com/category/sports-sandals-c_1039.html"
               ><picture
                 ><source
                   srcset="
-                    https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/0417pc-m-1.jpg
+                  https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-6.jpg
                   "
-                  media="(max-width:1023px)" />
+                  media="(max-width:768px)" />
                 <img
-                  src="https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/0417pc-m-1.jpg"
+                  src="https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-6.jpg"
                   alt=""
                   class="common-img" /></picture
             ></a>
             <div class="inner">
               <div class="title">
-                <span>Flexibility for Every Step</span>
+                <span>Toespring for Natural Rolling Motion</span>
               </div>
             </div>
           </div>
           <div class="item">
             <a
-              href="https://www.vivaia.com/item/adaptall-sling-footbed-sandal-isla-p_10022442.html?gid=10022442"
+              href="https://www.vivaia.com/category/sports-sandals-c_1039.html"
             >
               <picture>
                 <source
                   srcset="
-                    https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/pc-m-cp-4.gif
+                  https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-7.jpg
                   "
-                  media="(max-width:1023px)"
+                  media="(max-width:768px)"
                 />
                 <img
                   class="common-img"
-                  src="https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/pc-m-cp-4.gif"
+                  src="https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-7.jpg"
                   alt=""
                 /> </picture
             ></a>
 
             <div class="inner">
               <div class="title">
-                <span>AdaptAll Strap™ for Custom Fit</span>
+                <span>Heel-To-Toe Drop for Less Pressure</span>
               </div>
             </div>
           </div>
@@ -162,27 +181,29 @@
     </div>
 
     <div class="coming-launched space-w">
-      <div class="coming_title common_title">Launched</div>
+      <div class="coming_title common_title">Summer Comfort Essentials</div>
       <div class="list">
         <div class="item">
-          <a href="https://www.vivaia.com/promotion/Cargo-Collection-24SS.html">
+          <a
+            href="https://www.vivaia.com/promotion/walking-footbed-sandals-6338.html"
+          >
             <picture>
               <source
                 srcset="
-                  https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6612/new%20arrival-m_8f5.jpg
+                https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-8.jpg
                 "
-                media="(max-width:1023px)"
+                media="(max-width:768px)"
               />
               <img
                 class="common-img"
-                src="https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6612/Rectangle%202098PC_yqb.jpg"
+                src="https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-8.jpg"
                 alt=""
               />
             </picture>
           </a>
           <div class="inner">
             <div class="title">
-              <span>Cargo Collection</span>
+              <span>VIVAIA Footbed</span>
               <span class="month">2024/02</span>
             </div>
             <div class="m-desc-outer">
@@ -197,24 +218,24 @@
           </div>
         </div>
         <div class="item">
-          <a href="https://www.vivaia.com/promotion/Cargo-Collection-24SS.html">
+          <a href="https://www.vivaia.com/promotion/Manuella-The-Best-Walking-Slide-Sandal.html">
             <picture>
               <source
                 srcset="
-                  https://cdnimg.vivaia.com/VA/image/Banner/20240131_6630/new%20arrival-m.jpg
+                https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-9.jpg
                 "
-                media="(max-width:1023px)"
+                media="(max-width:768px)"
               />
               <img
                 class="common-img"
-                src="https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6612/Rectangle%201971PC_4d3.jpg"
+                src="https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-9.jpg"
                 alt=""
               />
             </picture>
           </a>
           <div class="inner">
             <div class="title">
-              <span>Dots Collection</span>
+              <span>VIVAIA Pillow Top</span>
               <span class="month">2024/02</span>
             </div>
             <div class="m-desc-outer">
@@ -230,25 +251,25 @@
         </div>
         <div class="item">
           <a
-            href="https://www.vivaia.com/promotion/Animal-Collection-24SS-6248.html"
+            href="https://www.vivaia.com/promotion/The-Best-Sandals-for-Plantar-Fasciitis-6353.html"
           >
             <picture>
               <source
                 srcset="
-                  https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6612/new%20arrival-m2.jpg
+                https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-10.jpg
                 "
-                media="(max-width:1023px)"
+                media="(max-width:768px)"
               />
               <img
                 class="common-img"
-                src="https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6612/Rectangle%202098PC2.jpg"
+                src="https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/pc-10.jpg"
                 alt=""
               />
             </picture>
           </a>
           <div class="inner">
             <div class="title">
-              <span>Animal Collection </span>
+              <span>VIVAIA Arch Pro</span>
               <span class="month">2024/02</span>
             </div>
             <div class="m-desc-outer">
@@ -262,62 +283,13 @@
             </div>
           </div>
         </div>
-        <div class="item">
-          <a
-            href="https://www.vivaia.com/promotion/VIVAIA-Timeless-Chic-Collection-24SS-6270.html"
-          >
-            <picture>
-              <source
-                srcset="
-                  https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/x-m.jpg
-                "
-                media="(max-width:1023px)"
-              />
-              <img
-                class="common-img"
-                src="https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/x-pc.jpg"
-                alt=""
-              />
-            </picture>
-          </a>
-          <div class="inner">
-            <div class="title">
-              <span>Timeless Collection </span>
-              <span class="month">2024/03</span>
-            </div>
-            <div class="m-desc-outer">
-              <a
-                class="desc"
-                href="hhttps://www.vivaia.com/promotion/VIVAIA-Timeless-Chic-Collection-24SS-6270.html"
-              >
-                Discover
-                <div class="desc-line"></div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div class="item no_bottom">
-          <picture>
-            <source
-              srcset="
-                https://cdnimg.vivaia.com/VA/image/Banner/20240131_6630/Group%20337545_q7d.jpg
-              "
-              media="(max-width:768px)"
-            />
-            <img
-              src="https://cdnimg.vivaia.com/VA/image/Banner/20240131_6630/Group%20337551.jpg"
-              alt=""
-              class="common-img"
-            />
-          </picture>
-        </div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-let str = `10022554,10022506,10022442,10022490,10022586,10022570,10022458,10022474`;
+let str = `10023211,10023579,10023371,10023195,10023179,10023275,10023563,10023515,10023547,10023467,10023435,10023419`;
 
 import swiper_one from "./swiper_one.vue";
 import goods_item from "./goods_item.vue";
@@ -402,6 +374,17 @@ export default {
   img {
     width: 100%;
     display: block;
+  }
+
+  .goods_title{
+    font-family: Noto Serif;
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: #191817;
+    margin-bottom: 1.667vw;
   }
 
   .top_banner {
@@ -709,7 +692,7 @@ export default {
               }
             }
 
-            .desc{
+            .desc {
               font-size: 0.92vw;
             }
           }
