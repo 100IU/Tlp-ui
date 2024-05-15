@@ -669,13 +669,7 @@ export default {
 
 @media screen and (min-width: 769px) and (max-width: 1440px) {
   .Sandals_new {
-    .img-fir {
-      aspect-ratio: 375/565;
-    }
 
-    .img-sec {
-      aspect-ratio: 335/350;
-    }
 
     .goods_title {
       font-size: 22px;
@@ -736,6 +730,14 @@ export default {
 @media screen and (max-width: 768px) {
   .Sandals_new {
     padding-bottom: 10.167vw;
+
+    .img-fir {
+      aspect-ratio: 375/565;
+    }
+
+    .img-sec {
+      aspect-ratio: 335/350;
+    }
 
     .space-w {
       width: 89.333vw;
