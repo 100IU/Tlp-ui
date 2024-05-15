@@ -181,7 +181,7 @@ export default {
   background: #ffff;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 768px) {
   .Sandals_new .swiper-pagination-bullet {
     border-radius: 50% !important;
     width: 4px;
@@ -406,9 +406,16 @@ export default {
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 769px) and (max-width: 1440px) {
   .Sandals_new {
     .fengniao_sort {
+      .swiper_btn{
+        .swiper-button{
+          width: 3.5vw;
+          height: 3.5vw;
+        }
+      }
+
       .swiper_one_swiper {
         .swiper-wrapper {
           .swiper-slide {
@@ -479,7 +486,7 @@ export default {
   }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 768px) {
   .Sandals_new {
     .fengniao_sort {
       width: 100%;

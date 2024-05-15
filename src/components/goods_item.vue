@@ -167,7 +167,7 @@ export default {
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 769px) and (max-width: 1440px) {
   .shop_btn {
     font-size: 14px;
     line-height: 1.14;
@@ -175,7 +175,7 @@ export default {
 }
 
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 769px) {
   .new_wrapper {
     display: flex;
     column-gap: 1.042vw;
@@ -188,7 +188,7 @@ export default {
   }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 768px) {
   .Sandals_new {
     .fengniao-margot {
       padding: 0 5.333vw;

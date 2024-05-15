@@ -123,7 +123,7 @@ export default {
   }
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 768px) {
   .Sandals_new {
     .fengniao_icon {
       margin-bottom: 10.667vw;

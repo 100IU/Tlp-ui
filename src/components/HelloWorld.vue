@@ -5,11 +5,12 @@
         class="inner common_title show_big"
         style="margin-bottom: 0; text-align: center"
       >
-      Our Best Supportive & Lightweight Flexible <br> Sport Sandals for Ultimate Comfort
+        Our Best Supportive & Lightweight Flexible <br />
+        Sport Sandals for Ultimate Comfort
       </div>
       <div class="inner common_title show_small">
-        Our Best Supportive & Flexible <br />
-        Footbed Sandals for Walking
+        Our Best Supportive & Lightweight Flexible Sport Sandals for Ultimate
+        Comfort
       </div>
       <a
         href="https://www.vivaia.com/item/adaptall-soft-footbed-sandal-isadora-p_10022554.html?gid=10022554"
@@ -63,22 +64,24 @@
       <div class="outer_scroll">
         <div class="list">
           <div class="item">
-            <a href="https://www.vivaia.com/item/adaptall-sling-footbed-sandal-isla-p_10022442.html?gid=10022442">
-               <picture>
-              <source
-                srcset="
-                  https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/pc-m-cp-1.jpg
-                "
-                media="(max-width:768px)"
-              />
-              <img
-                class="common-img"
-                src="https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/pc-m-cp-1.jpg"
-                alt=""
-              />
-            </picture>
+            <a
+              href="https://www.vivaia.com/item/adaptall-sling-footbed-sandal-isla-p_10022442.html?gid=10022442"
+            >
+              <picture>
+                <source
+                  srcset="
+                    https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/pc-m-cp-1.jpg
+                  "
+                  media="(max-width:768px)"
+                />
+                <img
+                  class="common-img"
+                  src="https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/pc-m-cp-1.jpg"
+                  alt=""
+                />
+              </picture>
             </a>
-           
+
             <div class="inner">
               <div class="title">
                 <span>Arch Support for Pressure Relief and Stability</span>
@@ -86,20 +89,23 @@
             </div>
           </div>
           <div class="item">
-            <a href="https://www.vivaia.com/item/adaptall-sling-footbed-sandal-isla-p_10022442.html?gid=10022442"> <picture>
-              <source
-                srcset="
-                  https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/pc-m-cp-2.jpg
-                "
-                media="(max-width:768px)"
-              />
-              <img
-                class="common-img"
-                src="https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/pc-m-cp-2.jpg"
-                alt=""
-              />
-            </picture></a>
-           
+            <a
+              href="https://www.vivaia.com/item/adaptall-sling-footbed-sandal-isla-p_10022442.html?gid=10022442"
+            >
+              <picture>
+                <source
+                  srcset="
+                    https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/pc-m-cp-2.jpg
+                  "
+                  media="(max-width:768px)"
+                />
+                <img
+                  class="common-img"
+                  src="https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/pc-m-cp-2.jpg"
+                  alt=""
+                /> </picture
+            ></a>
+
             <div class="inner">
               <div class="title">
                 <span>Dual-Layer PU Sole Comfort with Deep Heel Cup</span>
@@ -128,20 +134,22 @@
             </div>
           </div>
           <div class="item">
-            <a href="https://www.vivaia.com/item/adaptall-sling-footbed-sandal-isla-p_10022442.html?gid=10022442"> <picture>
-              <source
-                srcset="
-                  https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/pc-m-cp-4.gif
-                "
-                media="(max-width:1023px)"
-              />
-              <img
-                class="common-img"
-                src="https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/pc-m-cp-4.gif"
-                alt=""
-              />
-            </picture></a>
-           
+            <a
+              href="https://www.vivaia.com/item/adaptall-sling-footbed-sandal-isla-p_10022442.html?gid=10022442"
+            >
+              <picture>
+                <source
+                  srcset="
+                    https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/pc-m-cp-4.gif
+                  "
+                  media="(max-width:1023px)"
+                />
+                <img
+                  class="common-img"
+                  src="https://cdnimg.vivaia.com/VA/image/loadpage/20240416_6764/pc-m-cp-4.gif"
+                  alt=""
+                /> </picture
+            ></a>
 
             <div class="inner">
               <div class="title">
@@ -154,172 +162,167 @@
     </div>
 
     <div class="coming-launched space-w">
-			<div class="coming_title common_title">Launched</div>
-			<div class="list">
-				<div class="item">
-					<a
-						href="https://www.vivaia.com/promotion/Cargo-Collection-24SS.html"
-					>
-						<picture>
-							<source
-								srcset="
-									https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6612/new%20arrival-m_8f5.jpg
-								"
-								media="(max-width:1023px)"
-							/>
-							<img
-								class="common-img"
-								src="https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6612/Rectangle%202098PC_yqb.jpg"
-								alt=""
-							/>
-						</picture>
-					</a>
-					<div class="inner">
-						<div class="title">
-							<span>Cargo Collection</span>
-							<span class="month">2024/02</span>
-						</div>
-						<div class="m-desc-outer">
-							<a
-								class="desc"
-								href="https://www.vivaia.com/promotion/Cargo-Collection-24SS.html"
-							>
-								Discover
-								<div class="desc-line"></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<a
-						href="https://www.vivaia.com/promotion/Cargo-Collection-24SS.html"
-					>
-						<picture>
-							<source
-								srcset="
-									https://cdnimg.vivaia.com/VA/image/Banner/20240131_6630/new%20arrival-m.jpg
-								"
-								media="(max-width:1023px)"
-							/>
-							<img
-								class="common-img"
-								src="https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6612/Rectangle%201971PC_4d3.jpg"
-								alt=""
-							/>
-						</picture>
-					</a>
-					<div class="inner">
-						<div class="title">
-							<span>Dots Collection</span>
-							<span class="month">2024/02</span>
-						</div>
-						<div class="m-desc-outer">
-							<a
-								class="desc"
-								href="https://www.vivaia.com/promotion/Cargo-Collection-24SS.html"
-							>
-								Discover
-								<div class="desc-line"></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<a
-						href="https://www.vivaia.com/promotion/Animal-Collection-24SS-6248.html"
-					>
-						<picture>
-							<source
-								srcset="
-									https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6612/new%20arrival-m2.jpg
-								"
-								media="(max-width:1023px)"
-							/>
-							<img
-								class="common-img"
-								src="https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6612/Rectangle%202098PC2.jpg"
-								alt=""
-							/>
-						</picture>
-					</a>
-					<div class="inner">
-						<div class="title">
-							<span>Animal Collection </span>
-							<span class="month">2024/02</span>
-						</div>
-						<div class="m-desc-outer">
-							<a
-								class="desc"
-								href="https://www.vivaia.com/promotion/Animal-Collection-24SS-6248.html"
-							>
-								Discover
-								<div class="desc-line"></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item">
-					<a
-						href="https://www.vivaia.com/promotion/VIVAIA-Timeless-Chic-Collection-24SS-6270.html"
-					>
-						<picture>
-							<source
-								srcset="
-									https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/x-m.jpg
-								"
-								media="(max-width:1023px)"
-							/>
-							<img
-								class="common-img"
-								src="https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/x-pc.jpg"
-								alt=""
-							/>
-						</picture>
-					</a>
-					<div class="inner">
-						<div class="title">
-							<span>Timeless Collection </span>
-							<span class="month">2024/03</span>
-						</div>
-						<div class="m-desc-outer">
-							<a
-								class="desc"
-								href="hhttps://www.vivaia.com/promotion/VIVAIA-Timeless-Chic-Collection-24SS-6270.html"
-							>
-								Discover
-								<div class="desc-line"></div>
-							</a>
-						</div>
-					</div>
-				</div>
-				<div class="item no_bottom">
-					<picture>
-						<source
-							srcset="
-								https://cdnimg.vivaia.com/VA/image/Banner/20240131_6630/Group%20337545_q7d.jpg
-							"
-							media="(max-width:768px)"
-						/>
-						<img
-							src="https://cdnimg.vivaia.com/VA/image/Banner/20240131_6630/Group%20337551.jpg"
-							alt=""
-							class="common-img"
-						/>
-					</picture>
-				</div>
-			</div>
-		</div>
-
+      <div class="coming_title common_title">Launched</div>
+      <div class="list">
+        <div class="item">
+          <a href="https://www.vivaia.com/promotion/Cargo-Collection-24SS.html">
+            <picture>
+              <source
+                srcset="
+                  https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6612/new%20arrival-m_8f5.jpg
+                "
+                media="(max-width:1023px)"
+              />
+              <img
+                class="common-img"
+                src="https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6612/Rectangle%202098PC_yqb.jpg"
+                alt=""
+              />
+            </picture>
+          </a>
+          <div class="inner">
+            <div class="title">
+              <span>Cargo Collection</span>
+              <span class="month">2024/02</span>
+            </div>
+            <div class="m-desc-outer">
+              <a
+                class="desc"
+                href="https://www.vivaia.com/promotion/Cargo-Collection-24SS.html"
+              >
+                Discover
+                <div class="desc-line"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <a href="https://www.vivaia.com/promotion/Cargo-Collection-24SS.html">
+            <picture>
+              <source
+                srcset="
+                  https://cdnimg.vivaia.com/VA/image/Banner/20240131_6630/new%20arrival-m.jpg
+                "
+                media="(max-width:1023px)"
+              />
+              <img
+                class="common-img"
+                src="https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6612/Rectangle%201971PC_4d3.jpg"
+                alt=""
+              />
+            </picture>
+          </a>
+          <div class="inner">
+            <div class="title">
+              <span>Dots Collection</span>
+              <span class="month">2024/02</span>
+            </div>
+            <div class="m-desc-outer">
+              <a
+                class="desc"
+                href="https://www.vivaia.com/promotion/Cargo-Collection-24SS.html"
+              >
+                Discover
+                <div class="desc-line"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <a
+            href="https://www.vivaia.com/promotion/Animal-Collection-24SS-6248.html"
+          >
+            <picture>
+              <source
+                srcset="
+                  https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6612/new%20arrival-m2.jpg
+                "
+                media="(max-width:1023px)"
+              />
+              <img
+                class="common-img"
+                src="https://cdnimg.vivaia.com/VA/image/loadpage/20240129_6612/Rectangle%202098PC2.jpg"
+                alt=""
+              />
+            </picture>
+          </a>
+          <div class="inner">
+            <div class="title">
+              <span>Animal Collection </span>
+              <span class="month">2024/02</span>
+            </div>
+            <div class="m-desc-outer">
+              <a
+                class="desc"
+                href="https://www.vivaia.com/promotion/Animal-Collection-24SS-6248.html"
+              >
+                Discover
+                <div class="desc-line"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <a
+            href="https://www.vivaia.com/promotion/VIVAIA-Timeless-Chic-Collection-24SS-6270.html"
+          >
+            <picture>
+              <source
+                srcset="
+                  https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/x-m.jpg
+                "
+                media="(max-width:1023px)"
+              />
+              <img
+                class="common-img"
+                src="https://cdnimg.vivaia.com/VA/image/loadpage/20240229_6666/x-pc.jpg"
+                alt=""
+              />
+            </picture>
+          </a>
+          <div class="inner">
+            <div class="title">
+              <span>Timeless Collection </span>
+              <span class="month">2024/03</span>
+            </div>
+            <div class="m-desc-outer">
+              <a
+                class="desc"
+                href="hhttps://www.vivaia.com/promotion/VIVAIA-Timeless-Chic-Collection-24SS-6270.html"
+              >
+                Discover
+                <div class="desc-line"></div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="item no_bottom">
+          <picture>
+            <source
+              srcset="
+                https://cdnimg.vivaia.com/VA/image/Banner/20240131_6630/Group%20337545_q7d.jpg
+              "
+              media="(max-width:768px)"
+            />
+            <img
+              src="https://cdnimg.vivaia.com/VA/image/Banner/20240131_6630/Group%20337551.jpg"
+              alt=""
+              class="common-img"
+            />
+          </picture>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
 let str = `10022554,10022506,10022442,10022490,10022586,10022570,10022458,10022474`;
 
-import swiper_one from './swiper_one.vue';
-import goods_item from './goods_item.vue';
-import goods_item_one from './goods_item_one.vue';
-import Icon_swiper from './Icon_swiper.vue';
+import swiper_one from "./swiper_one.vue";
+import goods_item from "./goods_item.vue";
+import goods_item_one from "./goods_item_one.vue";
+import Icon_swiper from "./Icon_swiper.vue";
 export default {
   components: {
     swiper_one,
@@ -330,8 +333,8 @@ export default {
   data() {
     return {
       isPc: true,
-      threshold: 1024,
-      swiper_name: 'sandals',
+      threshold: 768,
+      swiper_name: "sandals",
       goods_data: [],
     };
   },
@@ -346,7 +349,7 @@ export default {
     async getAllgoods() {
       if (window._fengniao_getGoods_list) {
         const res = await window._fengniao_getGoods_list({
-          goods_id: str.replace(/\s/g, ''),
+          goods_id: str.replace(/\s/g, ""),
           disable_goods_number: 1,
         });
         this.goods_data = res.result;
@@ -479,14 +482,12 @@ export default {
         .inner {
           .title {
             margin-top: 10px;
-
             font-family: Roboto;
             font-size: 18px;
             font-weight: 400;
             line-height: 21px;
             letter-spacing: 0px;
             text-align: left;
-
             color: #191817;
           }
 
@@ -520,72 +521,72 @@ export default {
   }
 
   .coming-launched {
-		.list {
-			display: flex;
-			flex-wrap: wrap;
-			-moz-column-gap: 1.563vw;
-			column-gap: 1.563vw;
-			justify-content: start;
+    .list {
+      display: flex;
+      flex-wrap: wrap;
+      -moz-column-gap: 1.563vw;
+      column-gap: 1.563vw;
+      justify-content: start;
 
-			.item {
-				width: 31.8%;
-				margin-bottom: 1.667vw;
-				.inner {
-					.title {
-						margin-top: 1.042vw;
-						margin-bottom: 0.417vw;
-						font-family: Roboto;
-						font-size: 16px;
-						font-weight: 500;
-						line-height: 19px;
-						letter-spacing: 0px;
-						text-align: left;
-						display: flex;
-						justify-content: space-between;
-						align-items: center;
-						color: #191817;
-						span {
-							&:nth-child(2) {
-								font-family: Roboto;
-								font-size: 12px;
-								font-weight: 400;
-								line-height: 14px;
-								letter-spacing: 0px;
-								text-align: right;
-							}
-						}
-					}
+      .item {
+        width: 31.8%;
+        margin-bottom: 1.667vw;
+        .inner {
+          .title {
+            margin-top: 1.042vw;
+            margin-bottom: 0.417vw;
+            font-family: Roboto;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 19px;
+            letter-spacing: 0px;
+            text-align: left;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #191817;
+            span {
+              &:nth-child(2) {
+                font-family: Roboto;
+                font-size: 12px;
+                font-weight: 400;
+                line-height: 14px;
+                letter-spacing: 0px;
+                text-align: right;
+              }
+            }
+          }
 
-					.desc {
-						font-family: Roboto;
-						font-size: 14px;
-						font-weight: 500;
-						letter-spacing: 0px;
-						text-align: center;
-						color: rgba(25, 24, 23, 1);
-						text-decoration: none;
-						cursor: pointer;
-						opacity: 0.5;
-						display: inline;
-						transition: all 0.3s;
-						.desc-line {
-							transition: all 0.3s;
-							width: 100%;
-							height: 1px;
-							background: rgba(25, 24, 23, 1);
-						}
-						&:hover {
-							transition: all 0.3s;
-							.desc-line {
-								transition: all 0.3s;
-								width: 0%;
-							}
-						}
-					}
-				}
-			}
-		}
-	}
+          .desc {
+            font-family: Roboto;
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: 0px;
+            text-align: center;
+            color: rgba(25, 24, 23, 1);
+            text-decoration: none;
+            cursor: pointer;
+            opacity: 0.5;
+            display: inline-block;
+            transition: all 0.3s;
+            .desc-line {
+              transition: all 0.3s;
+              width: 100%;
+              height: 1px;
+              background: rgba(25, 24, 23, 1);
+            }
+            &:hover {
+              transition: all 0.3s;
+              .desc-line {
+                transition: all 0.3s;
+                width: 0%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 
   .bottom_icon {
     background: #fff;
@@ -621,7 +622,6 @@ export default {
           line-height: 19px;
           letter-spacing: 0px;
           text-align: center;
-
           margin-top: 0.781vw;
           margin-bottom: 0.417vw;
         }
@@ -666,7 +666,7 @@ export default {
   }
 }
 
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
+@media screen and (min-width: 769px) and (max-width: 1440px) {
   .Sandals_new {
     .fengniao_title {
       font-size: 24px;
@@ -682,25 +682,44 @@ export default {
         .item {
           .inner {
             .title {
-              font-size: 16px;
+              font-size: 1.11vw;
+              line-height: 1.46vw;
             }
           }
         }
       }
     }
     .coming-launched {
-		.list {
-			.item {
-				&:nth-child(4) {
-					margin-bottom: 0;
-				}
-			}
-		}
-	}
+      .list {
+        .item {
+          &:nth-child(4) {
+            margin-bottom: 0;
+          }
+
+          .inner {
+            .title {
+              font-size: 1.11vw;
+              line-height: 1.32vw;
+
+              span {
+                &:nth-child(2) {
+                  font-size: 0.83vw;
+                  line-height: 0.97vw;
+                }
+              }
+            }
+
+            .desc{
+              font-size: 0.92vw;
+            }
+          }
+        }
+      }
+    }
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 768px) {
   .Sandals_new {
     padding-bottom: 10.167vw;
 
@@ -744,6 +763,7 @@ export default {
         left: auto;
         top: auto;
         top: 10.667vw;
+        padding: 0 20px;
       }
     }
 
@@ -836,58 +856,58 @@ export default {
     }
 
     .coming-launched {
-			.list {
-				display: flex;
-				flex-wrap: wrap;
-				.item {
-					width: 100%;
-					margin-bottom: 20px;
+      .list {
+        display: flex;
+        flex-wrap: wrap;
+        .item {
+          width: 100%;
+          margin-bottom: 20px;
 
-					&:last-child {
-						margin-bottom: 0;
-					}
+          &:last-child {
+            margin-bottom: 0;
+          }
 
-					.inner {
-						display: flex;
-						flex-direction: column;
-						justify-content: flex-start;
-						.title {
-							margin-top: 10px;
-							margin-bottom: 6px;
-							font-family: Roboto;
-							font-size: 14px;
-							font-weight: 500;
-							line-height: 16.4px;
-							letter-spacing: 0px;
+          .inner {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            .title {
+              margin-top: 10px;
+              margin-bottom: 6px;
+              font-family: Roboto;
+              font-size: 14px;
+              font-weight: 500;
+              line-height: 16.4px;
+              letter-spacing: 0px;
 
-							span {
-								&:nth-child(1) {
-									font-size: 14px;
-								}
-								&:nth-child(2) {
-									font-family: Roboto;
-									font-size: 12px;
-									font-weight: 400;
-									line-height: 4.267vw;
-									letter-spacing: 0px;
-									text-align: right;
-								}
-							}
-						}
+              span {
+                &:nth-child(1) {
+                  font-size: 14px;
+                }
+                &:nth-child(2) {
+                  font-family: Roboto;
+                  font-size: 12px;
+                  font-weight: 400;
+                  line-height: 4.267vw;
+                  letter-spacing: 0px;
+                  text-align: right;
+                }
+              }
+            }
 
-						.desc {
-							font-family: Roboto;
-							display: inline-block;
-							font-size: 12px;
-							line-height: 12px;
-							font-weight: 500;
-							letter-spacing: 0px;
-							text-align: left;
-						}
-					}
-				}
-			}
-		}
+            .desc {
+              font-family: Roboto;
+              display: inline-block;
+              font-size: 12px;
+              line-height: 12px;
+              font-weight: 500;
+              letter-spacing: 0px;
+              text-align: left;
+            }
+          }
+        }
+      }
+    }
 
     .bottom_icon {
       // padding-top: 10.667vw;
