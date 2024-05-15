@@ -21,7 +21,7 @@
           </a>
 
           <div class="title-color">
-            <div class="title">Versatile & Softer Birken-Style Slides</div>
+            <div class="title">2x Arch Support Sandals for Long Walks</div>
           </div>
         </div>
       <a href="https://www.vivaia.com/category/kara-c_1037.html" class="shop-now">Discover Now</a>
@@ -37,21 +37,21 @@ export default {
     return {
       CircleImg: [
         {
-          src: "https://cdnimg.vivaia.com/vivaia/products/1714135377-f5c8aabb-b323-41eb-8b66-25f6eeeb77c1.jpg?imresize=800x800",
+          src: "https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/Rectangle%202209.jpg",
           link: "https://www.vivaia.com/category/kara-c_1037.html",
           data_url:
             "https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/Rectangle%202209.jpg",
           data_title: "Abstract Dots",
         },
         {
-          src: "https://cdnimg.vivaia.com/vivaia/products/1706766689-e74cd3fd-9da9-4111-8f13-1577ad094fae.jpg?imresize=800x800",
+          src: "https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/Rectangle%202210.jpg",
           link: "https://www.vivaia.com/category/kiara-c_1043.html",
           data_url:
             "https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/Rectangle%202210.jpg",
           data_title: "Abstract Dots",
         },
         {
-          src: "https://cdnimg.vivaia.com/vivaia/products/1706841294-1868696c-5c89-48b3-9691-3b7ee0696d51.jpg?imresize=800x800",
+          src: "https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/Rectangle%202211.jpg",
           link: "https://www.vivaia.com/category/katarina-c_1042.html",
           data_url:
             "https://cdnimg.vivaia.com/VA/image/Banner/20240515_6843/Rectangle%202211.jpg",
